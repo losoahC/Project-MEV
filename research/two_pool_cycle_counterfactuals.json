@@ -1,0 +1,129 @@
+{
+  "method": "Conditional two-pool fixed-investment policy. Remove target pool effects; freeze intervening observed inputs AND outputs, require AMM feasibility; simulate actor maximizing output on its two-pool route. Fixed gas/direct costs. Flash-swap execution order, slippage and other-pool responses not reexecuted. Not whole-EVM causal profit. Infeasible scenarios return null.",
+  "rows": [
+    {
+      "hash": "0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851",
+      "block": 26302300,
+      "actual_net_ETH": "0.000065472689682791",
+      "actual_route": [
+        {
+          "hash": "0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851",
+          "pool": "0xcf6daab95c476106eca715d48de4b13287ffdeaa",
+          "index": 333,
+          "log_index": 573,
+          "side": 1,
+          "input": 524304755859905015,
+          "output": 263597153258982257484624477,
+          "before": [
+            281837620265810686915156287074,
+            558381248911187155739
+          ],
+          "after": [
+            281574023112551704657671662597,
+            558905553667047060754
+          ]
+        },
+        {
+          "hash": "0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851",
+          "pool": "0x811beed0119b4afce20d2583eb608c6f7af1954f",
+          "index": 333,
+          "log_index": 575,
+          "side": 0,
+          "input": 263597153258982257484624477,
+          "output": 527170826041131280,
+          "before": [
+            58065569219216594149867061523,
+            117002563127352841744
+          ],
+          "after": [
+            58329166372475576407351686000,
+            116475392301311710464
+          ]
+        }
+      ],
+      "scenarios": [
+        {
+          "removed_target": "0x2ccafec913543cb6a8f13d9bf8f4fc77b3adb0b9bed4e32171560dac9670976d",
+          "intervening_swap_count": 2,
+          "feasible_under_frozen_intervening_flows": false,
+          "violations": [
+            {
+              "hash": "0x64327df08f043bb6590d7a8729f13c2ed4cfd76170c0e333cc44cd8f47f369c6",
+              "pool": "0xcf6daab95c476106eca715d48de4b13287ffdeaa",
+              "reason": "observed_intervening_output_exceeds_counterfactual_max",
+              "excess_raw": "2063606840080537891309949507"
+            },
+            {
+              "hash": "0x6564415d0ee5733da688b5ef91f09d1a72ac8b5160175bbf5ab3b48a50b1df91",
+              "pool": "0xcf6daab95c476106eca715d48de4b13287ffdeaa",
+              "reason": "observed_intervening_output_exceeds_counterfactual_max",
+              "excess_raw": "552071400400074071303228099"
+            }
+          ],
+          "counterfactual_route_outputs": [],
+          "counterfactual_net_ETH": null,
+          "actual_minus_counterfactual_ETH": null
+        }
+      ]
+    },
+    {
+      "hash": "0xbe7e1a0554942e23cb6c960274ab52033c9851445810c061a1f34f9e041d74a4",
+      "block": 26302437,
+      "actual_net_ETH": "0.002184499542797343",
+      "actual_route": [
+        {
+          "hash": "0xbe7e1a0554942e23cb6c960274ab52033c9851445810c061a1f34f9e041d74a4",
+          "pool": "0x0c365789dbbb94a29f8720dc465554c587e897db",
+          "index": 33,
+          "log_index": 176,
+          "side": 1,
+          "input": 30182152608108832,
+          "output": 113083412574719274907,
+          "before": [
+            5837888732946559956765,
+            1523376267707318877
+          ],
+          "after": [
+            5724805320371840681858,
+            1553558420315427709
+          ]
+        },
+        {
+          "hash": "0xbe7e1a0554942e23cb6c960274ab52033c9851445810c061a1f34f9e041d74a4",
+          "pool": "0xa040832b1e5026da6dc843e6773a9e4d02fff9b1",
+          "index": 33,
+          "log_index": 173,
+          "side": 0,
+          "input": 113083412574719274907,
+          "output": 37184110905353834,
+          "before": [
+            538707461329766829545,
+            214855021508719996
+          ],
+          "after": [
+            651790873904486104452,
+            177670910603366162
+          ]
+        }
+      ],
+      "scenarios": [
+        {
+          "removed_target": "0xbf3fc95e45d932b1ad0a55e91e77fea8652906a3eeb0efd65850976059aef9d7",
+          "intervening_swap_count": 1,
+          "feasible_under_frozen_intervening_flows": false,
+          "violations": [
+            {
+              "hash": "0x3dc9025a92d517ec54becab7932b757af04104717a8a2d612431cb0540b94aa0",
+              "pool": "0x0c365789dbbb94a29f8720dc465554c587e897db",
+              "reason": "observed_intervening_output_exceeds_counterfactual_max",
+              "excess_raw": "261718467659286601385"
+            }
+          ],
+          "counterfactual_route_outputs": [],
+          "counterfactual_net_ETH": null,
+          "actual_minus_counterfactual_ETH": null
+        }
+      ]
+    }
+  ]
+}

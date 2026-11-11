@@ -1,0 +1,22 @@
+{
+  "method": "Read-only injected probe contract executes PUSH4 historical_block_number, BLOCKHASH, MSTORE, RETURN in second simulated block. Tests whether client honors blockHash map override; does not alter real chain.",
+  "source": "https://reth.rs/docs/reth/rpc/types/struct.BlockOverrides.html",
+  "rows": [
+    {
+      "mode": "default",
+      "actual_historical_hash": "0x61b1d5526c4177ac0bbc617dc184110b94533fd59f5c4d5ae3683d395385fa2e",
+      "error": null,
+      "generated_prior_hash": "0xa9e7e9d770268c73cfc28cc31159c29c2504184b99018282db21ede8a081c2d3",
+      "queried_BLOCKHASH": "0xa9e7e9d770268c73cfc28cc31159c29c2504184b99018282db21ede8a081c2d3",
+      "returned_historical_hash": false
+    },
+    {
+      "mode": "override_map",
+      "actual_historical_hash": "0x61b1d5526c4177ac0bbc617dc184110b94533fd59f5c4d5ae3683d395385fa2e",
+      "error": null,
+      "generated_prior_hash": "0xa9e7e9d770268c73cfc28cc31159c29c2504184b99018282db21ede8a081c2d3",
+      "queried_BLOCKHASH": "0x61b1d5526c4177ac0bbc617dc184110b94533fd59f5c4d5ae3683d395385fa2e",
+      "returned_historical_hash": true
+    }
+  ]
+}

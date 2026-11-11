@@ -1,0 +1,12 @@
+{
+  "error": {
+    "code": -32603,
+    "message": "failed to get account for 0x028271E30a695c0527A0C50cA30603feD004cDb0: Max retries exceeded HTTP error 429 with body: {\"id\":1685,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"You reached Public endpoint rate limit, please upgrade to paid plan\",\"code\":15}}\n\nHTTP diagnostics:\ncf-ray: a58fdd482cdff322-IAD\nserver: cloudflare"
+  },
+  "transport_error": null,
+  "elapsed_seconds": 172.2507519721985,
+  "adapter_limitation": "Anvil block overrides do not include withdrawals; omit them and validate actual receipts before inference. Historical blobBaseFee comes from actual blob receipts; block 26302734 shares excessBlobGas with 26302735. Consensus balances are not claimed reproduced.",
+  "mismatches": [],
+  "compared_transactions": 0,
+  "all_receipts_match": false
+}

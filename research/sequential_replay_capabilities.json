@@ -1,0 +1,200 @@
+[
+  {
+    "endpoint": "https://eth.drpc.org",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_simulateV1",
+      "params": [
+        {
+          "blockStateCalls": [
+            {
+              "calls": [
+                {
+                  "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                  "data": "0x18160ddd",
+                  "gas": "0x186a0"
+                },
+                {
+                  "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                  "data": "0x18160ddd",
+                  "gas": "0x186a0"
+                }
+              ]
+            }
+          ],
+          "validation": false
+        },
+        "0x19154a8"
+      ]
+    },
+    "retrieved_unix": 1794424559.691515,
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": [
+        {
+          "hash": "0x717d1082d29f0b96c366b011804158bcd7f6c37c4dcb7b324ccf9b1fbbee0f75",
+          "parentHash": "0x11b37c21ab5ffa2156d0151e62437959d3140f745c720f81c61f99edcc4b1678",
+          "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+          "miner": "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97",
+          "stateRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "transactionsRoot": "0x442224c6bbbed0982a833fc6b0aca1c7c4f527135df4233fa3208d8a466b902a",
+          "receiptsRoot": "0x264b1216a066c48db32eae815e98a190dfb3528e500f3155b42e740cb5237d9e",
+          "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "difficulty": "0x0",
+          "number": "0x19154a9",
+          "gasLimit": "0x3938700",
+          "gasUsed": "0xa73e",
+          "timestamp": "0x6ae3d2e3",
+          "extraData": "0x546974616e2028746974616e6275696c6465722e78797a29",
+          "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "nonce": "0x0000000000000000",
+          "baseFeePerGas": "0x0",
+          "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "blobGasUsed": "0x0",
+          "excessBlobGas": "0xeafc668",
+          "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "requestsHash": "0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": "0x2db",
+          "uncles": [],
+          "transactions": [
+            "0xbd26b5d93ce4102d050e3b1a67efcacf654d0bfe7b66ded269ec48002ee67adc",
+            "0xcb91d42019af9943b64a3043f5f602cb459762a1da2ff1292f488b869741e157"
+          ],
+          "withdrawals": [],
+          "calls": [
+            {
+              "returnData": "0x00000000000000000000000000000000000000000001ba0137055a4f2a16b858",
+              "logs": [],
+              "gasUsed": "0x539f",
+              "maxUsedGas": "0x539f",
+              "status": "0x1"
+            },
+            {
+              "returnData": "0x00000000000000000000000000000000000000000001ba0137055a4f2a16b858",
+              "logs": [],
+              "gasUsed": "0x539f",
+              "maxUsedGas": "0x539f",
+              "status": "0x1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "endpoint": "https://eth.drpc.org",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "trace_callMany",
+      "params": [
+        [
+          [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x18160ddd",
+              "gas": "0x186a0"
+            },
+            [
+              "trace",
+              "stateDiff"
+            ]
+          ],
+          [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x18160ddd",
+              "gas": "0x186a0"
+            },
+            [
+              "trace",
+              "stateDiff"
+            ]
+          ]
+        ],
+        "0x19154a8"
+      ]
+    },
+    "retrieved_unix": 1794424559.920439,
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": [
+        {
+          "output": "0x00000000000000000000000000000000000000000001ba0137055a4f2a16b858",
+          "stateDiff": {
+            "0x0000000000000000000000000000000000000000": {
+              "balance": "=",
+              "code": "=",
+              "nonce": {
+                "*": {
+                  "from": "0x0",
+                  "to": "0x1"
+                }
+              },
+              "storage": {}
+            }
+          },
+          "trace": [
+            {
+              "action": {
+                "from": "0x0000000000000000000000000000000000000000",
+                "callType": "call",
+                "gas": "0x13458",
+                "input": "0x18160ddd",
+                "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                "value": "0x0"
+              },
+              "result": {
+                "gasUsed": "0x157",
+                "output": "0x00000000000000000000000000000000000000000001ba0137055a4f2a16b858"
+              },
+              "subtraces": 0,
+              "traceAddress": [],
+              "type": "call"
+            }
+          ],
+          "vmTrace": null
+        },
+        {
+          "output": "0x00000000000000000000000000000000000000000001ba0137055a4f2a16b858",
+          "stateDiff": {
+            "0x0000000000000000000000000000000000000000": {
+              "balance": "=",
+              "code": "=",
+              "nonce": {
+                "*": {
+                  "from": "0x1",
+                  "to": "0x2"
+                }
+              },
+              "storage": {}
+            }
+          },
+          "trace": [
+            {
+              "action": {
+                "from": "0x0000000000000000000000000000000000000000",
+                "callType": "call",
+                "gas": "0x13458",
+                "input": "0x18160ddd",
+                "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                "value": "0x0"
+              },
+              "result": {
+                "gasUsed": "0x157",
+                "output": "0x00000000000000000000000000000000000000000001ba0137055a4f2a16b858"
+              },
+              "subtraces": 0,
+              "traceAddress": [],
+              "type": "call"
+            }
+          ],
+          "vmTrace": null
+        }
+      ]
+    }
+  }
+]

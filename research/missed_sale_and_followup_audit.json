@@ -1,0 +1,131 @@
+{
+  "rows": [
+    {
+      "hash": "0x7a853830d923884ee8dd123db9d9436161aa76e8545355f042761fa6391c0f08",
+      "block": 26301304,
+      "index": 33,
+      "from": "0x0e772ee615c7f93373c7519f2c36e780696477d3",
+      "to": "0x2f68417a18da681589f4ea64b9cc9839209acff7",
+      "events": [
+        {
+          "pool": "V2:0x2e8135be71230c6b1b4045696d41c09db0414226",
+          "amount0": "-456998195",
+          "amount1": "200000000000000000",
+          "log_index": 297
+        }
+      ],
+      "accounts": [
+        "0x0e772ee615c7f93373c7519f2c36e780696477d3",
+        "0x2f68417a18da681589f4ea64b9cc9839209acff7"
+      ],
+      "native_ETH": "-0.2",
+      "token_net_raw": {
+        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": "456998195"
+      },
+      "gas_ETH": "0.00813808145690257",
+      "strict_net_valuation": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "-13.1515210166550224455",
+        "ETH_cashflow": "-0.20813808145690257",
+        "ETH_cashflow_USD": "-470.0070086419045384455",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793311800,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "raw": "456998195",
+            "decimals": 6,
+            "price_USD": "0.9996877288000",
+            "USD": "456.8554876252495160000",
+            "price_evidence": {
+              "symbol": "USDC",
+              "bar_start": 1793311800,
+              "stale_minutes": 0,
+              "source": "Binance public daily archive",
+              "quote": "USDT",
+              "USDT_USD_conversion": {
+                "symbol": "USDT",
+                "bar_start": 1793311800,
+                "stale_minutes": 0,
+                "source": "Coinbase",
+                "quote": "USD"
+              }
+            },
+            "proxy_assumption": null,
+            "identity_basis": {
+              "symbol": "USDC",
+              "source": "https://api.exchange.coinbase.com/currencies",
+              "name": "USDC",
+              "network": "ethereum"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "all_pool_events": [
+        {
+          "pool": "V2:0x2e8135be71230c6b1b4045696d41c09db0414226",
+          "amount0": "-456998195",
+          "amount1": "200000000000000000",
+          "log_index": 297
+        }
+      ],
+      "caveat": "from+to boundary only; not ownership. No causal link inferred from five-block proximity."
+    },
+    {
+      "hash": "0x344d72025b216c764bcfe74132d8352312ecaecf4234fc9fba016b5e195d1c07",
+      "block": 26301309,
+      "index": 61,
+      "from": "0xbee44aba13855ad98d57190906803b09c175cccb",
+      "to": "0xbee162fa5ae892be74f3f3e01c23da89adbccccc",
+      "events": [
+        {
+          "pool": "V2:0x2e8135be71230c6b1b4045696d41c09db0414226",
+          "amount0": "225527624",
+          "amount1": "-98368317679305311",
+          "log_index": 620
+        }
+      ],
+      "accounts": [
+        "0xbee162fa5ae892be74f3f3e01c23da89adbccccc",
+        "0xbee44aba13855ad98d57190906803b09c175cccb"
+      ],
+      "native_ETH": "0",
+      "token_net_raw": {},
+      "gas_ETH": "0.020999146918693286",
+      "strict_net_valuation": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "-47.56180782202517119284",
+        "ETH_cashflow": "-0.020999146918693286",
+        "ETH_cashflow_USD": "-47.56180782202517119284",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793311860,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [],
+        "missing_assets": []
+      },
+      "all_pool_events": [
+        {
+          "pool": "V2:0x2e8135be71230c6b1b4045696d41c09db0414226",
+          "amount0": "225527624",
+          "amount1": "-98368317679305311",
+          "log_index": 620
+        }
+      ],
+      "caveat": "from+to boundary only; not ownership. No causal link inferred from five-block proximity."
+    }
+  ],
+  "original_target_count": 1352,
+  "augmented_target_count": 1353,
+  "original_statistics_unchanged": true
+}

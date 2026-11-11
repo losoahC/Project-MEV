@@ -1,0 +1,124 @@
+{
+  "method": "Historical full-prefix EVM execution with validation=true, exact original call parameters and block environment. Remove one target; no subsequent nonce from its sender before evaluated actor. All intervening contracts execute normally, including reverts. Gas repriced using unchanged effective gas price. Difference measures a fixed-transaction intervention, not optimal alternative policy or event-wide attributable profit.",
+  "rows": [
+    {
+      "block": 26302300,
+      "hash": "0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851",
+      "removed_target": "0x2ccafec913543cb6a8f13d9bf8f4fc77b3adb0b9bed4e32171560dac9670976d",
+      "accounts": [
+        "0x0124d0fa0dfb1430dfcff16ec6a96945e7a0bc10",
+        "0x36331e299247e5d0d3261e1d9852f6e0cffee95c"
+      ],
+      "baseline_all_receipts_match": true,
+      "actual_cashflow_matches_raw_trace_ledger": true,
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "gas_wei": "972496905296097",
+          "net_ETH_after_gas": "0.000065472689682791",
+          "other_token_residual_raw": {},
+          "failed_transactions": [
+            "0x2333093ee903821f248e4700b647b4aa1e6909be9d3ce439cbc4e5e8832396ed",
+            "0x72f26f568db30bad003ca4993bdeca69afbcd5f9f1d85b0c3e28a5c1881dc905",
+            "0xcec12f6fc8a008f90750be93573168651866d5849d14c54df5f4bd7024d7aeb1",
+            "0x4a27011750e8a09fe953be16537479f0c68cf02475dd5131a255f7bd65524606",
+            "0xd3d1a02933c90a79ac21f172183c8affd532a0fdbdd3e59904f7ef3289ea7a9d",
+            "0xcc5887942c5493aa11986be376c5e5178a3edc12e7abddc56c41a05be7645fcf",
+            "0xcf23bfd72df253effdf6dd370aecf9dfc8c27d8a598c2ff021fc175f4493c004",
+            "0x7e441960f4f84d4f8ca37ca74a862ce826c70a751700f319e011e89f9ac00759",
+            "0x76585d9cd87fc4d85c21a2620f74b091f4efb783dc8993e120746d3e4375cc28",
+            "0x4c24a2c48dad093d507660920948b7ea77b3fb6dd250606fa553c5e17e470d19",
+            "0x3cd96b968f9ebeb28a03418c2228864dd5d88348f89ebb867454be66bc671e7f",
+            "0x9dddbcf48222ab08dd64d1346f410d4df6c41826fd9ca80bda534ad57a2c3e2d",
+            "0x479396f9d4b0c25b6ebaecc744435f42622f03229d5fdca3c687c53f00616102",
+            "0x616c8d7e5f28f10e6c208966efd13b52c124681637cf007a27caaa05c937901b",
+            "0x022d2276f27cf072e9dfc24e22543aafdf85d11986c937266ca61a13f206b59a",
+            "0x7fbed7b0ba55d21186db3b58b1f2262cbd6105fac29fd2e2e57f35ba1fcec3b6",
+            "0x61b974703d060d97d7fb6a2f3ac2c32eb4cd0de4b5d68b37869503878127bc55",
+            "0xc769a74d44540c4629531d54f3ed4a2ab4db3f3195924bda420bceff4d2ee1a6",
+            "0xde5a025f17508734ea12a24336639063c8c7527969ec2fdb2cebe0fa9e523aa4",
+            "0xd5828d53787c98f76f47a10f725e568b806382d2485fcdc15b27b0c2322b1240",
+            "0x8512274204eaad921f8fca369ef2bb3e4c0f91d5aef92f83dbf6a6b52b271e6a",
+            "0xc81fec13ce19769249b0f72ca92a4d04404bd730c1dfcba20f11a94dd263b7fb"
+          ]
+        },
+        "remove_target": {
+          "status": "0x0",
+          "error": {
+            "code": 3,
+            "message": "execution reverted: UniswapV2: K",
+            "data": "0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000c556e697377617056323a204b0000000000000000000000000000000000000000"
+          },
+          "gas_wei": "689547530705142",
+          "net_ETH_after_gas": "-0.000689547530705142",
+          "other_token_residual_raw": {},
+          "failed_transactions": [
+            "0x2333093ee903821f248e4700b647b4aa1e6909be9d3ce439cbc4e5e8832396ed",
+            "0x72f26f568db30bad003ca4993bdeca69afbcd5f9f1d85b0c3e28a5c1881dc905",
+            "0xcec12f6fc8a008f90750be93573168651866d5849d14c54df5f4bd7024d7aeb1",
+            "0x4a27011750e8a09fe953be16537479f0c68cf02475dd5131a255f7bd65524606",
+            "0xd3d1a02933c90a79ac21f172183c8affd532a0fdbdd3e59904f7ef3289ea7a9d",
+            "0xcc5887942c5493aa11986be376c5e5178a3edc12e7abddc56c41a05be7645fcf",
+            "0xcf23bfd72df253effdf6dd370aecf9dfc8c27d8a598c2ff021fc175f4493c004",
+            "0x7e441960f4f84d4f8ca37ca74a862ce826c70a751700f319e011e89f9ac00759",
+            "0x76585d9cd87fc4d85c21a2620f74b091f4efb783dc8993e120746d3e4375cc28",
+            "0x4c24a2c48dad093d507660920948b7ea77b3fb6dd250606fa553c5e17e470d19",
+            "0x3cd96b968f9ebeb28a03418c2228864dd5d88348f89ebb867454be66bc671e7f",
+            "0x9dddbcf48222ab08dd64d1346f410d4df6c41826fd9ca80bda534ad57a2c3e2d",
+            "0x479396f9d4b0c25b6ebaecc744435f42622f03229d5fdca3c687c53f00616102",
+            "0x616c8d7e5f28f10e6c208966efd13b52c124681637cf007a27caaa05c937901b",
+            "0x022d2276f27cf072e9dfc24e22543aafdf85d11986c937266ca61a13f206b59a",
+            "0x7fbed7b0ba55d21186db3b58b1f2262cbd6105fac29fd2e2e57f35ba1fcec3b6",
+            "0x61b974703d060d97d7fb6a2f3ac2c32eb4cd0de4b5d68b37869503878127bc55",
+            "0xc769a74d44540c4629531d54f3ed4a2ab4db3f3195924bda420bceff4d2ee1a6",
+            "0xde5a025f17508734ea12a24336639063c8c7527969ec2fdb2cebe0fa9e523aa4",
+            "0xd5828d53787c98f76f47a10f725e568b806382d2485fcdc15b27b0c2322b1240",
+            "0x8512274204eaad921f8fca369ef2bb3e4c0f91d5aef92f83dbf6a6b52b271e6a",
+            "0xc81fec13ce19769249b0f72ca92a4d04404bd730c1dfcba20f11a94dd263b7fb",
+            "0x64327df08f043bb6590d7a8729f13c2ed4cfd76170c0e333cc44cd8f47f369c6",
+            "0x6564415d0ee5733da688b5ef91f09d1a72ac8b5160175bbf5ab3b48a50b1df91",
+            "0xa1b9932279e96285468f7e2e6e75ffd4851e1c4e4565623baa030600ac768723",
+            "0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851"
+          ]
+        }
+      },
+      "fixed_transaction_cashflow_difference_ETH": "0.000755020220387933"
+    },
+    {
+      "block": 26302437,
+      "hash": "0xbe7e1a0554942e23cb6c960274ab52033c9851445810c061a1f34f9e041d74a4",
+      "removed_target": "0xbf3fc95e45d932b1ad0a55e91e77fea8652906a3eeb0efd65850976059aef9d7",
+      "accounts": [
+        "0x5205b8122e1f6fa6066ba487e49f6e4cc81c2cbd",
+        "0xe45572dff1865af5f12208b09ce7506847f628bd"
+      ],
+      "baseline_all_receipts_match": true,
+      "actual_cashflow_matches_raw_trace_ledger": true,
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "gas_wei": "2419126290265662",
+          "net_ETH_after_gas": "0.002184499542797343",
+          "other_token_residual_raw": {},
+          "failed_transactions": [
+            "0xa618874fd0968b39ceae330b168427a609fe2637e31bcb9d3d00e2293b96b799"
+          ]
+        },
+        "remove_target": {
+          "status": "0x1",
+          "error": null,
+          "gas_wei": "10587642864780636",
+          "net_ETH_after_gas": "0.113234132737217321",
+          "other_token_residual_raw": {},
+          "failed_transactions": [
+            "0x3dc9025a92d517ec54becab7932b757af04104717a8a2d612431cb0540b94aa0",
+            "0xa618874fd0968b39ceae330b168427a609fe2637e31bcb9d3d00e2293b96b799"
+          ]
+        }
+      },
+      "fixed_transaction_cashflow_difference_ETH": "-0.111049633194419978"
+    }
+  ]
+}

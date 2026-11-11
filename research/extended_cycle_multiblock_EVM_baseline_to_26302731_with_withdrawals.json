@@ -1,0 +1,65 @@
+{
+  "first_block": 26302728,
+  "last_block": 26302731,
+  "transactions": 1132,
+  "method": "Consecutive simulated blocks from historical parent state; actual block overrides. Final exit block stops at exit leg. Checks receipts, not consensus state root.",
+  "error": null,
+  "mismatches": [
+    {
+      "block": 26302731,
+      "hash": "0x610313ba768d546a6484ec55c0d3c803219fd66e258490c2d59270889703673f",
+      "checks": {
+        "status": false,
+        "gas": false,
+        "logs": false
+      },
+      "actual_gas": "0x2e197",
+      "simulated_gas": "0x6b6e"
+    },
+    {
+      "block": 26302731,
+      "hash": "0xf3bd6bad903443cf684b1cc1a727d38e9e79cbaec6327891cd9cd75b9a8a0be9",
+      "checks": {
+        "status": true,
+        "gas": false,
+        "logs": false
+      },
+      "actual_gas": "0x20dad",
+      "simulated_gas": "0x29f44"
+    },
+    {
+      "block": 26302731,
+      "hash": "0x915170aeda9ced22883f408ec008fbc38527b3b65ab2eb1755ceeb97fe1fdcc3",
+      "checks": {
+        "status": false,
+        "gas": false,
+        "logs": false
+      },
+      "actual_gas": "0x21294",
+      "simulated_gas": "0x677a"
+    },
+    {
+      "block": 26302731,
+      "hash": "0x716027c2a6f52e47f051e8bacb9a9a9850504bf78346266a61a6827ff904396e",
+      "checks": {
+        "status": true,
+        "gas": false,
+        "logs": false
+      },
+      "actual_gas": "0xbc5c6",
+      "simulated_gas": "0xbc5ee"
+    },
+    {
+      "block": 26302731,
+      "hash": "0xc2724d7cf39028aff286cacb210a53e41ce91bf5c1c598ef664ea56012210023",
+      "checks": {
+        "status": true,
+        "gas": true,
+        "logs": false
+      },
+      "actual_gas": "0x9afe0",
+      "simulated_gas": "0x9afe0"
+    }
+  ],
+  "all_receipts_match": false
+}

@@ -1,0 +1,336 @@
+{
+  "method": "Separate sensitivity for cases where outright target omission invalidates later sender nonces. Replace target by zero-value empty-calldata transfer to zero address, same sender/nonce/fee settings, 21000 gas, no authorization list. Preserve all other original calls and historical block environment, validation=true. Changes target fee burden and balances; not equivalent to omission, optimal response, or global causal MEV. Baseline every prefix receipt status/gas/log verified; original actor ledger cashflow verified.",
+  "rows": [
+    {
+      "hash": "0x5c5edff7dea94aca7610be658a9e5d1638e681c356d1b106fb47cb19aca56794",
+      "target": "0xd8d29297c1fe1ea5ac3cb60f2a323b00d75279f259512060c5f6270126ae6cd1",
+      "block": 26302284,
+      "accounts": [
+        "0x65f3443e12982a7180c46a20671ff07f7035629f",
+        "0xc7e68d0dac3d32f284a42f062551b4f15b2615f3"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x48",
+        "maxFeePerGas": "0x3cf23d5c4",
+        "maxPriorityFeePerGas": "0x493e0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.000636921608393429",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.000599696524956166",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "0.000037225083437263"
+    },
+    {
+      "hash": "0xd3c206ba2afca23245a17e7c1115f131105abb5ee004fdc715c91c6902ce4799",
+      "target": "0xd1d9fb124848cf50153de0daea37f4757c120466119e9cf946e626680050145f",
+      "block": 26302370,
+      "accounts": [
+        "0x000000000004444c5dc75cb358380d2e3de08a90",
+        "0x58f289c4fa1b8c3a5dd343c313a1a018d4d891e2",
+        "0x7bb3768c1a95545d32fbd0e2b0a094d9575dd8d6"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x89",
+        "maxFeePerGas": "0x53939c45d",
+        "maxPriorityFeePerGas": "0x57e40",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.002039487863450071",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.001113269823514119",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "0.000926218039935952"
+    },
+    {
+      "hash": "0xcaa5a501d4d54fe60d7223eaa8363656c22fa04b0f134609feb76426f5dd5425",
+      "target": "0x5cda34c3e567b59eead4a7a4948178090cb04abd6fb3d0c77d013f5429442fa7",
+      "block": 26302515,
+      "accounts": [
+        "0x1f44d2ef6b854790b140ba4dc5bbf336805ff525",
+        "0x77f40a04c3f552a0dfe82282de73db30d34c6e25"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x121",
+        "maxFeePerGas": "0x29109b4e4",
+        "maxPriorityFeePerGas": "0x493e0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.000085724724955963",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.000189247813423153",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "-0.000103523088467190"
+    },
+    {
+      "hash": "0x9a5e57c6419f47d1bb7ae42f5d657fa089875b7df0cb6c7fa27c5ec288dbe606",
+      "target": "0x7caede5e69925e50cf935523e57c1dde9042eca38d8faabf78d2634461c691b2",
+      "block": 26302528,
+      "accounts": [
+        "0x000000000004444c5dc75cb358380d2e3de08a90",
+        "0x565344d220b634fa09d24ce9c2555f2a13ef6505",
+        "0x5c6a3aef152a230f84137fd06e77b8ef3d30747b"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x131",
+        "maxFeePerGas": "0x464c3b2c6",
+        "maxPriorityFeePerGas": "0x493e0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.005621296623189428",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.005603887123878584",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "0.000017409499310844"
+    },
+    {
+      "hash": "0xf5d24c71c695e3c94b07e4631136530d98489490e867ea62972e1a116a0b8caf",
+      "target": "0xc88af7190dd40de6b69eeb8f011b42403fea0a355e3446160d481a762805c1d5",
+      "block": 26302615,
+      "accounts": [
+        "0x1b388a45cabc2b7fcdf25bcf4d52dae91d7e0ecf",
+        "0x90c8bd03b4996f6ed2b3ca22980f121fb267d2f0"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x196",
+        "maxFeePerGas": "0x347947cce",
+        "maxPriorityFeePerGas": "0x493e0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.00011202278635128",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.013492232617532268",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "-0.013380209831180988"
+    },
+    {
+      "hash": "0xe29de72e6239a16fbf7be5a0c10d9fbcbe574becf4477658b6d14515e5131ae5",
+      "target": "0x5a7f6376cb2c511d4c8da354745b04c651c5327fcb89ba566c28d0c85e36298c",
+      "block": 26302653,
+      "accounts": [
+        "0x81463b0f960f247f704377661ec81c1fd65b5128",
+        "0xe75ed6f453c602bd696ce27af11565edc9b46b0d"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x1bd",
+        "maxFeePerGas": "0x206816706",
+        "maxPriorityFeePerGas": "0x493e0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.000007296190258952",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x0",
+          "error": {
+            "code": 3,
+            "message": "execution reverted",
+            "data": "0x"
+          },
+          "net_ETH_after_gas": "-0.000202762717691364",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "0.000210058907950316"
+    },
+    {
+      "hash": "0x94b2b8e038d904a16ee80f8512eb9c44ca93b13e7348d1d1320da3723bb30536",
+      "target": "0x01cfb5111d670e70f2c843674d458044217068fd28fb73c39fda1ffbdd111efa",
+      "block": 26302663,
+      "accounts": [
+        "0x000000000004444c5dc75cb358380d2e3de08a90",
+        "0x2e0dd377dc289a20b2f556a9350b1a094e0f02b6",
+        "0xca9a624e8c4a0b978b2901dbf07ee2094310106b"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x1cb",
+        "maxFeePerGas": "0x1e4e9543c",
+        "maxPriorityFeePerGas": "0x493e0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.000644018418460357",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x0",
+          "error": {
+            "code": 3,
+            "message": "execution reverted",
+            "data": "0x"
+          },
+          "net_ETH_after_gas": "-0.00071491185720776",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "0.001358930275668117"
+    },
+    {
+      "hash": "0x725fb5e815fd1a40199671cda72d6114664b1215c0b9b48fc258de6fe934c871",
+      "target": "0x5196d1471a44996b986df3c0b815274cfbba7fbddf3e9a8bfc4790a41d5b79d6",
+      "block": 26302702,
+      "accounts": [
+        "0x76ea42c5c4dac319d6868b3a50ef3137d22b5bb1",
+        "0xb216fd07b50a1d251724949e301d9fb8bb525f02"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x1f5",
+        "maxFeePerGas": "0x17fab73e4",
+        "maxPriorityFeePerGas": "0x493e0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.002212616773734762",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.249328185583190069",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "-0.247115568809455307"
+    },
+    {
+      "hash": "0x2c04d4309d9f6dbfdf958b002e5cc268f845a11e453e2405571c6600fb854b2d",
+      "target": "0x076383deefb20487e9e1274a637de0fefef55a8e62b1deeaf9f24dc5ee93bcec",
+      "block": 26302864,
+      "accounts": [
+        "0x328330af76ddc0ff7cd25789517e9807744c102e",
+        "0x672b28a2ade75fd638f7b8bb7daf7e506fca639c",
+        "0xecb578d5107cb0b1a9cc760daa991ef1c5e90000"
+      ],
+      "replacement_call": {
+        "from": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+        "nonce": "0x274",
+        "maxFeePerGas": "0xf5254e9f",
+        "maxPriorityFeePerGas": "0x493e0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "value": "0x0",
+        "input": "0x",
+        "gas": "0x5208"
+      },
+      "status": "verified_nonce_preserving_sensitivity",
+      "scenarios": {
+        "actual": {
+          "status": "0x1",
+          "error": null,
+          "net_ETH_after_gas": "0.000040384434183447",
+          "other_token_residual_raw": {}
+        },
+        "replace_target_with_nonce_only": {
+          "status": "0x0",
+          "error": {
+            "code": 3,
+            "message": "execution reverted: O",
+            "data": "0x4f"
+          },
+          "net_ETH_after_gas": "-0.000094495311259235",
+          "other_token_residual_raw": {}
+        }
+      },
+      "cashflow_difference_ETH": "0.000134879745442682"
+    }
+  ]
+}

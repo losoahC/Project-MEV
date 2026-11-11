@@ -1,0 +1,25 @@
+{
+  "scope": "Search all 16491 classified candidates; identical operational address boundary; consecutive transactions within boundary; maximum blocks and legs recorded in output metadata. Excludes existing sandwich legs and standalone closed cycles. Stops at recognized positions, unresolved events and external funding. Does not infer ownership or causal profit. Complete noncandidate activity within interval must be checked separately.",
+  "maximum_blocks": 50000,
+  "maximum_legs": 10000,
+  "groups": [
+    {
+      "accounts": [
+        "0x3d63c340fa1735637e962e3b0b7d0f7cf1f722a1",
+        "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+      ],
+      "start_block": 26302729,
+      "start_index": 251,
+      "end_block": 26302735,
+      "end_index": 322,
+      "legs": [
+        "0x920240f243228a6f22471b409f980cffd356e5d053fd3764ea7868923d27d9b6",
+        "0xc1f4442a5de3c70625a46ba4d0b6b1576b4305b047e32c0f9a83dac9d23a4803"
+      ],
+      "net_ETH_after_gas": "0.007843240319553997",
+      "status": "endpoint_inventory_closure_candidate"
+    }
+  ],
+  "count": 1,
+  "net_ETH": "0.007843240319553997"
+}

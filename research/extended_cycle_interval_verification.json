@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "accounts": [
+        "0x3d63c340fa1735637e962e3b0b7d0f7cf1f722a1",
+        "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+      ],
+      "start_block": 26302729,
+      "start_index": 251,
+      "end_block": 26302735,
+      "end_index": 322,
+      "legs": [
+        "0x920240f243228a6f22471b409f980cffd356e5d053fd3764ea7868923d27d9b6",
+        "0xc1f4442a5de3c70625a46ba4d0b6b1576b4305b047e32c0f9a83dac9d23a4803"
+      ],
+      "net_ETH_after_gas": "0.007843240319553997",
+      "status": "endpoint_inventory_closure_candidate",
+      "wallet_only_accounts": [
+        "0x3d63c340fa1735637e962e3b0b7d0f7cf1f722a1"
+      ],
+      "wallet_interval_activities": [
+        {
+          "hash": "0x920240f243228a6f22471b409f980cffd356e5d053fd3764ea7868923d27d9b6",
+          "block": 26302729,
+          "index": 251,
+          "is_candidate_leg": true,
+          "wallet": "0x3d63c340fa1735637e962e3b0b7d0f7cf1f722a1",
+          "native_ETH": "0",
+          "token_net_raw": {
+            "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "-176522906110181952",
+            "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55": "2912157100166820859439"
+          },
+          "gas_ETH": "0.000229947184028124",
+          "cashflow_ETH_WETH": "-0.176752853294210076"
+        },
+        {
+          "hash": "0xc1f4442a5de3c70625a46ba4d0b6b1576b4305b047e32c0f9a83dac9d23a4803",
+          "block": 26302735,
+          "index": 322,
+          "is_candidate_leg": true,
+          "wallet": "0x3d63c340fa1735637e962e3b0b7d0f7cf1f722a1",
+          "native_ETH": "0",
+          "token_net_raw": {
+            "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55": "-2912157100166820859439",
+            "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "184754757355319617"
+          },
+          "gas_ETH": "0.000158663741555544",
+          "cashflow_ETH_WETH": "0.184596093613764073"
+        }
+      ],
+      "intervening_economic_transactions": 0,
+      "wallet_only_other_token_residual": {},
+      "wallet_only_net_ETH": "0.007843240319553997",
+      "verified_wallet_endpoint_closure": true,
+      "causal_MEV_proven": false,
+      "limits": "Full wallet flow scan inside observed interval; does not prove zero starting inventory or causal dependence on hacker target. Public router excluded from wallet balance."
+    }
+  ]
+}

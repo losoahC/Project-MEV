@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "standalone_count_1063": true,
+    "standalone_cashflow_matches": true,
+    "standalone_no_token_inventory": true,
+    "multitx_564": true,
+    "multitx_cashflow_matches": true,
+    "disjoint_strategy_transactions": true,
+    "wallet_price_trace_errors_zero": true,
+    "history_endpoints_exhausted": true
+  },
+  "passed": 8,
+  "failed": 0,
+  "disjoint_observed_cashflow": {
+    "standalone_ETH": "84.563209707817598363",
+    "multitx_closed_positive_ETH": "81.108470400749882302",
+    "not_causal_MEV_total": true
+  },
+  "causal_MEV_total": null,
+  "reason": "Observed net cashflow is not incremental profit caused by the target. Missing global counterfactual, ownership and cross-block inventory evidence."
+}

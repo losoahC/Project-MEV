@@ -1,0 +1,35 @@
+{
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "48 indexed endpoint scans exhausted",
+      "passed": true
+    },
+    {
+      "name": "1024 indexed outgoing transactions match RPC",
+      "passed": true
+    },
+    {
+      "name": "all 16 nonce totals reconcile including three verified authorization increments",
+      "passed": true
+    },
+    {
+      "name": "16 native balances independently conserve wei",
+      "passed": true
+    },
+    {
+      "name": "WETH synthetic records replaced exactly once",
+      "passed": true
+    },
+    {
+      "name": "106 token-wallet balances reconcile including independently recomputed Aave interest",
+      "passed": true
+    },
+    {
+      "name": "coverage boundaries explicit",
+      "passed": true
+    }
+  ],
+  "scope": "Conservation and nonce coverage evidence, not proof no omitted offsetting transactions or unknown-token events."
+}

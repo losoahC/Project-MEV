@@ -1,0 +1,31 @@
+{
+  "hash": "0x230b5d9ec55aa34e0de8342c1b0f5ef8ca46d11d9f13dfaeadd2dff3351b5272",
+  "wallet": 2,
+  "DAR_units": "3530547.65",
+  "ETH_received": "0.16343635721344046",
+  "ETH_reference_USD": "2243.93",
+  "ETH_price_evidence": {
+    "symbol": "ETH",
+    "bar_start": 1793358420,
+    "stale_minutes": 0,
+    "source": "Coinbase",
+    "quote": "USD"
+  },
+  "received_reference_value_USD": "366.7397450419554514078",
+  "unidentified_DAR_fair_price_symbol": "p_USD_per_old_DAR",
+  "execution_shortfall_formula": "DAR_units * p_USD_per_old_DAR - received_reference_value_USD; gas excluded",
+  "break_even_DAR_price_USD": "0.00010387616353002782766798233129639250159957478551521603171111427996163711315438555",
+  "conditional_bound_if_p_nonnegative": {
+    "shortfall_USD_lower": "-366.7397450419554514078",
+    "shortfall_USD_upper": null,
+    "upper_bound_reason": "No independently justified finite upper bound on p supplied by this evidence."
+  },
+  "separate_local_pool_spot_sensitivity": {
+    "spot_price_USD_per_DAR": "0.0022026694942993312471084570475346546810175299602597839836514185708456838102993131",
+    "shortfall_USD_at_local_spot": "7409.8898617832368796425323242994133776279400099997737329881542544655874890952857",
+    "actual_integer_output_reproduced": true,
+    "not_external_fair_price": true,
+    "not_added_to_market_shortfall_total": true
+  },
+  "resolution": "Row is fully cashflow-reconciled and actual AMM execution reproduced; fair price remains unidentified. Symbolic shortfall and break-even threshold replace an invented zero, migration parity, or new-token price. This is execution shortfall, never an MEV lower bound."
+}

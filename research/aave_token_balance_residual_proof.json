@@ -1,0 +1,56 @@
+{
+  "method": "Constant scaledBalanceOf after last liquidation; historical pool normalized income/debt index reproduces balanceOf via rayMul half-up rounding at last operation and cutoff. Difference equals entire token transfer residual. Claim interest and debt accrual are distinct, not MEV income.",
+  "rows": [
+    {
+      "wallet": 3,
+      "token": "0x23878914efe38d27c4d67ab83ed1b93a74d4086a",
+      "underlying": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "normalization_function": "getReserveNormalizedIncome(address)",
+      "states": [
+        {
+          "block": 26342152,
+          "scaled_balance_raw": "30098049175580",
+          "normalized_index_ray": "1181706408857048377181135185",
+          "balance_raw": "35567057604877",
+          "ray_mul_reproduced": true
+        },
+        {
+          "block": 26349764,
+          "scaled_balance_raw": "30098049175580",
+          "normalized_index_ray": "1181882864176986059965161022",
+          "balance_raw": "35572368565774",
+          "ray_mul_reproduced": true
+        }
+      ],
+      "interest_since_last_indexed_operation_raw": "5310960897",
+      "residual_fully_explained_by_index_growth": true,
+      "debt_not_asset_income": false
+    },
+    {
+      "wallet": 3,
+      "token": "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe",
+      "underlying": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "normalization_function": "getReserveNormalizedVariableDebt(address)",
+      "states": [
+        {
+          "block": 26342152,
+          "scaled_balance_raw": "8906085678207564136712",
+          "normalized_index_ray": "1109849560394184762656314624",
+          "balance_raw": "9884415274791609915063",
+          "ray_mul_reproduced": true
+        },
+        {
+          "block": 26349764,
+          "scaled_balance_raw": "8906085678207564136712",
+          "normalized_index_ray": "1109915575296337483632301705",
+          "balance_raw": "9885003209166220537042",
+          "ray_mul_reproduced": true
+        }
+      ],
+      "interest_since_last_indexed_operation_raw": "587934374610621979",
+      "residual_fully_explained_by_index_growth": true,
+      "debt_not_asset_income": true
+    }
+  ],
+  "all_explained": true
+}

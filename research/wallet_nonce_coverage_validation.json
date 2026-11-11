@@ -1,0 +1,204 @@
+{
+  "method": "Compare historical Ethereum account nonce to all indexed top-level outgoing transaction nonces at same cutoff, including failed transactions. Complete 0..nonce-1 proves indexed nonce sequence coverage under normal EOA nonce semantics; EIP-7702 authorizations/other nonce-changing behavior require separate audit if gaps appear. Does not prove inbound/internal/token history completeness.",
+  "rows": [
+    {
+      "wallet": 1,
+      "address": "0x7c8601d4645b93cea45f71e118a729332e6b5ca0",
+      "cutoff_block": 26349764,
+      "chain_nonce": 23,
+      "indexed_outgoing_transactions": 23,
+      "distinct_nonces": 23,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 2,
+      "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+      "cutoff_block": 26349764,
+      "chain_nonce": 729,
+      "indexed_outgoing_transactions": 729,
+      "distinct_nonces": 729,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 3,
+      "address": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "cutoff_block": 26349764,
+      "chain_nonce": 9,
+      "indexed_outgoing_transactions": 9,
+      "distinct_nonces": 9,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 4,
+      "address": "0x77edef23fbd05921c26fe29fcc3a65e14d2ac3eb",
+      "cutoff_block": 26349764,
+      "chain_nonce": 6,
+      "indexed_outgoing_transactions": 5,
+      "distinct_nonces": 5,
+      "missing_nonces": [
+        1
+      ],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": false
+    },
+    {
+      "wallet": 5,
+      "address": "0x7aa4d3029e4c6a8e916300014ad95b6d6c03bfd1",
+      "cutoff_block": 26349764,
+      "chain_nonce": 6,
+      "indexed_outgoing_transactions": 5,
+      "distinct_nonces": 5,
+      "missing_nonces": [
+        1
+      ],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": false
+    },
+    {
+      "wallet": 6,
+      "address": "0xccbef95633adb5cd2b5038db5a38d77e726ca263",
+      "cutoff_block": 26349764,
+      "chain_nonce": 3,
+      "indexed_outgoing_transactions": 3,
+      "distinct_nonces": 3,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 7,
+      "address": "0xb171ca86f82070282138352ff7111b494060c8c3",
+      "cutoff_block": 26349764,
+      "chain_nonce": 3,
+      "indexed_outgoing_transactions": 3,
+      "distinct_nonces": 3,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 8,
+      "address": "0x8532fa14acaf483729c449b8458aeddb900543d4",
+      "cutoff_block": 26349764,
+      "chain_nonce": 0,
+      "indexed_outgoing_transactions": 0,
+      "distinct_nonces": 0,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 9,
+      "address": "0x3e2bf1ac6bf0934bbba6456c341c2ecbced632d5",
+      "cutoff_block": 26349764,
+      "chain_nonce": 1,
+      "indexed_outgoing_transactions": 1,
+      "distinct_nonces": 1,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 10,
+      "address": "0x0ddf0480016e6bcb2c1f5d190d221fba1320697e",
+      "cutoff_block": 26349764,
+      "chain_nonce": 6,
+      "indexed_outgoing_transactions": 6,
+      "distinct_nonces": 6,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 11,
+      "address": "0x897c80d1a9729e94460e2bd93178bd5215158df3",
+      "cutoff_block": 26349764,
+      "chain_nonce": 0,
+      "indexed_outgoing_transactions": 0,
+      "distinct_nonces": 0,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 12,
+      "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+      "cutoff_block": 26349764,
+      "chain_nonce": 102,
+      "indexed_outgoing_transactions": 102,
+      "distinct_nonces": 102,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 13,
+      "address": "0x0e772ee615c7f93373c7519f2c36e780696477d3",
+      "cutoff_block": 26349764,
+      "chain_nonce": 7,
+      "indexed_outgoing_transactions": 6,
+      "distinct_nonces": 6,
+      "missing_nonces": [
+        3
+      ],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": false
+    },
+    {
+      "wallet": 14,
+      "address": "0x7f9dc988b46336ad536828fad50fa8fa1e5415e3",
+      "cutoff_block": 26349764,
+      "chain_nonce": 25,
+      "indexed_outgoing_transactions": 25,
+      "distinct_nonces": 25,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 15,
+      "address": "0x42cdf00c85005630cc8605731b9364f712077810",
+      "cutoff_block": 26349764,
+      "chain_nonce": 75,
+      "indexed_outgoing_transactions": 75,
+      "distinct_nonces": 75,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    },
+    {
+      "wallet": 16,
+      "address": "0xe7024ab80143b1ef843efe6a58368696cb87958d",
+      "cutoff_block": 26349764,
+      "chain_nonce": 32,
+      "indexed_outgoing_transactions": 32,
+      "distinct_nonces": 32,
+      "missing_nonces": [],
+      "duplicate_nonce_count": 0,
+      "out_of_range_nonces": [],
+      "complete_outgoing_nonce_sequence": true
+    }
+  ],
+  "all_passed": false
+}

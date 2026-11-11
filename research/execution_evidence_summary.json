@@ -1,0 +1,30 @@
+{
+  "all_linked_standalone_actors_have_intervention_evidence": true,
+  "linked_standalone_actors": 344,
+  "standalone_closed_positive_cashflow_ETH": "84.563209707817598363",
+  "positive_bracket_groups": 111,
+  "positive_bracket_cashflow_ETH": "81.108470400749882302",
+  "standalone_and_bracket_transaction_hashes_disjoint": true,
+  "bracket_groups_with_counterfactual_failed_leg": 109,
+  "bracket_both_scenarios_execute_and_endpoint_close": [
+    {
+      "group_id": 297,
+      "block": 26302407,
+      "target": "0x9e13860b4438cfd64fefdf320ac34832706f3f41e4ecbca90206a91b887d6ef3",
+      "actual_net_ETH": "3.987666616068123082",
+      "counterfactual_net_ETH": "-0.259444068438871501",
+      "fixed_call_cashflow_difference_ETH": "4.247110684506994583",
+      "scope": "Both legs execute and endpoint non-WETH inventory closes; operational boundary, not final owner or unobserved position valuation."
+    },
+    {
+      "group_id": 418,
+      "block": 26302698,
+      "target": "0x37f3b9c7386a6fd1ccace505502a0a0e757eaf93663ff61e47a08365dd4a862c",
+      "actual_net_ETH": "5.716327074095024149",
+      "counterfactual_net_ETH": "-0.01292283908550526",
+      "fixed_call_cashflow_difference_ETH": "5.729249913180529409",
+      "scope": "Both legs execute and endpoint non-WETH inventory closes; operational boundary, not final owner or unobserved position valuation."
+    }
+  ],
+  "interpretation": "Actual cashflow totals describe selected positive closed groups and are not event-wide causal MEV. Standalone 344 linked actors are a subset of 1063. Bracket 117 target experiments cover 111 groups, so never sum intervention differences. Failed counterfactual exits leave economic positions unvalued even if endpoint token transfers net to zero."
+}

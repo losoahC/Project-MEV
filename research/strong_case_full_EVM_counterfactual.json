@@ -1,0 +1,91 @@
+{
+  "block": 26301609,
+  "target": "0x625e674d10c864a1d98d8ba9b5c05ed2f325d74cca62b8b67cd6268edbd8f051",
+  "accounts": [
+    "0x45e9b04942176a513b22acc1ced75c34d2fd9215",
+    "0x4cd4499d6e6a0eb8995a2cabd400d1ad35c4d03e",
+    "0x5aae4d2f360e156de3416936049837a7bb685588"
+  ],
+  "baseline_all_146_receipts_match": true,
+  "actual_cashflow_matches_raw_trace_ledger": true,
+  "scenarios": {
+    "actual": {
+      "legs": [
+        {
+          "hash": "0xb85a8b174f8258c4d729e3b1112fe46fe90b6e4d761792b47b133e9dd77f2d7b",
+          "status": "0x1",
+          "gas_wei": "49047195733257436",
+          "net_raw": {
+            "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "-555550581789369600566"
+          },
+          "error": null
+        },
+        {
+          "hash": "0xf3935c9604416f38ea2942652ea8c652bc2ea0cfac2ad0316181031bdcd607c2",
+          "status": "0x1",
+          "gas_wei": "69278540454625216",
+          "net_raw": {
+            "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "567748941300978878840"
+          },
+          "error": null
+        }
+      ],
+      "net_ETH_after_gas": "12.080033775421395622",
+      "other_token_residual_raw": {},
+      "all_remaining_statuses": [
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1"
+      ]
+    },
+    "remove_target": {
+      "legs": [
+        {
+          "hash": "0xb85a8b174f8258c4d729e3b1112fe46fe90b6e4d761792b47b133e9dd77f2d7b",
+          "status": "0x1",
+          "gas_wei": "49047195733257436",
+          "net_raw": {
+            "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "-555550581789369600566"
+          },
+          "error": null
+        },
+        {
+          "hash": "0xf3935c9604416f38ea2942652ea8c652bc2ea0cfac2ad0316181031bdcd607c2",
+          "status": "0x0",
+          "gas_wei": "68902873276178916",
+          "net_raw": {},
+          "error": {
+            "code": 3,
+            "message": "execution reverted: DCF",
+            "data": "0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000034443460000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "net_ETH_after_gas": "-555.668531858379036918",
+      "other_token_residual_raw": {},
+      "all_remaining_statuses": [
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x1",
+        "0x0"
+      ]
+    }
+  },
+  "method": "Replay full prefix through back leg from previous-block state, historical block environment, validation=true. Counterfactual removes target only; all remaining calldata, sender, value, nonce, access list and fees unchanged. No subsequent transaction from removed sender in prefix. Synthetic native-transfer logs plus ERC20/WETH logs, less actual simulated gas. This is a fixed-transaction intervention, not optimized strategy or market equilibrium."
+}
