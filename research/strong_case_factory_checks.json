@@ -1,0 +1,42 @@
+[
+  {
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+          "data": "0xe6a439050000000000000000000000006982508145454ce325ddbe47a25d4ec3d2311933000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+        },
+        "0x19154a8"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "0x000000000000000000000000a43fe16908251ee70ef74718545e4fe6c5ccec9f"
+    },
+    "expected_pool": "0xa43fe16908251ee70ef74718545e4fe6c5ccec9f"
+  },
+  {
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+          "data": "0x1698ee820000000000000000000000006982508145454ce325ddbe47a25d4ec3d2311933000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc20000000000000000000000000000000000000000000000000000000000000bb8"
+        },
+        "0x19154a8"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "0x00000000000000000000000011950d141ecb863f01007add7d1a342041227b58"
+    },
+    "expected_pool": "0x11950d141ecb863f01007add7d1a342041227b58"
+  }
+]

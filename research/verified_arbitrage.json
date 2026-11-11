@@ -1,0 +1,170 @@
+{
+  "verified_examples": [
+    {
+      "block": 26300970,
+      "hash": "0x48e38c9f93410a620173a50bb3b7f8ed65537fc9dd5e0870bb1bb194d45ca93d",
+      "native_net_eth_before_gas": "7.381916240494385732",
+      "builder_payment_eth": "3.256182355410712753",
+      "builder_label": "Titan Builder",
+      "route": "WETH -> USDT -> Ring wrapped assets -> WETH; multiple cycles",
+      "note": "ETH refund from V4 is rewrapped; cancels within native net. Subcalls may revert but outer receipt succeeds.",
+      "source_url": "https://etherscan.io/tx/0x48e38c9f93410a620173a50bb3b7f8ed65537fc9dd5e0870bb1bb194d45ca93d",
+      "sender": "0x63c3eddef94eae0e2ee6fb33a95dd830c2c73263",
+      "strategy": "0x824520adebfa988772ae597ba1d2d81203380b9e",
+      "target_index": 13,
+      "index": 17,
+      "shared_v3_pools": [
+        "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+        "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36"
+      ],
+      "opposite_direction_shared_v3_pools": [
+        "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+        "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36"
+      ],
+      "corrected_weth_inventory_change": "-6.854061906071718814",
+      "other_token_changes_raw": {},
+      "gas_eth": "0.262430385477530145",
+      "priority_fee_eth": "0.00003270945",
+      "estimated_execution_net_eth": "0.265423948945136773",
+      "attribution": "Confirmed atomic arbitrage execution after target; event-specific incremental MEV unproven without replay"
+    },
+    {
+      "block": 26300976,
+      "hash": "0x104ecae8a68255d11ec4cc5c9380c623baf4aacb16c768337befc5df3ff0a4bd",
+      "native_net_eth_before_gas": "0.099826425978642652",
+      "builder_payment_eth": "0.406541522893480368",
+      "builder_label": "Eureka Builder",
+      "route": "WETH -> USDT -> USDC -> AAVE -> WETH",
+      "note": "Sender and strategy address are identical.",
+      "source_url": "https://etherscan.io/tx/0x104ecae8a68255d11ec4cc5c9380c623baf4aacb16c768337befc5df3ff0a4bd",
+      "sender": "0xf1de4e8073815e5f33c804e6309be030a88a02f1",
+      "strategy": "0xf1de4e8073815e5f33c804e6309be030a88a02f1",
+      "target_index": 0,
+      "index": 13,
+      "shared_v3_pools": [
+        "0x3416cf6c708da44db2624d63ea0aaef7113527c6"
+      ],
+      "opposite_direction_shared_v3_pools": [],
+      "corrected_weth_inventory_change": "0",
+      "other_token_changes_raw": {},
+      "gas_eth": "0.044319749321552796",
+      "priority_fee_eth": "0",
+      "estimated_execution_net_eth": "0.055506676657089856",
+      "attribution": "Confirmed atomic arbitrage execution after target; event-specific incremental MEV unproven without replay"
+    },
+    {
+      "block": 26300988,
+      "hash": "0x029f5f789661174e03f6297240c99d09be8082a1c5611fa8c8ca54d85b6d0d89",
+      "native_net_eth_before_gas": "0.217130791687433725",
+      "builder_payment_eth": "0.191513780760909034",
+      "builder_label": "Eureka Builder",
+      "route": "Flash-loan-assisted cycles across WETH, USDT, AAVE and V4 routes",
+      "note": "Morpho principal 9338.535528309 WETH is received and repaid. Residual -2 smallest AAVE units is not valued. Transaction value of 999 wei is internal to sender+strategy accounting group. Corrected 2026-11-04: subtract 999 wei strategy internal-net debit that was omitted when using the sender receipt alone. Blockscout confirms sender credit 0.217130791687434724 and strategy debit 0.000000000000000999.",
+      "source_url": "https://etherscan.io/tx/0x029f5f789661174e03f6297240c99d09be8082a1c5611fa8c8ca54d85b6d0d89",
+      "sender": "0xf07b4d27cae6571857e51ab3fb209f5226de2d88",
+      "strategy": "0x06cff7088619c7178f5e14f0b119458d08d2f5ef",
+      "target_index": 0,
+      "index": 1,
+      "shared_v3_pools": [
+        "0x6a11ed98b1a3ac36a768ebbbba36ded101da5a3f"
+      ],
+      "opposite_direction_shared_v3_pools": [
+        "0x6a11ed98b1a3ac36a768ebbbba36ded101da5a3f"
+      ],
+      "corrected_weth_inventory_change": "0",
+      "other_token_changes_raw": {
+        "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9": "-2"
+      },
+      "gas_eth": "0.09484120902650382",
+      "priority_fee_eth": "0",
+      "estimated_execution_net_eth": "0.122289582660929905",
+      "attribution": "Confirmed atomic arbitrage execution after target; event-specific incremental MEV unproven without replay"
+    },
+    {
+      "block": 26300992,
+      "hash": "0x509e3e1e434979f1eb286ee03838b4ba5159a0cbdce4a8aabb3fbcf3e7e1f131",
+      "native_net_eth_before_gas": "0.641410282504333275",
+      "builder_payment_eth": "4.928682708086733533",
+      "builder_label": "Titan Builder",
+      "route": "ETH -> USDT -> DAI -> WETH -> ETH",
+      "note": "Gross 101.067878846977348381 ETH unwrap includes 95.497785856386281573 ETH paid back into V4. Same shared V3 pool direction as target, so not a simple opposite-direction restorative backrun on that pool.",
+      "source_url": "https://etherscan.io/tx/0x509e3e1e434979f1eb286ee03838b4ba5159a0cbdce4a8aabb3fbcf3e7e1f131",
+      "sender": "0x2221612f8dc99f8e738bc6dc8918261e614476f0",
+      "strategy": "0xaf13a8a98cac93275e8be78d443f6e593de11154",
+      "target_index": 3,
+      "index": 7,
+      "shared_v3_pools": [
+        "0x769db46f39c42ee7ad5f71f4167c47edd281e767"
+      ],
+      "opposite_direction_shared_v3_pools": [],
+      "corrected_weth_inventory_change": "0",
+      "other_token_changes_raw": {},
+      "gas_eth": "0.0829198506663059",
+      "priority_fee_eth": "0",
+      "estimated_execution_net_eth": "0.558490431838027375",
+      "attribution": "Confirmed atomic arbitrage execution after target; event-specific incremental MEV unproven without replay"
+    },
+    {
+      "block": 26300992,
+      "hash": "0x3b4ae9044e973d444d2b284d51dc2c1f10fa293aeff64facb34b20d2fc116506",
+      "native_net_eth_before_gas": "4.396057600194258772",
+      "builder_payment_eth": "16.505734019904966462",
+      "builder_label": "Titan Builder",
+      "route": "WETH -> WBTC -> USDC -> WETH; multiple cycles",
+      "note": "WETH inventory falls after Withdrawal correction, so native ETH alone overstates profit. Small transaction value is internal to sender+strategy accounting group.",
+      "source_url": "https://etherscan.io/tx/0x3b4ae9044e973d444d2b284d51dc2c1f10fa293aeff64facb34b20d2fc116506",
+      "sender": "0xc77614364aa36e34b062a1a56500b7c37841c8ec",
+      "strategy": "0x584a31052c643d32f3134a956956dad722ff4161",
+      "target_index": 3,
+      "index": 8,
+      "shared_v3_pools": [
+        "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "0x7486ff76f69872d27b22dada4078bd55b36a5324",
+        "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+        "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed"
+      ],
+      "opposite_direction_shared_v3_pools": [
+        "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "0x7486ff76f69872d27b22dada4078bd55b36a5324",
+        "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed"
+      ],
+      "corrected_weth_inventory_change": "-2.676576918551493419",
+      "other_token_changes_raw": {},
+      "gas_eth": "0.51140218883717436",
+      "priority_fee_eth": "0.00004475064",
+      "estimated_execution_net_eth": "1.208078492805590993",
+      "attribution": "Confirmed atomic arbitrage execution after target; event-specific incremental MEV unproven without replay"
+    },
+    {
+      "block": 26300992,
+      "hash": "0xb759c6ce80d1db69f5b323c814366e5093685c7673575f6187e72769e8fca276",
+      "native_net_eth_before_gas": "1.392225098239439169",
+      "builder_payment_eth": "1.168406682169247103",
+      "builder_label": "Titan Builder",
+      "route": "WETH -> USDT -> WBTC -> WETH",
+      "note": "Sender and strategy address are identical. Clear atomic triangle with zero residual USDT/WBTC.",
+      "source_url": "https://etherscan.io/tx/0xb759c6ce80d1db69f5b323c814366e5093685c7673575f6187e72769e8fca276",
+      "sender": "0x00000000fd3a7b3fa5bcfa843c648714b11e089b",
+      "strategy": "0x00000000fd3a7b3fa5bcfa843c648714b11e089b",
+      "target_index": 3,
+      "index": 11,
+      "shared_v3_pools": [
+        "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+        "0x56534741cd8b152df6d48adf7ac51f75169a83b2"
+      ],
+      "opposite_direction_shared_v3_pools": [
+        "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36"
+      ],
+      "corrected_weth_inventory_change": "0",
+      "other_token_changes_raw": {},
+      "gas_eth": "0.13230107507600938",
+      "priority_fee_eth": "0",
+      "estimated_execution_net_eth": "1.259924023163429789",
+      "attribution": "Confirmed atomic arbitrage execution after target; event-specific incremental MEV unproven without replay"
+    }
+  ],
+  "selected_examples_net_eth": "3.469713156070204691",
+  "direct_builder_payments_eth": "26.457061069226049253",
+  "note": "Selected examples only; not event totals or lower bound of event-attributable MEV. Net includes measured sender gas and direct builder payments, excludes off-chain costs; one example has immaterial unvalued AAVE dust."
+}

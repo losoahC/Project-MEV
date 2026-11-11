@@ -1,0 +1,83 @@
+{
+  "passed": 14,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "新增连续区块无缺失",
+      "passed": true,
+      "detail": 2010
+    },
+    {
+      "check": "两个时段连续且不重叠",
+      "passed": true,
+      "detail": "26301940 -> 26301941"
+    },
+    {
+      "check": "所有净流出日志均有分类",
+      "passed": true,
+      "detail": 830
+    },
+    {
+      "check": "新增原生币证据完整",
+      "passed": true,
+      "detail": 830
+    },
+    {
+      "check": "原生币逐笔守恒",
+      "passed": true,
+      "detail": 830
+    },
+    {
+      "check": "调用树父子完整及重算一致",
+      "passed": true,
+      "detail": 830
+    },
+    {
+      "check": "十笔批量接口与完整轨迹一致",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "check": "五笔旧证据与新轨迹一致",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "check": "未核实合约不得估值",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "check": "完整候选无遗漏或重复",
+      "passed": true,
+      "detail": 13623
+    },
+    {
+      "check": "原生币缺失没有按零利润处理",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "严格与宽松价格分别核算",
+      "passed": true,
+      "detail": "strict subset unchanged"
+    },
+    {
+      "check": "估值加总 strict_shortfall_usd",
+      "passed": true,
+      "detail": {
+        "count": 492,
+        "sum_usd": "7820474.83908915378668118330930699"
+      }
+    },
+    {
+      "check": "估值加总 up_to_5min_stale_shortfall_usd",
+      "passed": true,
+      "detail": {
+        "count": 627,
+        "sum_usd": "9971220.04493943560660374730057616"
+      }
+    }
+  ],
+  "limitations": "Data consistency only; not completeness of event, entity ownership, economic inventory valuation, or causal MEV."
+}

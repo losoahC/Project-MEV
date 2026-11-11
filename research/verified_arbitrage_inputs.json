@@ -1,0 +1,59 @@
+{
+  "native_evidence": "Etherscan Overview internal ETH transfers, manually checked in browser. Numbers exclude USD labels. Group combines transaction sender and called strategy contract solely to account for this execution; not an ownership attribution.",
+  "examples": [
+    {
+      "block": 26300970,
+      "hash": "0x48e38c9f93410a620173a50bb3b7f8ed65537fc9dd5e0870bb1bb194d45ca93d",
+      "native_net_eth_before_gas": "7.381916240494385732",
+      "builder_payment_eth": "3.256182355410712753",
+      "builder_label": "Titan Builder",
+      "route": "WETH -> USDT -> Ring wrapped assets -> WETH; multiple cycles",
+      "note": "ETH refund from V4 is rewrapped; cancels within native net. Subcalls may revert but outer receipt succeeds."
+    },
+    {
+      "block": 26300976,
+      "hash": "0x104ecae8a68255d11ec4cc5c9380c623baf4aacb16c768337befc5df3ff0a4bd",
+      "native_net_eth_before_gas": "0.099826425978642652",
+      "builder_payment_eth": "0.406541522893480368",
+      "builder_label": "Eureka Builder",
+      "route": "WETH -> USDT -> USDC -> AAVE -> WETH",
+      "note": "Sender and strategy address are identical."
+    },
+    {
+      "block": 26300988,
+      "hash": "0x029f5f789661174e03f6297240c99d09be8082a1c5611fa8c8ca54d85b6d0d89",
+      "native_net_eth_before_gas": "0.217130791687433725",
+      "builder_payment_eth": "0.191513780760909034",
+      "builder_label": "Eureka Builder",
+      "route": "Flash-loan-assisted cycles across WETH, USDT, AAVE and V4 routes",
+      "note": "Morpho principal 9338.535528309 WETH is received and repaid. Residual -2 smallest AAVE units is not valued. Transaction value of 999 wei is internal to sender+strategy accounting group. Corrected 2026-11-04: subtract 999 wei strategy internal-net debit that was omitted when using the sender receipt alone. Blockscout confirms sender credit 0.217130791687434724 and strategy debit 0.000000000000000999."
+    },
+    {
+      "block": 26300992,
+      "hash": "0x509e3e1e434979f1eb286ee03838b4ba5159a0cbdce4a8aabb3fbcf3e7e1f131",
+      "native_net_eth_before_gas": "0.641410282504333275",
+      "builder_payment_eth": "4.928682708086733533",
+      "builder_label": "Titan Builder",
+      "route": "ETH -> USDT -> DAI -> WETH -> ETH",
+      "note": "Gross 101.067878846977348381 ETH unwrap includes 95.497785856386281573 ETH paid back into V4. Same shared V3 pool direction as target, so not a simple opposite-direction restorative backrun on that pool."
+    },
+    {
+      "block": 26300992,
+      "hash": "0x3b4ae9044e973d444d2b284d51dc2c1f10fa293aeff64facb34b20d2fc116506",
+      "native_net_eth_before_gas": "4.396057600194258772",
+      "builder_payment_eth": "16.505734019904966462",
+      "builder_label": "Titan Builder",
+      "route": "WETH -> WBTC -> USDC -> WETH; multiple cycles",
+      "note": "WETH inventory falls after Withdrawal correction, so native ETH alone overstates profit. Small transaction value is internal to sender+strategy accounting group."
+    },
+    {
+      "block": 26300992,
+      "hash": "0xb759c6ce80d1db69f5b323c814366e5093685c7673575f6187e72769e8fca276",
+      "native_net_eth_before_gas": "1.392225098239439169",
+      "builder_payment_eth": "1.168406682169247103",
+      "builder_label": "Titan Builder",
+      "route": "WETH -> USDT -> WBTC -> WETH",
+      "note": "Sender and strategy address are identical. Clear atomic triangle with zero residual USDT/WBTC."
+    }
+  ]
+}

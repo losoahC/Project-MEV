@@ -1,0 +1,11 @@
+[
+  {
+    "hash": "0x029f5f789661174e03f6297240c99d09be8082a1c5611fa8c8ca54d85b6d0d89",
+    "field": "native_net_eth_before_gas",
+    "previous": "0.217130791687434724",
+    "corrected": "0.217130791687433725",
+    "difference_wei": -999,
+    "evidence": "nonzero_value_crosscheck.json",
+    "reason": "Original manual extraction omitted the strategy internal-net debit; sender+strategy group must include both. Etherscan displayed net summary includes top-level value; Blockscout internal calls do not."
+  }
+]

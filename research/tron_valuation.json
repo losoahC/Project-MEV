@@ -1,0 +1,476 @@
+{
+  "method": "TRON net transfers and Swap-compatible logs; Bitfinex latest completed 1m spot candle with <=5m staleness, Coinbase prior-minute USDT/USD; gas excluded. Prior-hour Kraken is coarse sensitivity only, not equivalent benchmark.",
+  "source": "https://api-pub.bitfinex.com/v2/candles/trade:1m:tTRXUSD/hist?start=1793300400000&end=1793314800000&limit=1000&sort=1",
+  "summary": {
+    "large_swap_count": 16,
+    "priced_large_swaps": 16,
+    "USDT_input": "234000000",
+    "TRX_received": "638172758.693694",
+    "fees_TRX": "107.6470",
+    "shortfall_usd": "22195696.91959511380",
+    "sensitivity_low_usd": "21946624.97427372968",
+    "sensitivity_high_usd": "22550764.60102095450",
+    "prior_hour_Kraken_shortfall_usd": "22541129.123107765108"
+  },
+  "rows": [
+    {
+      "hash": "60a924f797306df50e867c84173453587830aa533a82031019119840a44b0050",
+      "timestamp_ms": 1793306847000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-10000000000000"
+      },
+      "trx_net_before_fee": "30049680.561919",
+      "fee_trx": "1.4318",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "10000000",
+      "observed_USDT_per_TRX": "0.332782239711149557790650404125285712337821161784214360731164",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33024",
+      "reference_candle_ms": 1793306580000,
+      "staleness_after_candle_end_ms": 180000,
+      "reference_USDT_USD": "0.99876",
+      "shortfall_usd": "63993.49123186944",
+      "sensitivity_low_usd": "63993.49123186944",
+      "sensitivity_high_usd": "64093.49123186944",
+      "prior_hour_Kraken_shortfall_usd": "34334.456517255387"
+    },
+    {
+      "hash": "437de0f2bcf1bae8cc1d7669beb4b409d576e20dbf2a183c6defd9c136944c9c",
+      "timestamp_ms": 1793306886000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-30000000000000"
+      },
+      "trx_net_before_fee": "88191900.46461",
+      "fee_trx": "1.5895",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "30000000",
+      "observed_USDT_per_TRX": "0.340167292483265177860440309305739278703151578792709364206002",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.32985",
+      "reference_candle_ms": 1793306820000,
+      "staleness_after_candle_end_ms": 0,
+      "reference_USDT_USD": "0.99877",
+      "shortfall_usd": "873001.6317483915",
+      "sensitivity_low_usd": "871819.7127437454",
+      "sensitivity_high_usd": "873001.6317483915",
+      "prior_hour_Kraken_shortfall_usd": "751561.38480862353"
+    },
+    {
+      "hash": "894bb2802b71a1f3788707efeb3af455eb3d242078ab54da466b514047a12ef5",
+      "timestamp_ms": 1793306940000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-30000000000000"
+      },
+      "trx_net_before_fee": "85903110.243266",
+      "fee_trx": "1.4802",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "30000000",
+      "observed_USDT_per_TRX": "0.349230661323484725319969961626676697909131187525542352720541",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.3339",
+      "reference_candle_ms": 1793306880000,
+      "staleness_after_candle_end_ms": 0,
+      "reference_USDT_USD": "0.99876",
+      "shortfall_usd": "1279751.4897734826",
+      "sensitivity_low_usd": "1122548.79802830582",
+      "sensitivity_high_usd": "1619368.77523438330",
+      "prior_hour_Kraken_shortfall_usd": "1509370.503453732618"
+    },
+    {
+      "hash": "3037ad382baa85f1fdc6b7409c3debfb8b8116b11bd827a936bcc662838b947b",
+      "timestamp_ms": 1793307072000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-10000000000000"
+      },
+      "trx_net_before_fee": "28290407.576133",
+      "fee_trx": "1.3148",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "10000000",
+      "observed_USDT_per_TRX": "0.353476703122383732407656528122045804553514712077839968384259",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33343",
+      "reference_candle_ms": 1793307000000,
+      "staleness_after_candle_end_ms": 0,
+      "reference_USDT_USD": "0.99879",
+      "shortfall_usd": "555029.40188997381",
+      "sensitivity_low_usd": "554929.40188997381",
+      "sensitivity_high_usd": "555029.40188997381",
+      "prior_hour_Kraken_shortfall_usd": "617353.169780194809"
+    },
+    {
+      "hash": "8b98ce5db3ae290d6723bd827e3387062bba49bcffafa22b4454646446fbaa7e",
+      "timestamp_ms": 1793307120000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-10000000000000"
+      },
+      "trx_net_before_fee": "28064383.014108",
+      "fee_trx": "1.3159",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "10000000",
+      "observed_USDT_per_TRX": "0.356323529185479960498374352904495873977467176453724034288973",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33343",
+      "reference_candle_ms": 1793307000000,
+      "staleness_after_candle_end_ms": 60000,
+      "reference_USDT_USD": "0.99879",
+      "shortfall_usd": "630392.77160596956",
+      "sensitivity_low_usd": "630292.77160596956",
+      "sensitivity_high_usd": "630392.77160596956",
+      "prior_hour_Kraken_shortfall_usd": "692218.607386049484"
+    },
+    {
+      "hash": "dfdd5e424c1db6d3d1ac7544c2830594bdf7b41e791d08ffcbab30a4ad06e63c",
+      "timestamp_ms": 1793307186000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-10000000000000"
+      },
+      "trx_net_before_fee": "27823756.360642",
+      "fee_trx": "1.322",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "10000000",
+      "observed_USDT_per_TRX": "0.359405102258064120151400105016690173913644955031781335612213",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33343",
+      "reference_candle_ms": 1793307000000,
+      "staleness_after_candle_end_ms": 120000,
+      "reference_USDT_USD": "0.99878",
+      "shortfall_usd": "710524.91667113794",
+      "sensitivity_low_usd": "710524.91667113794",
+      "sensitivity_high_usd": "710624.91667113794",
+      "prior_hour_Kraken_shortfall_usd": "771820.651933632266"
+    },
+    {
+      "hash": "0c2562ae7c9a628103d20ca2ebfe77a2c00625508b51faf8e6cae09c81a18eae",
+      "timestamp_ms": 1793307414000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-30000000000000"
+      },
+      "trx_net_before_fee": "81592369.038923",
+      "fee_trx": "1.3846",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "30000000",
+      "observed_USDT_per_TRX": "0.367681443171342839517771847725732370523171339002629056793297",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33029",
+      "reference_candle_ms": 1793307300000,
+      "staleness_after_candle_end_ms": 0,
+      "reference_USDT_USD": "0.99882",
+      "shortfall_usd": "3015456.43013412233",
+      "sensitivity_low_usd": "3014256.43013412233",
+      "sensitivity_high_usd": "3015756.43013412233",
+      "prior_hour_Kraken_shortfall_usd": "2939004.380344651479"
+    },
+    {
+      "hash": "f58ef10d691d7246fa48eabd1fe13d5e4f6745dc09550c3cdd7bac98b1510e96",
+      "timestamp_ms": 1793307453000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-30000000000000"
+      },
+      "trx_net_before_fee": "79525236.136217",
+      "fee_trx": "1.3966",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "30000000",
+      "observed_USDT_per_TRX": "0.377238741531225010697750368421220882196018319139662441514196",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33029",
+      "reference_candle_ms": 1793307300000,
+      "staleness_after_candle_end_ms": 60000,
+      "reference_USDT_USD": "0.99884",
+      "shortfall_usd": "3698809.75656888707",
+      "sensitivity_low_usd": "3697909.75656888707",
+      "sensitivity_high_usd": "3698809.75656888707",
+      "prior_hour_Kraken_shortfall_usd": "3624294.610309251741"
+    },
+    {
+      "hash": "7a2e639e043926a56ef766d8cf76306a780b1e97ecf23fc18bf92b116f3cef00",
+      "timestamp_ms": 1793307576000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-30000000000000"
+      },
+      "trx_net_before_fee": "77495564.728657",
+      "fee_trx": "1.9942",
+      "internal_call_count": 17,
+      "log_count": 2,
+      "usdt_input": "30000000",
+      "observed_USDT_per_TRX": "0.387118928741819115475723343013618896298702928075676957937379",
+      "large_swap": true,
+      "compatible_swap_event": false,
+      "reference_TRX_USD": "0.33029",
+      "reference_candle_ms": 1793307300000,
+      "staleness_after_candle_end_ms": 180000,
+      "reference_USDT_USD": "0.99886",
+      "shortfall_usd": "4369789.92577187947",
+      "sensitivity_low_usd": "4369489.92577187947",
+      "sensitivity_high_usd": "4369789.92577187947",
+      "prior_hour_Kraken_shortfall_usd": "4297176.581621127861"
+    },
+    {
+      "hash": "ee7dc32e258441f71491289b3a459a506791c7faab81a58ed491496c656d9ee3",
+      "timestamp_ms": 1793307762000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-20000000000000"
+      },
+      "trx_net_before_fee": "51056112.411119",
+      "fee_trx": "16.1126",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "20000000",
+      "observed_USDT_per_TRX": "0.391725868960684912293207511432300624604239341870170725292934",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33154",
+      "reference_candle_ms": 1793307660000,
+      "staleness_after_candle_end_ms": 0,
+      "reference_USDT_USD": "0.99876",
+      "shortfall_usd": "3048056.49121760674",
+      "sensitivity_low_usd": "3001395.42892348845",
+      "sensitivity_high_usd": "3054183.22470694102",
+      "prior_hour_Kraken_shortfall_usd": "3157673.964564279233"
+    },
+    {
+      "hash": "236dc327630f2f97a996576f7af500f8336b4b379f845a9e918cf70d2a69b0c3",
+      "timestamp_ms": 1793307849000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-10000000000000"
+      },
+      "trx_net_before_fee": "25248833.155577",
+      "fee_trx": "16.1678",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "10000000",
+      "observed_USDT_per_TRX": "0.396057906453834879720252057501522769392375168636207795785441",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33154",
+      "reference_candle_ms": 1793307660000,
+      "staleness_after_candle_end_ms": 120000,
+      "reference_USDT_USD": "0.99876",
+      "shortfall_usd": "1616601.85560000142",
+      "sensitivity_low_usd": "1593525.41742842635",
+      "sensitivity_high_usd": "1619631.71557867066",
+      "prior_hour_Kraken_shortfall_usd": "1670811.100385025239"
+    },
+    {
+      "hash": "3bd141bcc65f7c017ead4f82448e8200e85577d2abd9f018c1727fe900bfe03b",
+      "timestamp_ms": 1793307945000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-5000000000000"
+      },
+      "trx_net_before_fee": "12567393.035083",
+      "fee_trx": "14.6666",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "5000000",
+      "observed_USDT_per_TRX": "0.397854987589077024201631218179790508071038249965109317141118",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33154",
+      "reference_candle_ms": 1793307660000,
+      "staleness_after_candle_end_ms": 180000,
+      "reference_USDT_USD": "0.99875",
+      "shortfall_usd": "827156.51314858218",
+      "sensitivity_low_usd": "815720.18548665665",
+      "sensitivity_high_usd": "828714.60031279214",
+      "prior_hour_Kraken_shortfall_usd": "854138.705994905381"
+    },
+    {
+      "hash": "94a66c7237262557eee46c286da262397af1e0c64d80b5666ca82fdf912ae1a5",
+      "timestamp_ms": 1793308002000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-3000000000000"
+      },
+      "trx_net_before_fee": "7520336.751585",
+      "fee_trx": "9.631",
+      "internal_call_count": 17,
+      "log_count": 2,
+      "usdt_input": "3000000",
+      "observed_USDT_per_TRX": "0.398918306333518174496823389381138408174460488493880294088852",
+      "large_swap": true,
+      "compatible_swap_event": false,
+      "reference_TRX_USD": "0.33154",
+      "reference_candle_ms": 1793307660000,
+      "staleness_after_candle_end_ms": 240000,
+      "reference_USDT_USD": "0.99872",
+      "shortfall_usd": "502867.55337950910",
+      "sensitivity_low_usd": "495994.04693556675",
+      "sensitivity_high_usd": "503859.99378969930",
+      "prior_hour_Kraken_shortfall_usd": "519013.716385162095"
+    },
+    {
+      "hash": "03f637e231366acc7c9ae0bd7ff0cf3fbfec58c210a4ade210cee6828bf696a4",
+      "timestamp_ms": 1793308098000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-2000000000000"
+      },
+      "trx_net_before_fee": "5019492.659306",
+      "fee_trx": "14.6671",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "2000000",
+      "observed_USDT_per_TRX": "0.398446643067015057710734544644448145080711605759378449693163",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33408",
+      "reference_candle_ms": 1793307960000,
+      "staleness_after_candle_end_ms": 60000,
+      "reference_USDT_USD": "0.99872",
+      "shortfall_usd": "320527.89237905152",
+      "sensitivity_low_usd": "320507.89237905152",
+      "sensitivity_high_usd": "320527.89237905152",
+      "prior_hour_Kraken_shortfall_usd": "344054.254473218742"
+    },
+    {
+      "hash": "815c27617368ddb95d4910a98a418453cec4cdb1be8d2440703f8e37f221c14f",
+      "timestamp_ms": 1793308314000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-2000000000000"
+      },
+      "trx_net_before_fee": "5006565.490086",
+      "fee_trx": "12.7054",
+      "internal_call_count": 14,
+      "log_count": 4,
+      "usdt_input": "2000000",
+      "observed_USDT_per_TRX": "0.399475449579237424763255335239879193344851340269263667364280",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.33408",
+      "reference_candle_ms": 1793307960000,
+      "staleness_after_candle_end_ms": 240000,
+      "reference_USDT_USD": "0.99865",
+      "shortfall_usd": "324706.60107206912",
+      "sensitivity_low_usd": "324706.60107206912",
+      "sensitivity_high_usd": "324806.60107206912",
+      "prior_hour_Kraken_shortfall_usd": "348172.373524102202"
+    },
+    {
+      "hash": "ca263cf40cba09b1d9a3a1123b2924359532ed3d1913353b5b89c99f30eb2290",
+      "timestamp_ms": 1793308452000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-2000000000000"
+      },
+      "trx_net_before_fee": "4817617.066463",
+      "fee_trx": "10.4669",
+      "internal_call_count": 17,
+      "log_count": 5,
+      "usdt_input": "2000000",
+      "observed_USDT_per_TRX": "0.415142999621669970058837964906602649901905460639494042286323",
+      "large_swap": true,
+      "compatible_swap_event": true,
+      "reference_TRX_USD": "0.34",
+      "reference_candle_ms": 1793308380000,
+      "staleness_after_candle_end_ms": 0,
+      "reference_USDT_USD": "0.99851",
+      "shortfall_usd": "359030.19740258",
+      "sensitivity_low_usd": "359010.19740258",
+      "sensitivity_high_usd": "362173.47232511632",
+      "prior_hour_Kraken_shortfall_usd": "410130.661626553041"
+    },
+    {
+      "hash": "4c9e8df45d25b73ef108cb78ae68a921105df1bf65dee98f0a72c7d1bd4290e2",
+      "timestamp_ms": 1793344686000,
+      "success": true,
+      "contracts": [
+        "41a31d689a84244bc01be56e07aeafb7686f56bb89"
+      ],
+      "token_net_raw": {
+        "a614f803b6fd780986a42c78ec9c7f77e6ded13c": "-100000000"
+      },
+      "trx_net_before_fee": "282.892869",
+      "fee_trx": "2.5126",
+      "internal_call_count": 27,
+      "log_count": 5,
+      "usdt_input": "100",
+      "observed_USDT_per_TRX": "0.353490706052403180230039662116756997504945944749141060886904",
+      "large_swap": false,
+      "compatible_swap_event": false,
+      "reference_TRX_USD": null,
+      "reference_candle_ms": null,
+      "staleness_after_candle_end_ms": 29940000,
+      "reference_USDT_USD": null,
+      "shortfall_usd": null,
+      "sensitivity_low_usd": null,
+      "sensitivity_high_usd": null,
+      "prior_hour_Kraken_shortfall_usd": null
+    }
+  ]
+}

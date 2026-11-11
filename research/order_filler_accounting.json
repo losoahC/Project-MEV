@@ -1,0 +1,773 @@
+{
+  "method": "Group orders by transaction to avoid duplicate gas. Official UniswapX Fill identifies filler and swapper. 1inch OrderFilled uses transaction entry as provisional resolver boundary, not proven beneficial owner. Native and all ERC20 net changes minus gas; borrowed cash is not profit. No sum with candidate strategy accounting without transaction deduplication.",
+  "summary": {
+    "strict": {
+      "priced_without_flagged_debt": 7,
+      "marked_asset_change_USD": "334901.94789013934693713179"
+    },
+    "five_minute": {
+      "priced_without_flagged_debt": 7,
+      "marked_asset_change_USD": "334901.94789013934693713179"
+    }
+  },
+  "rows": [
+    {
+      "hash": "0x290e94a9d14294b1c22bbc5d167343fd91fe91233e89434f20532fe5fe7e8668",
+      "block": 26300820,
+      "orders": [
+        {
+          "hash": "0x290e94a9d14294b1c22bbc5d167343fd91fe91233e89434f20532fe5fe7e8668",
+          "block": 26300820,
+          "protocol": "UniswapX",
+          "reactor": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+          "order_hash": "0x83d702647b0ac8bb863fca052b0ca67bfd44ab3afb447c2489c9571f23985ae6",
+          "filler": "0x74edc79fea13bdf1f7841570227127cec493bdd9",
+          "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160897",
+          "root_from": "0xd694da172d0b3f4389a4ea909134d47fcd3acf6b",
+          "root_to": "0x74edc79fea13bdf1f7841570227127cec493bdd9"
+        }
+      ],
+      "operational_boundary": [
+        "0x74edc79fea13bdf1f7841570227127cec493bdd9",
+        "0xd694da172d0b3f4389a4ea909134d47fcd3acf6b"
+      ],
+      "native_after_gas_ETH": "-0.001483269172245356",
+      "net_token_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "213690481179432419"
+      },
+      "gas_ETH": "0.001483269172245356",
+      "recognized_debt_events": [],
+      "compound_market_interaction": false,
+      "strict": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "487.50787228835098357116",
+        "ETH_cashflow": "-0.001483269172245356",
+        "ETH_cashflow_USD": "-3.40754393478270124592",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793305980,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "213690481179432419",
+            "decimals": 18,
+            "price_USD": "2297.32",
+            "USD": "490.91541622313368481708",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793305980,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "487.50787228835098357116",
+        "ETH_cashflow": "-0.001483269172245356",
+        "ETH_cashflow_USD": "-3.40754393478270124592",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793305980,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "213690481179432419",
+            "decimals": 18,
+            "price_USD": "2297.32",
+            "USD": "490.91541622313368481708",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793305980,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    },
+    {
+      "hash": "0x4fa182626c85ca0cdc18ba736930bdbdfbcf5d201d373913317df6ec58d23d61",
+      "block": 26300829,
+      "orders": [
+        {
+          "hash": "0x4fa182626c85ca0cdc18ba736930bdbdfbcf5d201d373913317df6ec58d23d61",
+          "block": 26300829,
+          "protocol": "UniswapX",
+          "reactor": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+          "order_hash": "0xd0a03e6ef0b4501fbd02edc8c6dd1b872330588d10d2863e8d6049b25fdd205c",
+          "filler": "0x0000000000be226afde21672a5e4adc45692e69d",
+          "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160898",
+          "root_from": "0x0000000000fbee4bd3451901b0833d9ce8e03fdd",
+          "root_to": "0x0000000000be226afde21672a5e4adc45692e69d"
+        }
+      ],
+      "operational_boundary": [
+        "0x0000000000be226afde21672a5e4adc45692e69d",
+        "0x0000000000fbee4bd3451901b0833d9ce8e03fdd",
+        "0x111111125421ca6dc452d289314280a0f8842a65",
+        "0x111116058b9828cdcdd810c502b925c14f34ca11",
+        "0xb535aeb27335b91e1b5bccbd64888ba7574efbf8"
+      ],
+      "native_after_gas_ETH": "-0.004600620447744192",
+      "net_token_raw": {
+        "0x6b175474e89094c44da98b954eedeac495271d0f": "-7243925876052"
+      },
+      "gas_ETH": "0.004600620447744192",
+      "recognized_debt_events": [],
+      "compound_market_interaction": false,
+      "strict": {
+        "complete_under_price_mapping_assumptions": false,
+        "USD": null,
+        "ETH_cashflow": "-0.004600620447744192",
+        "ETH_cashflow_USD": "-10.52865791327601571776",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306100,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "raw": "-7243925876052",
+            "USD": null,
+            "reason": "no_completed_minute_price"
+          }
+        ],
+        "missing_assets": [
+          {
+            "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "raw": "-7243925876052",
+            "USD": null,
+            "reason": "no_completed_minute_price"
+          }
+        ]
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": false,
+        "USD": null,
+        "ETH_cashflow": "-0.004600620447744192",
+        "ETH_cashflow_USD": "-10.52865791327601571776",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306100,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "raw": "-7243925876052",
+            "USD": null,
+            "reason": "no_completed_minute_price"
+          }
+        ],
+        "missing_assets": [
+          {
+            "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "raw": "-7243925876052",
+            "USD": null,
+            "reason": "no_completed_minute_price"
+          }
+        ]
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    },
+    {
+      "hash": "0xfa949551eeec164133714f7658e232bf7eb8140a67d8f5edb95ea41b31b93a72",
+      "block": 26300838,
+      "orders": [
+        {
+          "hash": "0xfa949551eeec164133714f7658e232bf7eb8140a67d8f5edb95ea41b31b93a72",
+          "block": 26300838,
+          "protocol": "UniswapX",
+          "reactor": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+          "order_hash": "0x7aa3b9da2136807ba4befa3f5d8a78c5127a5964826c0a8f5d561456605f863b",
+          "filler": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+          "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160899",
+          "root_from": "0xeee8aeefe1a12c7745cf092ae6107a712f273513",
+          "root_to": "0xbeef02961503351625926ea9a11ae13b29f5c555"
+        }
+      ],
+      "operational_boundary": [
+        "0xbeef02961503351625926ea9a11ae13b29f5c555",
+        "0xeee8aeefe1a12c7745cf092ae6107a712f273513"
+      ],
+      "native_after_gas_ETH": "-0.004673728711834212",
+      "net_token_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "21216317838745650951"
+      },
+      "gas_ETH": "0.004673728711834212",
+      "recognized_debt_events": [],
+      "compound_market_interaction": false,
+      "strict": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "48760.69113082243690511103",
+        "ETH_cashflow": "-0.004673728711834212",
+        "ETH_cashflow_USD": "-10.74382735090313151924",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306160,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "21216317838745650951",
+            "decimals": 18,
+            "price_USD": "2298.77",
+            "USD": "48771.43495817334003663027",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793306160,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "48760.69113082243690511103",
+        "ETH_cashflow": "-0.004673728711834212",
+        "ETH_cashflow_USD": "-10.74382735090313151924",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306160,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "21216317838745650951",
+            "decimals": 18,
+            "price_USD": "2298.77",
+            "USD": "48771.43495817334003663027",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793306160,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    },
+    {
+      "hash": "0xa861a556b73df4e084aca07663d63b26eec33136ed7328712a7418361d856f36",
+      "block": 26300874,
+      "orders": [
+        {
+          "hash": "0xa861a556b73df4e084aca07663d63b26eec33136ed7328712a7418361d856f36",
+          "block": 26300874,
+          "protocol": "UniswapX",
+          "reactor": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+          "order_hash": "0xcdd3bdc0b7c3c52fa2f2cc5b20528a5b5e6afe8b62cfab7c5663ffffff6dab2d",
+          "filler": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+          "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160900",
+          "root_from": "0xbeeec612beb3ce8f380b4bce1451dd1882fd7502",
+          "root_to": "0xbeef02961503351625926ea9a11ae13b29f5c555"
+        }
+      ],
+      "operational_boundary": [
+        "0xbeeec612beb3ce8f380b4bce1451dd1882fd7502",
+        "0xbeef02961503351625926ea9a11ae13b29f5c555"
+      ],
+      "native_after_gas_ETH": "-0.126433118845237932",
+      "net_token_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "119087622993586818994"
+      },
+      "gas_ETH": "0.126433118845237932",
+      "recognized_debt_events": [],
+      "compound_market_interaction": false,
+      "strict": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "268019.560787792782132686",
+        "ETH_cashflow": "-0.126433118845237932",
+        "ETH_cashflow_USD": "-284.853816758321060796",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306640,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "119087622993586818994",
+            "decimals": 18,
+            "price_USD": "2253",
+            "USD": "268304.414604551103193482",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793306640,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "268019.560787792782132686",
+        "ETH_cashflow": "-0.126433118845237932",
+        "ETH_cashflow_USD": "-284.853816758321060796",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306640,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "119087622993586818994",
+            "decimals": 18,
+            "price_USD": "2253",
+            "USD": "268304.414604551103193482",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793306640,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    },
+    {
+      "hash": "0xe5ccc3a8b32f7c52683390fa75f57cec53394421bd05132400806533e661843a",
+      "block": 26300894,
+      "orders": [
+        {
+          "hash": "0xe5ccc3a8b32f7c52683390fa75f57cec53394421bd05132400806533e661843a",
+          "block": 26300894,
+          "protocol": "1inch-compatible OrderFilled",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "root_from": "0xeee51753a490038ec1c338c1330d4804fb8a1510",
+          "root_to": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001fd512913001"
+        }
+      ],
+      "operational_boundary": [
+        "0x0000000000001ff3684f28c67538d4d072c22734",
+        "0x0cef320d0c5793ade37964e2661a033771e53cd5",
+        "0x39d1d8fcc5e6eeaf567bce4e29b94fec956d3519",
+        "0xbeef02961503351625926ea9a11ae13b29f5c555",
+        "0xeee51753a490038ec1c338c1330d4804fb8a1510"
+      ],
+      "native_after_gas_ETH": "-0.44130145204112168",
+      "net_token_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "7656044874785584896"
+      },
+      "gas_ETH": "0.44130145204112168",
+      "recognized_debt_events": [],
+      "compound_market_interaction": false,
+      "strict": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "16290.1691742147234954064",
+        "ETH_cashflow": "-0.44130145204112168",
+        "ETH_cashflow_USD": "-996.414548563648641272",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "7656044874785584896",
+            "decimals": 18,
+            "price_USD": "2257.9",
+            "USD": "17286.5837227783721366784",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793306880,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "16290.1691742147234954064",
+        "ETH_cashflow": "-0.44130145204112168",
+        "ETH_cashflow_USD": "-996.414548563648641272",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "7656044874785584896",
+            "decimals": 18,
+            "price_USD": "2257.9",
+            "USD": "17286.5837227783721366784",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793306880,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    },
+    {
+      "hash": "0x7b0ad8b5814a048086dab1236284e677e430cac142c84ab6bbbc985da1f282e6",
+      "block": 26300894,
+      "orders": [
+        {
+          "hash": "0x7b0ad8b5814a048086dab1236284e677e430cac142c84ab6bbbc985da1f282e6",
+          "block": 26300894,
+          "protocol": "1inch-compatible OrderFilled",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "root_from": "0xeee9c5a763924fb6904eaa2ea1ef6afa5239c515",
+          "root_to": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001b48eb57e001"
+        }
+      ],
+      "operational_boundary": [
+        "0x0000000000001ff3684f28c67538d4d072c22734",
+        "0xbeef02961503351625926ea9a11ae13b29f5c555",
+        "0xeee9c5a763924fb6904eaa2ea1ef6afa5239c515"
+      ],
+      "native_after_gas_ETH": "-0.38129926112637648",
+      "net_token_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "1037938936870208150"
+      },
+      "gas_ETH": "0.38129926112637648",
+      "recognized_debt_events": [],
+      "compound_market_interaction": false,
+      "strict": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "1482.626723861997527693",
+        "ETH_cashflow": "-0.38129926112637648",
+        "ETH_cashflow_USD": "-860.935601697245454192",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "1037938936870208150",
+            "decimals": 18,
+            "price_USD": "2257.9",
+            "USD": "2343.562325559242981885",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793306880,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "1482.626723861997527693",
+        "ETH_cashflow": "-0.38129926112637648",
+        "ETH_cashflow_USD": "-860.935601697245454192",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "ETH",
+            "raw": "1037938936870208150",
+            "decimals": 18,
+            "price_USD": "2257.9",
+            "USD": "2343.562325559242981885",
+            "price_evidence": {
+              "symbol": "ETH",
+              "bar_start": 1793306880,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": "WETH redemption parity with ETH",
+            "identity_basis": {
+              "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    },
+    {
+      "hash": "0x1b623b4349356c6c5699f953c5df9d9a4bc278e598f90f1ef42f385399a07b66",
+      "block": 26300894,
+      "orders": [
+        {
+          "hash": "0x1b623b4349356c6c5699f953c5df9d9a4bc278e598f90f1ef42f385399a07b66",
+          "block": 26300894,
+          "protocol": "1inch-compatible OrderFilled",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "root_from": "0xb888896fd386651853a59cd5fd033c66d5a80d8f",
+          "root_to": "0xec4fb7e7c35c241e1138a2d8cfbb09f3ad1ccb22",
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001aa795f4b5d5"
+        }
+      ],
+      "operational_boundary": [
+        "0xb888896fd386651853a59cd5fd033c66d5a80d8f",
+        "0xec4fb7e7c35c241e1138a2d8cfbb09f3ad1ccb22"
+      ],
+      "native_after_gas_ETH": "-0.028890061412396508",
+      "net_token_raw": {},
+      "gas_ETH": "0.028890061412396508",
+      "recognized_debt_events": [],
+      "compound_market_interaction": false,
+      "strict": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "-65.2308696630500754132",
+        "ETH_cashflow": "-0.028890061412396508",
+        "ETH_cashflow_USD": "-65.2308696630500754132",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [],
+        "missing_assets": []
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "-65.2308696630500754132",
+        "ETH_cashflow": "-0.028890061412396508",
+        "ETH_cashflow_USD": "-65.2308696630500754132",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [],
+        "missing_assets": []
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    },
+    {
+      "hash": "0xc59188f11b6b7bd18a45b2afc91e787bf66d767dd5b95d01730f3c5c92f1e490",
+      "block": 26300895,
+      "orders": [
+        {
+          "hash": "0xc59188f11b6b7bd18a45b2afc91e787bf66d767dd5b95d01730f3c5c92f1e490",
+          "block": 26300895,
+          "protocol": "1inch-compatible OrderFilled",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "root_from": "0xb88842d381592429cada3b3475efd61eaff2751d",
+          "root_to": "0xec4fb7e7c35c241e1138a2d8cfbb09f3ad1ccb22",
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001a030fec47d3"
+        }
+      ],
+      "operational_boundary": [
+        "0xb88842d381592429cada3b3475efd61eaff2751d",
+        "0xec4fb7e7c35c241e1138a2d8cfbb09f3ad1ccb22"
+      ],
+      "native_after_gas_ETH": "-0.032497864908939294",
+      "net_token_raw": {},
+      "gas_ETH": "0.032497864908939294",
+      "recognized_debt_events": [],
+      "compound_market_interaction": false,
+      "strict": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "-73.3769291778940319226",
+        "ETH_cashflow": "-0.032497864908939294",
+        "ETH_cashflow_USD": "-73.3769291778940319226",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [],
+        "missing_assets": []
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "-73.3769291778940319226",
+        "ETH_cashflow": "-0.032497864908939294",
+        "ETH_cashflow_USD": "-73.3769291778940319226",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [],
+        "missing_assets": []
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    },
+    {
+      "hash": "0x3fd5ec345eaf60faca94c652f5ac5c0dca77b4ef3c355fb12cb8f5108464a0b6",
+      "block": 26300895,
+      "orders": [
+        {
+          "hash": "0x3fd5ec345eaf60faca94c652f5ac5c0dca77b4ef3c355fb12cb8f5108464a0b6",
+          "block": 26300895,
+          "protocol": "1inch-compatible OrderFilled",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "root_from": "0x620ee0fe91d2e148434dd74ec8afc768edfc6675",
+          "root_to": "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82",
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "operational_boundary": [
+        "0x620ee0fe91d2e148434dd74ec8afc768edfc6675",
+        "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82"
+      ],
+      "native_after_gas_ETH": "111.6761307913963501",
+      "net_token_raw": {},
+      "gas_ETH": "0.0647557070413734",
+      "recognized_debt_events": [],
+      "compound_market_interaction": true,
+      "strict": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "252153.53571389381889079",
+        "ETH_cashflow": "111.6761307913963501",
+        "ETH_cashflow_USD": "252153.53571389381889079",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [],
+        "missing_assets": []
+      },
+      "five_minute": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "252153.53571389381889079",
+        "ETH_cashflow": "111.6761307913963501",
+        "ETH_cashflow_USD": "252153.53571389381889079",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793306880,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [],
+        "missing_assets": []
+      },
+      "profit_interpretation": "Marked transaction asset change only; debt/position state, multi-order allocation, helper ownership and external hedges need independent treatment."
+    }
+  ]
+}

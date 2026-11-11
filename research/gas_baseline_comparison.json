@@ -1,0 +1,37 @@
+{
+  "method": "Same UTC hours in preceding calendar day vs original 1301-block event window. Different blocks/transaction counts; per-transaction averages and fractions shown. Descriptive comparison cannot attribute all change to event or MEV.",
+  "event": {
+    "blocks": 1301,
+    "transactions": 278475,
+    "gas_ETH": "2955.589181110724379959",
+    "burn_ETH": "1613.509153695983842349",
+    "priority_ETH": "1342.08002741474053761",
+    "failed_transactions": 9701,
+    "failed_fraction": "0.03483616123529939850974055122",
+    "failed_gas_ETH": "271.095610985993795302",
+    "median_base_fee_gwei": "21.602142005",
+    "peak_base_fee_gwei": "252.75315276",
+    "mean_gas_fee_ETH_per_transaction": "0.01061348121415108853562797379"
+  },
+  "baseline": {
+    "blocks": 1303,
+    "transactions": 336301,
+    "gas_ETH": "18.908079755133024922",
+    "burn_ETH": "4.377898634129581655",
+    "priority_ETH": "14.530181121003443267",
+    "failed_transactions": 3503,
+    "failed_fraction": "0.01041626400159381030683821933",
+    "failed_gas_ETH": "0.216688246686861312",
+    "median_base_fee_gwei": "0.088476249",
+    "peak_base_fee_gwei": "0.721669536",
+    "mean_gas_fee_ETH_per_transaction": "0.00005622367984375016702894133529"
+  },
+  "ratios": {
+    "gas_ETH": "156.3135558653629542712105749",
+    "priority_ETH": "92.36498955093943871902571760",
+    "failed_fraction": "3.344400759232778480794820759",
+    "median_base_fee_gwei": "244.1575253150707146276058787",
+    "peak_base_fee_gwei": "350.2339230791640344369476059",
+    "mean_gas_fee_ETH_per_transaction": "188.7724397201810822672138884"
+  }
+}

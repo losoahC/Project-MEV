@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-11-04",
+  "schema": ["minute_start_unix", "low", "high", "open", "close", "volume"],
+  "documentation": "https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles",
+  "sources": [
+    {"file":"coinbase_eth_usd_candles.json","url":"https://api.exchange.coinbase.com/products/ETH-USD/candles?granularity=60&start=2026-10-29T21%3A03%3A00Z&end=2026-10-29T21%3A11%3A00Z","status":"downloaded successfully"},
+    {"file":"coinbase_usdt_usd_candles.json","url":"https://api.exchange.coinbase.com/products/USDT-USD/candles?granularity=60&start=2026-10-29T21%3A03%3A00Z&end=2026-10-29T21%3A11%3A00Z","status":"downloaded successfully"},
+    {"url":"https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1m&startTime=1793307780000&endTime=1793308260000&limit=20","status":"HTTP 451; unavailable from current access route; not used"}
+  ],
+  "method": "For each swap use the close of the preceding completed UTC minute for both ETH/USD and USDT/USD. Sensitivity uses preceding-minute extrema, independently for ETH and USDT; not necessarily simultaneously executable and not a statistical confidence interval."
+}

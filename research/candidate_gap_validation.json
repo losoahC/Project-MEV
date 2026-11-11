@@ -1,0 +1,91 @@
+{
+  "initial_missing": 12934,
+  "gap_filled": 12934,
+  "remaining": 0,
+  "remaining_hashes": [],
+  "passed": 14,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "原始缺口清单唯一且数量正确",
+      "passed": true,
+      "detail": 12934
+    },
+    {
+      "check": "全候选覆盖保持完整",
+      "passed": true,
+      "detail": 13623
+    },
+    {
+      "check": "原始12934笔缺口全部补齐",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "原有689笔证据没有丢失",
+      "passed": true,
+      "detail": 689
+    },
+    {
+      "check": "轨迹结果没有重复",
+      "passed": true,
+      "detail": 1250
+    },
+    {
+      "check": "区块轨迹没有重复候选",
+      "passed": true,
+      "detail": 13623
+    },
+    {
+      "check": "两家公开来源逐地址原生币净额一致",
+      "passed": true,
+      "detail": 1250
+    },
+    {
+      "check": "原案例中91笔后续候选净现金流回归一致",
+      "passed": true,
+      "detail": {
+        "compared": 91,
+        "old_pre_target_examples_not_in_current_candidate_scope": [
+          "0x3fe2955328ef35555cea075a73406e1fd8db61072637b6d417bfe363f2fbcc2e",
+          "0x98c887a03fd46a1d48e1984cb9466885c6fd2ccde9a37508fca8b204531c1cb4"
+        ]
+      }
+    },
+    {
+      "check": "原案例范围差异仅为两笔目标前交易",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "check": "原批量区间逐地址净额回归一致",
+      "passed": true,
+      "detail": 598
+    },
+    {
+      "check": "原始回执与完整调用树逐笔重算一致",
+      "passed": true,
+      "detail": {
+        "candidate_receipts": 13623,
+        "raw_traces": 13623,
+        "errors": []
+      }
+    },
+    {
+      "check": "每笔净现金流只扣一次gas",
+      "passed": true,
+      "detail": 13623
+    },
+    {
+      "check": "缺失值保留为空",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "库存闭合子集汇总一致",
+      "passed": true,
+      "detail": 7325
+    }
+  ],
+  "limitation": "Closes public native-cashflow data gap only. Does not establish beneficial ownership, complete portfolio P&L, or event-causal MEV."
+}

@@ -1,0 +1,29 @@
+{
+  "hash": "0xf3935c9604416f38ea2942652ea8c652bc2ea0cfac2ad0316181031bdcd607c2",
+  "target": "0x625e674d10c864a1d98d8ba9b5c05ed2f325d74cca62b8b67cd6268edbd8f051",
+  "block": 26301609,
+  "target_index": 10,
+  "candidate_index": 11,
+  "route": "WETH -> PEPE in Uniswap V2; PEPE -> WETH in Uniswap V3",
+  "input_WETH": "377.164953752207848905",
+  "intermediate_PEPE": "222265166930.184391787969083121",
+  "output_WETH": "950.09105303331943518",
+  "gross_spread_WETH": "572.926099281111586275",
+  "direct_fee_recipient_payment_ETH": "5.177157980132707435",
+  "fee_recipient": "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97",
+  "gas_ETH": "0.069278540454625216",
+  "operational_net_ETH": "567.679662760524253624",
+  "v2_reserves_before_target_raw": [
+    "3595877417668273872845875379344",
+    "6127861251176820660176"
+  ],
+  "v2_reserves_after_target_raw": [
+    "3721964068581424670955443766926",
+    "5920873258013245884048"
+  ],
+  "actual_first_leg_output_matches_v2_formula": true,
+  "same_input_before_target_PEPE": "207901616399.256381605540748132",
+  "actual_to_before_target_output_ratio": "1.069088209989402398153825599822653931367183120945306056905670017167153",
+  "no_intervening_pool_logs": true,
+  "interpretation": "Strong observed atomic cross-pool cycle; exact economic owner unresolved. Removing only target reserve change in first-leg formula reduces output, holding input fixed. This is a local mechanical sensitivity, NOT a complete second-leg/whole-block counterfactual or proof all net gain is target-caused."
+}

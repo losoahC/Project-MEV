@@ -1,0 +1,76 @@
+{
+  "passed": 13,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "全候选唯一分类且无遗漏",
+      "passed": true,
+      "detail": 13623
+    },
+    {
+      "check": "强结构类通过所有排除条件",
+      "passed": true,
+      "detail": 1170
+    },
+    {
+      "check": "强结构类资产路径闭环",
+      "passed": true,
+      "detail": 1170
+    },
+    {
+      "check": "分类加总一致",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "check": "夹击分组没有重复计算同笔交易",
+      "passed": true,
+      "detail": 898
+    },
+    {
+      "check": "夹击组目标在前后交易之间",
+      "passed": true,
+      "detail": 449
+    },
+    {
+      "check": "夹击组净额等于全部组成交易之和",
+      "passed": true,
+      "detail": 449
+    },
+    {
+      "check": "重点案例首尾资产闭合且无已识别头寸操作",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "check": "重建报价精确复现真实第二腿输出",
+      "passed": true,
+      "detail": "950.09105303331943518"
+    },
+    {
+      "check": "两个模型使用相同的第二池状态",
+      "passed": true,
+      "detail": "Only input amount changes"
+    },
+    {
+      "check": "重点案例两池通过历史工厂登记核查",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "check": "重点案例成本守恒",
+      "passed": true,
+      "detail": "567.679662760524253624"
+    },
+    {
+      "check": "重点案例移除目标后固定策略由盈利变负",
+      "passed": true,
+      "detail": {
+        "actual_paired_net_ETH": "12.080033775421395622",
+        "without_target_paired_net_ETH": "-11.748385022254386040",
+        "increment_ETH": "23.828418797675781662"
+      }
+    }
+  ],
+  "limitation": "Classifier coverage does not certify all protocols, ownership or global causal MEV. Counterfactual is fixed-strategy local sensitivity only."
+}

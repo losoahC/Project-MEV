@@ -1,0 +1,374 @@
+{
+  "method": "Aave pool events for known lead borrower and historical account/interest-bearing collateral/debt balances. Debt burn is liability reduction, NOT an additional asset loss. Liquidation gross spread excludes gas, flash-loan fees, hedges and protocol split. Root boundary valuation is conditional and not automatically full liquidator profit. Account USD uses protocol oracle, not CEX execution quote.",
+  "user": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+  "sources": [
+    "https://raw.githubusercontent.com/aave/aave-v3-core/master/contracts/interfaces/IPool.sol",
+    "https://raw.githubusercontent.com/bgd-labs/aave-address-book/main/src/AaveV3Ethereum.sol"
+  ],
+  "events": [
+    {
+      "hash": "0x420e74015336a44f3056c00bf5a1313889a7f6ed30a053ad59832d4a4a1f14eb",
+      "block": 26300936,
+      "type": "Supply",
+      "user": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "topics": [
+        "0x2b627736bca15cd5381dcf80b0bf11fd197d01a037c52b927a881a10fb73ba61",
+        "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+        "0x0000000000000000000000008d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "data": "0x0000000000000000000000008d53903625b8e839b9df4bd28b0efb1cd6b8639a000000000000000000000000000000000000000000000000000009184e72a000",
+      "asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "initiator": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "amount_raw": "10000000000000"
+    },
+    {
+      "hash": "0x01b3406c2bcf1b9206c38dce48a9a98f9fb988438cc971f374ea5ed982e2d870",
+      "block": 26300942,
+      "type": "Borrow",
+      "user": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "topics": [
+        "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+        "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "0x0000000000000000000000008d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "data": "0x000000000000000000000000d01607c3c5ecaba394d8be377a085901493257220000000000000000000000000000000000000000000000b158287cd0dda862470000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000102166ac4efa3d5d4a9bc6",
+      "asset": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "initiator": "0xd01607c3c5ecaba394d8be377a08590149325722",
+      "amount_raw": "3271426165557510562375"
+    },
+    {
+      "hash": "0x65bd82f19985a569ef87b3926dd5f2247ba7bd06640141060f1b2d9ddedec3f6",
+      "block": 26300947,
+      "type": "Supply",
+      "user": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "topics": [
+        "0x2b627736bca15cd5381dcf80b0bf11fd197d01a037c52b927a881a10fb73ba61",
+        "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+        "0x0000000000000000000000008d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "data": "0x0000000000000000000000008d53903625b8e839b9df4bd28b0efb1cd6b8639a00000000000000000000000000000000000000000000000000002d79883d2000",
+      "asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "initiator": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "amount_raw": "50000000000000"
+    },
+    {
+      "hash": "0xa85ad4807b33ad63ba2b2ffbac63d913285eefe44d7e56495a4856e6374d9d5f",
+      "block": 26300951,
+      "type": "Borrow",
+      "user": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "topics": [
+        "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+        "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "0x0000000000000000000000008d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "data": "0x000000000000000000000000d01607c3c5ecaba394d8be377a0859014932572200000000000000000000000000000000000000000000037dfa6a66c2bfee5e2c0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000104a3c92f79f70c0a53c2c",
+      "asset": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "initiator": "0xd01607c3c5ecaba394d8be377a08590149325722",
+      "amount_raw": "16490986805666272665132"
+    },
+    {
+      "hash": "0xf5ff0c7106886a61fddb7a03ab7da7b3ae50cd4ba62e1f418b7a07f98434a3eb",
+      "block": 26342152,
+      "type": "LiquidationCall",
+      "user": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "topics": [
+        "0xe413a321e8681d831f4dbccbca790d2952b56f977908e45be37335533e005286",
+        "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+        "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "0x0000000000000000000000008d53903625b8e839b9df4bd28b0efb1cd6b8639a"
+      ],
+      "data": "0x000000000000000000000000000000000000000000000217d5d0ced0c3e000000000000000000000000000000000000000000000000000000000162c048a77f9000000000000000000000000eef1b06e23a39f05b6b34ff1052d7a6ca3a000050000000000000000000000000000000000000000000000000000000000000000",
+      "collateral_asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "debt_asset": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "debt_covered_raw": "9884415121155879337984",
+      "collateral_received_raw": "24378310555641",
+      "liquidator": "0xeef1b06e23a39f05b6b34ff1052d7a6ca3a00005",
+      "receive_a_token": false,
+      "collateral_market_valuation": {
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "symbol": "USDT",
+        "raw": "24378310555641",
+        "decimals": 6,
+        "price_USD": "0.99869",
+        "USD": "24346374.96881311029",
+        "price_evidence": {
+          "symbol": "USDT",
+          "bar_start": 1793803680,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "proxy_assumption": null,
+        "identity_basis": {
+          "symbol": "USDT",
+          "source": "https://api.exchange.coinbase.com/currencies",
+          "name": "Tether",
+          "network": "ethereum"
+        }
+      },
+      "repaid_debt_market_valuation": {
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "symbol": "ETH",
+        "raw": "9884415121155879337984",
+        "decimals": 18,
+        "price_USD": "2365.92",
+        "USD": "23385735.42344511804332310528",
+        "price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793803680,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "proxy_assumption": "WETH redemption parity with ETH",
+        "identity_basis": {
+          "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+        }
+      },
+      "gross_liquidation_spread_USD": "960639.54536799224667689472",
+      "liquidator_root_boundary": [
+        "0xe476367785bc9dcec25d415201e191d22f75f286",
+        "0xeef1b06e23a39f05b6b34ff1052d7a6ca3a00005"
+      ],
+      "liquidator_root_net_token_raw": {
+        "0xdac17f958d2ee523a2206206994597c13d831ec7": "2437831"
+      },
+      "liquidator_root_cashflow_ETH": "-0.00079002816927364",
+      "liquidator_root_valuation": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "0.5654939951421096512",
+        "ETH_cashflow": "-0.00079002816927364",
+        "ETH_cashflow_USD": "-1.8691434462478903488",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793803680,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "raw": "2437831",
+            "decimals": 6,
+            "price_USD": "0.99869",
+            "USD": "2.43463744139",
+            "price_evidence": {
+              "symbol": "USDT",
+              "bar_start": 1793803680,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": null,
+            "identity_basis": {
+              "symbol": "USDT",
+              "source": "https://api.exchange.coinbase.com/currencies",
+              "name": "Tether",
+              "network": "ethereum"
+            }
+          }
+        ],
+        "missing_assets": []
+      }
+    }
+  ],
+  "historical_states": {
+    "26300639": {
+      "total_collateral_oracle_USD": "0",
+      "total_debt_oracle_USD": "0",
+      "available_borrow_oracle_USD": "0",
+      "liquidation_threshold_bps": 0,
+      "ltv_bps": 0,
+      "health_factor": "115792089237316195423570985008687907853269984665640564039458",
+      "aUSDT_balance": "0",
+      "variable_WETH_debt_balance": "0"
+    },
+    "26303950": {
+      "total_collateral_oracle_USD": "59937392.44981283",
+      "total_debt_oracle_USD": "44352691.23891219",
+      "available_borrow_oracle_USD": "0",
+      "liquidation_threshold_bps": 7800,
+      "ltv_bps": 0,
+      "health_factor": "1.054077324395538602",
+      "aUSDT_balance": "60004077.981878",
+      "variable_WETH_debt_balance": "19762.871674320845037567"
+    },
+    "26342151": {
+      "total_collateral_oracle_USD": "59971532.12769494",
+      "total_debt_oracle_USD": "46526081.03990782",
+      "available_borrow_oracle_USD": "0",
+      "liquidation_threshold_bps": 7800,
+      "ltv_bps": 0,
+      "health_factor": "1.005410170254363893",
+      "aUSDT_balance": "60050799.182616",
+      "variable_WETH_debt_balance": "19768.830242311760009235"
+    },
+    "26342152": {
+      "total_collateral_oracle_USD": "35520109.08883856",
+      "total_debt_oracle_USD": "23398492.61328862",
+      "available_borrow_oracle_USD": "0",
+      "liquidation_threshold_bps": 7800,
+      "ltv_bps": 0,
+      "health_factor": "1.184079912633315908",
+      "aUSDT_balance": "35567057.604877",
+      "variable_WETH_debt_balance": "9884.415274791609915063"
+    },
+    "26349764": {
+      "total_collateral_oracle_USD": "35539944.35182629",
+      "total_debt_oracle_USD": "22300986.64751696",
+      "available_borrow_oracle_USD": "0",
+      "liquidation_threshold_bps": 7800,
+      "ltv_bps": 0,
+      "health_factor": "1.243046194887123508",
+      "aUSDT_balance": "35572368.565774",
+      "variable_WETH_debt_balance": "9885.003209166220537042"
+    }
+  },
+  "liquidations": [
+    {
+      "hash": "0xf5ff0c7106886a61fddb7a03ab7da7b3ae50cd4ba62e1f418b7a07f98434a3eb",
+      "block": 26342152,
+      "type": "LiquidationCall",
+      "user": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+      "topics": [
+        "0xe413a321e8681d831f4dbccbca790d2952b56f977908e45be37335533e005286",
+        "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+        "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "0x0000000000000000000000008d53903625b8e839b9df4bd28b0efb1cd6b8639a"
+      ],
+      "data": "0x000000000000000000000000000000000000000000000217d5d0ced0c3e000000000000000000000000000000000000000000000000000000000162c048a77f9000000000000000000000000eef1b06e23a39f05b6b34ff1052d7a6ca3a000050000000000000000000000000000000000000000000000000000000000000000",
+      "collateral_asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "debt_asset": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "debt_covered_raw": "9884415121155879337984",
+      "collateral_received_raw": "24378310555641",
+      "liquidator": "0xeef1b06e23a39f05b6b34ff1052d7a6ca3a00005",
+      "receive_a_token": false,
+      "collateral_market_valuation": {
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "symbol": "USDT",
+        "raw": "24378310555641",
+        "decimals": 6,
+        "price_USD": "0.99869",
+        "USD": "24346374.96881311029",
+        "price_evidence": {
+          "symbol": "USDT",
+          "bar_start": 1793803680,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "proxy_assumption": null,
+        "identity_basis": {
+          "symbol": "USDT",
+          "source": "https://api.exchange.coinbase.com/currencies",
+          "name": "Tether",
+          "network": "ethereum"
+        }
+      },
+      "repaid_debt_market_valuation": {
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "symbol": "ETH",
+        "raw": "9884415121155879337984",
+        "decimals": 18,
+        "price_USD": "2365.92",
+        "USD": "23385735.42344511804332310528",
+        "price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793803680,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "proxy_assumption": "WETH redemption parity with ETH",
+        "identity_basis": {
+          "source": "CoinGecko Ethereum address list; CEX product matched by unique ticker, not independently verified deposit contract"
+        }
+      },
+      "gross_liquidation_spread_USD": "960639.54536799224667689472",
+      "liquidator_root_boundary": [
+        "0xe476367785bc9dcec25d415201e191d22f75f286",
+        "0xeef1b06e23a39f05b6b34ff1052d7a6ca3a00005"
+      ],
+      "liquidator_root_net_token_raw": {
+        "0xdac17f958d2ee523a2206206994597c13d831ec7": "2437831"
+      },
+      "liquidator_root_cashflow_ETH": "-0.00079002816927364",
+      "liquidator_root_valuation": {
+        "complete_under_price_mapping_assumptions": true,
+        "USD": "0.5654939951421096512",
+        "ETH_cashflow": "-0.00079002816927364",
+        "ETH_cashflow_USD": "-1.8691434462478903488",
+        "ETH_price_evidence": {
+          "symbol": "ETH",
+          "bar_start": 1793803680,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "assets": [
+          {
+            "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "raw": "2437831",
+            "decimals": 6,
+            "price_USD": "0.99869",
+            "USD": "2.43463744139",
+            "price_evidence": {
+              "symbol": "USDT",
+              "bar_start": 1793803680,
+              "stale_minutes": 0,
+              "source": "Coinbase",
+              "quote": "USD"
+            },
+            "proxy_assumption": null,
+            "identity_basis": {
+              "symbol": "USDT",
+              "source": "https://api.exchange.coinbase.com/currencies",
+              "name": "Tether",
+              "network": "ethereum"
+            }
+          }
+        ],
+        "missing_assets": []
+      },
+      "protocol_fee_aUSDT_raw": "105432385873",
+      "protocol_fee_underlying_valuation": {
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "symbol": "USDT",
+        "raw": "105432385873",
+        "decimals": 6,
+        "price_USD": "0.99869",
+        "USD": "105294.26944750637",
+        "price_evidence": {
+          "symbol": "USDT",
+          "bar_start": 1793803680,
+          "stale_minutes": 0,
+          "source": "Coinbase",
+          "quote": "USD"
+        },
+        "proxy_assumption": null,
+        "identity_basis": {
+          "symbol": "USDT",
+          "source": "https://api.exchange.coinbase.com/currencies",
+          "name": "Tether",
+          "network": "ethereum"
+        }
+      },
+      "total_collateral_removed_underlying_raw": "24483742941514",
+      "gross_borrower_liquidation_asset_loss_USD": "1065933.81481549861667689472",
+      "protocol_fee_recipient": "0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c",
+      "block_fee_recipient": "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97",
+      "block_fee_recipient_net_native_ETH": "236.17122782784230044",
+      "block_fee_recipient_net_native_USD": "558762.2313424486554570048",
+      "transaction_priority_ETH": "0",
+      "gas_ETH": "0.00079002816927364",
+      "interpretation": "Treasury transfer of aUSDT marked at underlying USDT; redemption/freeze risk excluded. Liability reduction uses LiquidationCall.debtToCover, not net debt-token Transfer, because accrued interest changes emitted values. Previous-block health factor is not the pre-call intra-block health factor."
+    }
+  ]
+}
