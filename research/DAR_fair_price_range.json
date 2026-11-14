@@ -1,0 +1,89 @@
+{
+  "trade": "0x230b5d9ec55aa34e0de8342c1b0f5ef8ca46d11d9f13dfaeadd2dff3351b5272",
+  "DAR_units": "3530547.65",
+  "received_reference_value_USD": "366.7397450419554514078",
+  "venues": [
+    {
+      "pool": "0x4aadb3498f407e4d558589514bb9a4b341475e31",
+      "name": "DAR / WETH",
+      "last_pre_trade_day": "2026-10-29",
+      "days_before_trade_day": 1,
+      "close_USD": "0.00232029437879053",
+      "that_day_volume_USD": "1.06399118323667",
+      "is_pool_hacker_sold_into": true,
+      "live_within_30_days": true
+    },
+    {
+      "pool": "0xa9c6b614fa5503bd12e037d96fa292e4e15bb123",
+      "name": "DAR / WETH 0.3%",
+      "last_pre_trade_day": "2026-05-06",
+      "days_before_trade_day": 177,
+      "close_USD": "0.023954156942700398",
+      "that_day_volume_USD": "18.012713982118516",
+      "is_pool_hacker_sold_into": false,
+      "live_within_30_days": false
+    },
+    {
+      "pool": "0x13ccf826cd12d5fd4b77d063613cbf8bb08148b8fbb28510dcc2e221443c3282",
+      "name": "DAR / USDT 30%",
+      "last_pre_trade_day": "2026-10-20",
+      "days_before_trade_day": 10,
+      "close_USD": "0.00287858544835238",
+      "that_day_volume_USD": "94.9552504825241",
+      "is_pool_hacker_sold_into": false,
+      "live_within_30_days": true
+    },
+    {
+      "pool": "0x6f264715b5575f0ba8c96dc9fa243fbc86ad81cb927c27cc15ca2374c7710875",
+      "name": "DAR / USDC 80%",
+      "last_pre_trade_day": "2026-10-20",
+      "days_before_trade_day": 10,
+      "close_USD": "0.00994641432839412",
+      "that_day_volume_USD": "14.585509400139099",
+      "is_pool_hacker_sold_into": false,
+      "live_within_30_days": true
+    },
+    {
+      "pool": "0x36e491feed89ff6ad3e90a976ec05aec50b7ad488c22b4a39325e132e8841eb4",
+      "name": "DAR / USDT 4%",
+      "last_pre_trade_day": "2025-10-24",
+      "days_before_trade_day": 371,
+      "close_USD": "0.022238575392469997",
+      "that_day_volume_USD": "799.2705392062551",
+      "is_pool_hacker_sold_into": false,
+      "live_within_30_days": false
+    },
+    {
+      "pool": "0x504a0423e087637b0db25feb2a206dbba5e8115450a985d8b890f6dbd45924e1",
+      "name": "DAR / USDT 88%",
+      "last_pre_trade_day": "2026-10-20",
+      "days_before_trade_day": 10,
+      "close_USD": "0.016852475852442397",
+      "that_day_volume_USD": "28.172385334432597",
+      "is_pool_hacker_sold_into": false,
+      "live_within_30_days": true
+    }
+  ],
+  "rule": "Last daily close before the trade day; pool must have traded within 30 days; the new D token and post-trade candles are excluded.",
+  "central_estimate": {
+    "basis": "most active independent live venue (excludes the pool the hacker sold into)",
+    "pool": "0x13ccf826cd12d5fd4b77d063613cbf8bb08148b8fbb28510dcc2e221443c3282",
+    "price_USD": "0.00287858544835238",
+    "shortfall_USD": "9796.24"
+  },
+  "range": {
+    "low": {
+      "price_USD": "0.00232029437879053",
+      "shortfall_USD": "7825.17"
+    },
+    "high": {
+      "price_USD": "0.016852475852442397",
+      "shortfall_USD": "59131.73"
+    }
+  },
+  "executable_liquidity_note": "Every live venue held well under USD 1,000 of quote assets, so the whole position could not be sold near any quoted price. The price range values the tokens at the market quote; executable value was close to what the hacker received.",
+  "share_of_strict_wallet_shortfall": {
+    "strict_total_USD": "53031865.1982315594829666613648845247592",
+    "high_case_share_percent": "0.1115"
+  }
+}

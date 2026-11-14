@@ -28,16 +28,16 @@
 
 | 要求 | 当前权威证据 | 验收结论与边界 |
 |---|---|---|
-| 找出 Exploiter 1–16 | exploiter_1_16_and_bot_audit.json | 16 个地址有历史标签线索；1 号与基础无编号标签的对应未独立确认，在线核对曾返回 403 |
+| 找出 Exploiter 1–16 | exploiter_1_16_and_bot_audit.json、exploiter1_role_verification.json | 16 个地址有历史标签线索；1 号已核实（实时标签、最早活动、EIP-7702 控制热钱包并转出至 2 号）；2–16 号未逐一重读实时标签 |
 | 扫描钱包交易历史 | wallet_history_coverage.json、wallet_nonce_header_crosscheck.json、wallet_nonce_authorization_reconciliation.json | 48 项分页穷尽；1024 笔主动交易逐笔对 RPC；3 次额外 nonce 增长由 EIP-7702 授权解释；不能声称未知资产及抵销流量均无遗漏 |
 | 完整收支核查 | wallet_native_balance_reconciliation.json、wallet_token_balance_reconciliation.json、aave_token_balance_residual_proof.json | 16 钱包 ETH 精确守恒；106 已知资产组合闭合，其中 2 项 Aave 计息单独解释 |
 | 找 sandwich | all_scope_sandwich_groups.json、bracket_EVM_validation.json | 564 结构组；111 正收益库存闭合组的 117 个目标实验全部核验。结构候选、执行依赖和恶意意图是不同判断 |
 | 找非夹击 MEV 环 | standalone_ring_raw_replay.json、expanded_EVM_validation.json、nonce_preserving_EVM_sensitivity.json | 1063 单笔闭环原始收支重算；344 同块反向关联交易全部有干预证据；337 主实验中 331 数值结果、6 不可执行，另 9 个 nonce 敏感性实验 |
-| 跨区块闭环 | extended_cycle_interval_verification.json、extended_cycle_multiblock_EVM_baseline_to_26302733_with_withdrawals_historical_hashes.json | 新增六块间隔两腿闭环，实际净现金流 0.007843240319553997 ETH；六块 1516 交易基准复现，包含退出腿的完整八块及其因果实验尚在处理 |
-| 逐钱包 ETH 多付 | wallet_ETH_purchase_audit.json、wallet_purchase_price_completion.json、wallet_strict_purchase_summary.json | 804 笔候选；794 严格价格、801 五分钟、803 混合场景。旧 DAR 一笔缺独立公允价，已复现历史池储备和精度，不用新 D 价或零值填补 |
+| 跨区块闭环 | extended_cycle_interval_verification.json、extended_cycle_eight_block_EVM.json | 新增六块间隔两腿闭环，实际净现金流 0.007843240319553997 ETH；完整八块 1851 笔收据复现；去掉 26302728 黑客兑换后机器人两腿回滚，因果依赖成立 |
+| 逐钱包 ETH 多付 | wallet_ETH_purchase_audit.json、wallet_purchase_price_completion.json、wallet_strict_purchase_summary.json | 804 笔候选；794 严格价格、801 五分钟、803 混合场景。旧 DAR 一笔用独立旧 DAR 池价给出区间（中心约 9,796 美元，7,825–59,132 美元），单列不并入严格主估计，不用新 D 价或零值填补 |
 | 活跃 bot 与收益分配 | 全范围策略发起者分配.json、execution_evidence_summary.json | 已定位活跃发送者和执行边界，单笔与夹击哈希去重；地址并不证明品牌或最终受益所有人 |
 | gas 与区块生产者费用 | full_fee_distribution.json、recipient_distribution_ledger.json | 连续 3311 区块费用守恒，区分销毁、优先费、直接转账及 proposer 转付，不重复计算资金流转 |
-| 精确全事件 MEV 总额 | 最终研究报告_2026-11-11.md 中三类金额与反事实章节 | 尚不能唯一识别。已交付实际现金流、市场参考价差、限定干预三层证据；反例显示市场价差/邻近正收益不能直接等同于套利者因果收益 |
+| 精确全事件 MEV 总额 | event_MEV_total_bounds.json、未完成项收尾_2026-11-15.md | 本样本范围内给出带假设的区间：下界 312.7 ETH（约 70 万美元），上界 6,688 ETH（约 1,500 万美元），硬上限 5,303 万美元；搜索者自留部分 123–227 ETH。仍无无条件点估计 |
 
 上述逐钱包映射保持旧 1352 目标范围；补查新增 ETH 卖出另见 missed_sale_and_followup_audit.json。历史报告中的“尚未核查逐钱包购买/nonce/余额”等表述已被新证据更新，正式判断以本表与最新主报告为准。
 
