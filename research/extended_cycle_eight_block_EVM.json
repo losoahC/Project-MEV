@@ -1,0 +1,206 @@
+{
+  "window": [
+    26302728,
+    26302735
+  ],
+  "stops_at_exit_leg": "0xc1f4442a5de3c70625a46ba4d0b6b1576b4305b047e32c0f9a83dac9d23a4803",
+  "transactions": 1851,
+  "targets": [
+    "0x176905446185e22c310f5b6d8be9d0594b3cf721633fec088622d5f72e388763",
+    "0x179f57544bcb4a6b8350ea74bc44ddb67db32a672f4298f2acb5c0922ca45fe4"
+  ],
+  "bot_wallet": "0x3d63c340fa1735637e962e3b0b7d0f7cf1f722a1",
+  "method": "eth_simulateV1 over 8 consecutive blocks from historical parent 26302727; actual header overrides incl. withdrawals and historical block hashes; final block truncated at exit leg. Interventions replace a target with same-nonce 21000-gas zero-value self-transfer so later sender nonces stay valid. Receipts compared (status, gasUsed, ordered logs); state root not compared.",
+  "scenarios": [
+    {
+      "label": "baseline",
+      "removed": [],
+      "validation": true,
+      "seconds": 14.2,
+      "endpoint": "https://eth.drpc.org",
+      "receipt_mismatches": [],
+      "all_receipts_match": true,
+      "neutralized_unfundable_txs": [],
+      "other_status_changes": 0,
+      "other_status_changes_sample": [],
+      "entry_status": "0x1",
+      "exit_status": "0x1",
+      "bot_WETH_entry": "-176522906110181952",
+      "bot_WETH_exit": "184754757355319617",
+      "bot_net_ETH_after_gas": "0.007843240319553997",
+      "baseline_minus_scenario_ETH": "0E-18"
+    },
+    {
+      "label": "remove_target_1",
+      "removed": [
+        "0x176905446185e22c310f5b6d8be9d0594b3cf721633fec088622d5f72e388763"
+      ],
+      "validation": true,
+      "seconds": 7.7,
+      "endpoint": "https://eth.drpc.org",
+      "neutralized_unfundable_txs": [
+        {
+          "hash": "0xb414f87bed5b51abdd7b1af3f02bfeb061e54a09e9540a6d193f6486eb92d338",
+          "from": "0x54620b9a8a2c43aa8ed028450a7ce656a9c69feb",
+          "touched_cycle_pool_in_actual": true
+        }
+      ],
+      "other_status_changes": 45,
+      "other_status_changes_sample": [
+        "0x84ab3f02ac05ec0cebac53efdb430a4fd13328299857571015cabbcfc6ec2316",
+        "0xe12ae536255d4c8ce1b3179dcb9428e0b49e97ad4791bb576203e70ef5c116a6",
+        "0x920240f243228a6f22471b409f980cffd356e5d053fd3764ea7868923d27d9b6",
+        "0x7bc920f7a3461cf2be2cc64113b53f42fd67c47c7c5ef8e5df02204be5a6fdf6",
+        "0xbc278d894d0accdff71dadf31a2da3ab54b11de84814069f001c27eca690c533",
+        "0x2d36b47860befa63de57eee88feb30c9a518c11b948fb858d1f3a68974924e88",
+        "0x1600498ebb4ffb05f0f8b70836e0c002b59b12893cfd4d6b135f0349359bcc7a",
+        "0x8d4979cf80d16532d964c5318bfa2bf9b34ad23427e55971dfc2317bc94ed337",
+        "0xd05bd0f2ec9f13620ef260f9d64c4d914b3082398e7160b17b4c7fb69dd48816",
+        "0x0fafc2b627deb7ad05b9809fb7a123bec326433aafcb7fdef688b1c4d0ed67bf"
+      ],
+      "entry_status": "0x0",
+      "exit_status": "0x0",
+      "bot_WETH_entry": "0",
+      "bot_WETH_exit": "0",
+      "bot_net_ETH_after_gas": "-0.000294837123110668",
+      "baseline_minus_scenario_ETH": "0.008138077442664665"
+    },
+    {
+      "label": "remove_target_2",
+      "removed": [
+        "0x179f57544bcb4a6b8350ea74bc44ddb67db32a672f4298f2acb5c0922ca45fe4"
+      ],
+      "validation": true,
+      "seconds": 2.7,
+      "endpoint": "https://eth.drpc.org",
+      "neutralized_unfundable_txs": [
+        {
+          "hash": "0xe2a92ba42ecb7846fb26f1315c9ec8a3427d833cb36d2c29a64c1111f248cea2",
+          "from": "0xd87f3d6c5624e8b02be13c2c92f8511b88b94d96",
+          "touched_cycle_pool_in_actual": false
+        }
+      ],
+      "other_status_changes": 18,
+      "other_status_changes_sample": [
+        "0x4fa6b0be51dc3bd530f5a3b62ac90cb2e7c7a368c45511bc92f0c3ad3a167047",
+        "0x49574fb390268ff304ab65ab7e209c0b4bf59f0a82648dc9fa9e70359bc1159c",
+        "0xfe44b347459e1ce0a1fefca10ae8ac442bbb43a11d01bc8871e897fa9bbd7684",
+        "0x68b1f73610ae861d7dd5807a251c8c7568380e4feb5f294f0c25149496f6cb4d",
+        "0x5fdd60c572a376b8cdea14cf7e7c292afc3d738adbeafc9d71d0c7f700921102",
+        "0x8c355fd32899932e6e82d658389bc2fba0dfe6048aad34e44b0a972d6120b270",
+        "0xd78cba2ee9def669e345ca2f92dc8da287df9809b7e1483f5d0906e8f1d55bcb",
+        "0xa48bbaed8c6811a773e0d83bedc2e36469633ebcb088aeb2612117494af36094",
+        "0x5cf29595c6abf35dff385ddb86e81d472f3b183cc3a632cc31d5533ed2a2df73",
+        "0x203e29629397d7a3a25f46038226a22736671bc17a61dfbfb51b4fe89a763ed8"
+      ],
+      "entry_status": "0x1",
+      "exit_status": "0x1",
+      "bot_WETH_entry": "-176522906110181952",
+      "bot_WETH_exit": "187867212054331462",
+      "bot_net_ETH_after_gas": "0.010955695018565842",
+      "baseline_minus_scenario_ETH": "-0.003112454699011845"
+    },
+    {
+      "label": "remove_both",
+      "removed": [
+        "0x176905446185e22c310f5b6d8be9d0594b3cf721633fec088622d5f72e388763",
+        "0x179f57544bcb4a6b8350ea74bc44ddb67db32a672f4298f2acb5c0922ca45fe4"
+      ],
+      "validation": true,
+      "seconds": 2.8,
+      "endpoint": "https://eth.drpc.org",
+      "neutralized_unfundable_txs": [
+        {
+          "hash": "0xb414f87bed5b51abdd7b1af3f02bfeb061e54a09e9540a6d193f6486eb92d338",
+          "from": "0x54620b9a8a2c43aa8ed028450a7ce656a9c69feb",
+          "touched_cycle_pool_in_actual": true
+        }
+      ],
+      "other_status_changes": 46,
+      "other_status_changes_sample": [
+        "0x84ab3f02ac05ec0cebac53efdb430a4fd13328299857571015cabbcfc6ec2316",
+        "0xe12ae536255d4c8ce1b3179dcb9428e0b49e97ad4791bb576203e70ef5c116a6",
+        "0x920240f243228a6f22471b409f980cffd356e5d053fd3764ea7868923d27d9b6",
+        "0x7bc920f7a3461cf2be2cc64113b53f42fd67c47c7c5ef8e5df02204be5a6fdf6",
+        "0xbc278d894d0accdff71dadf31a2da3ab54b11de84814069f001c27eca690c533",
+        "0x2d36b47860befa63de57eee88feb30c9a518c11b948fb858d1f3a68974924e88",
+        "0x1600498ebb4ffb05f0f8b70836e0c002b59b12893cfd4d6b135f0349359bcc7a",
+        "0x8d4979cf80d16532d964c5318bfa2bf9b34ad23427e55971dfc2317bc94ed337",
+        "0xd05bd0f2ec9f13620ef260f9d64c4d914b3082398e7160b17b4c7fb69dd48816",
+        "0x0fafc2b627deb7ad05b9809fb7a123bec326433aafcb7fdef688b1c4d0ed67bf"
+      ],
+      "entry_status": "0x0",
+      "exit_status": "0x0",
+      "bot_WETH_entry": "0",
+      "bot_WETH_exit": "0",
+      "bot_net_ETH_after_gas": "-0.000294837123110668",
+      "baseline_minus_scenario_ETH": "0.008138077442664665"
+    },
+    {
+      "label": "remove_all_hacker_window_txs",
+      "removed": [
+        "0x176905446185e22c310f5b6d8be9d0594b3cf721633fec088622d5f72e388763",
+        "0xf0e9e7345eb45af6505628ef01f543a7e15d6edff1618fd39797afb57839eb32",
+        "0x243809aa32032f9cda51bf6bd66df7294cf9d261b5a6b835b84c0b117e73ea7d",
+        "0x69d5afa3b77258ef0658b957ea5044c1419b9d4348b31a138298386e87a3fe06",
+        "0x941937cab41b0a22af20480ed43c09bb489f75e9c60644153acbc98c153e8c7f",
+        "0xf3bd6bad903443cf684b1cc1a727d38e9e79cbaec6327891cd9cd75b9a8a0be9",
+        "0x179f57544bcb4a6b8350ea74bc44ddb67db32a672f4298f2acb5c0922ca45fe4",
+        "0xfd0bfbb07bbcd2e2d59d7f0e213eaeb025a64430b4c9b44f32d3e4771a22ed07",
+        "0x9889d08c8a56c6e92fbd28490cbd32438fadcb81cce0749aba20d45b16909e5f",
+        "0xa48bbaed8c6811a773e0d83bedc2e36469633ebcb088aeb2612117494af36094"
+      ],
+      "validation": true,
+      "seconds": 7.5,
+      "endpoint": "https://eth.drpc.org",
+      "neutralized_unfundable_txs": [
+        {
+          "hash": "0x5a3adb1d240ead2e5f09ca979f405dc6ce3731e458bec9fa9445cfdc549a6374",
+          "from": "0x54620b9a8a2c43aa8ed028450a7ce656a9c69feb",
+          "touched_cycle_pool_in_actual": false
+        },
+        {
+          "hash": "0xe2a92ba42ecb7846fb26f1315c9ec8a3427d833cb36d2c29a64c1111f248cea2",
+          "from": "0xd87f3d6c5624e8b02be13c2c92f8511b88b94d96",
+          "touched_cycle_pool_in_actual": false
+        }
+      ],
+      "other_status_changes": 70,
+      "other_status_changes_sample": [
+        "0x84ab3f02ac05ec0cebac53efdb430a4fd13328299857571015cabbcfc6ec2316",
+        "0x100a8622d185d97da375c257a8464ee3ba85dc089fb00b649c5d7aa3e90c7668",
+        "0x2aaa578ffdd861b67542a7ff58e85c67db13169f5c29d7d802bdbad5b5995169",
+        "0x92199097a0e896b6143b253f2d97ec2a20530107ce5a0da551e0e5db5aef1fc0",
+        "0x6d1b20a143ab97f7a3ce0211475527374d985144f57a9ed0c459278e2bebe8d9",
+        "0xe12ae536255d4c8ce1b3179dcb9428e0b49e97ad4791bb576203e70ef5c116a6",
+        "0x920240f243228a6f22471b409f980cffd356e5d053fd3764ea7868923d27d9b6",
+        "0x7bc920f7a3461cf2be2cc64113b53f42fd67c47c7c5ef8e5df02204be5a6fdf6",
+        "0xbc278d894d0accdff71dadf31a2da3ab54b11de84814069f001c27eca690c533",
+        "0x2d36b47860befa63de57eee88feb30c9a518c11b948fb858d1f3a68974924e88"
+      ],
+      "entry_status": "0x0",
+      "exit_status": "0x0",
+      "bot_WETH_entry": "0",
+      "bot_WETH_exit": "0",
+      "bot_net_ETH_after_gas": "-0.000294837123110668",
+      "baseline_minus_scenario_ETH": "0.008138077442664665"
+    }
+  ],
+  "hacker_senders": [
+    "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+  ],
+  "hacker_window_txs": [
+    "0x176905446185e22c310f5b6d8be9d0594b3cf721633fec088622d5f72e388763",
+    "0xf0e9e7345eb45af6505628ef01f543a7e15d6edff1618fd39797afb57839eb32",
+    "0x243809aa32032f9cda51bf6bd66df7294cf9d261b5a6b835b84c0b117e73ea7d",
+    "0x69d5afa3b77258ef0658b957ea5044c1419b9d4348b31a138298386e87a3fe06",
+    "0x941937cab41b0a22af20480ed43c09bb489f75e9c60644153acbc98c153e8c7f",
+    "0xf3bd6bad903443cf684b1cc1a727d38e9e79cbaec6327891cd9cd75b9a8a0be9",
+    "0x179f57544bcb4a6b8350ea74bc44ddb67db32a672f4298f2acb5c0922ca45fe4",
+    "0xfd0bfbb07bbcd2e2d59d7f0e213eaeb025a64430b4c9b44f32d3e4771a22ed07",
+    "0x9889d08c8a56c6e92fbd28490cbd32438fadcb81cce0749aba20d45b16909e5f",
+    "0xa48bbaed8c6811a773e0d83bedc2e36469633ebcb088aeb2612117494af36094"
+  ],
+  "actual_bot_WETH_entry": "-176522906110181952",
+  "actual_bot_WETH_exit": "184754757355319617"
+}

@@ -1,0 +1,63 @@
+{
+  "estimand": "Value captured by third-party searchers, and the builders they paid, because of the hacker swaps; 3,311-block window, 55-address scope.",
+  "ETH_USD_reference": "2243.93",
+  "lower_bound": {
+    "ETH": "312.725354",
+    "USD": "701734",
+    "components": {
+      "sandwich_closed_groups_net_ETH": {
+        "value": "81.011841",
+        "groups": 112,
+        "assumption": "Closed same-sender front/back groups; EVM removal of the target breaks the exit leg in all 117 verified experiments; includes the one non-positive closed group."
+      },
+      "backrun_intervention_ETH": {
+        "value": "42.122330",
+        "transactions": 338,
+        "assumption": "Per transaction: actual minus target-removed cashflow, smallest across removed targets, clipped to [0, actual profit]."
+      },
+      "cross_block_E53_ETH": {
+        "status": "eight-block EVM intervention",
+        "scenario": "remove_all_hacker_window_txs",
+        "difference_ETH": "0.008138077442664665",
+        "attributable_ETH": "0.007843240319553997"
+      },
+      "builder_payments_ETH": {
+        "value": "189.583340",
+        "assumption": "Priority fees of closed sandwich legs plus priority fees and direct fee-recipient transfers of back-runs that revert or lose money without the target."
+      }
+    },
+    "excludes": "Open-inventory sandwiches, unlinked cycles, other chains, and any payment not visible on the execution layer."
+  },
+  "net_causal_effect_on_backrun_bots_ETH": {
+    "value": "-138.595012",
+    "negative_transactions": 61,
+    "meaning": "Sum of signed differences. Negative cases are bots that would have earned more without the hacker swap (the hacker swap removed an existing price gap). They reduce other bots' income; they do not reduce what was extracted from the hacker, so they are not netted into the lower bound."
+  },
+  "upper_bound": {
+    "ETH": "6687.938988",
+    "USD": "15007267",
+    "components": {
+      "all_sandwich_groups_positive_ETH": {
+        "value": "142.902366",
+        "priced_groups": 298,
+        "unpriced_groups": 266,
+        "assumption": "Max of positive five-minute marked value of priced groups and positive closed ETH net. Unpriced groups are not valued."
+      },
+      "all_single_tx_cycles_positive_ETH": {
+        "value": "84.563210",
+        "transactions": 1063,
+        "assumption": "Every closed single-transaction cycle in scope is treated as caused by the hacker, linked or not."
+      },
+      "builder_payments_by_all_MEV_candidates_ETH": {
+        "value": "6460.473412",
+        "assumption": "Priority fees and direct fee-recipient transfers of every MEV-candidate transaction in the window, all treated as hacker-caused."
+      }
+    },
+    "not_covered": "Unpriced sandwich groups and non-Ethereum venues."
+  },
+  "hard_ceiling": {
+    "USD": "53031865",
+    "meaning": "Total strict execution shortfall of the 16 wallets. Ordering profit cannot exceed what the hacker lost against the reference price; most of this stayed with liquidity providers as price impact."
+  },
+  "summary": "MEV extracted around the hacker swaps lies between 312.725354 and 6687.938988 ETH (about USD 701734-15007267 at ETH = 2243.93). That is at most 28.30% of the USD 53031865 execution shortfall."
+}
