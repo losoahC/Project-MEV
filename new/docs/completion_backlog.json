@@ -1,0 +1,64 @@
+{
+  "requested_by_user": "把所有未完成项做完",
+  "status": "complete_observed_scope",
+  "items": [
+    {
+      "area": "全单元资金分配",
+      "task": "复算249项未解释分配，加入所有内部付款与V4 ERC-6909资产；区分实际收款与主体归属",
+      "status": "complete_observed_scope",
+      "finding": "471/471 单元ETH/WETH分配对平；107个有V4凭证；1322条地址记录。",
+      "evidence": "data/processed/mev_full_window/complete_pool_surplus_distributions.json"
+    },
+    {
+      "area": "价格覆盖",
+      "task": "补36个闭合单元及6笔订单的未定价资产、TRON 100USDT试单",
+      "status": "complete_available_price_investigation",
+      "finding": "17/17 TRON目标估值；2685闭合单元中2678有可靠价格，其他7个资产原币数量完整，二级报价无有效返回或不满足时间／身份检查。四种Few另有14次真实兑换和授权无储备mint源码依据，不强行按面值估值。",
+      "evidence": "data/processed/completion_secondary_prices.json"
+    },
+    {
+      "area": "Bitquery口径",
+      "task": "采用相同分钟、稳定币及事件筛选口径复算点名地址；核对边界和跨交易库存",
+      "status": "complete_comparison",
+      "finding": "13个点名ETH地址、四个TRON地址实际收支；稳定币$1、同分钟Coinbase及Hyperliquid15分钟高低敏感度。源分钟接口返回空；不声称精确复现原表。",
+      "evidence": "data/processed/mev_full_window/named_pool_edge_comparison.json"
+    },
+    {
+      "area": "库存和仓位",
+      "task": "将开放库存、Compound/JustLend及其他债务分账，补成本与实际提取资金",
+      "status": "complete_observed_cash_and_principal",
+      "finding": "137013笔完整sender上下文；200仓位单元另分现金、本金、债务及流动性，1025事件、167借贷行、158流动性行。历史成本和场外对冲不由Etherscan转账补成零。",
+      "evidence": "data/processed/mev_full_window/position_principal_ledger.json"
+    },
+    {
+      "area": "MEV因果与完整汇总",
+      "task": "扩大有效前置腿干预、处理失败实验和重叠事件，建立去重归因表",
+      "status": "complete_conditional_experiments",
+      "finding": "372前腿实验；319区块联合干预，目标去重。旧6项失败已定位为删除目标后资金不足的不可执行情景。",
+      "evidence": "data/processed/mev_full_window/joint_front_replays.json"
+    },
+    {
+      "area": "协议与身份",
+      "task": "补未认证pool/factory/hooks，核验编号地址和最终收款地址；公开证据不足须给出具体查证结果",
+      "status": "complete_historical_asset_identification",
+      "finding": "1097/1097普通池历史资产身份；1096历史factory目录匹配；另一个历史implementation确认为Ammalgam借贷池。最终受益所有权另保留为未知事实。",
+      "evidence": "data/processed/mev_full_window/complete_factory_membership_audit.json"
+    },
+    {
+      "area": "拍卖与LP分配",
+      "task": "扩展收益单元与区块/relay/proposer关联，计算LP/协议储备变化",
+      "status": "complete_observed_allocation",
+      "finding": "2939/2939已观察交付金额匹配实际proposer收款；关联11396单元；9订单199含供给记账账户的地址资产行，池托管余额不冒充个人LP利润。",
+      "evidence": "data/processed/mev_full_window/full_auction_allocation.json"
+    },
+    {
+      "area": "最终产物",
+      "task": "重建图谱、报告、八图、逐笔账及演示内容；逐项验收而非沿用上一轮完成标签",
+      "status": "complete_saved_and_verified",
+      "finding": "用户明确批准“保存更新副本”；14页修订副本已提交并读回核对，46处文字一致，14页渲染与批准预览逐像素一致，原版保留。",
+      "evidence": "reports/presentation/completion_revision/saved_verification.json"
+    }
+  ],
+  "updated_utc": "2026-11-19T14:05:00.114346+00:00",
+  "scientific_unidentified_facts_are_not_completed_claims": true
+}

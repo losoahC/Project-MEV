@@ -1,0 +1,570 @@
+{
+  "audit_scope": "Full supplied research plan; bounded evidence is identified explicitly, not promoted to whole-incident truth.",
+  "requirements": [
+    {
+      "requirement": "Architecture:Python3.11+,Web3,pandas,DuckDB,Parquet,Plotly,NetworkX,pytest",
+      "status": "verified",
+      "evidence": [
+        "pyproject.toml",
+        "requirements.lock.txt"
+      ],
+      "finding": "Tested interpreter3.12.14; explicit dependencies and scripts retained."
+    },
+    {
+      "requirement": "Inspect repository,credentials availability and teacher PDF pp8\u201310",
+      "status": "verified",
+      "evidence": [
+        "docs/teacher_source_metadata.json",
+        "docs/teacher_group12_source.txt",
+        "docs/progress.md"
+      ],
+      "finding": "Source PDF hash checked; no usable project credentials were found in initial inspection; no credentials are printed."
+    },
+    {
+      "requirement": "Identify the sixteen numbered explorer-wallet leads",
+      "status": "data_limited",
+      "evidence": [
+        "data/processed/wallet_registry.json",
+        "data/fixtures/identity_observations.json"
+      ],
+      "finding": "All16 historical leads retained; fresh Etherscan numbered labels0/16 because all16HTTP403. No fresh numbering claim is made."
+    },
+    {
+      "requirement": "Independent incident-address corroboration",
+      "status": "data_limited",
+      "evidence": [
+        "data/processed/wallet_registry.json",
+        "data/fixtures/identity_observations.json"
+      ],
+      "finding": "15/16 sources corroborate incident association;13unverified;9source concerns Arbitrum,not Ethereum control. Ultimate/common beneficial control remains unproven."
+    },
+    {
+      "requirement": "Transactions,token transfers,receipts,traces,block time and position",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/transactions.parquet",
+        "data/processed/wallet_edges.parquet",
+        "data/processed/decoded_swaps.parquet",
+        "data/processed/coverage.json"
+      ],
+      "finding": "1640selected transactions;57042core edges;1155compatible events. Exact hashes,event positions,UTC and original raw pointers retained; not full lifecycle coverage."
+    },
+    {
+      "requirement": "Directed fund graph,entity classes and no recipient-ownership inference",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/fund_flow_graph_edges.parquet",
+        "data/processed/crosschain_graph_entities.json",
+        "data/processed/entities.json",
+        "src/graph/crosschain_edges.py"
+      ],
+      "finding": "57052 transaction edges include10later THOR companions; confirmed BTC outputs have explicit deposit-time valuation. No invented cross-chain transfer edge or ownership cluster."
+    },
+    {
+      "requirement": "Figure1:node/edgevalue scaling,hover,chain/token/time/size filters",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig01_stolen_fund_flow.html",
+        "tests/html_filter_smoke.mjs",
+        "reports/pytest-results.xml"
+      ],
+      "finding": "Actual generated HTML filter logic:176Ethereum edges atUSD1M,3BTCoutputs atmin0,incompatible token/chain0,October excludesNovemberBTC. Original Ethereum filter was checked in Chrome; later extension tested in Node,not browser rendering."
+    },
+    {
+      "requirement": "One actual wallet swap before broad analysis",
+      "status": "verified",
+      "evidence": [
+        "reports/case_studies/m1_real_swap.json"
+      ],
+      "finding": "10MUSDT\u21923552.228717651589845452ETH; exact gas,balance and17event-ordered swap legs verified."
+    },
+    {
+      "requirement": "Source delegation and initial sweeps",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/incident_delegation.json",
+        "data/processed/asset_inventory.json",
+        "reports/initial_asset_inventory.md"
+      ],
+      "finding": "50authorization signatures recover to source address; historical delegation code verified. Three observed source sweeps cover64assets,not all sources/chains."
+    },
+    {
+      "requirement": "Three actual arbitrages:all observable legs,inventory closure,net PnL",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/arbitrage_cases.json",
+        "reports/case_studies/A1_arbitrage.md",
+        "reports/case_studies/A2_arbitrage.md",
+        "reports/case_studies/A3_arbitrage.md"
+      ],
+      "finding": "Three distinct blocks/hashes; non-WETH inventory closes; pool fees embedded,gas and identified builder payments deducted exactly once; selected net2.748062266732417199ETH."
+    },
+    {
+      "requirement": "Historical pool identities and pre/post liquidity state",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/pool_states.json",
+        "reports/tables/fig03_pool_states.parquet",
+        "reports/tables/fig03_routes.parquet"
+      ],
+      "finding": "141observed states plus historical metadata; V2 quotes exact for focal legs; V3 parent slot0/liquidity and ordered updates; no full tick/EVM counterfactual claim."
+    },
+    {
+      "requirement": "Direction-aware execution price,dislocation,adverse value and external prices",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/reconciliation/valuation.py",
+        "src/reconciliation/pricebook.py",
+        "data/processed/historical_pricebook.json",
+        "tests/test_research.py"
+      ],
+      "finding": "Exact contracts/decimals; strict prior completed minute; price conflicts/missing identities remain null; ETHUSDT sensitivity converted through observed USDT/USD."
+    },
+    {
+      "requirement": "Figure2:synchronized actual reference/executable prices,markers,deviation,zoom",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/visualization/fig02_eth_price_dislocation.py",
+        "reports/tables/fig02_price_observations.parquet",
+        "reports/tables/fig02_reference_prices.parquet"
+      ],
+      "finding": "210observed ETH/USDT executable trade-size points; real UTC vs explicitly ordinal within-block coordinate; second deviation panel and Plotly zoom; no fake sub-block clock."
+    },
+    {
+      "requirement": "Figure3:sequence,token flows,effective prices,addresses,states,actual PnL",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/visualization/fig03_transaction_reconstruction.py",
+        "reports/figures/fig03_transaction_reconstruction.html",
+        "reports/tables/fig03_routes.parquet"
+      ],
+      "finding": "Sequence views plus full expandable route/state/accounting tables; full contracts,quantities,output/input rates and exact hashes retained."
+    },
+    {
+      "requirement": "One complete sandwich alternative",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/case_studies/S1_sandwich.json",
+        "tests/test_arbitrage_auction.py"
+      ],
+      "finding": "Front+target+back ordering and full episode cashflows;12.080033775421395622ETH net; back leg is not episode profit."
+    },
+    {
+      "requirement": "Mechanical AMM impact,fees,and causal losses kept separate",
+      "status": "data_limited",
+      "evidence": [
+        "src/arbitrage/accounting.py",
+        "data/processed/anomaly_case_studies.json",
+        "reports/milestone23_report.md"
+      ],
+      "finding": "V2 curve/fee/residual output-unit decomposition exists for observed legs; exact per-LP allocation and full incremental sandwich/victim loss are not established. No total shortfall=MEV equation."
+    },
+    {
+      "requirement": "Three auction outcomes:slot,builder/proposer keys,relay,delivered payload,payout",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/auction_outcomes.json",
+        "data/processed/proposer_payments.parquet"
+      ],
+      "finding": "Three exact relay/onchain matches include SELFDESTRUCT forwarders. Whole-block payments not attributed wholly to a selected searcher."
+    },
+    {
+      "requirement": "Winning and other observable historical submissions",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/auction_submissions.json",
+        "data/processed/auction_timing_assessment.json"
+      ],
+      "finding": "7958retained observations,three slots,four relays. Revisions/late bids and relay caps explicit; no full valid losing book or cutoff inferred."
+    },
+    {
+      "requirement": "Builder margin proxy and payer ownership boundary",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/auction_outcomes.json",
+        "reports/tables/fig04_whole_block_ledger.parquet"
+      ],
+      "finding": "A1/A2 partial ETH proxies;A3proposer payer differs,so builder margin remains null. Separate fee-recipient balance proxy does not subtract externally funded payments."
+    },
+    {
+      "requirement": "Figure4:victim shortfall,searcher/builder/proposer,LP and other-cost boundaries",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/visualization/fig04_mev_value_attribution.py",
+        "reports/tables/fig04_attribution_status.json"
+      ],
+      "finding": "Actual target reference shortfalls now shown separately from ETH surplus. Searcher retained/directbuilder/tip/burn stack; whole-block onward payments in a separate denominator. LP fees embedded; exact LP capture unresolved."
+    },
+    {
+      "requirement": "Figure5:slot submissions,delivered vsothers,frequency,time,payout/surplus,baseline",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/visualization/fig05_auction_results.py",
+        "reports/tables/fig05_bid_comparison.parquet",
+        "reports/tables/fig05_builder_frequency.parquet"
+      ],
+      "finding": "All six views present; signing-key identities not builder-brand claims.2939/3311delivered coverage;baseline109/130,event2830/3181. Descriptive comparison,not causation."
+    },
+    {
+      "requirement": "Per-exchange net asset valuation,loss rate and prespecified screen",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/wallet_swap_valuations.json",
+        "data/processed/suspicious_transactions.parquet",
+        "src/anomaly/screen.py"
+      ],
+      "finding": "810two-sided observable wallet/exchange rows;621complete;241input>100k and loss>5%;5above1M,2above5M. One-sided net changes and unknown identities are not priced as simple swaps."
+    },
+    {
+      "requirement": "Fetch available missing historical prices rather than trusting old gaps",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/ingestion/price_gaps.py",
+        "data/processed/fresh_price_sources.json",
+        "data/processed/anomaly_coverage.json"
+      ],
+      "finding": "70actual public candle queries including paced post429 retries; failed/empty/no-exact-minute observations retained; strict complete-row count remains621."
+    },
+    {
+      "requirement": "Five largest anomaly investigations:liquidity,limits,neighbors,repeat,relationships,compensation",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/milestone45_report.md",
+        "data/processed/anomaly_case_studies.json",
+        "reports/case_studies/N1_abnormal_swap.md",
+        "reports/case_studies/N2_abnormal_swap.md",
+        "reports/case_studies/N3_abnormal_swap.md",
+        "reports/case_studies/N4_abnormal_swap.md",
+        "reports/case_studies/N5_abnormal_swap.md"
+      ],
+      "finding": "All five document each required topic; zero intermediate/nonzero final minima coexist; N3/N4internalexecute inspected. All classifications insufficient_evidence,not intentional-loss findings."
+    },
+    {
+      "requirement": "Figure6:ranked losses,complete hover fields,interactive case detail and ranges",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/visualization/fig06_suspicious_wallets.py",
+        "reports/tables/fig06_ranked_shortfalls.parquet"
+      ],
+      "finding": "Top20interactive/top12static; full address/hash,input/output,rate,UTC and classification. Top5click/dropdown evidence. Whiskers are available-feed/timing scenario min\u2013max,not statistical CIs."
+    },
+    {
+      "requirement": "THOR:three complete inbound/outbound paths with independent confirmations",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/thorchain_paths.json",
+        "reports/milestone45_report.md",
+        "reports/case_studies/T1_thorchain.md",
+        "reports/case_studies/T2_thorchain.md",
+        "reports/case_studies/T3_thorchain.md"
+      ],
+      "finding": "ETHreceipt/Deposit,THORNode,Midgard and confirmedBTCvout/OUTmemo agree; chronological three-hop funding link per path; no common-control or exclusive taint claim."
+    },
+    {
+      "requirement": "THOR quantities,rates,fees,delays,streaming and repeated-pattern search",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/thorchain/reconstruct.py",
+        "data/processed/thorchain_discovery.json",
+        "data/processed/thorchain_paths.json"
+      ],
+      "finding": "441memo candidates in bounded explorer search,only3fullyverified.1e8THORunits distinct fromwei. Protocol BTC deductions embedded; actualminerfee distinct; gas separate; liquidityfee kept inRUNE. Delays use coarse block timestamps."
+    },
+    {
+      "requirement": "THOR price impact,cross-chain arbitrage and Ethereum causal linkage",
+      "status": "data_limited",
+      "evidence": [
+        "data/processed/thorchain_paths.json",
+        "reports/milestone45_report.md"
+      ],
+      "finding": "Reference shortfalls estimated at same deposit-time mark per path; full historical THOR pool counterfactual and cross-chain arbitrage linkage unestablished. November costs never added toOctoberMEV."
+    },
+    {
+      "requirement": "Figure7:origin/input,THOR,output,destination,address,cost,Sankey units",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/visualization/fig07_thorchain_flows.py",
+        "reports/tables/fig07_crosschain_paths.parquet"
+      ],
+      "finding": "Three observed conversions; width common USD within each deposit reference; native amounts,receiver,hashes,gas/fees and limits retained."
+    },
+    {
+      "requirement": "Asset accounting:observed acquisition,holdings,transfers and unresolved inventory",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/asset_inventory.json",
+        "data/processed/asset_inventory.parquet",
+        "data/processed/initial_sweep_assets.parquet",
+        "reports/initial_asset_inventory.md"
+      ],
+      "finding": "64observed initial-sweep assets\u00d716leads fully reconcile. Other source addresses/chains,ultimate control,third-party account ownership and whole-event inventory/recovery not inferred."
+    },
+    {
+      "requirement": "Frozen stablecoins and professor USD2B definition/date",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "docs/teacher_group12_source.txt",
+        "data/processed/balance_reconciliation.json",
+        "data/processed/loss_reconciliation.json"
+      ],
+      "finding": "Teacher says frozen stablecoins. Historical USDT/USDC blacklist and balance calls at block26303950 implyUSD2.0260B at explicit closing mark; blacklisting is not seizure/recovery or economic loss."
+    },
+    {
+      "requirement": "Distinct economic attribution:shortfall,impact,fees,arbitrage,sandwich,auction,THOR,unknown",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/loss_reconciliation.json",
+        "reports/milestone6_report.md",
+        "reports/final_research_report.md"
+      ],
+      "finding": "621unique complete swaps:USD43.7279326Msignedtrade-time shortfall,not global loss or MEV. Selected observed profits separate; causal full-event/sandwich incremental and exact LP/unexplained components remain null."
+    },
+    {
+      "requirement": "Figure8:fixed-mark waterfall,holdings subset,profits,sample shortfall and uncertainty",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "src/visualization/fig08_loss_reconciliation.py",
+        "reports/tables/fig08_asset_ledger.parquet"
+      ],
+      "finding": "Four-assetUSDledger,frozen subset,three-arbitrageETHpartition and trade-time sample shortfall have explicit different boundaries/units. Whole-incident stolen/recovered/unrecovered/causalMEV quantities explicitly unresolved,not fabricated."
+    },
+    {
+      "requirement": "Valuation timestamps,nonadditivity and no-double-counting invariants",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/loss_reconciliation.json",
+        "tests/test_reconciliation.py",
+        "tests/test_arbitrage_auction.py"
+      ],
+      "finding": "Snapshot legs use one closing mark; within-swap marks use same prior completed minute. Frozen subset,searcher gross partition,relay duplicates and November/October separation checked. No total-event assertion uses inconsistent marks."
+    },
+    {
+      "requirement": "External feeds,timing,wallet-boundary and missing-relay sensitivities",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "data/processed/loss_reconciliation.json",
+        "data/processed/anomaly_case_studies.json",
+        "reports/milestone6_report.md"
+      ],
+      "finding": "Feed/timing scenarios;293same-transaction timing comparisons;16/15/14lead scopes;drop-one-relay outcomes. Different621/315coverage totals are not compared as pure sensitivity."
+    },
+    {
+      "requirement": "fig01_stolen_fund_flow:HTML/PNG/SVG,dedicated script,dataset,interpretation,limits",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig01_stolen_fund_flow.html",
+        "reports/figures/fig01_stolen_fund_flow.png",
+        "reports/figures/fig01_stolen_fund_flow.svg",
+        "src/visualization/fig01_stolen_fund_flow.py",
+        "reports/final_research_report.md"
+      ],
+      "finding": "All three formats exist; datasets and interpretation/limits are linked in the final figure index. Static scientific outputs have been visually inspected; browser review is not claimed for every HTML."
+    },
+    {
+      "requirement": "fig02_eth_price_dislocation:HTML/PNG/SVG,dedicated script,dataset,interpretation,limits",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig02_eth_price_dislocation.html",
+        "reports/figures/fig02_eth_price_dislocation.png",
+        "reports/figures/fig02_eth_price_dislocation.svg",
+        "src/visualization/fig02_eth_price_dislocation.py",
+        "reports/final_research_report.md"
+      ],
+      "finding": "All three formats exist; datasets and interpretation/limits are linked in the final figure index. Static scientific outputs have been visually inspected; browser review is not claimed for every HTML."
+    },
+    {
+      "requirement": "fig03_transaction_reconstruction:HTML/PNG/SVG,dedicated script,dataset,interpretation,limits",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig03_transaction_reconstruction.html",
+        "reports/figures/fig03_transaction_reconstruction.png",
+        "reports/figures/fig03_transaction_reconstruction.svg",
+        "src/visualization/fig03_transaction_reconstruction.py",
+        "reports/final_research_report.md"
+      ],
+      "finding": "All three formats exist; datasets and interpretation/limits are linked in the final figure index. Static scientific outputs have been visually inspected; browser review is not claimed for every HTML."
+    },
+    {
+      "requirement": "fig04_mev_value_attribution:HTML/PNG/SVG,dedicated script,dataset,interpretation,limits",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig04_mev_value_attribution.html",
+        "reports/figures/fig04_mev_value_attribution.png",
+        "reports/figures/fig04_mev_value_attribution.svg",
+        "src/visualization/fig04_mev_value_attribution.py",
+        "reports/final_research_report.md"
+      ],
+      "finding": "All three formats exist; datasets and interpretation/limits are linked in the final figure index. Static scientific outputs have been visually inspected; browser review is not claimed for every HTML."
+    },
+    {
+      "requirement": "fig05_auction_results:HTML/PNG/SVG,dedicated script,dataset,interpretation,limits",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig05_auction_results.html",
+        "reports/figures/fig05_auction_results.png",
+        "reports/figures/fig05_auction_results.svg",
+        "src/visualization/fig05_auction_results.py",
+        "reports/final_research_report.md"
+      ],
+      "finding": "All three formats exist; datasets and interpretation/limits are linked in the final figure index. Static scientific outputs have been visually inspected; browser review is not claimed for every HTML."
+    },
+    {
+      "requirement": "fig06_suspicious_wallets:HTML/PNG/SVG,dedicated script,dataset,interpretation,limits",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig06_suspicious_wallets.html",
+        "reports/figures/fig06_suspicious_wallets.png",
+        "reports/figures/fig06_suspicious_wallets.svg",
+        "src/visualization/fig06_suspicious_wallets.py",
+        "reports/final_research_report.md"
+      ],
+      "finding": "All three formats exist; datasets and interpretation/limits are linked in the final figure index. Static scientific outputs have been visually inspected; browser review is not claimed for every HTML."
+    },
+    {
+      "requirement": "fig07_thorchain_flows:HTML/PNG/SVG,dedicated script,dataset,interpretation,limits",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig07_thorchain_flows.html",
+        "reports/figures/fig07_thorchain_flows.png",
+        "reports/figures/fig07_thorchain_flows.svg",
+        "src/visualization/fig07_thorchain_flows.py",
+        "reports/final_research_report.md"
+      ],
+      "finding": "All three formats exist; datasets and interpretation/limits are linked in the final figure index. Static scientific outputs have been visually inspected; browser review is not claimed for every HTML."
+    },
+    {
+      "requirement": "fig08_loss_reconciliation:HTML/PNG/SVG,dedicated script,dataset,interpretation,limits",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/figures/fig08_loss_reconciliation.html",
+        "reports/figures/fig08_loss_reconciliation.png",
+        "reports/figures/fig08_loss_reconciliation.svg",
+        "src/visualization/fig08_loss_reconciliation.py",
+        "reports/final_research_report.md"
+      ],
+      "finding": "All three formats exist; datasets and interpretation/limits are linked in the final figure index. Static scientific outputs have been visually inspected; browser review is not claimed for every HTML."
+    },
+    {
+      "requirement": "Tests:decimals,USD,swaps,multihop,impact,PnL,gas,auction,wallets,crosschain,balances",
+      "status": "verified",
+      "evidence": [
+        "reports/pytest-results.xml",
+        "tests/test_research.py",
+        "tests/test_arbitrage_auction.py",
+        "tests/test_anomaly_thorchain.py",
+        "tests/test_reconciliation.py",
+        "tests/test_inventory_genesis.py"
+      ],
+      "finding": "52passed; all archived bytes and ERC20 edge receipts checked; expanded1024snapshots decoded against raw128multicall responses; failed calls remain null; tampered signature and wrong BTC data rejected."
+    },
+    {
+      "requirement": "Offline reproducibility and immutable evidence handoff",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/offline_replay_fingerprint.json",
+        "data/raw/manifest.json",
+        "data/raw/public_index.json",
+        "README.md"
+      ],
+      "finding": "M1\u2013M4 and four-asset ledger replay without old research directory;THOR and expandedinventory cached public evidence. Relay key outputs previously byte-identical. Raw objects must accompany code; no empty-directory all-history claim."
+    },
+    {
+      "requirement": "Milestone progress and academic report",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "docs/progress.md",
+        "reports/milestone1_report.md",
+        "reports/milestone23_report.md",
+        "reports/milestone45_report.md",
+        "reports/milestone6_report.md",
+        "reports/initial_asset_inventory.md",
+        "reports/final_research_report.md",
+        "reports/claim_ledger.json"
+      ],
+      "finding": "Written academic report,case narratives,all stage results and explicit observed/estimated/unresolved distinctions retained."
+    },
+    {
+      "requirement": "Presentation-ready results for12\u201315slides",
+      "status": "verified_bounded_sample",
+      "evidence": [
+        "reports/presentation/slide_content.md",
+        "reports/presentation/presenter_notes.md",
+        "reports/presentation/slide_notes.json",
+        "reports/presentation/presentation_review.pdf",
+        "reports/presentation/review_manifest.json",
+        "reports/presentation/canva_draft_review.json"
+      ],
+      "finding": "14 editable Canva pages, 14-page review PDF and exact per-slide companion notes. All available 600px previews/PDF renders reviewed; unsupported illustration removed. User approval received; revision committed and read back from saved design. Internal Canva notes remain generic; use companion notes. No full-resolution/PowerPoint application test claimed."
+    }
+  ],
+  "full_goal_complete": true,
+  "pending_action": "No pending delivery action. The approved updated 14-page Canva copy is saved and independently read back. Explicit scientific identifiability limits remain, not unperformed calculations.",
+  "status_counts": {
+    "data_limited": 4,
+    "verified": 4,
+    "verified_bounded_sample": 39
+  },
+  "expanded_objective": {
+    "status": "complete",
+    "objective": "\u5c3d\u53ef\u80fd\u5168\u9762\u5bfb\u627e\u4e8b\u4ef6\u5957\u5229\uff0c\u8bf4\u660e MEV \u5224\u5b9a\u6807\u51c6\u3001DEX \u8f6e\u6b21\u3001hacker \u635f\u5931\u3001bot \u6536\u76ca\u548c\u6700\u7ec8\u8d44\u91d1\u9014\u5f84",
+    "requirements": [
+      {
+        "requirement": "\u6269\u5927\u76ee\u6807\u5730\u5740\u3001\u8ba2\u5355\u6210\u4ea4\u3001\u5b8c\u6574\u533a\u5757\u65f6\u6bb5\u4e0e TRON \u8986\u76d6",
+        "status": "complete_observed_scope"
+      },
+      {
+        "requirement": "\u6838\u9a8c\u6bcf\u7b14\u5957\u5229\uff0f\u5939\u5b50\u7ed3\u6784\u53ca\u662f\u5426\u4f9d\u8d56\u4ea4\u6613\u987a\u5e8f",
+        "status": "complete_observed_scope"
+      },
+      {
+        "requirement": "\u91cd\u5efa\u6bcf\u4e2a DEX\u3001\u6c60\u3001\u4ee3\u5e01\u548c\u5b9e\u9645\u4ea4\u6613\u8f6e\u6b21",
+        "status": "complete_observed_scope"
+      },
+      {
+        "requirement": "\u6838\u5bf9 bot \u64cd\u4f5c\u8fb9\u754c\u3001\u5229\u6da6\u7559\u5b58\u53ca\u5916\u90e8\u6536\u6b3e\u5730\u5740",
+        "status": "complete_observed_scope"
+      },
+      {
+        "requirement": "\u5b8c\u6574\u8ba1\u5165\u8d1f\u6536\u76ca\u817f\u3001\u8de8\u533a\u5757\u5e93\u5b58\u53ca\u6240\u6709\u8d39\u7528",
+        "status": "complete_observed_scope"
+      },
+      {
+        "requirement": "\u5206\u522b\u62a5\u544a hacker \u53c2\u8003\u6210\u4ea4\u5dee\u989d\u548c\u6709\u53cd\u4e8b\u5b9e\u652f\u6301\u7684 MEV \u589e\u91cf\u635f\u5931",
+        "status": "complete_observed_scope"
+      },
+      {
+        "requirement": "\u53bb\u91cd\u6c47\u603b\u5e76\u63d0\u4f9b\u56fe\u8c31\u3001\u9010\u7b14\u8bc1\u636e\u548c\u6700\u7ec8\u53d9\u8ff0",
+        "status": "complete_observed_scope"
+      }
+    ],
+    "evidence": "reports/mev_expansion/expanded_requirements_audit.json",
+    "full_goal_complete": true,
+    "completion_interpretation": "Observed-scope research computations, evidence ledgers, report and the approved updated presentation are delivered and verified. Scientific facts not identifiable from public evidence remain explicitly unproven; completion does not claim all-incident causal quantities or beneficial ownership.",
+    "updated_utc": "2026-11-19T14:05:00.114346+00:00",
+    "research_report": "reports/mev_expansion/\u5b8c\u6574\u5957\u5229\u4e0eMEV\u6838\u9a8c\u62a5\u544a.md",
+    "all_incident_MEV_loss_established": false,
+    "all_beneficial_owners_established": false,
+    "pending_action": null,
+    "presentation_saved_verification": "reports/presentation/completion_revision/saved_verification.json"
+  },
+  "expanded_delivery_audit": {
+    "path": "reports/mev_expansion/expanded_requirements_audit.json",
+    "checks": 27,
+    "ready_for_delivery": true,
+    "scientific_unknowns": {
+      "all_incident_causal_MEV_loss_USD": null,
+      "all_incident_firm_wide_arbitrage_profit_USD": null,
+      "ultimate_beneficial_owners_complete": false,
+      "unresolved_external_distribution_units": 0,
+      "unpriced_terminal_cycle_units": 7,
+      "orders_with_unpriced_counterparty_assets": 6,
+      "TRON_historical_state_replay_proven": false,
+      "exact_Bitquery_global_replication": false
+    }
+  },
+  "updated_presentation": {
+    "saved_and_verified": true,
+    "design_id": "DAHbVfFZRn0",
+    "verification": "reports/presentation/completion_revision/saved_verification.json"
+  }
+}

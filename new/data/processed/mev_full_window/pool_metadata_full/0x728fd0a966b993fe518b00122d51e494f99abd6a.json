@@ -1,0 +1,25 @@
+{
+  "pool": "0x728fd0a966b993fe518b00122d51e494f99abd6a",
+  "block": 26300815,
+  "event_protocol": "V2-compatible (event only)",
+  "sources": {
+    "token0": "data/raw/public_rpc/0433bf50019a76c034d2d4fa1b574a226c16231d3b3dd61a2ebff2fc54b0343d.json",
+    "token1": "data/raw/public_rpc/0433bf50019a76c034d2d4fa1b574a226c16231d3b3dd61a2ebff2fc54b0343d.json",
+    "factory": "data/raw/public_rpc/0433bf50019a76c034d2d4fa1b574a226c16231d3b3dd61a2ebff2fc54b0343d.json"
+  },
+  "batch_indices": {
+    "token0": 34,
+    "token1": 35,
+    "factory": 36
+  },
+  "failures": {
+    "token0": "Call reverted or non-32-byte ABI return; allowFailure preserved",
+    "token1": "Call reverted or non-32-byte ABI return; allowFailure preserved",
+    "factory": "Call reverted or non-32-byte ABI return; allowFailure preserved"
+  },
+  "dex_name": null,
+  "planning_snapshot_block": 26303950,
+  "planning_matches_parent": true,
+  "factory_lookup_matches_pool": false,
+  "identity_note": "Metadata and factory lookup are historical first-parent multicalls. End snapshot only planned query arguments; mismatches are not silently accepted."
+}

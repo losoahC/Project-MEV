@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "binance-mev-research"
+version = "0.1.0"
+description = "Evidence-first Binance incident research; DEX arbitrage and MEV auctions"
+requires-python = ">=3.11"
+dependencies = ["web3>=7,<9", "pandas>=2,<4", "pyarrow>=18,<27", "duckdb>=1,<3", "plotly>=6,<8", "networkx>=3,<4", "matplotlib>=3.9,<4", "pypdf>=5,<8", "Markdown==3.8.2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+review = ["reportlab>=4,<6", "pypdfium2>=4,<6"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

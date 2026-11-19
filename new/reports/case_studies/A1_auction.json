@@ -1,0 +1,43 @@
+{
+  "case_id": "A1",
+  "block": 26300992,
+  "slot": 15540344,
+  "block_hash": "0x7b7f6cd5e75c6afbb6db23d13ea27aeda34f01c851b953b79b876da6f3365793",
+  "timestamp_utc": "2026-10-29T21:09:11+00:00",
+  "relays": [
+    "ultrasound"
+  ],
+  "builder_pubkey": "0x88857150299287cedfbadea1ee3fb7ac121f1e4e16bef44b4a7bad35432973c4009efb90394facca3fdc0759ba70f93f",
+  "proposer_pubkey": "0xb532943de7e0c619f1911cda18f38fd98a3f326e1239f7ca96665b166e33342b1b595accd814e4bb7ba5488ea1d5ad0f",
+  "builder_fee_recipient": "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97",
+  "proposer_fee_recipient": "0x388c818ca8b9251b393131c08a736a67ccb19297",
+  "delivered_value_wei": "36437514095553389525",
+  "onchain_proposer_payment_wei": "36437514095553389525",
+  "proposer_payment_exact_match": true,
+  "proposer_payment_payers": [
+    "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97"
+  ],
+  "fee_recipient_funded_proposer_wei": "36437514095553389525",
+  "separate_payer_proposer_wei": "0",
+  "whole_block_priority_wei": "725813224783048078",
+  "whole_block_native_receipts_wei": "86133252907079031203",
+  "whole_block_other_native_outflow_wei": "550685620864951701",
+  "fee_recipient_own_gas_wei": "9948873739923090",
+  "builder_execution_balance_margin_proxy_wei": "49860917541703814965",
+  "whole_block_base_burn_wei": "6850377652681750000",
+  "builder_margin_proxy_wei": "49860917541703814965",
+  "builder_margin_status": "partial execution-ETH proxy",
+  "selected_searcher_gross_after_pool_fees_ETH": "12.137824203978034597",
+  "selected_searcher_retained_ETH": "2.745812294499937065",
+  "selected_searcher_direct_builder_wei": "8252947611860856740",
+  "selected_searcher_priority_wei": "91661779990833822",
+  "selected_searcher_burn_wei": "1047402517626406970",
+  "selected_searcher_tx_hash": "0x722001ce0a09024d683592474d12df947aa9548befb0292ae098a9db37a0aa7c",
+  "relay_evidence": "data/raw/objects/470d9d1a09515fed98f006920385c0fd9cf426cdcf3e751b42e750405cb06898.json",
+  "evidence": {
+    "header": "data/raw/objects/6a75fa8db5db47b4bf91177a263eff0c2f8d0f86e5d1b50030e3978cae00e820.json.gz",
+    "receipts": "data/raw/objects/95c1e66f7c764d17d2e9755b0332e141a52a2f935d36db992788dc7ec57d9284.json.gz",
+    "traces": "data/raw/objects/23846b66bf1cab96103c57df38e1e1fe8325a258a58b52f8ec84326165c20365.json.gz"
+  },
+  "limits": "Builder proxy is execution-ETH cash flow, not exact realized profit: excludes token positions, withdrawals, offchain costs and financing. Whole-block proposer payment cannot be causally allocated to this single searcher. Searcher pool fees are already embedded in gross observed swap surplus."
+}

@@ -1,0 +1,111 @@
+{
+  "token_net_raw": {},
+  "other_token_residual_raw": {},
+  "native_net_wei": "1037969594978888",
+  "gas_wei": "972496905296097",
+  "identified_builder_payment_wei": "1828100586247377",
+  "cashflow_before_gas_ETH": "0.001037969594978888",
+  "gross_after_pool_fees_before_gas_and_builder_ETH": "0.002866070181226265",
+  "net_after_gas_and_builder_ETH": "0.000065472689682791",
+  "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again.",
+  "pool_flow_surplus_ETH": "0.002866070181226265",
+  "unallocated_pool_surplus_vs_operational_gross_ETH": "0E-18",
+  "case_id": "A2",
+  "block": 26302300,
+  "tx_hash": "0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851",
+  "target": "0x2ccafec913543cb6a8f13d9bf8f4fc77b3adb0b9bed4e32171560dac9670976d",
+  "accounts": [
+    "0x0124d0fa0dfb1430dfcff16ec6a96945e7a0bc10",
+    "0x36331e299247e5d0d3261e1d9852f6e0cffee95c"
+  ],
+  "route_label": "WETH / SHIB two-pool cycle",
+  "timestamp_utc": "2026-10-30T01:31:47+00:00",
+  "sender": "0x0124d0fa0dfb1430dfcff16ec6a96945e7a0bc10",
+  "executor": "0x36331e299247e5d0d3261e1d9852f6e0cffee95c",
+  "actor_index": 333,
+  "target_index": 329,
+  "same_pool_opposite_direction": [
+    "0xcf6daab95c476106eca715d48de4b13287ffdeaa"
+  ],
+  "route": [
+    {
+      "pool": "0x811beed0119b4afce20d2583eb608c6f7af1954f",
+      "input_token": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce",
+      "output_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "input_raw": "263597153258982257484624477",
+      "output_raw": "527170826041131280",
+      "input_quantity": "263597153.258982257484624477",
+      "output_quantity": "0.52717082604113128",
+      "output_per_input": "1.99991092287400325005001828161744121941887258873686311602303625360499560792031614480429949E-9",
+      "swap_log_indices": [
+        575
+      ],
+      "protocol": "V2-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0xcf6daab95c476106eca715d48de4b13287ffdeaa",
+      "input_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "output_token": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce",
+      "input_raw": "524304755859905015",
+      "output_raw": "263597153258982257484624477",
+      "input_quantity": "0.524304755859905015",
+      "output_quantity": "263597153.258982257484624477",
+      "output_per_input": "502755602.181521687418968835514692771024374135252490689046096797745913628883354633635459782",
+      "swap_log_indices": [
+        573
+      ],
+      "protocol": "V2-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    }
+  ],
+  "metadata": {
+    "0xcf6daab95c476106eca715d48de4b13287ffdeaa": {
+      "pool": "0xcf6daab95c476106eca715d48de4b13287ffdeaa",
+      "protocol": "V2-compatible (event only)",
+      "block": 26302299,
+      "sources": {
+        "token0": "data/raw/public_rpc/66351b5f7436bf921497a026e7903c917a5698df0ac1da4b648ff63d929c8707.json",
+        "token1": "data/raw/public_rpc/cd7ff44c8bd50bee9b587f90010240c00e85c0c28957941d40116bbfd707be20.json",
+        "factory": "data/raw/public_rpc/6a22da88650ab51edb2f77c53e6f9662341012f58fe29a91f7b788803532b36e.json",
+        "decimals0": "data/raw/public_rpc/b7dbd0f8ec2c4b8caeb06473d4f9f342a45ace84de4dbb38603f599f15b966f6.json",
+        "decimals1": "data/raw/public_rpc/5901a64ae084be2e97a4e61ceff229d53e35b83474c9aa27842871d412222cb4.json"
+      },
+      "token0": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x115934131916c8b277dd010ee02de363c09d037c",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 18,
+      "decimals1": 18
+    },
+    "0x811beed0119b4afce20d2583eb608c6f7af1954f": {
+      "pool": "0x811beed0119b4afce20d2583eb608c6f7af1954f",
+      "protocol": "V2-compatible (event only)",
+      "block": 26302299,
+      "sources": {
+        "token0": "data/raw/public_rpc/03fa8b83e10d6bd03949b9db539287cf3b72d85ef53543bd6e46bf21f3e7c743.json",
+        "token1": "data/raw/public_rpc/3468d4476486f58c3934cbd7629159956e6ef731af126e591d0f6ada974f13f1.json",
+        "factory": "data/raw/public_rpc/390b8ae24613398b7cd9d2dad59daaff0bfd67436b2f30c076374fc9c47fe102.json",
+        "decimals0": "data/raw/public_rpc/b7dbd0f8ec2c4b8caeb06473d4f9f342a45ace84de4dbb38603f599f15b966f6.json",
+        "decimals1": "data/raw/public_rpc/5901a64ae084be2e97a4e61ceff229d53e35b83474c9aa27842871d412222cb4.json"
+      },
+      "token0": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 18,
+      "decimals1": 18
+    }
+  },
+  "evidence": {
+    "header": "data/raw/objects/45133a022257bd66fbd1201c9cddb42ecb54581e9990e5c30bc4fe534c439fa1.json.gz",
+    "receipts": "data/raw/objects/56a8dc4e6a3b2d391906afafbb810f4ad15c4755fb3613394e183fdbfe0ebc3d.json.gz",
+    "traces": "data/raw/objects/6c11b035027eb7bbe905188bf5321fa5b7612cc4f205bd2ec8ee26f408bd2e7d.json.gz"
+  },
+  "classification": "observed_inventory_closed_profitable_atomic_arbitrage",
+  "attribution_limit": "Same-block/pool association is observed. This cash flow is not all causally attributable to removing the hacker's trade; operational boundary is not beneficial ownership."
+}

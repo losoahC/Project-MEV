@@ -1,0 +1,168 @@
+{
+  "cases": 3,
+  "baseline_transactions_status_gas_logs_reproduced": 1003,
+  "rows": [
+    {
+      "case_id": "S1",
+      "block": 26301609,
+      "target": "0x625e674d10c864a1d98d8ba9b5c05ed2f325d74cca62b8b67cd6268edbd8f051",
+      "accounts": [
+        "0x45e9b04942176a513b22acc1ced75c34d2fd9215",
+        "0x4cd4499d6e6a0eb8995a2cabd400d1ad35c4d03e",
+        "0x5aae4d2f360e156de3416936049837a7bb685588"
+      ],
+      "baseline_transactions_reproduced": 146,
+      "evidence": {
+        "header": "data/raw/objects/44e58ce84954e269e6621a13c32f0eb00d62e8aa5ed0a6c8fb98283334ce330f.json.gz",
+        "receipts": "data/raw/objects/52ef85116cfa424378c8d1eb68f9f2b0a17c210d7162190d9b7d3e3f7b9db15e.json.gz",
+        "traces": "data/raw/objects/b6f380c27c683a582cdcb8c5ef8b5ac26e854347c4f75379576b2f9102a2011b.json.gz",
+        "baseline_simulation": "data/raw/objects/868b0fb21f690629a1bf90404220c1f12ed006b9fbe33737c47fce4b1bb82448.json.gz",
+        "actual_simulation": "data/raw/objects/79d690b517515057f09baceec328eb0f8212fda818b2457b95861fe30d814a79.json.gz",
+        "remove_target_simulation": "data/raw/objects/973ca32e7d1e44f8b0238be01e15ba8c25d89f3b38642bdad048e98317121e16.json.gz"
+      },
+      "scenarios": {
+        "actual": {
+          "net_cashflow_ETH": "12.080033775421395622",
+          "other_token_residual_raw": {},
+          "legs": [
+            {
+              "tx_hash": "0xb85a8b174f8258c4d729e3b1112fe46fe90b6e4d761792b47b133e9dd77f2d7b",
+              "status": 1,
+              "gas_wei": "49047195733257436",
+              "error": null
+            },
+            {
+              "tx_hash": "0xf3935c9604416f38ea2942652ea8c652bc2ea0cfac2ad0316181031bdcd607c2",
+              "status": 1,
+              "gas_wei": "69278540454625216",
+              "error": null
+            }
+          ]
+        },
+        "remove_target": {
+          "net_cashflow_ETH": "-555.668531858379036918",
+          "other_token_residual_raw": {},
+          "legs": [
+            {
+              "tx_hash": "0xb85a8b174f8258c4d729e3b1112fe46fe90b6e4d761792b47b133e9dd77f2d7b",
+              "status": 1,
+              "gas_wei": "49047195733257436",
+              "error": null
+            },
+            {
+              "tx_hash": "0xf3935c9604416f38ea2942652ea8c652bc2ea0cfac2ad0316181031bdcd607c2",
+              "status": 0,
+              "gas_wei": "68902873276178916",
+              "error": {
+                "code": 3,
+                "message": "execution reverted: DCF",
+                "data": "0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000034443460000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          ]
+        }
+      },
+      "actual_minus_removed_target_cashflow_ETH": "567.748565633800432540",
+      "interpretation": "Fixed-original-call target-removal sensitivity, not victim loss or optimal alternative profit. A reverted exit can leave economically valuable untracked/non-boundary inventory; negative cashflow is not all-in wealth loss. RPC simulation response audited offline, not a fresh local EVM execution or consensus proof."
+    },
+    {
+      "case_id": "A2",
+      "block": 26302300,
+      "target": "0x2ccafec913543cb6a8f13d9bf8f4fc77b3adb0b9bed4e32171560dac9670976d",
+      "accounts": [
+        "0x0124d0fa0dfb1430dfcff16ec6a96945e7a0bc10",
+        "0x36331e299247e5d0d3261e1d9852f6e0cffee95c"
+      ],
+      "baseline_transactions_reproduced": 463,
+      "evidence": {
+        "header": "data/raw/objects/45133a022257bd66fbd1201c9cddb42ecb54581e9990e5c30bc4fe534c439fa1.json.gz",
+        "receipts": "data/raw/objects/56a8dc4e6a3b2d391906afafbb810f4ad15c4755fb3613394e183fdbfe0ebc3d.json.gz",
+        "traces": "data/raw/objects/6c11b035027eb7bbe905188bf5321fa5b7612cc4f205bd2ec8ee26f408bd2e7d.json.gz",
+        "baseline_simulation": "data/raw/objects/f174f69b056e246edf1c27ccb6eec027a9c3dfa9cbe8583b44d2793803cac1fc.json.gz",
+        "actual_simulation": "data/raw/objects/7369527f95b74d6033c5fc36e433782925b52eb8f2a3572520f1a6620d4a5258.json.gz",
+        "remove_target_simulation": "data/raw/objects/bc8a92837175b0a22369423c0ab7581d4df61bab8e998676cebb984916f417dc.json.gz"
+      },
+      "scenarios": {
+        "actual": {
+          "net_cashflow_ETH": "0.000065472689682791",
+          "other_token_residual_raw": {},
+          "legs": [
+            {
+              "tx_hash": "0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851",
+              "status": 1,
+              "gas_wei": "972496905296097",
+              "error": null
+            }
+          ]
+        },
+        "remove_target": {
+          "net_cashflow_ETH": "-0.000689547530705142",
+          "other_token_residual_raw": {},
+          "legs": [
+            {
+              "tx_hash": "0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851",
+              "status": 0,
+              "gas_wei": "689547530705142",
+              "error": {
+                "code": 3,
+                "message": "execution reverted: UniswapV2: K",
+                "data": "0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000c556e697377617056323a204b0000000000000000000000000000000000000000"
+              }
+            }
+          ]
+        }
+      },
+      "actual_minus_removed_target_cashflow_ETH": "0.000755020220387933",
+      "interpretation": "Fixed-original-call target-removal sensitivity, not victim loss or optimal alternative profit. A reverted exit can leave economically valuable untracked/non-boundary inventory; negative cashflow is not all-in wealth loss. RPC simulation response audited offline, not a fresh local EVM execution or consensus proof."
+    },
+    {
+      "case_id": "A3",
+      "block": 26302437,
+      "target": "0xbf3fc95e45d932b1ad0a55e91e77fea8652906a3eeb0efd65850976059aef9d7",
+      "accounts": [
+        "0x5205b8122e1f6fa6066ba487e49f6e4cc81c2cbd",
+        "0xe45572dff1865af5f12208b09ce7506847f628bd"
+      ],
+      "baseline_transactions_reproduced": 394,
+      "evidence": {
+        "header": "data/raw/objects/17e4f5d5610dab0ff277d8f39b898a375b68d3cccd4e9e924d5e88c9fddbd192.json.gz",
+        "receipts": "data/raw/objects/8f52986bdac633f9e6fdadacb25bdb0e1dce4ccde853426255d232d4978487ca.json.gz",
+        "traces": "data/raw/objects/7931587fbae126fbc90c97a183137280b6ca7af4d9b9108c2e72f2543727648c.json.gz",
+        "baseline_simulation": "data/raw/objects/90f0d6f6cbab01979b4f64a7ee17263502429ac0233c28d8ebdd4e4f19c4b1fc.json.gz",
+        "actual_simulation": "data/raw/objects/f211956e5fa70803e9dd9ea9e8d6ef1d0e41ec4bc1058b51dfba463f169113f6.json.gz",
+        "remove_target_simulation": "data/raw/objects/42194f55bba1e25a39a1aef404cff065a3a3a25b229ac946deacd695d20b447e.json.gz"
+      },
+      "scenarios": {
+        "actual": {
+          "net_cashflow_ETH": "0.002184499542797343",
+          "other_token_residual_raw": {},
+          "legs": [
+            {
+              "tx_hash": "0xbe7e1a0554942e23cb6c960274ab52033c9851445810c061a1f34f9e041d74a4",
+              "status": 1,
+              "gas_wei": "2419126290265662",
+              "error": null
+            }
+          ]
+        },
+        "remove_target": {
+          "net_cashflow_ETH": "0.113234132737217321",
+          "other_token_residual_raw": {},
+          "legs": [
+            {
+              "tx_hash": "0xbe7e1a0554942e23cb6c960274ab52033c9851445810c061a1f34f9e041d74a4",
+              "status": 1,
+              "gas_wei": "10587642864780636",
+              "error": null
+            }
+          ]
+        }
+      },
+      "actual_minus_removed_target_cashflow_ETH": "-0.111049633194419978",
+      "interpretation": "Fixed-original-call target-removal sensitivity, not victim loss or optimal alternative profit. A reverted exit can leave economically valuable untracked/non-boundary inventory; negative cashflow is not all-in wealth loss. RPC simulation response audited offline, not a fresh local EVM execution or consensus proof."
+    }
+  ],
+  "hacker_incremental_loss_proven": false,
+  "not_additive": true,
+  "simulation_documentation": "https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-eth"
+}

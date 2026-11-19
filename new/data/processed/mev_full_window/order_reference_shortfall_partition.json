@@ -1,0 +1,123 @@
+{
+  "tx_hash": "0x3fd5ec345eaf60faca94c652f5ac5c0dca77b4ef3c355fb12cb8f5108464a0b6",
+  "block": 26300895,
+  "maker": "0x9749292d74fd460982d0912ea9515ea24736c762",
+  "resolver": "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82",
+  "gas_payer": "0x620ee0fe91d2e148434dd74ec8afc768edfc6675",
+  "fee_recipient": "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97",
+  "settlement_carrier": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+  "third_party_receiver": "0x90cbe4bdd538d6e9b379bff5fe72c3d67a521de5",
+  "maker_net_USDT_raw": "-28600454367187",
+  "maker_native_ETH_in": "9565.967441296956128627",
+  "third_party_native_ETH_in": "28.697902323890868385",
+  "reference_ETH_USD": "2257.9",
+  "maker_reference_shortfall_USD": "6965991.9180672908771730967",
+  "partition_USD": {
+    "resolver_marked_equity_gain_USD": "6144583.89909572876889079",
+    "direct_block_fee_recipient_payment_USD": "756464.8134035201995559552",
+    "third_party_settlement_payment_USD": "64796.9936571131917264915",
+    "actual_gas_USD": "146.21191092871699986"
+  },
+  "partition_reconciles_exactly": true,
+  "MEV_incremental_loss_proven": false,
+  "third_party_beneficial_owner_proven": false,
+  "actual_native_flows": [
+    {
+      "token": "native:eth",
+      "sender": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "recipient": "0x111111125421ca6dc452d289314280a0f8842a65",
+      "amount_raw": "9594665343620846997012",
+      "log_index": null,
+      "trace_address": [
+        0,
+        1,
+        0,
+        2,
+        4,
+        0
+      ]
+    },
+    {
+      "token": "native:eth",
+      "sender": "0x111111125421ca6dc452d289314280a0f8842a65",
+      "recipient": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+      "amount_raw": "9594665343620846997012",
+      "log_index": null,
+      "trace_address": [
+        0,
+        1,
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "token": "native:eth",
+      "sender": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+      "recipient": "0x90cbe4bdd538d6e9b379bff5fe72c3d67a521de5",
+      "amount_raw": "28697902323890868385",
+      "log_index": null,
+      "trace_address": [
+        0,
+        1,
+        0,
+        2,
+        6,
+        1
+      ]
+    },
+    {
+      "token": "native:eth",
+      "sender": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+      "recipient": "0x9749292d74fd460982d0912ea9515ea24736c762",
+      "amount_raw": "9565967441296956128627",
+      "log_index": null,
+      "trace_address": [
+        0,
+        1,
+        0,
+        2,
+        6,
+        2
+      ]
+    },
+    {
+      "token": "native:eth",
+      "sender": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "recipient": "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82",
+      "amount_raw": "446771141781453002988",
+      "log_index": null,
+      "trace_address": [
+        2,
+        0
+      ]
+    },
+    {
+      "token": "native:eth",
+      "sender": "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82",
+      "recipient": "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97",
+      "amount_raw": "335030255283015279488",
+      "log_index": null,
+      "trace_address": [
+        3
+      ]
+    },
+    {
+      "token": "native:eth",
+      "sender": "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82",
+      "recipient": "0x620ee0fe91d2e148434dd74ec8afc768edfc6675",
+      "amount_raw": "111740886498437723500",
+      "log_index": null,
+      "trace_address": [
+        4
+      ]
+    }
+  ],
+  "position_equity_evidence": "data/processed/mev_full_window/comet_resolver_equity.json",
+  "evidence": {
+    "header": "data/raw/objects/0272f794e785b8eb9a5c151ef1e9ff9f241f0b061dfb8e00e2b3602862ae176b.json.gz",
+    "receipts": "data/raw/objects/0ef9dd8791c3ceba53078a11de97d6493740d3e286f87f70d050be292f2077d0.json.gz",
+    "traces": "data/raw/objects/a0395792137280f86e14909f5bd949e7088461983fae7cb3e323be2a89fee117.json.gz"
+  },
+  "interpretation": "Same-transaction reference-price accounting identity, using maker asset deltas and resolver collateral-minus-debt equity. Unknown third-party recipient is retained by address, not labelled as protocol firm revenue. Not all-event, equilibrium or ordering-caused MEV loss."
+}

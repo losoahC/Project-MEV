@@ -1,4 +1,28 @@
-# 最新核验交付（2026-11-11）
+# 最新交付：全事件统一分配账（2026-11-19）
+
+打开 [中文交互核验报告](new/reports/event_allocation/全事件统一分配核验.html) 或 [中文研究正文](new/reports/event_allocation/全事件统一分配报告.md)。库存型交易、代币承接、TRON、LP 和区块付款已经汇入统一时间、价格与去重框架。
+
+- 共同窗口：2026-10-29 20:30 至 2026-10-30 07:00 UTC；覆盖已识别事件集合的 **104,064 笔唯一交易、872,470 条实际资产/仓位变化**。
+- **834 笔目标交易的事件钱包变化均已取得合约匹配历史报价**，参考损失合计 **$115,933,224.16**。参考价差、实际现金/本金变化和有反事实支持的因果 MEV 分别报告。
+- [同一张分阶段总表 CSV.gz](new/reports/event_allocation/all_stages_allocation.csv.gz) 共 **650,900 行**；主预算 85,230 笔，二次结算 53,238 条原生币转账。二次付款的 `primary_additive_USD` 为 0，避免重复累计。
+- [完整实际地址账](new/reports/event_allocation/actual_address_changes.csv.gz)、[全部交易索引（含零原币付款）](new/reports/event_allocation/transaction_index.csv.gz)、[逐池 LP 双估值](new/reports/event_allocation/lp_inventory_valuations.csv)、[全区块实际结算](new/reports/event_allocation/whole_block_native_settlements.csv.gz) 均已导出。
+- **98 项测试、10 项独立核验通过**。见 [核验结果](new/reports/event_allocation/validation.json)；图谱可导出 [PNG](new/reports/event_allocation/event_allocation_graph.png) / [SVG](new/reports/event_allocation/event_allocation_graph.svg)。
+
+未知报价凭证保留原币；全块付款的事件份额及最终受益所有权按证据标注。Bitquery 未公开逐笔全集，因此未声称与其全部交易已经逐笔全集匹配。新成果保存在本项目；先前批准保存的 Canva 副本保留。
+
+复算：`PYTHONPATH=new python -m src.event_allocation.reproduce`（默认使用本地归档，不下载网络数据）。显式阶段 `--stage reconstruct` 重建原币账，`--stage collect` 采集原始数据，`--stage audit` 重做导出核验。
+
+---
+
+## 之前版本与研究背景
+
+# 当前研究入口（2026-11-19）
+
+先打开 [真实收支核对入口](new/reports/mev_expansion/真实收支核对入口.html)，可选真实案例查看收到、转出、Gas、原币净变化和 Etherscan 链接。完整解释见 [中文报告](new/reports/mev_expansion/完整套利与MEV核验报告.md) 或 [带图 HTML](new/reports/mev_expansion/完整套利与MEV核验报告.html)。本轮读取 Ethereum 3,311 块／751,258 回执；2,483 个 ETH/WETH 正收益闭合单元净留存 244.618801770585241269 ETH；471 个分配差额全部对平；2,939 个已观察 proposer 交付金额与链上实际收款一致；372 个目标完成 319 个区块的联合干预。87 项检查通过。
+
+[逐笔真实转账 CSV.gz](new/reports/mev_expansion/逐笔真实转账与Etherscan链接.csv.gz) · [逐地址实际收支 CSV.gz](new/reports/mev_expansion/逐交易逐地址实际收支.csv.gz) · [全部操作单元与判据](new/reports/mev_expansion/全部操作单元与判据.csv) · [交付审计](new/reports/mev_expansion/expanded_requirements_audit.json) · [最新14页演示预览](new/reports/presentation/completion_revision/review.html)。原 Canva 已保存；用户批准的新14页副本也已提交并读回核对，[打开更新稿](https://www.canva.com/d/83U9CSo9ZRBAMU4)。全事件因果量、最终控制人及缺乏可靠行情的资产估值保留识别边界，不填假数。以下仅为历史记录。
+
+# 历史核验交付（2026-11-11）
 
 请先阅读 [最终研究报告](research/最终研究报告_2026-11-11.md)。本稿包含新历史核查、逐钱包 ETH 购买及交易环重算；原 PDF 为早期版本。
 

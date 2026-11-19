@@ -1,0 +1,145 @@
+{
+  "tx_hash": "0x3fd5ec345eaf60faca94c652f5ac5c0dca77b4ef3c355fb12cb8f5108464a0b6",
+  "block": 26300895,
+  "boundary": [
+    "0x620ee0fe91d2e148434dd74ec8afc768edfc6675",
+    "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82"
+  ],
+  "common_beneficial_ownership_proven": false,
+  "comet": "0xa17581a9e3356d9a858b789d68b4d866e593ae94",
+  "position_owner": "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82",
+  "states": {
+    "before": {
+      "base_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "supply_raw": "0",
+      "borrow_raw": "0",
+      "USDT_collateral_raw": "0"
+    },
+    "after": {
+      "base_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "supply_raw": "0",
+      "borrow_raw": "10041436485402300000000",
+      "USDT_collateral_raw": "28600454367187"
+    }
+  },
+  "actual_cashflow": {
+    "token_net_raw": {},
+    "other_token_residual_raw": {},
+    "native_net_wei": "111740886498437723500",
+    "gas_wei": "64755707041373400",
+    "identified_builder_payment_wei": "335030255283015279488",
+    "cashflow_before_gas_ETH": "111.7408864984377235",
+    "gross_after_pool_fees_before_gas_and_builder_ETH": "446.771141781453002988",
+    "net_after_gas_and_builder_ETH": "111.6761307913963501",
+    "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+  },
+  "liquid_change_after_actual_gas_raw": {
+    "native:eth": "111676130791396350100"
+  },
+  "position_equity_change_raw": {
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "-10041436485402300000000",
+    "0xdac17f958d2ee523a2206206994597c13d831ec7": "28600454367187"
+  },
+  "combined_equity_change_raw": {
+    "0xdac17f958d2ee523a2206206994597c13d831ec7": "28600454367187",
+    "native:eth": "111676130791396350100",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "-10041436485402300000000"
+  },
+  "reference_valuations": [
+    {
+      "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "raw": "28600454367187",
+      "symbol": "USDT",
+      "decimals": 6,
+      "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+      "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+      "quantity": "28600454.367187",
+      "reference_USD": "0.99876",
+      "USD": "28564989.80377168812",
+      "price_evidence": {
+        "venue": "Coinbase",
+        "symbol": "USDT",
+        "quote": "USD",
+        "bar_start": 1793306880,
+        "stale_minutes": 0,
+        "lookback_minutes": 1,
+        "field": "close",
+        "sources": [
+          "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+          "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+        ]
+      },
+      "confidence": "reference_price_estimate_from_contract_matched_market"
+    },
+    {
+      "address": "native:eth",
+      "raw": "111676130791396350100",
+      "symbol": "ETH",
+      "decimals": 18,
+      "identity_basis": "Ethereum native ETH",
+      "decimal_basis": "Ethereum wei denomination",
+      "quantity": "111.6761307913963501",
+      "reference_USD": "2257.9",
+      "USD": "252153.53571389381889079",
+      "price_evidence": {
+        "venue": "Coinbase",
+        "symbol": "ETH",
+        "quote": "USD",
+        "bar_start": 1793306880,
+        "stale_minutes": 0,
+        "lookback_minutes": 1,
+        "field": "close",
+        "sources": [
+          "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+          "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+        ]
+      },
+      "confidence": "reference_price_estimate_from_contract_matched_market"
+    },
+    {
+      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "raw": "-10041436485402300000000",
+      "symbol": "ETH",
+      "decimals": 18,
+      "identity_basis": "WETH contract redemption parity with native ETH; explicit wrapper assumption",
+      "decimal_basis": "ERC20 WETH canonical constant",
+      "quantity": "-10041.4364854023",
+      "reference_USD": "2257.9",
+      "USD": "-22672559.44038985317",
+      "price_evidence": {
+        "venue": "Coinbase",
+        "symbol": "ETH",
+        "quote": "USD",
+        "bar_start": 1793306880,
+        "stale_minutes": 0,
+        "lookback_minutes": 1,
+        "field": "close",
+        "sources": [
+          "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+          "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+        ]
+      },
+      "confidence": "reference_price_estimate_from_contract_matched_market"
+    }
+  ],
+  "reference_equity_gain_after_gas_USD": "6144583.89909572876889079",
+  "actual_prefix_transaction_comparisons": 25,
+  "evidence": {
+    "header": "data/raw/objects/0272f794e785b8eb9a5c151ef1e9ff9f241f0b061dfb8e00e2b3602862ae176b.json.gz",
+    "receipts": "data/raw/objects/0ef9dd8791c3ceba53078a11de97d6493740d3e286f87f70d050be292f2077d0.json.gz",
+    "traces": "data/raw/objects/a0395792137280f86e14909f5bd949e7088461983fae7cb3e323be2a89fee117.json.gz",
+    "prefix_state_diagnostics": {
+      "before": "data/raw/victim_simulations/f90b0da1870bd50f1f4f92fd00d5a203fb06eeeee52900b905f6b292d9343a92.json",
+      "after": "data/raw/victim_simulations/27de2cf4d27d35efbca5e048886f33e1e7e4cb937ebcc7559ca8d87a52909863.json"
+    }
+  },
+  "mechanism": "Order resolver uses received USDT as collateral and borrows WETH from Compound to fulfil the order. Equity accounting adds collateral and subtracts debt; borrowed cash is not profit.",
+  "MEV_classification": "Order-filling execution spread; transaction ordering causation not established. Not classified as MEV from gas or Compound borrowing.",
+  "limits": [
+    "Prefix RPC reproduces actual statuses/gas/logs; not a consensus state-root proof.",
+    "Diagnostic view-call gas is excluded; only actual transaction gas is deducted.",
+    "Marked position equity at transaction time, not liquidation proceeds, ultimate owner PnL or eventual debt repayment.",
+    "External payments remain outside the stated boundary; no common ownership inferred."
+  ],
+  "protocol_interface_source": "https://raw.githubusercontent.com/compound-finance/comet/main/contracts/CometMainInterface.sol"
+}

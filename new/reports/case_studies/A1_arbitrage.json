@@ -1,0 +1,863 @@
+{
+  "token_net_raw": {},
+  "other_token_residual_raw": {},
+  "native_net_wei": "3884876592117177857",
+  "gas_wei": "1139064297617240792",
+  "identified_builder_payment_wei": "8252947611860856740",
+  "cashflow_before_gas_ETH": "3.884876592117177857",
+  "gross_after_pool_fees_before_gas_and_builder_ETH": "12.137824203978034597",
+  "net_after_gas_and_builder_ETH": "2.745812294499937065",
+  "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again.",
+  "pool_flow_surplus_ETH": "12.137824203978034597",
+  "unallocated_pool_surplus_vs_operational_gross_ETH": "0E-18",
+  "case_id": "A1",
+  "block": 26300992,
+  "tx_hash": "0x722001ce0a09024d683592474d12df947aa9548befb0292ae098a9db37a0aa7c",
+  "target": "0x2a1979ae32a40c0aaa0df757f6af690857c6c8cb86097cac29316597de9469f6",
+  "accounts": [
+    "0xb7c2f4c212e83c9503beb0cbe53013bfbdb51f2e",
+    "0xc77a078a0e45bb30912c1e3bb0c20571e6728dfa"
+  ],
+  "route_label": "Multi-pool atomic cycle",
+  "timestamp_utc": "2026-10-29T21:09:11+00:00",
+  "sender": "0xc77a078a0e45bb30912c1e3bb0c20571e6728dfa",
+  "executor": "0xb7c2f4c212e83c9503beb0cbe53013bfbdb51f2e",
+  "actor_index": 20,
+  "target_index": 3,
+  "same_pool_opposite_direction": [
+    "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+    "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+    "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36"
+  ],
+  "route": [
+    {
+      "pool": "0x1d42064fc4beb5f8aaf85f4617ae8b3b5b8bd801",
+      "input_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "output_token": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "input_raw": "33646353211685082679",
+      "output_raw": "12287672430249561022277",
+      "input_quantity": "33.646353211685082679",
+      "output_quantity": "12287.672430249561022277",
+      "output_per_input": "365.200720355695499579144280006829666879032484799823046605456692877062476154997225181610214",
+      "swap_log_indices": [
+        635,
+        645
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x3470447f3cecffac709d3e783a307790b0208d60",
+      "input_token": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "output_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "input_raw": "12287672430249561022277",
+      "output_raw": "115356979190",
+      "input_quantity": "12287.672430249561022277",
+      "output_quantity": "115356.97919",
+      "output_per_input": "9.38802526229592163846274739371591076485445013639599558082036967666473626601929983786649720",
+      "swap_log_indices": [
+        627,
+        640
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+      "input_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "output_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "input_raw": "80429611872",
+      "output_raw": "65059624026",
+      "input_quantity": "80429.611872",
+      "output_quantity": "65059.624026",
+      "output_per_input": "0.808901379874111249273293024302809108550213643880656124720879966003971716890893117351284985",
+      "swap_log_indices": [
+        630,
+        673
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 100,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+      "input_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "output_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "input_raw": "135154907455",
+      "output_raw": "49855579730893551332",
+      "input_quantity": "135154.907455",
+      "output_quantity": "49.855579730893551332",
+      "output_per_input": "0.000368877317662276011892519851971807929643482289638330025372736473825585218369901476397707323",
+      "swap_log_indices": [
+        633,
+        656,
+        666
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 500,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+      "input_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "output_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "input_raw": "223597615814844981869",
+      "output_raw": "742879535658",
+      "input_quantity": "223.597615814844981869",
+      "output_quantity": "742879.535658",
+      "output_per_input": "3322.39470868579409417789440424821327235430529754447935805700819869206742329688074244230048",
+      "swap_log_indices": [
+        643,
+        692
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0xc5c7c21f4e60770ca5991a8832127a40f5236f73",
+      "input_token": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+      "output_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "input_raw": "155076940",
+      "output_raw": "225935056207902670770",
+      "input_quantity": "155.07694",
+      "output_quantity": "225.93505620790267077",
+      "output_per_input": "1.45692232647808675338835032468399234599289875077493791146510886789486560671109450573373449",
+      "swap_log_indices": [
+        658,
+        690
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0xc756bba710d45647715079ce50aa16aab36ded42",
+      "input_token": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+      "output_token": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+      "input_raw": "12261537",
+      "output_raw": "12233835233377731831",
+      "input_quantity": "12.261537",
+      "output_quantity": "12.233835233377731831",
+      "output_per_input": "0.997740759040056057490998069817837682176386206721066045798336701181915448283522693769957225",
+      "swap_log_indices": [
+        650
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 100,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x5ae13baaef0620fdae1d355495dc51a17adb4082",
+      "input_token": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+      "output_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "input_raw": "12233835233377731831",
+      "output_raw": "49633067329",
+      "input_quantity": "12.233835233377731831",
+      "output_quantity": "49633.067329",
+      "output_per_input": "4057.03251532973541066473536627727382626632026538394747992468042751513937444778104147527430",
+      "swap_log_indices": [
+        653
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 500,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "input_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "output_token": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "input_raw": "6458362563059708841",
+      "output_raw": "23835238",
+      "input_quantity": "6.458362563059708841",
+      "output_quantity": "0.23835238",
+      "output_per_input": "0.0369060079350946753343891965872143207561288282986489409971515824710416919201595750536943349",
+      "swap_log_indices": [
+        668
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 500,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x9a772018fbd77fcd2d25657e5c547baff3fd7d16",
+      "input_token": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "output_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "input_raw": "23835238",
+      "output_raw": "18339767537",
+      "input_quantity": "0.23835238",
+      "output_quantity": "18339.767537",
+      "output_per_input": "76943.9245246890339420986692056525720448019021249127027806477115940692515845656754088211748",
+      "swap_log_indices": [
+        663
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 500,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x397ff1542f962076d0bfe58ea045ffa2d347aca0",
+      "input_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "output_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "input_raw": "822195333527466219",
+      "output_raw": "2122448563",
+      "input_quantity": "0.822195333527466219",
+      "output_quantity": "2122.448563",
+      "output_per_input": "2581.44077988627696608559348111994303444023047273661045100706926845498943095673197304355294",
+      "swap_log_indices": [
+        682
+      ],
+      "protocol": "V2-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x80fa4c1fd0fbb9a4f071999af69531dee1016644",
+      "input_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "output_token": "0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb",
+      "input_raw": "2661933100",
+      "output_raw": "3235337039146687442629",
+      "input_quantity": "2661.9331",
+      "output_quantity": "3235.337039146687442629",
+      "output_per_input": "1.21540884673122981288635691107338497725581458076463304055237150775877876119426141851573956",
+      "swap_log_indices": [
+        676
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x06f00544c0bc62e6db10f46d370dfccdc23d8189",
+      "input_token": "0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb",
+      "output_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "input_raw": "3235337039146687442629",
+      "output_raw": "871715188299052103",
+      "input_quantity": "3235.337039146687442629",
+      "output_quantity": "0.871715188299052103",
+      "output_per_input": "0.000269435665512290781236581828695527542942693982997950107087524581157553499550506681113876641",
+      "swap_log_indices": [
+        679
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 3000,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    },
+    {
+      "pool": "0x6546055f46e866a4b9a4a13e81273e3152bae5da",
+      "input_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "output_token": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+      "input_raw": "775144969876",
+      "output_raw": "167338477",
+      "input_quantity": "775144.969876",
+      "output_quantity": "167.338477",
+      "output_per_input": "0.000215880233379788491614792743814404549684410858217743380853003766799612293276123464190497565",
+      "swap_log_indices": [
+        687
+      ],
+      "protocol": "V3-compatible (event only)",
+      "fee_pips": 500,
+      "fee_note": "Pool fees embedded in observed net proceeds; fee tier alone does not allocate fee-growth to individual LPs."
+    }
+  ],
+  "metadata": {
+    "0x3470447f3cecffac709d3e783a307790b0208d60": {
+      "pool": "0x3470447f3cecffac709d3e783a307790b0208d60",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/3ad3522278671d29439fbcf8da1f686e247a0eb6d63fe8ce5302a1529eb70fa6.json",
+        "token1": "data/raw/public_rpc/6b2cab25177e656316ce6ab2e4bc5868af5b20353a41e76c0212cb1699129c8f.json",
+        "factory": "data/raw/public_rpc/063a4d806a6692f9612f275c45cd3421c0b6aaddd8ccd7afc6a470d3bdc4d860.json",
+        "fee": "data/raw/public_rpc/dcccfdd239b2b692fdaa23e564d6d002f4c44d7d336196bf5e5e77337eff09b5.json",
+        "decimals0": "data/raw/public_rpc/07da2de22a070eaba28889a249529759bcff3c34770b777956cea0e5532c3338.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0x3416cf6c708da44db2624d63ea0aaef7113527c6": {
+      "pool": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/fd6cfac6671895b52101251ba1635db0bd815e704ebf9884f4960fa5a0fbe1a2.json",
+        "token1": "data/raw/public_rpc/dc8e9644d282f44030d673342820d5a1624d33101c1547d8d97271bee3520835.json",
+        "factory": "data/raw/public_rpc/1727d6573e559029ebc2354a571af2af22f50e05ce142ca86c73f082f2e22146.json",
+        "fee": "data/raw/public_rpc/4945e1ac6f1e19bf360b9e70684c8f598d51c44997385fb9ff60b328a2a3e10e.json",
+        "decimals0": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 100,
+      "decimals0": 6,
+      "decimals1": 6
+    },
+    "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640": {
+      "pool": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/d8f584a1a8582fbf288fe59fd4d7372b501b17454ac46a1d6b898644c32ceecf.json",
+        "token1": "data/raw/public_rpc/77826eeb6f24b8405b1a8499bf0fdfe84d2e8d3b83898d891d1d411ec25f2b50.json",
+        "factory": "data/raw/public_rpc/cf89b55dc8ffb03d90b4b726dbe220924689b212479a3dbcfec4b6d68bf7165c.json",
+        "fee": "data/raw/public_rpc/4222faf083dd3bf201cd5aa131f3280a57e5c175ca53d0850e443e136b31b12b.json",
+        "decimals0": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 500,
+      "decimals0": 6,
+      "decimals1": 18
+    },
+    "0x1d42064fc4beb5f8aaf85f4617ae8b3b5b8bd801": {
+      "pool": "0x1d42064fc4beb5f8aaf85f4617ae8b3b5b8bd801",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/8fad6c7da4b1bb67da3b73ead3e115a02ebb31160808a4a47df967745e2e1b73.json",
+        "token1": "data/raw/public_rpc/353a1328b0cdf44094984c028aa2c98d7fcae25bcb20f4e7ac8af7055bc585cf.json",
+        "factory": "data/raw/public_rpc/17d4c16f0245f22259abf3c1d26f797411f79c232faad7ba128a02d002df45cc.json",
+        "fee": "data/raw/public_rpc/1301588479e170e01fd688d1df23280cee4ce961ec7d9eb3f3c7c77a36380618.json",
+        "decimals0": "data/raw/public_rpc/07da2de22a070eaba28889a249529759bcff3c34770b777956cea0e5532c3338.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 18,
+      "decimals1": 18
+    },
+    "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36": {
+      "pool": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/d5c217c7d661b2b405da5be7b4b2b85a8958172b6ebf435c9c92c950b1e6e650.json",
+        "token1": "data/raw/public_rpc/14c16b47de8b64a7ae9b588e7762e22d12b41271a36d779dcecfe9df041340ec.json",
+        "factory": "data/raw/public_rpc/ccf4dc43d2e1de33ceb42cf6ab95392c216bf525acf3ef41cecd7cb41e3fcefb.json",
+        "fee": "data/raw/public_rpc/2526e31bc8c8883d47ccb74fd932a6e06b700cd7c099b25f40e7f393a1e0de6a.json",
+        "decimals0": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0xc756bba710d45647715079ce50aa16aab36ded42": {
+      "pool": "0xc756bba710d45647715079ce50aa16aab36ded42",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/2621499d8d286a3eb3f684e39800b76f5cb11a1a351c45873780eb52b6b7c6fb.json",
+        "token1": "data/raw/public_rpc/52bda38a9a854a938b0e5e9ab97a1f319a59cdb08b1a00c12e79f6ef9c310fa3.json",
+        "factory": "data/raw/public_rpc/ae6ba11c4c745b084d58e7f693209a9d4d069bb7d08a549981fe4a6a349336e3.json",
+        "fee": "data/raw/public_rpc/d0f7a54531891b0acc06fe8a21180037d5d10914e482cfb647b9aef43ad7451a.json",
+        "decimals0": "data/raw/public_rpc/b4b00ccd56e72b52a52667f476251622a2665027eac737348b8711744b4746a4.json",
+        "decimals1": "data/raw/public_rpc/ff5704855d55c710b2c11db954f96eb6c1b89a89f6943cc3d70aa4c8c55c3a74.json"
+      },
+      "token0": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+      "token1": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 100,
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0x5ae13baaef0620fdae1d355495dc51a17adb4082": {
+      "pool": "0x5ae13baaef0620fdae1d355495dc51a17adb4082",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/827f3b9ffc6a168089ad0b5cf340b67421e938c71ffd28dfb0458973d4ef3f06.json",
+        "token1": "data/raw/public_rpc/16f766a4470917c920f80ab27f6febc4ac1351ac7d1478043452873b15333120.json",
+        "factory": "data/raw/public_rpc/d418056a1e8612d330d661d383bd87890217555153553a60641751e95586a74c.json",
+        "fee": "data/raw/public_rpc/45d655083d8caf8706e79174331740ca5ae71dd8ca412be440580309389929e4.json",
+        "decimals0": "data/raw/public_rpc/b4b00ccd56e72b52a52667f476251622a2665027eac737348b8711744b4746a4.json",
+        "decimals1": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json"
+      },
+      "token0": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+      "token1": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 500,
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0xc5c7c21f4e60770ca5991a8832127a40f5236f73": {
+      "pool": "0xc5c7c21f4e60770ca5991a8832127a40f5236f73",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/ee4ebf24b8f904d8fd6d272c913d1e1c6dfa06faa990d7136de128d1dc5720c6.json",
+        "token1": "data/raw/public_rpc/0c00cdafaf7c3933a217f181a278796b042764affe081559012b70bb23100fc8.json",
+        "factory": "data/raw/public_rpc/51cd870019dd70b37713648f93ad5b3a1ec1df1e50ed177056e792ea5d57543f.json",
+        "fee": "data/raw/public_rpc/be92def5f6400304243d12e0e116796d9e1c2a24f6fef2b3b39bc8acbb6db78c.json",
+        "decimals0": "data/raw/public_rpc/ff5704855d55c710b2c11db954f96eb6c1b89a89f6943cc3d70aa4c8c55c3a74.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 6,
+      "decimals1": 18
+    },
+    "0x9a772018fbd77fcd2d25657e5c547baff3fd7d16": {
+      "pool": "0x9a772018fbd77fcd2d25657e5c547baff3fd7d16",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/3fbf0c51d7bb50c283aa0709b3d8a81f9d8bbeddb7d8c80fec8f1ddfc740bc82.json",
+        "token1": "data/raw/public_rpc/028517cbc0811d54aa439f00d1b8971b28379468ecf62979326610f8564be22a.json",
+        "factory": "data/raw/public_rpc/1525b8090a7ece837b86eb5e1e3d71d22fe8fd169a08495d092b95ffc3dbf18b.json",
+        "fee": "data/raw/public_rpc/a4921946befd07081f5083dc1233a62ad17df6fadea0ef0e38f055e9796e7e33.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 500,
+      "decimals0": 8,
+      "decimals1": 6
+    },
+    "0x4585fe77225b41b697c938b018e2ac67ac5a20c0": {
+      "pool": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/b8074b21bf3f650c3ff015212df1a16352e11dc4ab61311da4c7b68140ec942d.json",
+        "token1": "data/raw/public_rpc/8c1cf96ecf9328ef1ae65d652c37354fd8f6744754c26fc7390d05bf86184d63.json",
+        "factory": "data/raw/public_rpc/3faf1882fc1567b54a84bf7ad18aeb4964d7118337df6c8eedc3cfa5574acd8d.json",
+        "fee": "data/raw/public_rpc/fee633087a4bc81ea0ccd5832b9ad6a36650edba06c16c5ef87a366e416ea065.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 500,
+      "decimals0": 8,
+      "decimals1": 18
+    },
+    "0x80fa4c1fd0fbb9a4f071999af69531dee1016644": {
+      "pool": "0x80fa4c1fd0fbb9a4f071999af69531dee1016644",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/a06c9d493d5a913063d345843059b0cf34ce78518410b195a83f6f5d15c14571.json",
+        "token1": "data/raw/public_rpc/1fa249f5b4414d9b1c075b4affbc99f9037136cf5556428216e1c295989ed8cf.json",
+        "factory": "data/raw/public_rpc/b33766d11cf93cf5cacdf18148fbb2135c911b464de1ee940734becf91c242c4.json",
+        "fee": "data/raw/public_rpc/7cf93af4d57f1b93d4ceb631be8d89f0a68a33ce8049c8a2e171bf4581638276.json",
+        "decimals0": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json",
+        "decimals1": "data/raw/public_rpc/2eb1a6aab77702a447b72031b24ebc72e4b0c6ae16ba5e1b71fdbffbb32da7dc.json"
+      },
+      "token0": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "token1": "0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 6,
+      "decimals1": 18
+    },
+    "0x06f00544c0bc62e6db10f46d370dfccdc23d8189": {
+      "pool": "0x06f00544c0bc62e6db10f46d370dfccdc23d8189",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/74991e1a0ddd5bb7af640ff00325ecb0db6683da914c38964a72a18e72a3dd2a.json",
+        "token1": "data/raw/public_rpc/8bbc33c4ad578305e2c77276cb4d2e94be2fe5818899f9a3c60470b5aa8e7219.json",
+        "factory": "data/raw/public_rpc/e9fd30d3f0f48ce2bfedaca39cb13011797e6a65cfff392703fd6956ca4df901.json",
+        "fee": "data/raw/public_rpc/d6d40d527a8ed4e922ac03966f57d9be1ecb7a2c69994cd5aeb7bc4e2d55cdc2.json",
+        "decimals0": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json",
+        "decimals1": "data/raw/public_rpc/2eb1a6aab77702a447b72031b24ebc72e4b0c6ae16ba5e1b71fdbffbb32da7dc.json"
+      },
+      "token0": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "token1": "0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 18,
+      "decimals1": 18
+    },
+    "0x397ff1542f962076d0bfe58ea045ffa2d347aca0": {
+      "pool": "0x397ff1542f962076d0bfe58ea045ffa2d347aca0",
+      "protocol": "V2-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/28ef0b4e0d916f3e9e59117fe99a12ade34ea8dd1de198ab96c23d770bd612ed.json",
+        "token1": "data/raw/public_rpc/c3be2b50282006a5b7a827af0eb59175005cb42dfb9681b4aca331e0ea7d2535.json",
+        "factory": "data/raw/public_rpc/8d47ca7c5162848ffd3d198d9b27e925c533a5e6d193524d69090186be44340b.json",
+        "decimals0": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0xc0aee478e3658e2610c5f7a4a2e1777ce9e4f2ac",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 6,
+      "decimals1": 18
+    },
+    "0x6546055f46e866a4b9a4a13e81273e3152bae5da": {
+      "pool": "0x6546055f46e866a4b9a4a13e81273e3152bae5da",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/83281e3c1b303940d3532754ca26967cec08e053fa290c9cf58f5788d6ebe712.json",
+        "token1": "data/raw/public_rpc/749afbfac6728a372d1c60f0fea2bd53f567657f64cdf7d818d082abce86ad23.json",
+        "factory": "data/raw/public_rpc/e6754df18db4e855f6b688f22f9e88f5024848bf02333622bdd71f2123ba9b17.json",
+        "fee": "data/raw/public_rpc/8d9c58f841f437c97bc56437ff03642c95f0d7e824a3aed184a153add64f0bae.json",
+        "decimals0": "data/raw/public_rpc/ff5704855d55c710b2c11db954f96eb6c1b89a89f6943cc3d70aa4c8c55c3a74.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 500,
+      "decimals0": 6,
+      "decimals1": 6
+    },
+    "0x3041cbd36888becc7bbcbc0045e3b1f144466f5f": {
+      "pool": "0x3041cbd36888becc7bbcbc0045e3b1f144466f5f",
+      "protocol": "V2-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/7f13f859166840394532189e50affc5f878a5bd20726f9ed2d4971a838f8070d.json",
+        "token1": "data/raw/public_rpc/770a3776657593e913f39a32de1b03e68426a754d5b43664b35846e9a92d58a6.json",
+        "factory": "data/raw/public_rpc/2151033e351531565f75f980ed10b4578e2c8dd4cfbfb9e5e434438fff3f92dd.json",
+        "decimals0": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 6,
+      "decimals1": 6
+    },
+    "0x56534741cd8b152df6d48adf7ac51f75169a83b2": {
+      "pool": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/f20f5bb8342ea3989c64eac980924441cb86d38b83fb2e939da68b2b2ccc50a6.json",
+        "token1": "data/raw/public_rpc/ca1183b3b4fe44373cf86e211fa3da334a86537d583865e218adef5459151648.json",
+        "factory": "data/raw/public_rpc/88f064f8fb574997546a6f8d5b9564b9497f5be7d4028bce9610c76765df3e13.json",
+        "fee": "data/raw/public_rpc/b3936e17ed018e4115c74493d9d13ec1ea2837b7aac24dd7357bdd43ad654b49.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 500,
+      "decimals0": 8,
+      "decimals1": 6
+    },
+    "0x9db9e0e53058c89e5b94e29621a205198648425b": {
+      "pool": "0x9db9e0e53058c89e5b94e29621a205198648425b",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/9a866d72bb762723a8b86db975f2c5d7c5692ad04cfd54bbd8e23aa6bfc91720.json",
+        "token1": "data/raw/public_rpc/81af50ae051277b6995ee91b64a8ba5e2e49ccc2a42301bbde5a7a1e2e56f65a.json",
+        "factory": "data/raw/public_rpc/0d9f16e76e047cdd741f9fe0d947c9e6a6d388a643570c8d934305dfabb75be3.json",
+        "fee": "data/raw/public_rpc/ee9a8adf38d71d23c0facbf714c3e48514b6bd6317f216368327188534733e5f.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 8,
+      "decimals1": 6
+    },
+    "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852": {
+      "pool": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852",
+      "protocol": "V2-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/497ffd0af7c45256d50dbf6a4eae8b6614c95818b861379fdda357e5e482c2db.json",
+        "token1": "data/raw/public_rpc/adf4e92c5944f45f5a83003726fe981809aa4ab31bbaea3d3405c86f2e392c3e.json",
+        "factory": "data/raw/public_rpc/e2539bf23b390df876f5c8ff45ccfb18bc6a7b9e1416b031bd1a60f438bfa42c.json",
+        "decimals0": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0x11b815efb8f581194ae79006d24e0d814b7697f6": {
+      "pool": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/47ca6bf8e0e514b923b34ec6eba523a99df45eee640f25ab4a5782d6abe10cb4.json",
+        "token1": "data/raw/public_rpc/365fa00117bdedc7c7ba8efe69be57d6c17ba9d87614bcce11b310cae408b568.json",
+        "factory": "data/raw/public_rpc/12f1c4de4c37ddad39430236cb0fdd43482772d5ee843c14f5705cf63cdd32e1.json",
+        "fee": "data/raw/public_rpc/ee9ae917fa0977de8e8ef78e5ea7b3772ea24c368f28a70431219c5c625415d3.json",
+        "decimals0": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 500,
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0xc5af84701f98fa483ece78af83f11b6c38aca71d": {
+      "pool": "0xc5af84701f98fa483ece78af83f11b6c38aca71d",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/e2ab09ebc4cac910d2064c8a316b4e2d7d49db0a17a131e5afe3ed1241875fba.json",
+        "token1": "data/raw/public_rpc/84c77315e0d790a2a2db462e868e1909010a1f1485694a12b3a46d7de7e8ccb5.json",
+        "factory": "data/raw/public_rpc/cb34830e4cfcbd2477caa5f98190e5a5b3a17c1be6fb8db3ddfa707e0fc7e546.json",
+        "fee": "data/raw/public_rpc/27e6b31ec7a0568b5a2c435905e1558cf908b588a8e2e89548a0b4db3d2b56be.json",
+        "decimals0": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 10000,
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b": {
+      "pool": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/85bb5ef9a959b4d2f5be1219131a85869455bf6d24dde6c17297d9500444bfa0.json",
+        "token1": "data/raw/public_rpc/eabad5367228ecd223544a9cda4fe65916896b5ac068267bb2d2c450e9a44b6f.json",
+        "factory": "data/raw/public_rpc/72be324beea3e52ca063b099e4258523410539696f4770bb0b9740e00149480a.json",
+        "fee": "data/raw/public_rpc/c273e49d1b8830878d4e72ebd5cc2a4d6cd9eae6e69b11a807f6314db47ef62b.json",
+        "decimals0": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 100,
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0x6a11ed98b1a3ac36a768ebbbba36ded101da5a3f": {
+      "pool": "0x6a11ed98b1a3ac36a768ebbbba36ded101da5a3f",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/18c9eaaf69c971c27ff15c33dd4c4bb64f81849e60771676059064d0f5b506fd.json",
+        "token1": "data/raw/public_rpc/62af3fa3cfd1f9d618caad07ec735b65f832bf7a47b04e43e88b761697500947.json",
+        "factory": "data/raw/public_rpc/2e0760a225e9377230081ed38249d804c8c66c05fcc1c85e79304502c0d8a9fa.json",
+        "fee": "data/raw/public_rpc/884452860d16bf7a8388ef2cc4769f346329e43b1aec726296869c506c181c65.json",
+        "decimals0": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json",
+        "decimals1": "data/raw/public_rpc/22c1a6985ae3792b6c10a91a1620a738c9684d3c120c2fbc9cc91a68fa96a837.json"
+      },
+      "token0": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "factory": "0xbaceb8ec6b9355dfc0269c18bac9d6e2bdc29c4f",
+      "fee_pips": 3000,
+      "decimals0": 18,
+      "decimals1": 6
+    },
+    "0x769db46f39c42ee7ad5f71f4167c47edd281e767": {
+      "pool": "0x769db46f39c42ee7ad5f71f4167c47edd281e767",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/77c00f3b298dd0913453856a00fb7fca56e77ec745261aafa1424ce53ac85ca6.json",
+        "token1": "data/raw/public_rpc/a82e79eb46c2690e390b6a52da86cff89a23323cff78a0284eb52bd785844a68.json",
+        "factory": "data/raw/public_rpc/e988f2b387e5fd975b48947232774e87139aa4588e8a4d2920538915ba50468c.json",
+        "fee": "data/raw/public_rpc/cd3c6006d6d968d18fe0987cbdde8a91c60f072e6ec1a04df139e07ca4ed86e2.json",
+        "decimals0": "data/raw/public_rpc/ee7d2fb6a98d9f60c095fac02d67929c06a642072c2add9426d8e96609c50d48.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0xbaceb8ec6b9355dfc0269c18bac9d6e2bdc29c4f",
+      "fee_pips": 3000,
+      "decimals0": 18,
+      "decimals1": 18
+    },
+    "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8": {
+      "pool": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/040a4430ebbfe8a127bf30c6665f2ceb0395e0ed8336d5b5af1acdc63caaad40.json",
+        "token1": "data/raw/public_rpc/146a3da7e25210ac6f9057984e74bc883d8eaf9276aa33649c1dec9fb364e6ef.json",
+        "factory": "data/raw/public_rpc/7a6543c78150a49f22fc91f9b4d4a6b7bd140e36812c2b884835fadf36a3457d.json",
+        "fee": "data/raw/public_rpc/89c216bb5d3a576b9ef3eecafdc5b400cad731bb7d03c9048d696e11f8fa4333.json",
+        "decimals0": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 6,
+      "decimals1": 18
+    },
+    "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc": {
+      "pool": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+      "protocol": "V2-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/cbed78d5eca0d2cd4d740d8566fa793c63b46d4186f054edba8896a78717fadc.json",
+        "token1": "data/raw/public_rpc/12d3608e73f110a0454bc322b122450e0bc35e6f2b9516b2305164676a412ff1.json",
+        "factory": "data/raw/public_rpc/67804454be83b3acdb1eb586fc6e4d252999b3812b9e33726de567c60b8f4b5f.json",
+        "decimals0": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 6,
+      "decimals1": 18
+    },
+    "0xe0554a476a092703abdb3ef35c80e0d76d32939f": {
+      "pool": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/e3b3f8ab48fb1cc9810b5a36dc38c466f31d9f8431e359a9327449f9086a884a.json",
+        "token1": "data/raw/public_rpc/0ebf9d05f98b1cd502e6bf67124bd61aeeeb0e09ca7c89e3935ac42a3147d1c4.json",
+        "factory": "data/raw/public_rpc/f7ea73389ab3063738fba1867af3ef03d87c7e9fe1d2360276e3dc87b4a6fedb.json",
+        "fee": "data/raw/public_rpc/36919ed2ea3704887e8e6d643ed581c04e564c9c4ab7f9dae2efbcd32f65fdec.json",
+        "decimals0": "data/raw/public_rpc/0b9fdcfad845dd77843e02338b5479cabed066f8eca0d888cf7ddb1315b67c01.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 100,
+      "decimals0": 6,
+      "decimals1": 18
+    },
+    "0xbb2b8038a1640196fbe3e38816f3e67cba72d940": {
+      "pool": "0xbb2b8038a1640196fbe3e38816f3e67cba72d940",
+      "protocol": "V2-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/7e2670988ab73dfcd2e07303b22c971649cf3f86d571e2b7a6c40662ed7a1040.json",
+        "token1": "data/raw/public_rpc/eb8432925cef8aec2fc5a84ce395d3614f70189236ff638018c795362f2d935e.json",
+        "factory": "data/raw/public_rpc/7b3e1929c1b4be22be8f4927e5fea24be20488390b8763d131adaec2c3db14b6.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 8,
+      "decimals1": 18
+    },
+    "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed": {
+      "pool": "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/3b823bb6ccae68aaf4ce0c5166924e43bee9b2f45126d3581d318e6d7b1668c7.json",
+        "token1": "data/raw/public_rpc/8ca782b34b3575832bb08a8ef1532180ad52422431510f566412a448791eba20.json",
+        "factory": "data/raw/public_rpc/bd7d50312152092d243ed06375555786a8a3b48a0e55df4145b8fcaedf4f385d.json",
+        "fee": "data/raw/public_rpc/cbec2b7808e4e5f5c1074f8bd071cab82a9f33faada1850c4dbfa0441614a5ec.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 8,
+      "decimals1": 18
+    },
+    "0xe6ff8b9a37b0fab776134636d9981aa778c4e718": {
+      "pool": "0xe6ff8b9a37b0fab776134636d9981aa778c4e718",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/9631d9b160b372fe0351754134cf51ec9c058168f99ea92d29a1cb288c841fcd.json",
+        "token1": "data/raw/public_rpc/091a9ba2871b6bad9aaee75469f2d78e538e203b4c5aa687f563b3d3c8a4eb10.json",
+        "factory": "data/raw/public_rpc/377f10bd922bafd28c430367e42068c7ca2a7d312e4a5f9f9f2224d52698ce1c.json",
+        "fee": "data/raw/public_rpc/bb29c247de05ccb256ca271d82b76f8b7248a016677389b11bd8d234ec120d70.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 100,
+      "decimals0": 8,
+      "decimals1": 18
+    },
+    "0xceff51756c56ceffca006cd410b03ffc46dd3a58": {
+      "pool": "0xceff51756c56ceffca006cd410b03ffc46dd3a58",
+      "protocol": "V2-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/7ecd507bd0f88ac2dfb25522256ec12596fc7439dec6d6b7b26f87d58a1bbb11.json",
+        "token1": "data/raw/public_rpc/2103f7252142bde0075646231d386554088005466ac09d47ef99f19568fe6551.json",
+        "factory": "data/raw/public_rpc/f5bb1cd64183c3c23dc4d40d8223eb9da9a645141bcae3cb0e52676ce16e8326.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0xc0aee478e3658e2610c5f7a4a2e1777ce9e4f2ac",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 8,
+      "decimals1": 18
+    },
+    "0x7486ff76f69872d27b22dada4078bd55b36a5324": {
+      "pool": "0x7486ff76f69872d27b22dada4078bd55b36a5324",
+      "protocol": "V3-compatible (event only)",
+      "block": 26300991,
+      "sources": {
+        "token0": "data/raw/public_rpc/9b31c17f6913bfaf70640f1bef4f90a5fd46dfda02cbfe390f5fc3b8fb4e2290.json",
+        "token1": "data/raw/public_rpc/ac7d2e9204b376f9729e20e3185e6f3f79551b2a963a0eca7a2ec65f7d6d6d98.json",
+        "factory": "data/raw/public_rpc/706ee6f33bd4ed88ddf0374f04fbaf09334d35dd6875c812bd87c232e5520f0f.json",
+        "fee": "data/raw/public_rpc/5f151fda4955ec4c821a746ba66bd6e30743afe536744c3e305f3917cc435fef.json",
+        "decimals0": "data/raw/public_rpc/b43a685a331982e835a685fad2e7fda25601417461c47d104ccb6df2104a3d1d.json",
+        "decimals1": "data/raw/public_rpc/655dd788f4fbc7a5f1e930d9ba8a3385bc32f73c3907a56ee063c369adaf71da.json"
+      },
+      "token0": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0xbaceb8ec6b9355dfc0269c18bac9d6e2bdc29c4f",
+      "fee_pips": 3000,
+      "decimals0": 8,
+      "decimals1": 18
+    }
+  },
+  "evidence": {
+    "header": "data/raw/objects/6a75fa8db5db47b4bf91177a263eff0c2f8d0f86e5d1b50030e3978cae00e820.json.gz",
+    "receipts": "data/raw/objects/95c1e66f7c764d17d2e9755b0332e141a52a2f935d36db992788dc7ec57d9284.json.gz",
+    "traces": "data/raw/objects/23846b66bf1cab96103c57df38e1e1fe8325a258a58b52f8ec84326165c20365.json.gz"
+  },
+  "classification": "observed_inventory_closed_profitable_atomic_arbitrage",
+  "attribution_limit": "Same-block/pool association is observed. This cash flow is not all causally attributable to removing the hacker's trade; operational boundary is not beneficial ownership."
+}

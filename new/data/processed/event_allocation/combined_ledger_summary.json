@@ -1,0 +1,11 @@
+{
+  "rows": {
+    "primary_asset_rows": 597662,
+    "secondary_actual_native_transfer_rows": 53238
+  },
+  "all_stages_export": "reports/event_allocation/all_stages_allocation.csv.gz",
+  "primary_signed_sum_USD": "0E-34",
+  "secondary_additive_amount_USD": "0",
+  "unique_stage_record_keys": true,
+  "interpretation": "Primary rows are signed reference-allocation entries. Secondary rows are directed observed native transfers. Never sum the mixed USD column as incident extraction; secondary primary_additive_USD is explicitly zero. The overlap flag prevents mistaking a second observation of an already-included transaction for new extraction."
+}

@@ -1,0 +1,64 @@
+{
+  "unit": "USD, priced component",
+  "nodes": [
+    {
+      "id": "incident_reference_loss",
+      "label": "\u4e8b\u4ef6\u94b1\u5305\u53c2\u8003\u635f\u5931",
+      "value": "115933224.1630176900419030518413854370381340"
+    },
+    {
+      "id": "initial_pool",
+      "label": "\u76ee\u6807\u4ea4\u6613\u4e2d\u7684\u6c60\u4ea4\u6613\u5e93\u5b58\u53d8\u5316",
+      "value": "100703193.7806748810607223265877773014310430"
+    },
+    {
+      "id": "other_initial",
+      "label": "\u76ee\u6807\u4ea4\u6613\u5176\u4ed6\u5b9e\u9645\u53bb\u5411",
+      "value": "15230030.3823428089811807252536081356070910"
+    },
+    {
+      "id": "later_operator",
+      "label": "\u540e\u7eed\u5e93\u5b58 / \u5957\u5229\u4ea4\u6613\u64cd\u4f5c\u5730\u5740",
+      "value": "51270900.6587049619144777242309699815418498"
+    },
+    {
+      "id": "later_block_protocol",
+      "label": "\u540e\u7eed\u533a\u5757\u6536\u6b3e\u4eba\u53ca\u534f\u8bae\u8d39\u7528",
+      "value": "34250697.43457744173523144957"
+    },
+    {
+      "id": "remaining_pool",
+      "label": "\u6c60\u4ea4\u6613\u5e93\u5b58\uff1a\u4ea4\u6613\u65f6\u4ef7\u683c\u51c0\u989d",
+      "value": "15181595.6873924774110131527868073198891932"
+    }
+  ],
+  "edges": [
+    {
+      "source": "incident_reference_loss",
+      "target": "initial_pool",
+      "value_USD": "100703193.7806748810607223265877773014310430"
+    },
+    {
+      "source": "incident_reference_loss",
+      "target": "other_initial",
+      "value_USD": "15230030.3823428089811807252536081356070910"
+    },
+    {
+      "source": "initial_pool",
+      "target": "later_operator",
+      "value_USD": "51270900.6587049619144777242309699815418498"
+    },
+    {
+      "source": "initial_pool",
+      "target": "later_block_protocol",
+      "value_USD": "34250697.43457744173523144957"
+    },
+    {
+      "source": "initial_pool",
+      "target": "remaining_pool",
+      "value_USD": "15181595.6873924774110131527868073198891932"
+    }
+  ],
+  "meaning": "Reference-value allocation, not literal USD bank transfers and not proof that all later activity was caused by the incident. Unknown asset vectors remain in the complete ledger.",
+  "proposer_secondary_rule": "Actual proposer payouts are a separate block-connected redistribution, never extra primary extraction."
+}

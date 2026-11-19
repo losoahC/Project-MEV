@@ -1,0 +1,94 @@
+{
+  "case_id": "S1",
+  "block": 26301609,
+  "front": "0xb85a8b174f8258c4d729e3b1112fe46fe90b6e4d761792b47b133e9dd77f2d7b",
+  "target": "0x625e674d10c864a1d98d8ba9b5c05ed2f325d74cca62b8b67cd6268edbd8f051",
+  "back": "0xf3935c9604416f38ea2942652ea8c652bc2ea0cfac2ad0316181031bdcd607c2",
+  "accounts": [
+    "0x45e9b04942176a513b22acc1ced75c34d2fd9215",
+    "0x4cd4499d6e6a0eb8995a2cabd400d1ad35c4d03e",
+    "0x5aae4d2f360e156de3416936049837a7bb685588"
+  ],
+  "pool": "0xa43fe16908251ee70ef74718545e4fe6c5ccec9f",
+  "front_cashflow": {
+    "token_net_raw": {
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "-555550581789369600566"
+    },
+    "other_token_residual_raw": {},
+    "native_net_wei": "0",
+    "gas_wei": "49047195733257436",
+    "identified_builder_payment_wei": "0",
+    "cashflow_before_gas_ETH": "-555.550581789369600566",
+    "gross_after_pool_fees_before_gas_and_builder_ETH": "-555.550581789369600566",
+    "net_after_gas_and_builder_ETH": "-555.599628985102858002",
+    "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+  },
+  "back_cashflow": {
+    "token_net_raw": {
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "567748941300978878840"
+    },
+    "other_token_residual_raw": {},
+    "native_net_wei": "0",
+    "gas_wei": "69278540454625216",
+    "identified_builder_payment_wei": "5177157980132707435",
+    "cashflow_before_gas_ETH": "567.74894130097887884",
+    "gross_after_pool_fees_before_gas_and_builder_ETH": "572.926099281111586275",
+    "net_after_gas_and_builder_ETH": "567.679662760524253624",
+    "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+  },
+  "episode_net_ETH": "12.080033775421395622",
+  "episode_gas_ETH": "0.118325736187882652",
+  "episode_builder_payment_ETH": "5.177157980132707435",
+  "evidence": {
+    "header": "data/raw/objects/44e58ce84954e269e6621a13c32f0eb00d62e8aa5ed0a6c8fb98283334ce330f.json.gz",
+    "receipts": "data/raw/objects/52ef85116cfa424378c8d1eb68f9f2b0a17c210d7162190d9b7d3e3f7b9db15e.json.gz",
+    "traces": "data/raw/objects/b6f380c27c683a582cdcb8c5ef8b5ac26e854347c4f75379576b2f9102a2011b.json.gz"
+  },
+  "transaction_indices": [
+    9,
+    10,
+    11
+  ],
+  "metadata": {
+    "0x11950d141ecb863f01007add7d1a342041227b58": {
+      "pool": "0x11950d141ecb863f01007add7d1a342041227b58",
+      "protocol": "V3-compatible (event only)",
+      "block": 26301608,
+      "sources": {
+        "token0": "data/raw/public_rpc/509616967ce8a864ecd50acecbdde95570b93905ce1351ebf2a58efa777c5192.json",
+        "token1": "data/raw/public_rpc/880586fd3a6f277cfb073dcfb81f9cc38ba7bb5fe605535b64a2ed6cd151693e.json",
+        "factory": "data/raw/public_rpc/e9e9fefe2ad43da1bcad0620d0c63423131136276bde2fe17f27307265ee5b65.json",
+        "fee": "data/raw/public_rpc/7029df2ea1695ea5f98c21ac6c95caf4d813f63e32233f78a3bc5023b2477399.json",
+        "decimals0": "data/raw/public_rpc/1fb4cc29cbb1e48dbe5b2024522fb0d050ec1a6675765464e943ce261f03919d.json",
+        "decimals1": "data/raw/public_rpc/646d6c6d387d7be6cc9cdc61bf3778393bf7209be291e8590d90ca3e37b125a1.json"
+      },
+      "token0": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "fee_pips": 3000,
+      "decimals0": 18,
+      "decimals1": 18
+    },
+    "0xa43fe16908251ee70ef74718545e4fe6c5ccec9f": {
+      "pool": "0xa43fe16908251ee70ef74718545e4fe6c5ccec9f",
+      "protocol": "V2-compatible (event only)",
+      "block": 26301608,
+      "sources": {
+        "token0": "data/raw/public_rpc/d34fa54a93aa46d8e975676bbb42fc423695a72ef4662fbc71efc2764ed8611d.json",
+        "token1": "data/raw/public_rpc/5f965de214afa07c9f2897c70e1c01e040dca6d0b13813193e1f5a8b9788a36d.json",
+        "factory": "data/raw/public_rpc/f26fc057c0d253c2ad7270222483d69d3dd03fc95cbfbad97cfb7264d52dd1e9.json",
+        "decimals0": "data/raw/public_rpc/1fb4cc29cbb1e48dbe5b2024522fb0d050ec1a6675765464e943ce261f03919d.json",
+        "decimals1": "data/raw/public_rpc/646d6c6d387d7be6cc9cdc61bf3778393bf7209be291e8590d90ca3e37b125a1.json"
+      },
+      "token0": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
+      "token1": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "factory": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "fee_pips": 3000,
+      "fee_assumption": "997/1000 V2 model tested against observed amount-out; suboptimal outputs retain nonzero model residuals. Not inferred from event topic alone.",
+      "decimals0": 18,
+      "decimals1": 18
+    }
+  },
+  "classification": "same-sender inventory-closed directional sandwich with cross-pool back leg",
+  "limit": "Bracketing and observed PnL are established. Incremental victim loss requires a separate executable counterfactual; back-leg cash inflow alone is not episode profit."
+}

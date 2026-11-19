@@ -1,0 +1,54 @@
+{
+  "design_id": "DAHbT7iYK6M",
+  "transaction_id": "849451146740428700",
+  "applied_in_current_draft": true,
+  "committed": true,
+  "pages": [
+    {
+      "page_index": 4,
+      "operations": [
+        {
+          "type": "delete_element",
+          "locator_id": "PBy1brMb0XkLF4ZL-LBgrNl4rWRWr58wb"
+        },
+        {
+          "type": "replace_text",
+          "locator_id": "PBy1brMb0XkLF4ZL-LBc0mZ3g128Y566p",
+          "text": "Observed example — wallet 5, block 26,300,992\nInput: USD 29,961,300 · Output: 9,551.900920 ETH\nEffective price: USD 3,136.68/ETH · Reference: USD 2,260/ETH\nEstimated reference shortfall: USD 8,374,003.92 (gas excluded)\n\n210 observed ETH/USDT executable prices are available in Figure 2.\nPrices use the prior completed independent market minute; missing prices stay null.\nV2 reserves and ordered V3 states are reconstructed, not a full no-MEV counterfactual.\nAMM impact, fees and captured arbitrage profit are distinct quantities."
+        },
+        {
+          "type": "position_element",
+          "locator_id": "PBy1brMb0XkLF4ZL-LBc0mZ3g128Y566p",
+          "left": 96,
+          "top": 380
+        },
+        {
+          "type": "resize_element",
+          "locator_id": "PBy1brMb0XkLF4ZL-LBc0mZ3g128Y566p",
+          "width": 1728
+        }
+      ]
+    },
+    {
+      "page_index": 6,
+      "operations": [
+        {
+          "type": "replace_text",
+          "locator_id": "PB7cKMdLvksM8CZq-LB74KLKHRR5SqWgh",
+          "text": "Rounded to 6 decimals; exact values: companion presenter notes, slide 6."
+        }
+      ]
+    },
+    {
+      "page_index": 14,
+      "operations": [
+        {
+          "type": "replace_text",
+          "locator_id": "PBdM6db3cX9QWQRZ-LB8GJ9JlZSgwsTvH",
+          "text": "Selected profits and proposer payments are reconstructable. Execution shortfalls do not establish intentional loss or causal MEV. Price-timing sensitivity compares identical transactions. Excluding wallets 13 and 9 leaves this sample unchanged; recipient ownership is not expanded.\n\nEight reproducible figures · 1,024 raw-asset ledgers reconciled · 52 tests passed\nExact figures, full hashes and sources: companion presenter notes, slides 1–14."
+        }
+      ]
+    }
+  ],
+  "instruction": "Historical approved operation record; saved revision verified in canva_saved_verification.json. Do not replay."
+}

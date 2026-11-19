@@ -1,0 +1,1613 @@
+{
+  "rows": [
+    {
+      "tx_hash": "00826ad9bd9eb373ac83bb03a394854f1aff010894facabca5f884e8cb6d723f",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Redeem",
+          "decoded": {
+            "redeemer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "redeemAmount": "751385166594",
+            "redeemTokens": "7093569658557945"
+          },
+          "underlying_principal_equity_delta_raw": "-751385166594",
+          "log_index": 2
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "RepayBorrow",
+          "decoded": {
+            "payer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "repayAmount": "300012270449",
+            "accountBorrows": "1058980594319",
+            "totalBorrows": "125043370864013",
+            "borrowIndex": "1183903341287070675"
+          },
+          "underlying_principal_equity_delta_raw": "300012270449",
+          "log_index": 11
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-7093569658557945"
+      },
+      "event_share_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-7093569658557945"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-751385166594",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "300012270449"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-751385166594",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "300012270449"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/74869694d0b9281321904dbf17d3a51d0ee1d16633602ff639facbe15c0d3d35.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "40719.3265483893287000",
+      "timestamp": 1793308971,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793308860,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793308860,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793308860,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "03f2b890445dcba0b9e12a09c8e3505f3a3431147187b91bf44f524186fe80d8",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Borrow",
+          "decoded": {
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrowAmount": "112176960000",
+            "accountBorrows": "1175414869839",
+            "totalBorrows": "190338487842739",
+            "borrowIndex": "1378650028416680417"
+          },
+          "underlying_principal_equity_delta_raw": "-112176960000",
+          "log_index": 1
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "42753166154",
+            "mintTokens": "392575499850892"
+          },
+          "underlying_principal_equity_delta_raw": "42753166154",
+          "log_index": 9
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "392575499850892"
+      },
+      "event_share_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "392575499850892"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-112176960000",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "42753166154"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-112176960000",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "42753166154"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/d8711a3295d05a70c7713d1458f3479ef079ec27458f1df47b677680be95676e.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "2992.066399074420000",
+      "timestamp": 1793312637,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793312520,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793312520,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793312520,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "03f5989849aed7a3e294d200d609a6bc1d276c84cf3e260500afa648f32fd7fe",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Borrow",
+          "decoded": {
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrowAmount": "142146000000",
+            "accountBorrows": "1461856312760",
+            "totalBorrows": "198443202263971",
+            "borrowIndex": "1378652826251648485"
+          },
+          "underlying_principal_equity_delta_raw": "-142146000000",
+          "log_index": 1
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "53613353268",
+            "mintTokens": "492297544117682"
+          },
+          "underlying_principal_equity_delta_raw": "53613353268",
+          "log_index": 9
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "492297544117682"
+      },
+      "event_share_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "492297544117682"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-142146000000",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "53613353268"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-142146000000",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "53613353268"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/ca5e1aacc1d992d80d350c317de28135a2986d0ae4721c1539e9405c8c3cf90a.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "3472.2674108589600",
+      "timestamp": 1793314056,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793313960,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793313960,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793313960,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "0a3a7d254de3051358fbfeca18d7bb8aaad3797cbf40b79db1db1faa6de54cc5",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Redeem",
+          "decoded": {
+            "redeemer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "redeemAmount": "1426370057307",
+            "redeemTokens": "13465870237289190"
+          },
+          "underlying_principal_equity_delta_raw": "-1426370057307",
+          "log_index": 2
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "568185821851",
+            "mintTokens": "5217300859984675"
+          },
+          "underlying_principal_equity_delta_raw": "568185821851",
+          "log_index": 11
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-13465870237289190",
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "5217300859984675"
+      },
+      "event_share_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-13465870237289190",
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "5217300859984675"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-1426370057307",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "568185821851"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-1426370057307",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "568185821851"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/cc007c10ac9d548b1c184204d2a1a34f0974453a824587a1d711d79d701a61c0.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "74398.9539204185368470",
+      "timestamp": 1793309178,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793309100,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793309100,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793309100,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "23b94ce8328ebc12370bb33ea172a3d6824d3594ce05cfd22bbc4e681e708b9a",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Borrow",
+          "decoded": {
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrowAmount": "144293000000",
+            "accountBorrows": "1319709786563",
+            "totalBorrows": "198000977239186",
+            "borrowIndex": "1378652276552174545"
+          },
+          "underlying_principal_equity_delta_raw": "-144293000000",
+          "log_index": 1
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "54493452584",
+            "mintTokens": "500378984116749"
+          },
+          "underlying_principal_equity_delta_raw": "54493452584",
+          "log_index": 9
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "500378984116749"
+      },
+      "event_share_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "500378984116749"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-144293000000",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "54493452584"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-144293000000",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "54493452584"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/037e542d66a634e0d96a913e36af283bfebba9025d83332fe36df9339acb7cbf.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "3983.7987774004800",
+      "timestamp": 1793313780,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793313720,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793313720,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793313720,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "28980b8ec87a30913054821d088b69297b6e2be6ed5b0abbccf8d040b6e04cbf",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Borrow",
+          "decoded": {
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrowAmount": "8533572272",
+            "accountBorrows": "1192190295895",
+            "totalBorrows": "182876812328355",
+            "borrowIndex": "1378644093904831672"
+          },
+          "underlying_principal_equity_delta_raw": "-8533572272",
+          "log_index": 1
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "3392061412",
+            "mintTokens": "31147208718709"
+          },
+          "underlying_principal_equity_delta_raw": "3392061412",
+          "log_index": 9
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "31147208718709"
+      },
+      "event_share_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "31147208718709"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-8533572272",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "3392061412"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-8533572272",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "3392061412"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/e518fc29ed963a31a565655d6322df25520fbeb8e7e7d6af64bc99cefad4e623.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "502.62657899537736",
+      "timestamp": 1793309544,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793309460,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793309460,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793309460,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "61359c280f64f20140f098bc6657f1b43f431e118b7f7233babefead9a61058f",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Redeem",
+          "decoded": {
+            "redeemer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "redeemAmount": "1466951636591",
+            "redeemTokens": "13848987212752870"
+          },
+          "underlying_principal_equity_delta_raw": "-1466951636591",
+          "log_index": 2
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "RepayBorrow",
+          "decoded": {
+            "payer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "repayAmount": "585345577732",
+            "accountBorrows": "473635070383",
+            "totalBorrows": "124458031638468",
+            "borrowIndex": "1183903401429213238"
+          },
+          "underlying_principal_equity_delta_raw": "585345577732",
+          "log_index": 11
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-13848987212752870"
+      },
+      "event_share_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-13848987212752870"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-1466951636591",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "585345577732"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-1466951636591",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "585345577732"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/4aec97473b1db08d4e2ca153ab5d87499dba4b1f781ec146c66311fa98127742.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "77657.2033619706478800",
+      "timestamp": 1793309025,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793308920,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793308920,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793308920,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "7130df21d2b7292151f0f0137b9788a3a8425b013685299275034e86bc9b71cd",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "RepayBorrow",
+          "decoded": {
+            "payer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "repayAmount": "300000000000",
+            "accountBorrows": "892191559160",
+            "totalBorrows": "185227512727953",
+            "borrowIndex": "1378645554740056822"
+          },
+          "underlying_principal_equity_delta_raw": "300000000000",
+          "log_index": 1
+        }
+      ],
+      "actual_jtoken_delta_raw": {},
+      "event_share_delta_raw": {},
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "300000000000"
+      },
+      "principal_adjusted_asset_vector_raw": {},
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/903f857c2214b720be9c4010a1ab960e7afbd7c8e14dd19317ce3c70c24368e7.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "-0.114364312920000",
+      "timestamp": 1793310309,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793310240,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793310240,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793310240,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "840991d123ac49e5e5f7ad7e68a4f421581cca02d187dd4fff1ee3beff856be0",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Borrow",
+          "decoded": {
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrowAmount": "142527879700",
+            "accountBorrows": "1063237532270",
+            "totalBorrows": "189223200863654",
+            "borrowIndex": "1378649538840231221"
+          },
+          "underlying_principal_equity_delta_raw": "-142527879700",
+          "log_index": 1
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "54413531802",
+            "mintTokens": "499645367970716"
+          },
+          "underlying_principal_equity_delta_raw": "54413531802",
+          "log_index": 9
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "499645367970716"
+      },
+      "event_share_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "499645367970716"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-142527879700",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "54413531802"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-142527879700",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "54413531802"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/6a01aed0b33027d4c31589f20ee89f4126de257fa4a78723e1c4f6453274f795.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "4136.561304982988700",
+      "timestamp": 1793312385,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793312280,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793312280,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793312280,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "a50fe7ab79458a97f8fce5f51967212238d9a5b7e1e4cc322b7b39d20121db55",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Redeem",
+          "decoded": {
+            "redeemer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "redeemAmount": "1384901382442",
+            "redeemTokens": "13074378833684400"
+          },
+          "underlying_principal_equity_delta_raw": "-1384901382442",
+          "log_index": 2
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "RepayBorrow",
+          "decoded": {
+            "payer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "repayAmount": "13304",
+            "accountBorrows": "0",
+            "totalBorrows": "123984403172204",
+            "borrowIndex": "1183903464490695608"
+          },
+          "underlying_principal_equity_delta_raw": "13304",
+          "log_index": 11
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "551930665716",
+            "mintTokens": "5068039952783891"
+          },
+          "underlying_principal_equity_delta_raw": "551930665716",
+          "log_index": 14
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-13074378833684400",
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "5068039952783891"
+      },
+      "event_share_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-13074378833684400",
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "5068039952783891"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-1384901382442",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "551930679020"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-1384901382442",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "551930679020"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/300c8b24bdd74fecb00e69811be2a0e6293193eac9a5b9a74ce65bab7dd798fc.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "68904.925162818800640",
+      "timestamp": 1793309082,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793308980,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793308980,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793308980,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "aa259c8d5d51b4eb7950952b04fda5b90a3348507268aaeb0abb5de2de9de72a",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Redeem",
+          "decoded": {
+            "redeemer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "redeemAmount": "1427823754520",
+            "redeemTokens": "13479594259365510"
+          },
+          "underlying_principal_equity_delta_raw": "-1427823754520",
+          "log_index": 2
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "RepayBorrow",
+          "decoded": {
+            "payer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "repayAmount": "473635070383",
+            "accountBorrows": "13304",
+            "totalBorrows": "123984400064116",
+            "borrowIndex": "1183903434685109650"
+          },
+          "underlying_principal_equity_delta_raw": "473635070383",
+          "log_index": 11
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "95629647714",
+            "mintTokens": "878108267137183"
+          },
+          "underlying_principal_equity_delta_raw": "95629647714",
+          "log_index": 14
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-13479594259365510",
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "878108267137183"
+      },
+      "event_share_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-13479594259365510",
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "878108267137183"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-1427823754520",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "569264718097"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-1427823754520",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "569264718097"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/d34f006783f29f26fdf6fb9aec5b5e9dd6cebb3e270a289ab45e4ae4fc6e6bf2.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "71268.145883526758400",
+      "timestamp": 1793309055,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793308980,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793308980,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793308980,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "ab8789ac7c76f44e93d57403342ce56f116edfecb5122000da48c19149316529",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Borrow",
+          "decoded": {
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrowAmount": "500000000000",
+            "accountBorrows": "1961858504381",
+            "totalBorrows": "202222699776815",
+            "borrowIndex": "1378654893134419700"
+          },
+          "underlying_principal_equity_delta_raw": "-500000000000",
+          "log_index": 1
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "187644503351",
+            "mintTokens": "1723020368586601"
+          },
+          "underlying_principal_equity_delta_raw": "187644503351",
+          "log_index": 9
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "1723020368586601"
+      },
+      "event_share_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "1723020368586601"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-500000000000",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "187644503351"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-500000000000",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "187644503351"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/eff89455fdc4282069de7636f0ab2b3d2c5fdd15aface235739b45a8d5d782dc.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "16764.4411900017100",
+      "timestamp": 1793315085,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793314980,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793314980,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793314980,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "df4c3db72b98db4c57e839b3679e5d325c2349bbb7d4422843d01654bf1bff6d",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Borrow",
+          "decoded": {
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrowAmount": "28515506200",
+            "accountBorrows": "920709365317",
+            "totalBorrows": "188630614087749",
+            "borrowIndex": "1378649108713999100"
+          },
+          "underlying_principal_equity_delta_raw": "-28515506200",
+          "log_index": 1
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "10917082114",
+            "mintTokens": "100244732900683"
+          },
+          "underlying_principal_equity_delta_raw": "10917082114",
+          "log_index": 9
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "100244732900683"
+      },
+      "event_share_delta_raw": {
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "100244732900683"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-28515506200",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "10917082114"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-28515506200",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "10917082114"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/78e6d6af277c06f5bafa5a32cc5e537a839162d7b6ea2650d061940992e1831c.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "972.0795066375186",
+      "timestamp": 1793312163,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793312100,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793312100,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793312100,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "edb5213b0d172727f9bdaf560bc554b66427fec459e59ef3e2077636b1ca29a4",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Redeem",
+          "decoded": {
+            "redeemer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "redeemAmount": "284744567383",
+            "redeemTokens": "2688175740320757"
+          },
+          "underlying_principal_equity_delta_raw": "-284744567383",
+          "log_index": 2
+        },
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Borrow",
+          "decoded": {
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrowAmount": "1183656170450",
+            "accountBorrows": "1183656170450",
+            "totalBorrows": "182350822307551",
+            "borrowIndex": "1378643449605764619"
+          },
+          "underlying_principal_equity_delta_raw": "-1183656170450",
+          "log_index": 5
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "Mint",
+          "decoded": {
+            "minter": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "mintAmount": "584506583216",
+            "mintTokens": "5367164314248256"
+          },
+          "underlying_principal_equity_delta_raw": "584506583216",
+          "log_index": 13
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-2688175740320757",
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "5367164314248256"
+      },
+      "event_share_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-2688175740320757",
+        "41ea09611b57e89d67fbb33a516eb90508ca95a3e5": "5367164314248256"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-1468400737833",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "584506583216"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-1468400737833",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "584506583216"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/f28c693ea89a55d378cfd630a32772599dc2362cd6b7df5a258c19effdfe41a4.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "76170.255980556982093",
+      "timestamp": 1793309205,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793309100,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793309100,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793309100,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "tx_hash": "f71ec6182936199f10dad20cd572bd40f6ad5c7f4d725ce402d1a3cce5923fa0",
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "boundary": [
+        "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+        "TGKLeTRMJyzpHq9ypyukxc3ee4DAyyfbqB"
+      ],
+      "decoded_position_events": [
+        {
+          "market": "412c7c9963111905d29eb8da37d28b0f53a7bb5c28",
+          "underlying": "native:trx",
+          "name": "Redeem",
+          "decoded": {
+            "redeemer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "redeemAmount": "742184636548",
+            "redeemTokens": "7006710647466619"
+          },
+          "underlying_principal_equity_delta_raw": "-742184636548",
+          "log_index": 2
+        },
+        {
+          "market": "41ea09611b57e89d67fbb33a516eb90508ca95a3e5",
+          "underlying": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+          "name": "RepayBorrow",
+          "decoded": {
+            "payer": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "borrower": "41459f749a62c6afbcd62b8bae33b9d50e433da0e1",
+            "repayAmount": "296149948648",
+            "accountBorrows": "1358992795406",
+            "totalBorrows": "125692551196525",
+            "borrowIndex": "1183903280860683189"
+          },
+          "underlying_principal_equity_delta_raw": "296149948648",
+          "log_index": 11
+        }
+      ],
+      "actual_jtoken_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-7006710647466619"
+      },
+      "event_share_delta_raw": {
+        "412c7c9963111905d29eb8da37d28b0f53a7bb5c28": "-7006710647466619"
+      },
+      "unmatched_jtoken_transfers_raw": {},
+      "unresolved_other_tokens_raw": {},
+      "equity_principal_adjustment_raw": {
+        "native:trx": "-742184636548",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "296149948648"
+      },
+      "principal_adjusted_asset_vector_raw": {
+        "native:trx": "-742184636548",
+        "41a614f803b6fd780986a42c78ec9c7f77e6ded13c": "296149948648"
+      },
+      "complete_for_principal_conversion": true,
+      "evidence": {
+        "receipt": "data/raw/tron_expansion/f4201f9865fcb01daecacf34814cb99aff3e8ade98d4b3b3b30fd988e903a84e.json",
+        "transaction": "data/raw/tron_expansion/34b417c716428fd8f85cd4aeb77e69a26654e5a660338f6008bbef1e93fe5790.json"
+      },
+      "limit": "Actual historical conversion amounts, not present-day jToken prices. Includes new loan principal as liability. Excludes revaluation/interest on previously held positions and ultimate-owner/offchain costs. Not a proved MEV increment.",
+      "principal_adjusted_reference_edge_after_fee_USD": "40258.022884215244356",
+      "timestamp": 1793308917,
+      "signature_txid_matches": true,
+      "signature_owner_matches": true,
+      "overlaps_simple_swap_edge": false,
+      "price_evidence": {
+        "USDT": {
+          "venue": "Coinbase",
+          "symbol": "USDT",
+          "quote": "USD",
+          "bar_start": 1793308800,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+            "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+          ]
+        },
+        "TRX": {
+          "venue": "Binance",
+          "symbol": "TRX",
+          "quote": "USDT",
+          "bar_start": 1793308800,
+          "stale_minutes": 0,
+          "lookback_minutes": 1,
+          "field": "close",
+          "sources": [
+            "data/raw/public_http/5650759bbc5515e8ea3a8dfdbefaff5684424dca436031083f4f862ca42c8206.json"
+          ],
+          "USDT_USD_conversion": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793308800,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "summary_by_bot": [
+    {
+      "bot": "TUAAqYySyBJDLJDxnQKqtcPBW1JXJuqrSS",
+      "lending_transactions": 0,
+      "principal_conversions_priced": 0,
+      "additional_disjoint_lending_reference_edge_USD": "0",
+      "simple_and_lending_reference_edge_USD": "1121584.8547937184119130000",
+      "interpretation": "Priced trade edges including actual principal conversions; not all-in equity mark, historical cost-basis PnL or whole-event MEV."
+    },
+    {
+      "bot": "TVFxAQUx3xrrGrwEwCVFMNkPd2z5zTwAoc",
+      "lending_transactions": 0,
+      "principal_conversions_priced": 0,
+      "additional_disjoint_lending_reference_edge_USD": "0",
+      "simple_and_lending_reference_edge_USD": "969006.1375689293059670000",
+      "interpretation": "Priced trade edges including actual principal conversions; not all-in equity mark, historical cost-basis PnL or whole-event MEV."
+    },
+    {
+      "bot": "TDR4JCtV4TEWAueKhAKkS3bZ8PPvPmGsui",
+      "lending_transactions": 0,
+      "principal_conversions_priced": 0,
+      "additional_disjoint_lending_reference_edge_USD": "0",
+      "simple_and_lending_reference_edge_USD": "750728.0352976174731520000",
+      "interpretation": "Priced trade edges including actual principal conversions; not all-in equity mark, historical cost-basis PnL or whole-event MEV."
+    },
+    {
+      "bot": "TActorJXZ3oqWCRH9f5LfpLAtsStWuXdK4",
+      "lending_transactions": 15,
+      "principal_conversions_priced": 15,
+      "additional_disjoint_lending_reference_edge_USD": "482200.5605455348335760",
+      "simple_and_lending_reference_edge_USD": "558844.3742298251384250000",
+      "interpretation": "Priced trade edges including actual principal conversions; not all-in equity mark, historical cost-basis PnL or whole-event MEV."
+    }
+  ],
+  "source": "https://docs.justlend.org/developers/contracts_overview/",
+  "event_abi_source": "Current node getcontract ABIs archived; layouts checked against actual historical event topics/lengths."
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "All transactions in every available block containing an original wallet-sample transaction; successful V2/V3-compatible pool events only. Not whole event/all chains.",
+  "blocks_requested": 1207,
+  "blocks_scanned": 1207,
+  "block_failures": 0,
+  "receipts_scanned": 283706,
+  "targets_with_pool_events_and_debit": 743,
+  "target_rejections": {
+    "no_recognized_successful_pool_event": 896,
+    "no_lead_token_debit": 1
+  },
+  "unique_associated_transactions": 3210,
+  "classes": {
+    "associated_trade_requires_inventory_or_multi_tx_accounting": 2801,
+    "inventory_closed_positive_cashflow_candidate": 409
+  },
+  "closed_positive_candidate_cashflow_ETH": "7872.001160100996018584",
+  "sum_warning": "Candidate accounting boundaries unverified. Not an approved profit total; multi-transaction/sandwich episodes may overlap and must be reconciled before aggregation.",
+  "next_required": [
+    "Verify private executors vs shared routers and real profit recipients",
+    "Reconstruct multi-transaction episodes including negative legs",
+    "Enrich token metadata, factory and per-event path branches",
+    "Extend neighboring blocks, RFQ fills and TRON",
+    "Counterfactual replay before causal victim-loss attribution"
+  ]
+}

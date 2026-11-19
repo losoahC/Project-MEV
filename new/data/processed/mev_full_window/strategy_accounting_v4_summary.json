@@ -1,0 +1,16 @@
+{
+  "units": 12249,
+  "statuses": {
+    "V4_settlement_requires_poolId_level_reconstruction": 1192,
+    "no_verified_positive_closed_cycle": 3326,
+    "open_inventory_requires_valuation_and_history": 4577,
+    "verified_cashflow_and_pool_closed_positive_cycle": 2483,
+    "position_debt_or_NFT_requires_separate_accounting": 200,
+    "pool_closed_cycle_distribution_or_cost_gap": 471
+  },
+  "candidate_transactions_covered_once": 12841,
+  "verified_positive_cycle_units": 2483,
+  "verified_cycle_operational_net_ETH": "244.618801770585241269",
+  "interpretation": "Transaction-disjoint, inventory-closed pool bridges only; bounded operational cashflow, not whole-event MEV or ultimate owner profit. Other classes remain fully listed.",
+  "whole_event_profit_established": false
+}

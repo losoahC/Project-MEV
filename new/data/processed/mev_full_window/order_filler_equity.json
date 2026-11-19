@@ -1,0 +1,1609 @@
+{
+  "rows": [
+    {
+      "tx_hash": "0x290e94a9d14294b1c22bbc5d167343fd91fe91233e89434f20532fe5fe7e8668",
+      "block": 26300820,
+      "order_events": [
+        {
+          "protocol": "UniswapX-compatible Fill (deployment not yet checked)",
+          "emitter": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+          "order_hash": "0x83d702647b0ac8bb863fca052b0ca67bfd44ab3afb447c2489c9571f23985ae6",
+          "filler": "0x74edc79fea13bdf1f7841570227127cec493bdd9",
+          "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160897",
+          "log_index": 185
+        }
+      ],
+      "boundary": [
+        "0x74edc79fea13bdf1f7841570227127cec493bdd9",
+        "0xd694da172d0b3f4389a4ea909134d47fcd3acf6b"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "213690481179432419"
+        },
+        "other_token_residual_raw": {},
+        "native_net_wei": "0",
+        "gas_wei": "1483269172245356",
+        "identified_builder_payment_wei": "4026200018412480656",
+        "cashflow_before_gas_ETH": "0.213690481179432419",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "4.239890499591913075",
+        "net_after_gas_and_builder_ETH": "0.212207212007187063",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {},
+      "equity_change_after_gas_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "213690481179432419",
+        "native:eth": "-1483269172245356"
+      },
+      "valuations": [
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "raw": "213690481179432419",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "WETH contract redemption parity with native ETH; explicit wrapper assumption",
+          "decimal_basis": "ERC20 WETH canonical constant",
+          "quantity": "0.213690481179432419",
+          "reference_USD": "2297.32",
+          "USD": "490.91541622313368481708",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793305980,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        },
+        {
+          "address": "native:eth",
+          "raw": "-1483269172245356",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "-0.001483269172245356",
+          "reference_USD": "2297.32",
+          "USD": "-3.40754393478270124592",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793305980,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "487.50787228835098357116",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0x290e94a9d14294b1c22bbc5d167343fd91fe91233e89434f20532fe5fe7e8668",
+          "block": 26300820,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306063,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-50000000000000",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-50000000",
+                "reference_USD": "0.99882",
+                "USD": "-49941000.00000",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793305980,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "20940127353061384926818",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "20940.127353061384926818",
+                "reference_USD": "2297.32",
+                "USD": "48106173.37073498082007752776",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793305980,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-1834826.62926501917992247224"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "1834826.62926501917992247224",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "UniswapX-compatible Fill (deployment not yet checked)",
+              "emitter": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+              "order_hash": "0x83d702647b0ac8bb863fca052b0ca67bfd44ab3afb447c2489c9571f23985ae6",
+              "filler": "0x74edc79fea13bdf1f7841570227127cec493bdd9",
+              "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+              "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160897",
+              "log_index": 185
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/f85eb274adc90087887eb8336bc82bbbc5c9364eaec369b2e69fea95f98c57f8.json.gz",
+            "receipts": "data/raw/objects/af6eb0a9d2abb7a8dbbaac9097e8e1f2c237e60167ecca0b0c9c470c3fb66d4f.json.gz",
+            "traces": "data/raw/objects/8b0ca5f3f95311403713d2d50960b98a49146a54c0a93bed24d40ea4dc43ae4c.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/f85eb274adc90087887eb8336bc82bbbc5c9364eaec369b2e69fea95f98c57f8.json.gz",
+        "receipts": "data/raw/objects/af6eb0a9d2abb7a8dbbaac9097e8e1f2c237e60167ecca0b0c9c470c3fb66d4f.json.gz",
+        "traces": "data/raw/objects/8b0ca5f3f95311403713d2d50960b98a49146a54c0a93bed24d40ea4dc43ae4c.json.gz"
+      }
+    },
+    {
+      "tx_hash": "0x4fa182626c85ca0cdc18ba736930bdbdfbcf5d201d373913317df6ec58d23d61",
+      "block": 26300829,
+      "order_events": [
+        {
+          "protocol": "UniswapX-compatible Fill (deployment not yet checked)",
+          "emitter": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+          "order_hash": "0xd0a03e6ef0b4501fbd02edc8c6dd1b872330588d10d2863e8d6049b25fdd205c",
+          "filler": "0x0000000000be226afde21672a5e4adc45692e69d",
+          "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160898",
+          "log_index": 98
+        }
+      ],
+      "boundary": [
+        "0x0000000000be226afde21672a5e4adc45692e69d",
+        "0x0000000000fbee4bd3451901b0833d9ce8e03fdd"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {},
+        "other_token_residual_raw": {},
+        "native_net_wei": "0",
+        "gas_wei": "4600620447744192",
+        "identified_builder_payment_wei": "93615754428275961461",
+        "cashflow_before_gas_ETH": "0",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "93.615754428275961461",
+        "net_after_gas_and_builder_ETH": "-0.004600620447744192",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {},
+      "equity_change_after_gas_raw": {
+        "native:eth": "-4600620447744192"
+      },
+      "valuations": [
+        {
+          "address": "native:eth",
+          "raw": "-4600620447744192",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "-0.004600620447744192",
+          "reference_USD": "2288.53",
+          "USD": "-10.52865791327601571776",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306100,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "-10.52865791327601571776",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0x4fa182626c85ca0cdc18ba736930bdbdfbcf5d201d373913317df6ec58d23d61",
+          "block": 26300829,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306171,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-100000000000000",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-100000000",
+                "reference_USD": "0.9988",
+                "USD": "-99880000.0000",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793306100,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "39400469488397240656473",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "39400.469488397240656473",
+                "reference_USD": "2288.53",
+                "USD": "90169156.43828173715955815469",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793306100,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-9710843.56171826284044184531"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "9710843.56171826284044184531",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "UniswapX-compatible Fill (deployment not yet checked)",
+              "emitter": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+              "order_hash": "0xd0a03e6ef0b4501fbd02edc8c6dd1b872330588d10d2863e8d6049b25fdd205c",
+              "filler": "0x0000000000be226afde21672a5e4adc45692e69d",
+              "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+              "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160898",
+              "log_index": 98
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/557131da0f38d8e205e573ce4ea671ba1e16c7d92201fe367abdc04fd8dd16d0.json.gz",
+            "receipts": "data/raw/objects/d2a20ba7e5657de3f5f9b5ce87c20e6c6da918d6c14ad0190480b0832b80ab97.json.gz",
+            "traces": "data/raw/objects/24ac85e8bada17aa84f06198b42f43e787702cc9d8d1fc61fc421d0cecb1a596.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/557131da0f38d8e205e573ce4ea671ba1e16c7d92201fe367abdc04fd8dd16d0.json.gz",
+        "receipts": "data/raw/objects/d2a20ba7e5657de3f5f9b5ce87c20e6c6da918d6c14ad0190480b0832b80ab97.json.gz",
+        "traces": "data/raw/objects/24ac85e8bada17aa84f06198b42f43e787702cc9d8d1fc61fc421d0cecb1a596.json.gz"
+      }
+    },
+    {
+      "tx_hash": "0xfa949551eeec164133714f7658e232bf7eb8140a67d8f5edb95ea41b31b93a72",
+      "block": 26300838,
+      "order_events": [
+        {
+          "protocol": "UniswapX-compatible Fill (deployment not yet checked)",
+          "emitter": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+          "order_hash": "0x7aa3b9da2136807ba4befa3f5d8a78c5127a5964826c0a8f5d561456605f863b",
+          "filler": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+          "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160899",
+          "log_index": 436
+        }
+      ],
+      "boundary": [
+        "0xbeef02961503351625926ea9a11ae13b29f5c555",
+        "0xeee8aeefe1a12c7745cf092ae6107a712f273513"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "21216317838745650951"
+        },
+        "other_token_residual_raw": {},
+        "native_net_wei": "0",
+        "gas_wei": "4673728711834212",
+        "identified_builder_payment_wei": "1179955585822238787",
+        "cashflow_before_gas_ETH": "21.216317838745650951",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "22.396273424567889738",
+        "net_after_gas_and_builder_ETH": "21.211644110033816739",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {},
+      "equity_change_after_gas_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "21216317838745650951",
+        "native:eth": "-4673728711834212"
+      },
+      "valuations": [
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "raw": "21216317838745650951",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "WETH contract redemption parity with native ETH; explicit wrapper assumption",
+          "decimal_basis": "ERC20 WETH canonical constant",
+          "quantity": "21.216317838745650951",
+          "reference_USD": "2298.77",
+          "USD": "48771.43495817334003663027",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306160,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        },
+        {
+          "address": "native:eth",
+          "raw": "-4673728711834212",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "-0.004673728711834212",
+          "reference_USD": "2298.77",
+          "USD": "-10.74382735090313151924",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306160,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "48760.69113082243690511103",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0xfa949551eeec164133714f7658e232bf7eb8140a67d8f5edb95ea41b31b93a72",
+          "block": 26300838,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306279,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-50000000000000",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-50000000",
+                "reference_USD": "0.9988",
+                "USD": "-49940000.0000",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793306160,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "19025260483300806985301",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "19025.260483300806985301",
+                "reference_USD": "2298.77",
+                "USD": "43734698.04119739607360037977",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793306160,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-6205301.95880260392639962023"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "6205301.95880260392639962023",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "UniswapX-compatible Fill (deployment not yet checked)",
+              "emitter": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+              "order_hash": "0x7aa3b9da2136807ba4befa3f5d8a78c5127a5964826c0a8f5d561456605f863b",
+              "filler": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+              "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+              "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160899",
+              "log_index": 436
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/5dc7b3109b9cfc6e736b2d90813353ce52130b4e6ceb54911e6e3f506dc530ac.json.gz",
+            "receipts": "data/raw/objects/e65fe44c74f0fb9f5d4dcabb3811ec4eccda65b0107571d17199cca75b3a25dc.json.gz",
+            "traces": "data/raw/objects/b4161bd31c09104e66d0a3fcf49dfce15c4a94faca4ca4b829e6e925f3de0d6c.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/5dc7b3109b9cfc6e736b2d90813353ce52130b4e6ceb54911e6e3f506dc530ac.json.gz",
+        "receipts": "data/raw/objects/e65fe44c74f0fb9f5d4dcabb3811ec4eccda65b0107571d17199cca75b3a25dc.json.gz",
+        "traces": "data/raw/objects/b4161bd31c09104e66d0a3fcf49dfce15c4a94faca4ca4b829e6e925f3de0d6c.json.gz"
+      }
+    },
+    {
+      "tx_hash": "0xa861a556b73df4e084aca07663d63b26eec33136ed7328712a7418361d856f36",
+      "block": 26300874,
+      "order_events": [
+        {
+          "protocol": "UniswapX-compatible Fill (deployment not yet checked)",
+          "emitter": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+          "order_hash": "0xcdd3bdc0b7c3c52fa2f2cc5b20528a5b5e6afe8b62cfab7c5663ffffff6dab2d",
+          "filler": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+          "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160900",
+          "log_index": 77
+        }
+      ],
+      "boundary": [
+        "0xbeeec612beb3ce8f380b4bce1451dd1882fd7502",
+        "0xbeef02961503351625926ea9a11ae13b29f5c555"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "119087622993586818994"
+        },
+        "other_token_residual_raw": {},
+        "native_net_wei": "0",
+        "gas_wei": "126433118845237932",
+        "identified_builder_payment_wei": "1070650745841096105993",
+        "cashflow_before_gas_ETH": "119.087622993586818994",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "1189.738368834682924987",
+        "net_after_gas_and_builder_ETH": "118.961189874741581062",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {},
+      "equity_change_after_gas_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "119087622993586818994",
+        "native:eth": "-126433118845237932"
+      },
+      "valuations": [
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "raw": "119087622993586818994",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "WETH contract redemption parity with native ETH; explicit wrapper assumption",
+          "decimal_basis": "ERC20 WETH canonical constant",
+          "quantity": "119.087622993586818994",
+          "reference_USD": "2253",
+          "USD": "268304.414604551103193482",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306640,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        },
+        {
+          "address": "native:eth",
+          "raw": "-126433118845237932",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "-0.126433118845237932",
+          "reference_USD": "2253",
+          "USD": "-284.853816758321060796",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306640,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "268019.560787792782132686",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0xa861a556b73df4e084aca07663d63b26eec33136ed7328712a7418361d856f36",
+          "block": 26300874,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306711,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-75000000000000",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-75000000",
+                "reference_USD": "0.99881",
+                "USD": "-74910750.00000",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793306640,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "26227012979488894699045",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "26227.012979488894699045",
+                "reference_USD": "2253",
+                "USD": "59089460.242788479756948385",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793306640,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-15821289.757211520243051615"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "15821289.757211520243051615",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "UniswapX-compatible Fill (deployment not yet checked)",
+              "emitter": "0x00000011f84b9aa48e5f8aa8b9897600006289be",
+              "order_hash": "0xcdd3bdc0b7c3c52fa2f2cc5b20528a5b5e6afe8b62cfab7c5663ffffff6dab2d",
+              "filler": "0xbeef02961503351625926ea9a11ae13b29f5c555",
+              "swapper": "0x9749292d74fd460982d0912ea9515ea24736c762",
+              "nonce": "1993351540935521092728323189325150311608242164201606921029124076988786160900",
+              "log_index": 77
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/c3ec9ec59bdcc020de119e2f189d7d1a4b1875ffb026d743a7885030fa3e571c.json.gz",
+            "receipts": "data/raw/objects/3efbcdc5da6a7813f66936ca8b8331dc41b336a35bb1711b827824ea0a3b1e0f.json.gz",
+            "traces": "data/raw/objects/faca85d88f42d9571ff603ac5da46022ab3389cf717fdf9c1e381aac0c9578a0.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/c3ec9ec59bdcc020de119e2f189d7d1a4b1875ffb026d743a7885030fa3e571c.json.gz",
+        "receipts": "data/raw/objects/3efbcdc5da6a7813f66936ca8b8331dc41b336a35bb1711b827824ea0a3b1e0f.json.gz",
+        "traces": "data/raw/objects/faca85d88f42d9571ff603ac5da46022ab3389cf717fdf9c1e381aac0c9578a0.json.gz"
+      }
+    },
+    {
+      "tx_hash": "0xe5ccc3a8b32f7c52683390fa75f57cec53394421bd05132400806533e661843a",
+      "block": 26300894,
+      "order_events": [
+        {
+          "protocol": "1inch-compatible OrderFilled (event only)",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "topics": [
+            "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+          ],
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001fd512913001",
+          "log_index": 57
+        }
+      ],
+      "boundary": [
+        "0xbeef02961503351625926ea9a11ae13b29f5c555",
+        "0xeee51753a490038ec1c338c1330d4804fb8a1510"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "7656044874785584896"
+        },
+        "other_token_residual_raw": {},
+        "native_net_wei": "0",
+        "gas_wei": "441301452041121680",
+        "identified_builder_payment_wei": "137080595397604726903",
+        "cashflow_before_gas_ETH": "7.656044874785584896",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "144.736640272390311799",
+        "net_after_gas_and_builder_ETH": "7.214743422744463216",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {},
+      "equity_change_after_gas_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "7656044874785584896",
+        "native:eth": "-441301452041121680"
+      },
+      "valuations": [
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "raw": "7656044874785584896",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "WETH contract redemption parity with native ETH; explicit wrapper assumption",
+          "decimal_basis": "ERC20 WETH canonical constant",
+          "quantity": "7.656044874785584896",
+          "reference_USD": "2257.9",
+          "USD": "17286.5837227783721366784",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        },
+        {
+          "address": "native:eth",
+          "raw": "-441301452041121680",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "-0.44130145204112168",
+          "reference_USD": "2257.9",
+          "USD": "-996.414548563648641272",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "16290.1691742147234954064",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0xe5ccc3a8b32f7c52683390fa75f57cec53394421bd05132400806533e661843a",
+          "block": 26300894,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306963,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-14999999999999",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-14999999.999999",
+                "reference_USD": "0.99876",
+                "USD": "-14981399.99999900124",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "5017036085415089804752",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "5017.036085415089804752",
+                "reference_USD": "2257.9",
+                "USD": "11327965.7772587312701495408",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-3653434.2227402699698504592"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "3653434.2227402699698504592",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "1inch-compatible OrderFilled (event only)",
+              "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+              "topics": [
+                "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+              ],
+              "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001fd512913001",
+              "log_index": 57
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/e9ce8a90982d19fc9b43b8c8015c793055870fde88cf5435356230c4a7c944f5.json.gz",
+            "receipts": "data/raw/objects/62c8f10644c024d97e360057d1ccf64933eac1b618f5a658763b7427910d8849.json.gz",
+            "traces": "data/raw/objects/3aeb56b007ec2aa2fc633a37c823285f5950e9341565e14ea8723daf9698a7a1.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/e9ce8a90982d19fc9b43b8c8015c793055870fde88cf5435356230c4a7c944f5.json.gz",
+        "receipts": "data/raw/objects/62c8f10644c024d97e360057d1ccf64933eac1b618f5a658763b7427910d8849.json.gz",
+        "traces": "data/raw/objects/3aeb56b007ec2aa2fc633a37c823285f5950e9341565e14ea8723daf9698a7a1.json.gz"
+      }
+    },
+    {
+      "tx_hash": "0x7b0ad8b5814a048086dab1236284e677e430cac142c84ab6bbbc985da1f282e6",
+      "block": 26300894,
+      "order_events": [
+        {
+          "protocol": "1inch-compatible OrderFilled (event only)",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "topics": [
+            "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+          ],
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001b48eb57e001",
+          "log_index": 429
+        }
+      ],
+      "boundary": [
+        "0xbeef02961503351625926ea9a11ae13b29f5c555",
+        "0xeee9c5a763924fb6904eaa2ea1ef6afa5239c515"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "1037938936870208150"
+        },
+        "other_token_residual_raw": {},
+        "native_net_wei": "0",
+        "gas_wei": "381299261126376480",
+        "identified_builder_payment_wei": "12290897296554025877",
+        "cashflow_before_gas_ETH": "1.03793893687020815",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "13.328836233424234027",
+        "net_after_gas_and_builder_ETH": "0.65663967574383167",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {},
+      "equity_change_after_gas_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "1037938936870208150",
+        "native:eth": "-381299261126376480"
+      },
+      "valuations": [
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "raw": "1037938936870208150",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "WETH contract redemption parity with native ETH; explicit wrapper assumption",
+          "decimal_basis": "ERC20 WETH canonical constant",
+          "quantity": "1.03793893687020815",
+          "reference_USD": "2257.9",
+          "USD": "2343.562325559242981885",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        },
+        {
+          "address": "native:eth",
+          "raw": "-381299261126376480",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "-0.38129926112637648",
+          "reference_USD": "2257.9",
+          "USD": "-860.935601697245454192",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "1482.626723861997527693",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0x7b0ad8b5814a048086dab1236284e677e430cac142c84ab6bbbc985da1f282e6",
+          "block": 26300894,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306963,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-5000000000000",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-5000000",
+                "reference_USD": "0.99876",
+                "USD": "-4993800.00000",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "1672345361805141424610",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "1672.34536180514142461",
+                "reference_USD": "2257.9",
+                "USD": "3775988.592419828822626919",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-1217811.407580171177373081"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "1217811.407580171177373081",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "1inch-compatible OrderFilled (event only)",
+              "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+              "topics": [
+                "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+              ],
+              "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001b48eb57e001",
+              "log_index": 429
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/e9ce8a90982d19fc9b43b8c8015c793055870fde88cf5435356230c4a7c944f5.json.gz",
+            "receipts": "data/raw/objects/62c8f10644c024d97e360057d1ccf64933eac1b618f5a658763b7427910d8849.json.gz",
+            "traces": "data/raw/objects/3aeb56b007ec2aa2fc633a37c823285f5950e9341565e14ea8723daf9698a7a1.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/e9ce8a90982d19fc9b43b8c8015c793055870fde88cf5435356230c4a7c944f5.json.gz",
+        "receipts": "data/raw/objects/62c8f10644c024d97e360057d1ccf64933eac1b618f5a658763b7427910d8849.json.gz",
+        "traces": "data/raw/objects/3aeb56b007ec2aa2fc633a37c823285f5950e9341565e14ea8723daf9698a7a1.json.gz"
+      }
+    },
+    {
+      "tx_hash": "0x1b623b4349356c6c5699f953c5df9d9a4bc278e598f90f1ef42f385399a07b66",
+      "block": 26300894,
+      "order_events": [
+        {
+          "protocol": "1inch-compatible OrderFilled (event only)",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "topics": [
+            "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+          ],
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001aa795f4b5d5",
+          "log_index": 696
+        }
+      ],
+      "boundary": [
+        "0xb888896fd386651853a59cd5fd033c66d5a80d8f",
+        "0xec4fb7e7c35c241e1138a2d8cfbb09f3ad1ccb22"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {},
+        "other_token_residual_raw": {},
+        "native_net_wei": "0",
+        "gas_wei": "28890061412396508",
+        "identified_builder_payment_wei": "48227800938190805166",
+        "cashflow_before_gas_ETH": "0",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "48.227800938190805166",
+        "net_after_gas_and_builder_ETH": "-0.028890061412396508",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {},
+      "equity_change_after_gas_raw": {
+        "native:eth": "-28890061412396508"
+      },
+      "valuations": [
+        {
+          "address": "native:eth",
+          "raw": "-28890061412396508",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "-0.028890061412396508",
+          "reference_USD": "2257.9",
+          "USD": "-65.2308696630500754132",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "-65.2308696630500754132",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0x1b623b4349356c6c5699f953c5df9d9a4bc278e598f90f1ef42f385399a07b66",
+          "block": 26300894,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306963,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-692922296876",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-692922.296876",
+                "reference_USD": "0.99876",
+                "USD": "-692063.07322787376",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "231761077854388767499",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "231.761077854388767499",
+                "reference_USD": "2257.9",
+                "USD": "523293.3376874243981359921",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-168769.7355404493618640079"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "168769.7355404493618640079",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "1inch-compatible OrderFilled (event only)",
+              "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+              "topics": [
+                "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+              ],
+              "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001aa795f4b5d5",
+              "log_index": 696
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/e9ce8a90982d19fc9b43b8c8015c793055870fde88cf5435356230c4a7c944f5.json.gz",
+            "receipts": "data/raw/objects/62c8f10644c024d97e360057d1ccf64933eac1b618f5a658763b7427910d8849.json.gz",
+            "traces": "data/raw/objects/3aeb56b007ec2aa2fc633a37c823285f5950e9341565e14ea8723daf9698a7a1.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/e9ce8a90982d19fc9b43b8c8015c793055870fde88cf5435356230c4a7c944f5.json.gz",
+        "receipts": "data/raw/objects/62c8f10644c024d97e360057d1ccf64933eac1b618f5a658763b7427910d8849.json.gz",
+        "traces": "data/raw/objects/3aeb56b007ec2aa2fc633a37c823285f5950e9341565e14ea8723daf9698a7a1.json.gz"
+      }
+    },
+    {
+      "tx_hash": "0xc59188f11b6b7bd18a45b2afc91e787bf66d767dd5b95d01730f3c5c92f1e490",
+      "block": 26300895,
+      "order_events": [
+        {
+          "protocol": "1inch-compatible OrderFilled (event only)",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "topics": [
+            "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+          ],
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001a030fec47d3",
+          "log_index": 8
+        }
+      ],
+      "boundary": [
+        "0xb88842d381592429cada3b3475efd61eaff2751d",
+        "0xec4fb7e7c35c241e1138a2d8cfbb09f3ad1ccb22"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {},
+        "other_token_residual_raw": {},
+        "native_net_wei": "0",
+        "gas_wei": "32497864908939294",
+        "identified_builder_payment_wei": "49098107355492631834",
+        "cashflow_before_gas_ETH": "0",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "49.098107355492631834",
+        "net_after_gas_and_builder_ETH": "-0.032497864908939294",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {},
+      "equity_change_after_gas_raw": {
+        "native:eth": "-32497864908939294"
+      },
+      "valuations": [
+        {
+          "address": "native:eth",
+          "raw": "-32497864908939294",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "-0.032497864908939294",
+          "reference_USD": "2257.9",
+          "USD": "-73.3769291778940319226",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "-73.3769291778940319226",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0xc59188f11b6b7bd18a45b2afc91e787bf66d767dd5b95d01730f3c5c92f1e490",
+          "block": 26300895,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306975,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-706623335938",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-706623.335938",
+                "reference_USD": "0.99876",
+                "USD": "-705747.12300143688",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "236343651679838120599",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "236.343651679838120599",
+                "reference_USD": "2257.9",
+                "USD": "533640.3311279064925004821",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-172106.7918735303874995179"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "172106.7918735303874995179",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "1inch-compatible OrderFilled (event only)",
+              "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+              "topics": [
+                "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+              ],
+              "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd00000000000000000000000000000000000000000000000000001a030fec47d3",
+              "log_index": 8
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/0272f794e785b8eb9a5c151ef1e9ff9f241f0b061dfb8e00e2b3602862ae176b.json.gz",
+            "receipts": "data/raw/objects/0ef9dd8791c3ceba53078a11de97d6493740d3e286f87f70d050be292f2077d0.json.gz",
+            "traces": "data/raw/objects/a0395792137280f86e14909f5bd949e7088461983fae7cb3e323be2a89fee117.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/0272f794e785b8eb9a5c151ef1e9ff9f241f0b061dfb8e00e2b3602862ae176b.json.gz",
+        "receipts": "data/raw/objects/0ef9dd8791c3ceba53078a11de97d6493740d3e286f87f70d050be292f2077d0.json.gz",
+        "traces": "data/raw/objects/a0395792137280f86e14909f5bd949e7088461983fae7cb3e323be2a89fee117.json.gz"
+      }
+    },
+    {
+      "tx_hash": "0x3fd5ec345eaf60faca94c652f5ac5c0dca77b4ef3c355fb12cb8f5108464a0b6",
+      "block": 26300895,
+      "order_events": [
+        {
+          "protocol": "1inch-compatible OrderFilled (event only)",
+          "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "topics": [
+            "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+          ],
+          "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd0000000000000000000000000000000000000000000000000000000000000000",
+          "log_index": 73
+        }
+      ],
+      "boundary": [
+        "0x620ee0fe91d2e148434dd74ec8afc768edfc6675",
+        "0x9b1303ebf09bc51b7fac376c9e421e8daae63b82"
+      ],
+      "common_beneficial_owner_proven": false,
+      "actual_cashflow": {
+        "token_net_raw": {},
+        "other_token_residual_raw": {},
+        "native_net_wei": "111740886498437723500",
+        "gas_wei": "64755707041373400",
+        "identified_builder_payment_wei": "335030255283015279488",
+        "cashflow_before_gas_ETH": "111.7408864984377235",
+        "gross_after_pool_fees_before_gas_and_builder_ETH": "446.771141781453002988",
+        "net_after_gas_and_builder_ETH": "111.6761307913963501",
+        "payment_note": "Direct native transfers to block fee recipient only; not assumed to identify every searcher payment. Pool trading fees are already embedded in swap proceeds and are NOT deducted again."
+      },
+      "position_adjustment_raw": {
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "-10041436485402300000000",
+        "0xdac17f958d2ee523a2206206994597c13d831ec7": "28600454367187"
+      },
+      "equity_change_after_gas_raw": {
+        "0xdac17f958d2ee523a2206206994597c13d831ec7": "28600454367187",
+        "native:eth": "111676130791396350100",
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "-10041436485402300000000"
+      },
+      "valuations": [
+        {
+          "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "raw": "28600454367187",
+          "symbol": "USDT",
+          "decimals": 6,
+          "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+          "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+          "quantity": "28600454.367187",
+          "reference_USD": "0.99876",
+          "USD": "28564989.80377168812",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "USDT",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+              "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        },
+        {
+          "address": "native:eth",
+          "raw": "111676130791396350100",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "Ethereum native ETH",
+          "decimal_basis": "Ethereum wei denomination",
+          "quantity": "111.6761307913963501",
+          "reference_USD": "2257.9",
+          "USD": "252153.53571389381889079",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        },
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "raw": "-10041436485402300000000",
+          "symbol": "ETH",
+          "decimals": 18,
+          "identity_basis": "WETH contract redemption parity with native ETH; explicit wrapper assumption",
+          "decimal_basis": "ERC20 WETH canonical constant",
+          "quantity": "-10041.4364854023",
+          "reference_USD": "2257.9",
+          "USD": "-22672559.44038985317",
+          "price_evidence": {
+            "venue": "Coinbase",
+            "symbol": "ETH",
+            "quote": "USD",
+            "bar_start": 1793306880,
+            "stale_minutes": 0,
+            "lookback_minutes": 1,
+            "field": "close",
+            "sources": [
+              "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+              "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+            ]
+          },
+          "confidence": "reference_price_estimate_from_contract_matched_market"
+        }
+      ],
+      "reference_net_after_gas_USD": "6144583.89909572876889079",
+      "target_reference_shortfalls": [
+        {
+          "tx_hash": "0x3fd5ec345eaf60faca94c652f5ac5c0dca77b4ef3c355fb12cb8f5108464a0b6",
+          "block": 26300895,
+          "address": "0x9749292d74fd460982d0912ea9515ea24736c762",
+          "source_category": "direct_funding_association",
+          "timestamp": 1793306975,
+          "valuation": {
+            "assets": [
+              {
+                "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                "raw": "-28600454367187",
+                "symbol": "USDT",
+                "decimals": 6,
+                "identity_basis": "data/raw/objects/2dee1ab79514dae9091c87f629b1dac6ada08856fc292fb5c5b9c78e9cb3af30.json",
+                "decimal_basis": "data/raw/public_rpc/dc838e64fe3324a074a2aa7d3c4f5bed164ad0db72c4e105165590fac916f31f.json",
+                "quantity": "-28600454.367187",
+                "reference_USD": "0.99876",
+                "USD": "-28564989.80377168812",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "USDT",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/81f4c7ec30f9e1192457688be32125e9d54faf2ba081b2ad458bdb5bb704c241.json",
+                    "data/raw/objects/ff27d857b59179d60f72cce1c67d6d024e0012bf8b67d83363c727ee4061e2a6.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              },
+              {
+                "address": "native:eth",
+                "raw": "9565967441296956128627",
+                "symbol": "ETH",
+                "decimals": 18,
+                "identity_basis": "Ethereum native ETH",
+                "decimal_basis": "Ethereum wei denomination",
+                "quantity": "9565.967441296956128627",
+                "reference_USD": "2257.9",
+                "USD": "21598997.8857043972428269033",
+                "price_evidence": {
+                  "venue": "Coinbase",
+                  "symbol": "ETH",
+                  "quote": "USD",
+                  "bar_start": 1793306880,
+                  "stale_minutes": 0,
+                  "lookback_minutes": 1,
+                  "field": "close",
+                  "sources": [
+                    "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                    "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                  ]
+                },
+                "confidence": "reference_price_estimate_from_contract_matched_market"
+              }
+            ],
+            "missing_assets": [],
+            "marked_net_USD": "-6965991.9180672908771730967"
+          },
+          "valuation_complete": true,
+          "signed_reference_shortfall_USD": "6965991.9180672908771730967",
+          "gas_included": false,
+          "MEV_incremental_loss_USD": null,
+          "order_events": [
+            {
+              "protocol": "1inch-compatible OrderFilled (event only)",
+              "emitter": "0x111111125421ca6dc452d289314280a0f8842a65",
+              "topics": [
+                "0xfec331350fce78ba658e082a71da20ac9f8d798a99b3c79681c8440cbfe77e07"
+              ],
+              "data": "0x7dd846ea874f26ce7588df4cf8d60ada0dc21f20ce1781218eb009c361a7a1cd0000000000000000000000000000000000000000000000000000000000000000",
+              "log_index": 73
+            }
+          ],
+          "evidence": {
+            "header": "data/raw/objects/0272f794e785b8eb9a5c151ef1e9ff9f241f0b061dfb8e00e2b3602862ae176b.json.gz",
+            "receipts": "data/raw/objects/0ef9dd8791c3ceba53078a11de97d6493740d3e286f87f70d050be292f2077d0.json.gz",
+            "traces": "data/raw/objects/a0395792137280f86e14909f5bd949e7088461983fae7cb3e323be2a89fee117.json.gz"
+          }
+        }
+      ],
+      "MEV_incremental_loss_USD": null,
+      "MEV_criterion": "Order-filling price spread; no ordering-causation proof. Gas/payment alone is not MEV.",
+      "limit": "Marked operational-boundary equity for this fill only, not firm-wide cost-basis PnL. External payments are outside boundary. Unrecognized credit/inventory can remain a limitation.",
+      "evidence": {
+        "header": "data/raw/objects/0272f794e785b8eb9a5c151ef1e9ff9f241f0b061dfb8e00e2b3602862ae176b.json.gz",
+        "receipts": "data/raw/objects/0ef9dd8791c3ceba53078a11de97d6493740d3e286f87f70d050be292f2077d0.json.gz",
+        "traces": "data/raw/objects/a0395792137280f86e14909f5bd949e7088461983fae7cb3e323be2a89fee117.json.gz"
+      }
+    }
+  ],
+  "transactions": 9,
+  "priced": 9,
+  "reference_equity_gain_after_gas_USD": "6479475.31832795483981220403",
+  "direct_fee_recipient_ETH": "1751.200312144464256165",
+  "all_incident_fills_complete": false,
+  "not_additive_to_cycle_catalog_without_tx_deduplication": true
+}

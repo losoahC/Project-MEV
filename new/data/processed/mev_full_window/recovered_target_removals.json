@@ -1,0 +1,182 @@
+{
+  "original_response_errors": 6,
+  "recovered": 0,
+  "funding_infeasible_after_target_removal": 6,
+  "unexplained_transport_or_execution_errors": 0,
+  "rows": [
+    {
+      "block": 26301492,
+      "actor": "0x03fea8095dd44a78bf23bfc071785bf3a936876ab37ebe19f5fe5bc96787c5fe",
+      "removed_target": "0x78e69ffaa39e5abe08e22366b5b0b0a5adb459807cd0823b7718253faed01490",
+      "original_evidence": {
+        "header": "data/raw/objects/8241c21cd5704f77fc90112affb4b2ba893f562b3695cdfb13cca650a8cb56f8.json.gz",
+        "receipts": "data/raw/objects/a22e69a52af47a4a5e8effc9acfca0c0f04637115cae9765d6447c2c9e584f6b.json.gz",
+        "traces": "data/raw/objects/08de75fe01ed88658b3084e0198308a847e2eded70cdc65af7fc4d3567fb0b2b.json.gz",
+        "actual": "data/raw/objects/9b53d10650cdf2930360c9b1c08b367b75bd617188a03951c9251c7a2ae159f7.json.gz",
+        "remove_target": "data/raw/objects/00621217b16437caff1bc11e6d787a9321856a85ee159eed39a5a8b4bd30921a.json.gz"
+      },
+      "accounts": [
+        "0x000000000004444c5dc75cb358380d2e3de08a90",
+        "0x0b6cc422b3e19bbe80f1d7aeb4ea8c30fbe76e82"
+      ],
+      "boundary_includes_public_service": true,
+      "nonce_reassigned_sender": "0xe7024ab80143b1ef843efe6a58368696cb87958d",
+      "fresh_evidence": "data/raw/victim_simulations/ec592b1972547f60100ec9cd7549ac5a354eab3527a2a782d0042aeeba8da20d.json",
+      "status": "verified_intervention_funding_infeasible",
+      "error": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -38014,
+          "message": "insufficient funds for gas * price + value: have 785542171349338424 want 786866991951737906"
+        }
+      },
+      "meaning": "Original actual prefix already reproduced status/gas/logs. Recovery removes the target and only reassigns remaining sender nonces; signed transactions are not rebroadcast. Not a victim-loss estimate or a continuous event counterfactual."
+    },
+    {
+      "block": 26301505,
+      "actor": "0x27c53aed95f94b5e6cd31980a8f35f37ed6d45d4f6d5eac97e284f9e47e6725d",
+      "removed_target": "0xb9e32fdd7b44b370554544bc067697adb5fd9e26e6430f2526b39184ae2133fa",
+      "original_evidence": {
+        "header": "data/raw/objects/457b281daab052918fa335878745eeddffe07d20ff5bc434abcc1aa01cadeb84.json.gz",
+        "receipts": "data/raw/objects/ecf4fded252367a81bb47a5d86a23ed667124dc8f03f7656bed7dc0198b7087a.json.gz",
+        "traces": "data/raw/objects/4a3692b54a5259a3156b1d89e9dbb31a33c40447851dfcbbc238bf7046f6c24d.json.gz",
+        "actual": "data/raw/objects/a899e7c1c524b3630fbf6e4c286708cc840b955a083535e4c03d4bd966654e71.json.gz",
+        "remove_target": "data/raw/objects/a21c3b3ac53784f046e4ecce435ef5c9891f9223a0e415713f6e82aa538a7dc1.json.gz"
+      },
+      "accounts": [
+        "0x5c8e47d95714c0dd48c7b0c91b0228ccd3dfbfbe",
+        "0xa0f1c3ad83e07d97b5e7030e177718be175275ea"
+      ],
+      "boundary_includes_public_service": false,
+      "nonce_reassigned_sender": "0xcf4ca2bdf21bc3a467a00b6afe72b833982723e0",
+      "fresh_evidence": "data/raw/victim_simulations/e400599c2f098bf0f5436f7c01098a03107c5b0b08e929b359e534b81d14a78b.json",
+      "status": "verified_intervention_funding_infeasible",
+      "error": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -38014,
+          "message": "insufficient funds for gas * price + value: have 763476743106334292 want 787085959315306032"
+        }
+      },
+      "meaning": "Original actual prefix already reproduced status/gas/logs. Recovery removes the target and only reassigns remaining sender nonces; signed transactions are not rebroadcast. Not a victim-loss estimate or a continuous event counterfactual."
+    },
+    {
+      "block": 26301507,
+      "actor": "0x51dec01181b6bed5e4592caea6c41c1dbe4926f7c8b3c604c7bb40cbd652af5c",
+      "removed_target": "0xd586d20ceb72a99a2d49265bb13d40871bb010c498847d21ba84a63284c28246",
+      "original_evidence": {
+        "header": "data/raw/objects/291106d5b9a04d96a9cf0640b80ed701e9332dfc4e9c4e10e2d41e961004324b.json.gz",
+        "receipts": "data/raw/objects/e622e8d9e03fb87dfd63912ecb6c8cfc6f9ebbbe41968e140a5c22e6cd6b679e.json.gz",
+        "traces": "data/raw/objects/ae33921ca1b83c55ca4cd39feb751d1404095c06b34fd5f8a7c9310420aab9e7.json.gz",
+        "actual": "data/raw/objects/4eb507605f7ae6dc8793435009d41ec4faed3e7bcd1036cd63015ca8c9394c69.json.gz",
+        "remove_target": "data/raw/objects/323d61a78ed490af1590b23a983cfef6911d818a5e0642d62e84c2e557cf8a93.json.gz"
+      },
+      "accounts": [
+        "0xb7c2f4c212e83c9503beb0cbe53013bfbdb51f2e",
+        "0xeedcbb56e5a0840cc9e3607a4c56d9c73abc13d6"
+      ],
+      "boundary_includes_public_service": false,
+      "nonce_reassigned_sender": "0xe7024ab80143b1ef843efe6a58368696cb87958d",
+      "fresh_evidence": "data/raw/victim_simulations/2142ddd58488c544c667d1cf1b2674adbe433c4fd71e0ef185721d7d768cb887.json",
+      "status": "verified_intervention_funding_infeasible",
+      "error": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -38014,
+          "message": "insufficient funds for gas * price + value: have 778930610909717730 want 786879847505368114"
+        }
+      },
+      "meaning": "Original actual prefix already reproduced status/gas/logs. Recovery removes the target and only reassigns remaining sender nonces; signed transactions are not rebroadcast. Not a victim-loss estimate or a continuous event counterfactual."
+    },
+    {
+      "block": 26301507,
+      "actor": "0xddb7798d000adfbf53d76ce008a0ae400d316a695ffaec4bdc152c3faf8f136b",
+      "removed_target": "0xd586d20ceb72a99a2d49265bb13d40871bb010c498847d21ba84a63284c28246",
+      "original_evidence": {
+        "header": "data/raw/objects/291106d5b9a04d96a9cf0640b80ed701e9332dfc4e9c4e10e2d41e961004324b.json.gz",
+        "receipts": "data/raw/objects/e622e8d9e03fb87dfd63912ecb6c8cfc6f9ebbbe41968e140a5c22e6cd6b679e.json.gz",
+        "traces": "data/raw/objects/ae33921ca1b83c55ca4cd39feb751d1404095c06b34fd5f8a7c9310420aab9e7.json.gz",
+        "actual": "data/raw/objects/0c7e6e4c0cc4765582a362637b19de3355648c5ee3a134bc7e6765e9e868b8c4.json.gz",
+        "remove_target": "data/raw/objects/78c8e6dbbaaf58a24c6e6461bed6315c1393602f0e521d9e5d3a63a8a295f74d.json.gz"
+      },
+      "accounts": [
+        "0x76dfa069f33bbdf111e5b83a360c751cdf06cda1",
+        "0xea51075ccbd58174834da36372b0ed52199c483c"
+      ],
+      "boundary_includes_public_service": false,
+      "nonce_reassigned_sender": "0xe7024ab80143b1ef843efe6a58368696cb87958d",
+      "fresh_evidence": "data/raw/victim_simulations/28c870b26c643eb448639f1fe58303ed771651375d3f4f6a87dc28a43e8795a0.json",
+      "status": "verified_intervention_funding_infeasible",
+      "error": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -38014,
+          "message": "insufficient funds for gas * price + value: have 778930610909717730 want 786879847505368114"
+        }
+      },
+      "meaning": "Original actual prefix already reproduced status/gas/logs. Recovery removes the target and only reassigns remaining sender nonces; signed transactions are not rebroadcast. Not a victim-loss estimate or a continuous event counterfactual."
+    },
+    {
+      "block": 26301507,
+      "actor": "0x800ddae3f051681775d5cd262a662a171d9fc40eb172bb5890382a1d6f38e1fa",
+      "removed_target": "0xd586d20ceb72a99a2d49265bb13d40871bb010c498847d21ba84a63284c28246",
+      "original_evidence": {
+        "header": "data/raw/objects/291106d5b9a04d96a9cf0640b80ed701e9332dfc4e9c4e10e2d41e961004324b.json.gz",
+        "receipts": "data/raw/objects/e622e8d9e03fb87dfd63912ecb6c8cfc6f9ebbbe41968e140a5c22e6cd6b679e.json.gz",
+        "traces": "data/raw/objects/ae33921ca1b83c55ca4cd39feb751d1404095c06b34fd5f8a7c9310420aab9e7.json.gz",
+        "actual": "data/raw/objects/0caf4cd1e242ff145981862561050ccf5caea04e85ed893941f40e944b3060ea.json.gz",
+        "remove_target": "data/raw/objects/1e207f12ec3f08f5aa953fbd5633cc35ed131361e112fe6c4a9c03ee0567492e.json.gz"
+      },
+      "accounts": [
+        "0x4408dd1bb11ed1a411493c4c9fccad53b5e62518",
+        "0x6d45f93e64216f26b288bcf1e0963b606024023b"
+      ],
+      "boundary_includes_public_service": false,
+      "nonce_reassigned_sender": "0xe7024ab80143b1ef843efe6a58368696cb87958d",
+      "fresh_evidence": "data/raw/victim_simulations/f7adc1ec2cb2a9032aac77fef06043eb6fa567d2ec026f52a44ae2c574df8311.json",
+      "status": "verified_intervention_funding_infeasible",
+      "error": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -38014,
+          "message": "insufficient funds for gas * price + value: have 778930610909717730 want 786879847505368114"
+        }
+      },
+      "meaning": "Original actual prefix already reproduced status/gas/logs. Recovery removes the target and only reassigns remaining sender nonces; signed transactions are not rebroadcast. Not a victim-loss estimate or a continuous event counterfactual."
+    },
+    {
+      "block": 26301532,
+      "actor": "0x3ca17b954c42b71bc8b7bd3569aed89cf31ad1592b33c595fb84631ed4b8cdd0",
+      "removed_target": "0xca71a60f0d51bec1952a015f80e6c1267c7a4ea02318956fd050df5d62a1d8a2",
+      "original_evidence": {
+        "header": "data/raw/objects/e52c6d487724d14904b48a225df7989eea29f0b979075fd77b5be2276a34bdc0.json.gz",
+        "receipts": "data/raw/objects/f588af9a0fcb81b4c83555b46bce5fd767e558d1962962ad5b89e7b6ac976427.json.gz",
+        "traces": "data/raw/objects/cbb0bf6fda896b259574a711ec510a237d1c1e3eddca9f116eb55ef243752c7d.json.gz",
+        "actual": "data/raw/objects/4af58ce2d4823fb46c818a567cf3d1918ed8d68d621c037676d8c3d0278933ca.json.gz",
+        "remove_target": "data/raw/objects/87f581da512cdb2850f20f778ff112cb6a95593a1947f54ad9533316a310c79b.json.gz"
+      },
+      "accounts": [
+        "0x000000000004444c5dc75cb358380d2e3de08a90",
+        "0xe5533973a73b494fc241f1673e2c1426bb4d7f59"
+      ],
+      "boundary_includes_public_service": true,
+      "nonce_reassigned_sender": "0xe7024ab80143b1ef843efe6a58368696cb87958d",
+      "fresh_evidence": "data/raw/victim_simulations/0c747731fc2b9e339e4cac6c7e67899b36ec178acb0f0a3b761b40c058ff7b8d.json",
+      "status": "verified_intervention_funding_infeasible",
+      "error": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -38014,
+          "message": "insufficient funds for gas * price + value: have 758986677333877983 want 796760226346846621"
+        }
+      },
+      "meaning": "Original actual prefix already reproduced status/gas/logs. Recovery removes the target and only reassigns remaining sender nonces; signed transactions are not rebroadcast. Not a victim-loss estimate or a continuous event counterfactual."
+    }
+  ]
+}

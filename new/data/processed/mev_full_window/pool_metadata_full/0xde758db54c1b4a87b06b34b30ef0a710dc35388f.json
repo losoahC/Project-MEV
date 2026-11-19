@@ -1,0 +1,31 @@
+{
+  "pool": "0xde758db54c1b4a87b06b34b30ef0a710dc35388f",
+  "block": 26300814,
+  "event_protocol": "V3-compatible (event only)",
+  "sources": {
+    "token0": "data/raw/public_rpc/cc3d65c6a5a469f18cd3c707196761b1a7c6df1708b7581aeaa16574939e8d1c.json",
+    "token1": "data/raw/public_rpc/cc3d65c6a5a469f18cd3c707196761b1a7c6df1708b7581aeaa16574939e8d1c.json",
+    "factory": "data/raw/public_rpc/cc3d65c6a5a469f18cd3c707196761b1a7c6df1708b7581aeaa16574939e8d1c.json",
+    "fee_pips": "data/raw/public_rpc/cc3d65c6a5a469f18cd3c707196761b1a7c6df1708b7581aeaa16574939e8d1c.json",
+    "factory_lookup": "data/raw/public_rpc/cc3d65c6a5a469f18cd3c707196761b1a7c6df1708b7581aeaa16574939e8d1c.json"
+  },
+  "batch_indices": {
+    "token0": 5,
+    "token1": 6,
+    "factory": 7,
+    "fee_pips": 8,
+    "factory_lookup": 9
+  },
+  "failures": {
+    "factory_lookup": "Call reverted or non-32-byte ABI return; allowFailure preserved"
+  },
+  "dex_name": null,
+  "planning_snapshot_block": 26303950,
+  "token0": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+  "token1": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+  "factory": "0x44b7fbd4d87149efa5347c451e74b9fd18e89c55",
+  "fee_pips": 414,
+  "planning_matches_parent": false,
+  "factory_lookup_matches_pool": false,
+  "identity_note": "Metadata and factory lookup are historical first-parent multicalls. End snapshot only planned query arguments; mismatches are not silently accepted."
+}

@@ -1,0 +1,1796 @@
+{
+  "rows": [
+    {
+      "block": 26301519,
+      "target": "0xf30388e7ce87591c850e6b0f7e623c494cd95d3a4983390481696b09b4d41506",
+      "removed_front": "0xd8a861fc1769ca262a7f4570bc3b0f7c4ed98d2a6013bf2acc0f4eafad78023a",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "1778863974956737538",
+      "evidence": {
+        "header": "data/raw/objects/c681c375b1a472ed2ebba9610a1cfab5f3b526949ac8e4bd292e580fa36b3a2b.json.gz",
+        "receipts": "data/raw/objects/8de6934b5a6a813f232eeb6f19c6cdcfd9a7442c114b0add6f27ce199da4601b.json.gz",
+        "traces": "data/raw/objects/1be5f93027edb00815de8686848880c044fb4ba58c1938d4fb34c3572f7b5658.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/a6b306b4893ed1e45f50ee6e0fc7d7d1416ca48312568f0a5926793ae6469d95.json",
+        "without_front_simulation": "data/raw/victim_simulations/cd72f61c033e53bddaf541e4a51760413c0275fbd7681de8a5c9335af98c49b2.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-83462274212837956629210766713",
+              "native:eth": "152643728972225223386"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-83462274212837956629210766713",
+              "native:eth": "154422592947181960924"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 10,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "1778863974956737538"
+          },
+          "marked_output_improvement_USD": "4039.88903032549878567490",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "1778863974956737538",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "1.778863974956737538",
+              "reference_USD": "2271.05",
+              "USD": "4039.88903032549878567490",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793314380,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26302634,
+      "target": "0xc694b5beb3bf1c98ae1f8e04e141e291cb298f9c6a5d0c5afab2c7eda540a8aa",
+      "removed_front": "0xbefc642125a3c183a54508e92ba0f7197efd5fcd241a21223e4917bf5a445250",
+      "victim_addresses": [
+        "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+      ],
+      "local_quote_reduction_raw": "615799905305765988",
+      "evidence": {
+        "header": "data/raw/objects/d807a991aabd26a17ef0d72e07e87639794063c786be66895e5f71955920e26b.json.gz",
+        "receipts": "data/raw/objects/078578ecad54c8a96abeb3350b91d42b82472b375daf5e40734062e4cd0ccc24.json.gz",
+        "traces": "data/raw/objects/2a56acdc43df2d20779c79b17aead4a38b12ed71a407c04ee5d1c38132c7d6bf.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/07d9bd85333f0b736be3fef35e0987c0519c70556f42ab45a2c5d1cf6bad1491.json",
+        "without_front_simulation": "data/raw/victim_simulations/7905c1190509405812ab36a2e091ff5ed53722a991eb71a8345662b3387f1455.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 107251,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55": "-538229833381006882868673",
+              "native:eth": "35006191504609828345"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 117667,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55": "-538229833381006882868673",
+              "native:eth": "35621991409915594333"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 2,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "615799905305765988"
+          },
+          "marked_output_improvement_USD": "1363.46720233370870467032",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "615799905305765988",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.615799905305765988",
+              "reference_USD": "2214.14",
+              "USD": "1363.46720233370870467032",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793327880,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/ca61011cb00ef4c055bafa791d8227861addac580874e6e87051b6a8c227a1e8.json",
+                  "data/raw/objects/ceb8f40c4ad9b4bbbab4199a5285442ce49c6ee9d644094d5bbbd35bc04c5bf6.json",
+                  "data/raw/objects/e61e9c9625986da0da3852393a8eff695f55664442d33d0cebf9a81fd12c73b5.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26302559,
+      "target": "0x2d7016bcb954508710e1c71bd275033feadc799232591bc82ed73c7171e9db6f",
+      "removed_front": "0x83cb6ce21a83e7641cc3c91d223c46cf39b1f06cec2a8ee138216e5414e1e4e8",
+      "victim_addresses": [
+        "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+      ],
+      "local_quote_reduction_raw": "568231352594592504",
+      "evidence": {
+        "header": "data/raw/objects/f40463000c218aeeb622b6ae769ec78a0d1c9d3a963ca9ca358f78fe8ff53eaf.json.gz",
+        "receipts": "data/raw/objects/c0799e447c3f0631339713f14ebf13c1781e2e38c49ea89d0eda87ecd1492721.json.gz",
+        "traces": "data/raw/objects/de44e86b95c8f70ce4f652765c3eecd79197463c04fc1903086f0a69662c2646.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/0d7f1358c0215cad4b38380718fa44b16b725f544e4561c2f773adeeae67c2aa.json",
+        "without_front_simulation": "data/raw/victim_simulations/fc8e72b0e275a528fa42d7b072ca393a2d6acca9ee635970abb30721fba8c2be.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 109907,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0x6c5ba91642f10282b576d91922ae6448c9d52f4e": "-453562212976777848091447",
+              "native:eth": "6765549481364090089"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 120323,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0x6c5ba91642f10282b576d91922ae6448c9d52f4e": "-453562212976777848091447",
+              "native:eth": "7333780833958682593"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 3,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "568231352594592504"
+          },
+          "marked_output_improvement_USD": "1255.05827078920240950984",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "568231352594592504",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.568231352594592504",
+              "reference_USD": "2208.71",
+              "USD": "1255.05827078920240950984",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793326920,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/ca61011cb00ef4c055bafa791d8227861addac580874e6e87051b6a8c227a1e8.json",
+                  "data/raw/objects/ceb8f40c4ad9b4bbbab4199a5285442ce49c6ee9d644094d5bbbd35bc04c5bf6.json",
+                  "data/raw/objects/e61e9c9625986da0da3852393a8eff695f55664442d33d0cebf9a81fd12c73b5.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301686,
+      "target": "0x4fb827ee30ce02ef84cb6605cdbb1df7d193e3a0197bd45a4ff4ef1c20fcc977",
+      "removed_front": "0xe728e5dfded109c37340b56b153e31719c9528692da240e3d9926bde335e1a28",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "81184902705655366750",
+      "evidence": {
+        "header": "data/raw/objects/44102f34405712338f19dfc015deddd03b4ebb3f00b814b6a8bdab977d003c39.json.gz",
+        "receipts": "data/raw/objects/0ba0e44d8317dfc91088857c65664217e51bbdd5dbf1a571b7c9c5fc92188767.json.gz",
+        "traces": "data/raw/objects/4d42278ffa1ae06c01cd60810430c7860e10a1ae6bb39fd799835f24bc44dd83.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/1a998c78f643bfdec92dc38556cc97c8820c2325127015a41f41510ce0ae789c.json",
+        "without_front_simulation": "data/raw/victim_simulations/cca362c14c57c67eca101a1a10b2311f716c28287c2e36f2c34f49e6cf589df5.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-414517980993430630280041274019",
+              "native:eth": "666750906221869949000"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-414517980993430630280041274019",
+              "native:eth": "747935808927525315750"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 3,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "81184902705655366750"
+          },
+          "marked_output_improvement_USD": "183837.5292337671821297025",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "81184902705655366750",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "81.18490270565536675",
+              "reference_USD": "2264.43",
+              "USD": "183837.5292337671821297025",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793316420,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301699,
+      "target": "0x662ff54a34a6f1fa258b01c57aff1d7f53601699fe4f1f8a8a66a0f76cae7c74",
+      "removed_front": "0x8300d3042e9e7d745367530c262370b9903a54866790711a47971b0fb7f1fb06",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "74457361291624211989",
+      "evidence": {
+        "header": "data/raw/objects/064532d47c9ad60eba0592ce434294fca5ae3fe480e9545e9d3bab384b93f64b.json.gz",
+        "receipts": "data/raw/objects/d2cf1f9d7a2c9cf798d201b90438dcfda8c7a3acd098ac3a0eb5e8b3787f54db.json.gz",
+        "traces": "data/raw/objects/fc91b5208f993215078dbfefff27f0b46a6f373af9db0b5e13874e9c3f47fa15.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/7b6a94a9c82da4e717c1f6dcfab944ea39378042ae125d211420bff4a9f44315.json",
+        "without_front_simulation": "data/raw/victim_simulations/0361c25f30843518a586c6bb097321b89256e1d6af86fdc0f371f307869cc9f1.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-413631715108520207583718784355",
+              "native:eth": "670592050762639143004"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-413631715108520207583718784355",
+              "native:eth": "745049412054263354993"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 3,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "74457361291624211989"
+          },
+          "marked_output_improvement_USD": "168522.32410578474396318326",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "74457361291624211989",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "74.457361291624211989",
+              "reference_USD": "2263.34",
+              "USD": "168522.32410578474396318326",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793316540,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301585,
+      "target": "0xef4f4d215d72165199e0b4b4f4cfed778f6d13a4e7ae05c7e890ce39ff4aaf77",
+      "removed_front": "0xa0816cc8e3bf7e1fd64cf6e586e845af2027b732721b858711ebb14b9700327d",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "36712685582327948512",
+      "evidence": {
+        "header": "data/raw/objects/996902f85883890d23a31e4b669094f18be0cbb3660d82ed0d9e8659a0bd331e.json.gz",
+        "receipts": "data/raw/objects/dc2ee3a19365785c0794c4baa88a94ce552fdd1c6951499fdfd21f04555dcfbb.json.gz",
+        "traces": "data/raw/objects/91709843f36d639a768bc4b6087f46a44da60a15ef0576f2be4de2b81b665e7e.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/2d1a116ebc86f3536304165600e66fda90577edddadf20b6a077799689d90f77.json",
+        "without_front_simulation": "data/raw/victim_simulations/f507e2af591b329eb36ee8a3ba2bded2f7b0822ddb397082ad9d65abaf754aba.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-201527112799709134787870046635",
+              "native:eth": "330506152048453994971"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-201527112799709134787870046635",
+              "native:eth": "367218837630781943483"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 4,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "36712685582327948512"
+          },
+          "marked_output_improvement_USD": "83056.20997346798775715296",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "36712685582327948512",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "36.712685582327948512",
+              "reference_USD": "2262.33",
+              "USD": "83056.20997346798775715296",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793315160,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301609,
+      "target": "0x625e674d10c864a1d98d8ba9b5c05ed2f325d74cca62b8b67cd6268edbd8f051",
+      "removed_front": "0xb85a8b174f8258c4d729e3b1112fe46fe90b6e4d761792b47b133e9dd77f2d7b",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "25819250972259055290",
+      "evidence": {
+        "header": "data/raw/objects/44e58ce84954e269e6621a13c32f0eb00d62e8aa5ed0a6c8fb98283334ce330f.json.gz",
+        "receipts": "data/raw/objects/52ef85116cfa424378c8d1eb68f9f2b0a17c210d7162190d9b7d3e3f7b9db15e.json.gz",
+        "traces": "data/raw/objects/b6f380c27c683a582cdcb8c5ef8b5ac26e854347c4f75379576b2f9102a2011b.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/5db2f5e742e1f05bba73ad28b210109d94ce532a959b71dbbbba1f5b667d61fa.json",
+        "without_front_simulation": "data/raw/victim_simulations/4d708622fb9a3b09e6a6eef187f7134f39467a3dcc627a93f16dda55ffb83490.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-126086650913150798109568387582",
+              "native:eth": "206987993163574776128"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-126086650913150798109568387582",
+              "native:eth": "232807244135833831418"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 11,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "25819250972259055290"
+          },
+          "marked_output_improvement_USD": "58431.546875319468026799",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "25819250972259055290",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "25.81925097225905529",
+              "reference_USD": "2263.1",
+              "USD": "58431.546875319468026799",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793315460,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301676,
+      "target": "0xa1ffb6c903251ed68c39a25fe767267eae471b79154acf006749fcfb3a268605",
+      "removed_front": "0x4098d2e40b6eb6ecf923aa1fadad3881c4a5330eef8147fdbdfd2ba298971101",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "13355161394158177002",
+      "evidence": {
+        "header": "data/raw/objects/3e2aa05f5eb66a6d990435b1c9c200255cae2edb89d55633025523c5aa007794.json.gz",
+        "receipts": "data/raw/objects/eed8a390bb941040cfe3ef000dc06449aab0645dc18f7f51040bfa4ef6887d84.json.gz",
+        "traces": "data/raw/objects/bd7b8abe5a2da16f4aa69ac8a6ce3787922f2af5c6e26bb0e7223a1c035e77c2.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/3f327dd5b75a9531810fd6ca3ad1d23e93c4bb71c48a0d4ede5b548d59fc39dd.json",
+        "without_front_simulation": "data/raw/victim_simulations/4a4ad1a49c54f64772eac905fc2fe02eda027d3bc280ec101158ab201b497cf9.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-290589924820136936691162954982",
+              "native:eth": "530861101215240889866"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-290589924820136936691162954982",
+              "native:eth": "544216262609399066868"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 4,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "13355161394158177002"
+          },
+          "marked_output_improvement_USD": "30258.25496428841530635132",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "13355161394158177002",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "13.355161394158177002",
+              "reference_USD": "2265.66",
+              "USD": "30258.25496428841530635132",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793316300,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301646,
+      "target": "0xf930d01df237aae8b2110c5ab77ad2f20ae17e0c1be103ece34aeb9ada42035e",
+      "removed_front": "0x0b15440db772390ef02f33d84bed390f2041bad08e0a5eaf4dc516b24c87d608",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "7189735222853190396",
+      "evidence": {
+        "header": "data/raw/objects/d673256b04bb6ec89809790204a92bea5477b2fd2f8500638d5323c46fd9a6f4.json.gz",
+        "receipts": "data/raw/objects/947348c08b121f60e1f8845a8157e5d3a582add8b24917ec446f307e8e259f9f.json.gz",
+        "traces": "data/raw/objects/f99e62c6876de4580897ca271b18c320bd1a83c1d203a3e04a0437fc51f1a67b.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/de9d03836cd5d9d33078192012e6cb6103bc6123c8def9356aa9cea6ed78b1c9.json",
+        "without_front_simulation": "data/raw/victim_simulations/91d9c6853b0b413cd787f3c975b3be4163e55b8397ab8803c45fc024afbd5c20.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-118601047519661436909654370140",
+              "native:eth": "216663384232834053176"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-118601047519661436909654370140",
+              "native:eth": "223853119455687243572"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 5,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "7189735222853190396"
+          },
+          "marked_output_improvement_USD": "16285.32545858030450217168",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "7189735222853190396",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "7.189735222853190396",
+              "reference_USD": "2265.08",
+              "USD": "16285.32545858030450217168",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793315880,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301572,
+      "target": "0x61d38d4297e5e1efc170b502fce38f72141d15765319a82edda15aceee8746cc",
+      "removed_front": "0x5775b162fee0d4cc5adf558354e0bcf9fb95eec7eacb15654e556c9522641343",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "5034589834368051254",
+      "evidence": {
+        "header": "data/raw/objects/8bd0b8016733d869166eb602b9d2bd9a0b7471a1bc42151925418f2f2bcc0ea9.json.gz",
+        "receipts": "data/raw/objects/6b97ca2d8bcc97d41eb41e8d387e6d9706d6b0fe6087fa7affc1b80e22324942.json.gz",
+        "traces": "data/raw/objects/90a984e31c97306d9747e439d001d71c9adfe3bf652fd20995d4b666efd0857a.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/ae7b206f33cb9583eab6d07609622d99d37bdbd7cbcb0cb3d964dc3f0b70976c.json",
+        "without_front_simulation": "data/raw/victim_simulations/ff003b0ce2637d2672a32710372c59606d7b2921828643833584be46572dc500.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-103910714869362028049606783935",
+              "native:eth": "189828031225612850853"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-103910714869362028049606783935",
+              "native:eth": "194862621059980902107"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 4,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "5034589834368051254"
+          },
+          "marked_output_improvement_USD": "11377.6695666883590289146",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "5034589834368051254",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "5.034589834368051254",
+              "reference_USD": "2259.9",
+              "USD": "11377.6695666883590289146",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793315040,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301617,
+      "target": "0xe81fff4ab1b4d8881c2a9ad64bd7d951a5bf2038386b896169df2ce7ff3c19b3",
+      "removed_front": "0xecf35cadb20f11dc6a4d6c26c102a6c394f49421f8a0d1f24f6cc92bdd36b8f4",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "5021355420345009174",
+      "evidence": {
+        "header": "data/raw/objects/0f610716bd0ccac4f647e35127a48aa3d40047246540124da37016d78b729047.json.gz",
+        "receipts": "data/raw/objects/790cbee208dfd8d98778ab9b0df53cc4449388e5982049d257c3c38c1ea03e42.json.gz",
+        "traces": "data/raw/objects/df0cb4c304ac4d546327ae201181f61a171cd01e6aca5c4fa85aa36567efa30b.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/be1cd363fe4c3da65fc64119e4ee1689a517fe3a39f8ac40016f575e65b5856f.json",
+        "without_front_simulation": "data/raw/victim_simulations/d7111efc7e4f79ab40aecb01569a29ec2b29998388c7e234a25350dbdc5ac7ce.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-79744984873222412045264924386",
+              "native:eth": "145682641046777728141"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-79744984873222412045264924386",
+              "native:eth": "150703996467122737315"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 2,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "5021355420345009174"
+          },
+          "marked_output_improvement_USD": "11371.26105780490087525692",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "5021355420345009174",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "5.021355420345009174",
+              "reference_USD": "2264.58",
+              "USD": "11371.26105780490087525692",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793315580,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301600,
+      "target": "0x152d0c5a1ef7656050baded1bacd978f3558f2efb269bb7db6aab3cc45c964c2",
+      "removed_front": "0x5de13e294031eab9275435c87466605588c3a6a4b2b8cb72a4ba8e0f335b24e5",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "3530688773747013840",
+      "evidence": {
+        "header": "data/raw/objects/b5f761880e753c5c688b0f7771af3bee043de3047cdef5abf3d5826842675273.json.gz",
+        "receipts": "data/raw/objects/cbea3277d093850ec08472570c1d26723bb04d7f0d2e75cd109d414c643c2453.json.gz",
+        "traces": "data/raw/objects/385ead74b7a2ade413a617cb727244ddc8b7c462544bd0e6f2c540ee13de8751.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/a26274304ac484723085d5cf75e29d9d30d5413b68b52e0cb2ea63a0c43fb5fc.json",
+        "without_front_simulation": "data/raw/victim_simulations/20e82c4e0d038103f580919d5943b0bc25ced6971761d994181823a233e9b4b5.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116126,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-104368941810607573693049785692",
+              "native:eth": "190664354371420568973"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126542,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-104368941810607573693049785692",
+              "native:eth": "194195043145167582813"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 2,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "3530688773747013840"
+          },
+          "marked_output_improvement_USD": "7996.9747656492488774616",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "3530688773747013840",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "3.53068877374701384",
+              "reference_USD": "2264.99",
+              "USD": "7996.9747656492488774616",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793315340,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301528,
+      "target": "0x03c65c42c7c8358cf02e633b5b2e06a8d1a5291f81a53d01dff8173ae29aa899",
+      "removed_front": "0x8bcb267eeec49b01d7acbde9fc7ac9ec69f7987a259047f04c238b0f4dc19996",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "1802830133035329553",
+      "evidence": {
+        "header": "data/raw/objects/1ee0fc4089842d25b282e4c090147f6623fb946ac36548255f2d44acc2c6d2b6.json.gz",
+        "receipts": "data/raw/objects/4e6eec41a864f2730480d31ae0c0c750c0faf3c62b4f5523f28438afbe48d104.json.gz",
+        "traces": "data/raw/objects/2689ef90ac3fa6cc4fb00e3668cde32bc3238392ee8f49a21a22258d9442cc4a.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/309ab18097af23bba40194f8573c3eea6a74a4ea304dc62b27b0ba0544d886ac.json",
+        "without_front_simulation": "data/raw/victim_simulations/ca4039687cfd41d0bb443dcbb224c4d291cea28215d8d46c540bb7669313f587.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116114,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-51534126798695958852870355732",
+              "native:eth": "94143677414127954588"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126530,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-51534126798695958852870355732",
+              "native:eth": "95946507547163284141"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 145,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "1802830133035329553"
+          },
+          "marked_output_improvement_USD": "4095.05653398442966645738",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "1802830133035329553",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "1.802830133035329553",
+              "reference_USD": "2271.46",
+              "USD": "4095.05653398442966645738",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793314500,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26302626,
+      "target": "0x5f389f65a46a425b776272a55e3c8199a4debcaea18a5a9286047ecdb8437fe5",
+      "removed_front": "0xecf1bfc0facdc5651485b4bbb8f8a7122f6620347bbd33b896ce640c5cd41b7d",
+      "victim_addresses": [
+        "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+      ],
+      "local_quote_reduction_raw": "895079927510506992",
+      "evidence": {
+        "header": "data/raw/objects/97f13589f61827095c167120e697769320dc45be83f7bafdf1ceda98de0c957c.json.gz",
+        "receipts": "data/raw/objects/449bf4767e83d18f6e11e06295aac6db2a648d18c79d5d81a2c026b1799077ff.json.gz",
+        "traces": "data/raw/objects/cd229ae6f88c6254ea4572808115162ae80428fd7bfdac069ab78948e475526d.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/33f28f837084e4c86a7a472e492272437fe367cc1a2647adc39d2be97021f3b7.json",
+        "without_front_simulation": "data/raw/victim_simulations/6edf948fba881681c0818fd82343c770265a8a25b971bb363436f7a2aacdee6f.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 107251,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55": "-897304638392130447900789",
+              "native:eth": "58360653088290114007"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 117667,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55": "-897304638392130447900789",
+              "native:eth": "59255733015800620999"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 7,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "895079927510506992"
+          },
+          "marked_output_improvement_USD": "1979.88099645614104602432",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "895079927510506992",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.895079927510506992",
+              "reference_USD": "2211.96",
+              "USD": "1979.88099645614104602432",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793327760,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/ca61011cb00ef4c055bafa791d8227861addac580874e6e87051b6a8c227a1e8.json",
+                  "data/raw/objects/ceb8f40c4ad9b4bbbab4199a5285442ce49c6ee9d644094d5bbbd35bc04c5bf6.json",
+                  "data/raw/objects/e61e9c9625986da0da3852393a8eff695f55664442d33d0cebf9a81fd12c73b5.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301533,
+      "target": "0xe356d9f3e0b4f748bcafba51847f6072d0d06728db5036922a3d76c5d1d7cba4",
+      "removed_front": "0x3a7ee6150fc41d6fb9f793afd38a5c13efc036b4ffe93e98cc6283d3d2f90a2a",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "551636118948212449",
+      "evidence": {
+        "header": "data/raw/objects/dc14609b575cefe1297a69b7902c24bc07d8fb22c5d06f5d64f27f9559690b2d.json.gz",
+        "receipts": "data/raw/objects/67489a2629f5fcc8146fa8bc20b16a46fc6712d5f8fb129c8f4edd2a68641ff4.json.gz",
+        "traces": "data/raw/objects/cbe6490e6ee8115ce01669fe03bf293e31a2a63a30bc3ebf4618de45849a43a9.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/0b3b5ab960598e85bf20a456c4107ac21c3740d73c7122859f261c287f8ae74c.json",
+        "without_front_simulation": "data/raw/victim_simulations/a1b8be434986a694731ffdcbe7af005907b122797e7371299e9b172763c7e739.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116114,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-28915614496295450026778224922",
+              "native:eth": "53620816844086429800"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126530,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-28915614496295450026778224922",
+              "native:eth": "54172452963034642249"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 29,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "551636118948212449"
+          },
+          "marked_output_improvement_USD": "1253.39449130699143387086",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "551636118948212449",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.551636118948212449",
+              "reference_USD": "2272.14",
+              "USD": "1253.39449130699143387086",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793314560,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26302802,
+      "target": "0x05eff63d4346e68913505a5a7fbd42d25708f36a981068ee4ebe4cb460c653e4",
+      "removed_front": "0xfd8cbd00277541574923dbf76af0e8670433620ab0621c54895141e7fb00623b",
+      "victim_addresses": [
+        "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+      ],
+      "local_quote_reduction_raw": "503200644028123925",
+      "evidence": {
+        "header": "data/raw/objects/cf353a1b2addaa4838298e81a5a7403def471c8dd18fa5d758ae4edf932af0ff.json.gz",
+        "receipts": "data/raw/objects/332f8efd0d55f6433e3f836265be92e10b4db5892e4b85f2c8b2ba5797c83283.json.gz",
+        "traces": "data/raw/objects/a7c9520a646fd415fa970feda97c3096f63c3b20438657953bca5a6d832978e9.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/63275372b0fdfdd2061d2d51d541f90f18ba235626287524b555a7baedaaf761.json",
+        "without_front_simulation": "data/raw/victim_simulations/35a6048efd4e9fbb103186472a2b324112297c5c6b2b09a5fb659707244a4ed9.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 181326,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0x31c8eacbffdd875c74b94b077895bd78cf1e64a3": "-221278301136301385870916",
+              "native:eth": "19799483954843741939"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 191742,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0x31c8eacbffdd875c74b94b077895bd78cf1e64a3": "-221278301136301385870916",
+              "native:eth": "20302684598871865864"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 89,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "503200644028123925"
+          },
+          "marked_output_improvement_USD": "1113.25091280917968423450",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "503200644028123925",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.503200644028123925",
+              "reference_USD": "2212.34",
+              "USD": "1113.25091280917968423450",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793329860,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/ca61011cb00ef4c055bafa791d8227861addac580874e6e87051b6a8c227a1e8.json",
+                  "data/raw/objects/ceb8f40c4ad9b4bbbab4199a5285442ce49c6ee9d644094d5bbbd35bc04c5bf6.json",
+                  "data/raw/objects/e61e9c9625986da0da3852393a8eff695f55664442d33d0cebf9a81fd12c73b5.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26302769,
+      "target": "0x2c3a9c83586108411d99b6d706f44b1dfa2ac576747445ba9906a5596fd1261a",
+      "removed_front": "0x1c2ad9e8b06f22398ae6a9bd546b2f77ca170b4251d0a75d3e983f1f89c647c5",
+      "victim_addresses": [
+        "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+      ],
+      "local_quote_reduction_raw": "483821727165781067",
+      "evidence": {
+        "header": "data/raw/objects/0489ffe3071bfd6ecfc113cc4a58aa75f54799384877e2a8dece08d1d7f78f73.json.gz",
+        "receipts": "data/raw/objects/ccaf60b27373379a763b49072eff6f6bf8af644515bc8f73fb34ab1efc6a7224.json.gz",
+        "traces": "data/raw/objects/9f948d6d5bb340a6ca1516d7c6c5ef780041ac6b9a52e139f536496119affd1d.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/3b00a06692d39baaa2fcaca0955dee2b5ca7fd719ec0045df863ef063b33bc07.json",
+        "without_front_simulation": "data/raw/victim_simulations/951895c74c374a41ae4d8628ad6e1053cb9cdf55e58f782ebe43de2cb89d3e2d.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 181302,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0x31c8eacbffdd875c74b94b077895bd78cf1e64a3": "-189467857046345589234966",
+              "native:eth": "18624321321875509005"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 191718,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0x31c8eacbffdd875c74b94b077895bd78cf1e64a3": "-189467857046345589234966",
+              "native:eth": "19108143049041290072"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 4,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "483821727165781067"
+          },
+          "marked_output_improvement_USD": "1069.75402984990022819035",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "483821727165781067",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.483821727165781067",
+              "reference_USD": "2211.05",
+              "USD": "1069.75402984990022819035",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793329500,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/ca61011cb00ef4c055bafa791d8227861addac580874e6e87051b6a8c227a1e8.json",
+                  "data/raw/objects/ceb8f40c4ad9b4bbbab4199a5285442ce49c6ee9d644094d5bbbd35bc04c5bf6.json",
+                  "data/raw/objects/e61e9c9625986da0da3852393a8eff695f55664442d33d0cebf9a81fd12c73b5.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301470,
+      "target": "0xbdba30bf96ee327dd37f89807a95da7b3b2ebaeee0302379d47849b8bb11d759",
+      "removed_front": "0xdabf1d0ab4ab5b9f9e2890b15c7270f1b6c7501b85e7ee5cdad3c822663af8ac",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "394028370371710333",
+      "evidence": {
+        "header": "data/raw/objects/971af1c4c68009f9b20f97fc7b9b101b393da19c3b2aaf76b68062baf2198617.json.gz",
+        "receipts": "data/raw/objects/ceb1ab337e9b7a45b7011ad8fdfa59f2d911d2aa9b3dd702a09bd8df3e537d27.json.gz",
+        "traces": "data/raw/objects/9eaee1564a82199937a46405fcf7778a406ece48bace054a25787f95d1f6fc0c.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/6489eeda12b6c3ffa762ecf2682c3584a5a1818605082422bf56d30b409f82f6.json",
+        "without_front_simulation": "data/raw/victim_simulations/ee302492cb6faab077ccd4b6f8977510f23eb59c5be192983db15bd42259f12c.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116114,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-26466579044119897421789635452",
+              "native:eth": "48640601252805218921"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 126530,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-26466579044119897421789635452",
+              "native:eth": "49034629623176929254"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 35,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "394028370371710333"
+          },
+          "marked_output_improvement_USD": "895.23639776822959367933",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "394028370371710333",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.394028370371710333",
+              "reference_USD": "2272.01",
+              "USD": "895.23639776822959367933",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793313780,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26301485,
+      "target": "0x09d47d2643b03692b2c85a64fe29f9447f2305092394f281337d32bdffb33e55",
+      "removed_front": "0xf3f4c29665f65e318557741fccabaca818fc1adde5e8a14ebd4e67ad2d983034",
+      "victim_addresses": [
+        "0x600d6f00eadabdb514561ceeb43730a7103e8298"
+      ],
+      "local_quote_reduction_raw": "375118415031425746",
+      "evidence": {
+        "header": "data/raw/objects/671db47ea1bddfaed8a0b27ba009c0d3fb863b07e4dc5f6c3d25dafc87339ba5.json.gz",
+        "receipts": "data/raw/objects/ca962e6171d4e2431058cf03ace5776c6aa82df28847329753497cc38b3e91a0.json.gz",
+        "traces": "data/raw/objects/94a1a394783203e6e79c1d0a7da67817f21653056d0ef28b6849ddbff672a2c5.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/96207baef298faf148a44110edb13d893212058ff009d4612b3e86e9471836e5.json",
+        "without_front_simulation": "data/raw/victim_simulations/5b95db9052cf4fa9f92ff0ef672f87fabb10f44479576bbecbc2d6f2782d348d.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 116114,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-25732901446695723941483362729",
+              "native:eth": "47634982312697476695"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 116114,
+          "error": null,
+          "victim_net_raw": {
+            "0x600d6f00eadabdb514561ceeb43730a7103e8298": {
+              "0x6982508145454ce325ddbe47a25d4ec3d2311933": "-25732901446695723941483362729",
+              "native:eth": "48010100727728902441"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 21,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "375118415031425746"
+          },
+          "marked_output_improvement_USD": "851.84890632656409807648",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "375118415031425746",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.375118415031425746",
+              "reference_USD": "2270.88",
+              "USD": "851.84890632656409807648",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793313960,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/070745a7dbf6cbc338dd866e7ab7bf414ffb6c5972bbaa0601531273b0580bdd.json",
+                  "data/raw/objects/1d8aab7d5926e9afab770a83a5f0385df2638dd35cbf906a69faad1960b11665.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26302631,
+      "target": "0x1b83b8ab78eb32f8f954f633564fc799683b21c568369e475df80f4a39d26807",
+      "removed_front": "0xd955dc46104afaf31d18008fb704db9ef66fec69d9f1b4d2a7c7e1ae72f135d7",
+      "victim_addresses": [
+        "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+      ],
+      "local_quote_reduction_raw": "358622600000926262",
+      "evidence": {
+        "header": "data/raw/objects/0573c0758c54e55b2b44f9a4f716d75af70dcec243a93898c1174402a8490904.json.gz",
+        "receipts": "data/raw/objects/2c3650a1e507bf0e22c1b68b18945e7d23bfb5ec8f2d0df2fe9c5c4616d0bb40.json.gz",
+        "traces": "data/raw/objects/a5682e0228637d45270a3dc6f5d43752624eeef59566d3643e7bd74b4573f722.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/a34fda1431aba82c1d09b91be2c0be2ff56f72a386d328c1f543eeb97243bb65.json",
+        "without_front_simulation": "data/raw/victim_simulations/f6e6b25cd3c79b73bbdd6f25b8b3aa8cc6585b736e45543edb4ed9a18c1e02bb.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 107239,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55": "-246248943376931253600045",
+              "native:eth": "16591330643159091207"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 117655,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55": "-246248943376931253600045",
+              "native:eth": "16949953243160017469"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 6,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "358622600000926262"
+          },
+          "marked_output_improvement_USD": "793.81829755405029946224",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "358622600000926262",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.358622600000926262",
+              "reference_USD": "2213.52",
+              "USD": "793.81829755405029946224",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793327820,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/ca61011cb00ef4c055bafa791d8227861addac580874e6e87051b6a8c227a1e8.json",
+                  "data/raw/objects/ceb8f40c4ad9b4bbbab4199a5285442ce49c6ee9d644094d5bbbd35bc04c5bf6.json",
+                  "data/raw/objects/e61e9c9625986da0da3852393a8eff695f55664442d33d0cebf9a81fd12c73b5.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26302895,
+      "target": "0x835b66894fc3724fe683c56d26b90714a732093e1c1a23aacb7d37f20b399453",
+      "removed_front": "0x5d57732a49f68675c0a1d4d7552facb9ce39616ed4a1ceff3c2e5f4cf35562d2",
+      "victim_addresses": [
+        "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+      ],
+      "local_quote_reduction_raw": "196590962516002369",
+      "evidence": {
+        "header": "data/raw/objects/0971fc6c61b1033803fa4f90a07404c438db6b392d0604efc5881329517551be.json.gz",
+        "receipts": "data/raw/objects/087842c9cd82a1b84ff15a291de3c61dca1e74a8629361e4de108c6b6eecba60.json.gz",
+        "traces": "data/raw/objects/d70d9a6b0b6b4cf7ab29e78e39254966c6b55dbebd2f8dd0492fed60fb9fd241.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/d918f593ebec0deacc3d05266be7e8761cd83b3a3edd517d008c2309fb738617.json",
+        "without_front_simulation": "data/raw/victim_simulations/00279c62ec6afd06b93da2603daa6796ba5af7292ac4e4aa81ee0ce563979aac.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 106015,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xddb3422497e61e13543bea06989c0789117555c5": "-513679145474462522025754",
+              "native:eth": "1709284069080699512"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 116431,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xddb3422497e61e13543bea06989c0789117555c5": "-513679145474462522025754",
+              "native:eth": "1905875031596701881"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 30,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "196590962516002369"
+          },
+          "marked_output_improvement_USD": "435.57480018895548885116",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "196590962516002369",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.196590962516002369",
+              "reference_USD": "2215.64",
+              "USD": "435.57480018895548885116",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793331000,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/ca61011cb00ef4c055bafa791d8227861addac580874e6e87051b6a8c227a1e8.json",
+                  "data/raw/objects/ceb8f40c4ad9b4bbbab4199a5285442ce49c6ee9d644094d5bbbd35bc04c5bf6.json",
+                  "data/raw/objects/e61e9c9625986da0da3852393a8eff695f55664442d33d0cebf9a81fd12c73b5.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    },
+    {
+      "block": 26302864,
+      "target": "0xb5cffe6b3f3909043f41456b151eff70de7a72b55f64f772776bcb104367a496",
+      "removed_front": "0xf501627b872112a9342347d7b4fd78299b53bc47e95b9e5b81b67dc10284d6e3",
+      "victim_addresses": [
+        "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+      ],
+      "local_quote_reduction_raw": "76486204685853984",
+      "evidence": {
+        "header": "data/raw/objects/8a686b99587fb0cf9d86085d300acc0ef531a2d5ce26082966b5db23f743ba6a.json.gz",
+        "receipts": "data/raw/objects/b2d0c38ab0315dc34a6f863a369048b3dab571685f118f5458d3fa23b30ba42e.json.gz",
+        "traces": "data/raw/objects/996079e133d9f3b19112fa4764523aecb59e7b24ffa5c2187c500742d38bd12f.json.gz",
+        "actual_simulation": "data/raw/victim_simulations/fc922b162bc0ad78398da7768f5ca3bf8113e192c338d266a92a50bfddba430f.json",
+        "without_front_simulation": "data/raw/victim_simulations/370bedae70caa2532b021938e5c26e38cd7187f59cc9edfb6850d4fbf74ec630.json"
+      },
+      "gas_included_in_output_effect": false,
+      "scenarios": {
+        "actual": {
+          "target_status": 1,
+          "target_gas_used": 106015,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xddb3422497e61e13543bea06989c0789117555c5": "-370137896766240400533486",
+              "native:eth": "1397726761632198422"
+            }
+          }
+        },
+        "without_front": {
+          "target_status": 1,
+          "target_gas_used": 116431,
+          "error": null,
+          "victim_net_raw": {
+            "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c": {
+              "0xddb3422497e61e13543bea06989c0789117555c5": "-370137896766240400533486",
+              "native:eth": "1474212966318052406"
+            }
+          }
+        }
+      },
+      "actual_prefix_transactions_reproduced": 6,
+      "status": "verified_fixed_call_victim_intervention",
+      "victim_effects": [
+        {
+          "address": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+          "inputs_unchanged": true,
+          "without_front_minus_actual_asset_raw": {
+            "native:eth": "76486204685853984"
+          },
+          "marked_output_improvement_USD": "169.28768169324748132704",
+          "valuation": [
+            {
+              "address": "native:eth",
+              "raw": "76486204685853984",
+              "symbol": "ETH",
+              "decimals": 18,
+              "identity_basis": "Ethereum native ETH",
+              "decimal_basis": "Ethereum wei denomination",
+              "quantity": "0.076486204685853984",
+              "reference_USD": "2213.31",
+              "USD": "169.28768169324748132704",
+              "price_evidence": {
+                "venue": "Coinbase",
+                "symbol": "ETH",
+                "quote": "USD",
+                "bar_start": 1793330640,
+                "stale_minutes": 0,
+                "lookback_minutes": 1,
+                "field": "close",
+                "sources": [
+                  "data/raw/objects/ca61011cb00ef4c055bafa791d8227861addac580874e6e87051b6a8c227a1e8.json",
+                  "data/raw/objects/ceb8f40c4ad9b4bbbab4199a5285442ce49c6ee9d644094d5bbbd35bc04c5bf6.json",
+                  "data/raw/objects/e61e9c9625986da0da3852393a8eff695f55664442d33d0cebf9a81fd12c73b5.json"
+                ]
+              },
+              "confidence": "reference_price_estimate_from_contract_matched_market"
+            }
+          ]
+        }
+      ],
+      "limit": "Conditional historical fixed-call execution, removing only one front transaction. Other calls, quotes, signatures and policy are not reoptimized. Not whole-event MEV, not equilibrium loss, not directly equal to bot profit."
+    }
+  ],
+  "whole_event_loss_established": false,
+  "method": "Fresh archived eth_simulateV1 historical prefix; actual status/gas/logs must reproduce before target effect accepted."
+}

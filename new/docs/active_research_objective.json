@@ -1,0 +1,68 @@
+{
+  "status": "complete_observed_scope",
+  "objective": "在明确的 Ethereum/TRON 共同窗口及已识别事件集合内，完成库存交易、代币承接、LP、真实区块结算的统一分配账、图谱和逐笔证据交付",
+  "requirements": [
+    {
+      "requirement": "统一共同窗口与合约匹配历史价格，目标事件钱包834笔全部估值",
+      "status": "complete"
+    },
+    {
+      "requirement": "逐交易原币/仓位总账、未知凭证原币保留及零原币付款交易索引",
+      "status": "complete"
+    },
+    {
+      "requirement": "全池全操作者库存交易与代币承接，保留负收益和失败成本敏感性",
+      "status": "complete"
+    },
+    {
+      "requirement": "逐池交易时与终点库存双估值及TRON行情交叉检查",
+      "status": "complete"
+    },
+    {
+      "requirement": "全区块原生币结算、proposer实付款、未识别事件份额和重复计数控制",
+      "status": "complete"
+    },
+    {
+      "requirement": "单一分阶段总表、逐地址实际收支、明确MEV判据、图谱和中文交互报告",
+      "status": "complete"
+    },
+    {
+      "requirement": "98项测试和10项独立核验，原始证据哈希和离线复现入口",
+      "status": "complete"
+    }
+  ],
+  "evidence": "reports/event_allocation/validation.json",
+  "full_goal_complete": true,
+  "completion_interpretation": "Defined research deliverable completed: actual cash/principal ledger, shared quote schedule, signed event-market allocation, whole-block secondary settlements, complete transaction index, scientific bounds and reproducible figures/report. This does not assert unobserved firm ownership, historical cost-basis PnL or globally identified causal MEV.",
+  "updated_utc": "2026-11-19T17:59:02.979173+00:00",
+  "research_report": "reports/event_allocation/全事件统一分配报告.md",
+  "all_incident_MEV_loss_established": false,
+  "all_beneficial_owners_established": false,
+  "pending_action": null,
+  "presentation_saved_verification": "reports/presentation/completion_revision/saved_verification.json",
+  "event_allocation_delivered": true,
+  "event_allocation_counts": {
+    "actual_transactions": 104064,
+    "ethereum_actual_transactions": 84922,
+    "before_first_target_control": 4021,
+    "actual_entries": 872470,
+    "failed_attempt_before_target_control": 265,
+    "same_operator_failed_context_unassigned": 13891,
+    "target": 834,
+    "primary_transactions": 85230,
+    "ethereum_primary_transactions": 76405,
+    "allocation_asset_rows": 597662,
+    "fully_priced_primary_transactions": 83213,
+    "secondary_priced_primary_transactions": 2135,
+    "fully_priced_incident_wallet_transactions": 834,
+    "incident_wallet_unpriced_transactions": 0,
+    "after_prior_target": 73023,
+    "failed_attempt_after_target": 11373,
+    "tron_actual_transactions": 19142,
+    "tron_primary_transactions": 8825,
+    "unrelated_manager_pool_control": 657
+  },
+  "independent_checks": 10,
+  "tests": 98,
+  "presentation_contains_new_event_allocation": false
+}

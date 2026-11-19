@@ -1,0 +1,141 @@
+{
+  "case_id": "T3",
+  "ethereum_deposit": "0x7f8d415a1661815c4150d7b4f313af0a491026bc3908947aa342c22c621adc6b",
+  "source_address": "0x53a95853f2b9449841c7b85367a38c6500c505f4",
+  "source_block": 26435503,
+  "deposit_timestamp": 1794927395,
+  "deposit_utc": "2026-11-17T14:56:35+00:00",
+  "router": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+  "vault": "0x46f3fb8c14006268d153b18000495c8ee858e94b",
+  "memo": "=:b:bc1qpwd8yanakftutvz5r2njrahju5g859w3pmue98:110170770/1/0",
+  "input_ETH": "40",
+  "output_BTC": "1.10797406",
+  "BTC_per_ETH": "0.0276993515",
+  "destination_address": "bc1qpwd8yanakftutvz5r2njrahju5g859w3pmue98",
+  "bitcoin_txid": "102dcc81ee7f7e987febaedebaca7c9c22189619f86fbd685fd743687db93025",
+  "bitcoin_outputs": [
+    {
+      "index": 0,
+      "value_sats": 110797406
+    }
+  ],
+  "bitcoin_confirmed_block": {
+    "confirmed": true,
+    "block_height": 976292,
+    "block_hash": "000000000000000000004479287b9f561d3bad27229070b9809799839f961cea",
+    "block_time": 1794928691
+  },
+  "inclusion_delay_seconds": 1296,
+  "delay_definition": "Ethereum inclusion to Bitcoin block timestamp; coarse cross-chain clocks, not exact service latency",
+  "funding_path": [
+    {
+      "sender": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+      "recipient": "0x79e70d139fc05aa75f75611fdf2680e9952b544a",
+      "tx_hash": "0xa024c760b7fcabe748798b52c4806f4581389f770acff43ebac2938c4961d2e4",
+      "amount_wei": "14040000000000000000000",
+      "timestamp": 1793320547,
+      "timestamp_utc": "2026-10-30T00:35:47+00:00",
+      "evidence": [
+        "data/raw/public_rpc/90f36fe6e8be602056c84098dd172be4fe047e951dc7d4e70f4c50407cc30be7.json",
+        "data/raw/public_rpc/b5969e2575ab05af47d7f0f5ab09d5def6b40199d262cbb02398c26978e219db.json",
+        "data/raw/public_rpc/9ab0f4c8d8fcaa141bded289a8141826996e5bb90a3cbdc7687dceee6d487a76.json"
+      ],
+      "index_evidence": "data/raw/objects/53f9eec92d643186b2507e1749e50e23f37ab783234f9f0400b5561b7659ac6b.json.gz"
+    },
+    {
+      "sender": "0x79e70d139fc05aa75f75611fdf2680e9952b544a",
+      "recipient": "0x381aed84964b5e68445f9e121a42d0743c081c2b",
+      "tx_hash": "0xcd7a591142ba2544835a46d42dbba102caa86e4393a32506f4781e87136ecdbe",
+      "amount_wei": "12000000000000000000000",
+      "timestamp": 1794898511,
+      "timestamp_utc": "2026-11-17T06:55:11+00:00",
+      "evidence": [
+        "data/raw/public_rpc/ebae947bd587f947776b8656a753d896ec4bf8c4cf2ac1ce0d76964deea1af8f.json",
+        "data/raw/public_rpc/f9b8b4f43786422a19f5a93eb7e50b628b581eef0ba67019f4eaf12b0699c527.json",
+        "data/raw/public_rpc/44b416ff1cdedfb63b8fa7934a271df947ff7fc558d51d50cb851c1ba9eb0865.json"
+      ],
+      "index_evidence": "data/raw/public_http/454f247347920b0241aec2c27f07e32d33b41919232a3409fae1060537e8d971.json"
+    },
+    {
+      "sender": "0x381aed84964b5e68445f9e121a42d0743c081c2b",
+      "recipient": "0x53a95853f2b9449841c7b85367a38c6500c505f4",
+      "tx_hash": "0xdf9264009c3e9156bbf15e96e39d13134dd807fbec46c56bf9fa75ea54c22dd4",
+      "amount_wei": "40459046881944670000",
+      "timestamp": 1794927107,
+      "timestamp_utc": "2026-11-17T14:51:47+00:00",
+      "evidence": [
+        "data/raw/public_rpc/5e16bb02ca119bb47e0e96cafed50f76eae31d16c8ab7133f01a7738d750d48e.json",
+        "data/raw/public_rpc/1ee8a83e0ed3bccc7bb8e89d73162497042c83254827e2fe57d70651be5ae17b.json",
+        "data/raw/public_rpc/497bf000bcb43113d933cd4720f2b8e7ce7c3d81af944c3e51b1d99dd60c53d4.json"
+      ],
+      "index_evidence": "data/raw/public_http/34a7e62f9470a70da8bb43505e0de967ecd54ae50b07c136bd32a06b1447bd4a.json"
+    }
+  ],
+  "incident_anchor_address": "0x600d6f00eadabdb514561ceeb43730a7103e8298",
+  "common_control_established": false,
+  "exclusive_stolen_unit_provenance_established": false,
+  "funding_scope": "Chronologically prior ordinary transfers, each >= the next transfer. Fund-flow association, not exclusive coin-taint accounting or ownership. Other inputs and intervening spending not exhausted.",
+  "reference": {
+    "venue": "Coinbase",
+    "method": "prior completed minute close for both assets at deposit time; output valued at same reference time",
+    "minute_utc": "2026-11-17T14:55:00+00:00",
+    "ETH_USD": "1806.31",
+    "BTC_USD": "64823.43",
+    "evidence": {
+      "ETH": "data/raw/public_http/761b9c3e9e872dc0c02b08a743d75e4d14c624c962a75bafd9668151f9341953.json",
+      "BTC": "data/raw/public_http/82c3d957fa86fd31121da610ffe28220af75606d6fee8c9303e48b327f4cc60f.json"
+    }
+  },
+  "input_reference_USD": "72252.40",
+  "output_reference_USD": "71822.6789202258",
+  "estimated_execution_shortfall_USD": "429.7210797742",
+  "shortfall_rate": "0.0059474990418892659620995288737813553598219574713089115378866307555181557982849013",
+  "ethereum_gas_ETH": "0.001190339390995059",
+  "ethereum_gas_reference_USD": "2.15012194534828502229",
+  "network_fee_BTC": "0.00001038",
+  "network_fee_reference_USD": "0.6728672034",
+  "actual_bitcoin_network_fee_sats": 1000,
+  "reported_liquidity_fee_RUNE": "260.35439669",
+  "reported_swap_slip_bps": "20",
+  "streaming_swap": {
+    "count": "20",
+    "depositedCoin": {
+      "amount": "4000000000",
+      "asset": "ETH.ETH"
+    },
+    "inCoin": {
+      "amount": "4000000000",
+      "asset": "ETH.ETH"
+    },
+    "interval": "1",
+    "lastHeight": "28712178",
+    "outCoin": {
+      "amount": "110798444",
+      "asset": "BTC.BTC"
+    },
+    "outEstimation": "110495060",
+    "quantity": "20"
+  },
+  "midgard_price_mark_USD": {
+    "ETH": "1815.2991331069957",
+    "BTC": "65576.05975832186"
+  },
+  "price_impact_USD": null,
+  "price_impact_limit": "No historical THOR pool/counterfactual replay; liquidity fee RUNE-denominated. No invented USD fee/additive decomposition. Shortfall includes market/streaming/timing effects.",
+  "sensitivity": {
+    "prior_5min_USD": "536.4056119296",
+    "prior_15min_USD": "699.2174537172"
+  },
+  "evidence": {
+    "ethereum": [
+      "data/raw/public_rpc/98a354c90a02776e29d1e34f7637e652dac8cb992a7e45effe64858b98f3706a.json",
+      "data/raw/public_rpc/c5f9e350b5359a48d286123fe19871ce2843d6af0a24af6ab1e2bfd769c3cd91.json",
+      "data/raw/public_rpc/02c4b2ed9dd0ff2f8a324f7c1528273a009c314144691a76b617556b6e813a48.json"
+    ],
+    "thornode": "data/raw/public_http/059f97d6334e194c14532610ffded7b98c2bd05548dc0a0e6a78352383deb997.json",
+    "midgard": "data/raw/public_http/95bf89eb5a3fa5e2e702c4aaa0a569959d21ea2deaecfece05c24db51fe6b8f8.json",
+    "bitcoin": "data/raw/public_http/586b0c99ac5613593d93667b53d02621149ce7c30d62b21d1767d585f1ee612e.json"
+  },
+  "classification": "observed conversion; estimated reference shortfall; incident fund-flow association only",
+  "ethereum_MEV_link_established": false
+}

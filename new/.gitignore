@@ -1,0 +1,38 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+data/raw/objects/
+data/processed/*.duckdb
+data/processed/*.duckdb.wal
+
+# Raw objects are retained locally. Archive them together with manifest.json
+# when producing a complete evidence handoff; they are not uploaded implicitly.
+
+# Large reproducible tables are published compressed; originals remain local.
+
+data/raw/
+reports/event_allocation/qa/
+/data/processed/mev_full_window/candidates.json
+/data/processed/mev_full_window/all_sender_accounting.jsonl
+/data/processed/mev_full_window/named_full_window_ledger.jsonl
+/data/processed/mev_full_window/affected_pool_scope.jsonl
+/data/processed/mev_full_window/whole_pool_counterparty_ledger.jsonl
+/data/processed/mev_full_window/strategy_accounts_v4.json
+/data/processed/mev_full_window/full_ordered_routes.json
+/data/processed/mev_full_window/named_address_profiles.json
+/data/processed/mev_full_window/strategy_accounts.json
+/data/processed/mev_full_window/pool_census.jsonl
+/data/processed/mev_full_window/strategy_profit_assets.json
+/data/processed/mev_discovery/candidates.json
+/data/processed/mev_discovery/episodes.json
+/data/processed/mev_discovery/ordered_routes.json
+/data/processed/event_allocation/quote_schedule_primary.json
+/data/processed/event_allocation/actual_all_counterparties.json
+/data/processed/event_allocation/tron_root_transactions.json
+/data/processed/mev_tron/all_named_bot_accounting.json
+/data/processed/mev_tron/TVFxAQUx3xrrGrwEwCVFMNkPd2z5zTwAoc/receipts.json
+/data/processed/event_allocation/tron_operator_history/TWqF5bpc1aZ7MMxDqGficXCefwxmTeVp7x.json
+/data/processed/event_allocation/tron_operator_history/TT3EDfsk4AfumVQ9mVXkx4BXpwQx3cu2dy.json
+/reports/mev_expansion/全部候选池路径.csv
+/reports/mev_expansion/逐笔真实转账与Etherscan链接.csv
+/reports/mev_expansion/逐交易逐地址实际收支.csv

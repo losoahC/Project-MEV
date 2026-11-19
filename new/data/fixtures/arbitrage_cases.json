@@ -1,0 +1,9 @@
+{
+  "selection_method": "Three distinct blocks: highest-net standalone two-account cycle associated with a target in the 16-wallet sample, plus two simple two-pool V2 cycles. Selection uses legacy leads only; results must be recomputed from receipts and traces. Cases are not a random or exhaustive sample.",
+  "cases": [
+    {"case_id":"A1", "block":26300992,"tx_hash":"0x722001ce0a09024d683592474d12df947aa9548befb0292ae098a9db37a0aa7c","target":"0x2a1979ae32a40c0aaa0df757f6af690857c6c8cb86097cac29316597de9469f6","accounts":["0xb7c2f4c212e83c9503beb0cbe53013bfbdb51f2e","0xc77a078a0e45bb30912c1e3bb0c20571e6728dfa"],"route_label":"Multi-pool atomic cycle"},
+    {"case_id":"A2", "block":26302300,"tx_hash":"0xa48203e21f385c7685c5656c7492feae9498c6c40b53c709a39d8b94639eb851","target":"0x2ccafec913543cb6a8f13d9bf8f4fc77b3adb0b9bed4e32171560dac9670976d","accounts":["0x0124d0fa0dfb1430dfcff16ec6a96945e7a0bc10","0x36331e299247e5d0d3261e1d9852f6e0cffee95c"],"route_label":"WETH / SHIB two-pool cycle"},
+    {"case_id":"A3", "block":26302437,"tx_hash":"0xbe7e1a0554942e23cb6c960274ab52033c9851445810c061a1f34f9e041d74a4","target":"0xbf3fc95e45d932b1ad0a55e91e77fea8652906a3eeb0efd65850976059aef9d7","accounts":["0x5205b8122e1f6fa6066ba487e49f6e4cc81c2cbd","0xe45572dff1865af5f12208b09ce7506847f628bd"],"route_label":"WETH / AXS two-pool cycle"}
+  ],
+  "sandwich": {"case_id":"S1","block":26301609,"front":"0xb85a8b174f8258c4d729e3b1112fe46fe90b6e4d761792b47b133e9dd77f2d7b","target":"0x625e674d10c864a1d98d8ba9b5c05ed2f325d74cca62b8b67cd6268edbd8f051","back":"0xf3935c9604416f38ea2942652ea8c652bc2ea0cfac2ad0316181031bdcd607c2","accounts":["0x45e9b04942176a513b22acc1ced75c34d2fd9215","0x4cd4499d6e6a0eb8995a2cabd400d1ad35c4d03e","0x5aae4d2f360e156de3416936049837a7bb685588"],"pool":"0xa43fe16908251ee70ef74718545e4fe6c5ccec9f"}
+}

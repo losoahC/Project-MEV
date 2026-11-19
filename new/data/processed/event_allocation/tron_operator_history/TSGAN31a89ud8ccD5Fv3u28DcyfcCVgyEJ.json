@@ -1,0 +1,186 @@
+{
+  "owner": "TSGAN31a89ud8ccD5Fv3u28DcyfcCVgyEJ",
+  "complete": true,
+  "pages": [
+    "data/raw/event_allocation/tron_history/cc02d459880b856215963663b2f5d535221a090a72b8a3d0b01430821ce53d9a-1.json"
+  ],
+  "transactions": 2,
+  "failed_transactions": 0,
+  "error": null,
+  "rows": {
+    "4f5913bb0e07ca03084939529968dfa734bfc3d7c6a903fb5dc55b32eecf7eba": {
+      "transaction": {
+        "ret": [
+          {
+            "contractRet": "SUCCESS",
+            "fee": 0
+          }
+        ],
+        "signature": [
+          "e1fdeb688136e67565efffedfd4430228713b90ba6cbc0049f4c200aa9a3c8762cfc7a26122ba8b3a601b162ecb770cce2ee1f97b35738ab647019d9962ff9161b"
+        ],
+        "txID": "4f5913bb0e07ca03084939529968dfa734bfc3d7c6a903fb5dc55b32eecf7eba",
+        "net_usage": 512,
+        "raw_data_hex": "0a02f99822089b5e7c6e06a9dbad40d890d4d998345ad502081f12d0020a31747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e54726967676572536d617274436f6e7472616374129a020a1541b2b6e1ab2e6b99b34fc50ff8f5326f4a12d9ce881215418747979e9965c33e07d497008b08570e51ffccd018ba86ae0122e401fb3bdb4100000000000000000000000000000000000000000000000000000000000f46280000000000000000000000000000000000000000000000000000000000000080000000000000000000000000b2b6e1ab2e6b99b34fc50ff8f5326f4a12d9ce88000000000000000000000000000000000000000000000000000000006ae4269e0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000891cdb91d149f23b1a45d9c5ca78a88d0cb44c18000000000000000000000000a614f803b6fd780986a42c78ec9c7f77e6ded13c70dac1d0d9983490018087a70e",
+        "net_fee": 0,
+        "energy_usage": 2307,
+        "blockNumber": 87554476,
+        "block_timestamp": 1793336817000,
+        "energy_fee": 0,
+        "energy_usage_total": 230669,
+        "raw_data": {
+          "contract": [
+            {
+              "parameter": {
+                "value": {
+                  "data": "fb3bdb4100000000000000000000000000000000000000000000000000000000000f46280000000000000000000000000000000000000000000000000000000000000080000000000000000000000000b2b6e1ab2e6b99b34fc50ff8f5326f4a12d9ce88000000000000000000000000000000000000000000000000000000006ae4269e0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000891cdb91d149f23b1a45d9c5ca78a88d0cb44c18000000000000000000000000a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+                  "owner_address": "41b2b6e1ab2e6b99b34fc50ff8f5326f4a12d9ce88",
+                  "contract_address": "418747979e9965c33e07d497008b08570e51ffccd0",
+                  "call_value": 2851642
+                },
+                "type_url": "type.googleapis.com/protocol.TriggerSmartContract"
+              },
+              "type": "TriggerSmartContract"
+            }
+          ],
+          "ref_block_bytes": "f998",
+          "ref_block_hash": "9b5e7c6e06a9dbad",
+          "expiration": 1793336871000,
+          "fee_limit": 30000000,
+          "timestamp": 1793336811738
+        },
+        "internal_transactions": [
+          {
+            "internal_tx_id": "eaecfd54eb86241e4e110c3904bc94e209be44ab1b7cf89f08096c7579ac7eda",
+            "data": {
+              "note": "call",
+              "rejected": false
+            },
+            "to_address": "413a10321a4e97a64d9376af42ec07d5fa50294b35",
+            "from_address": "418747979e9965c33e07d497008b08570e51ffccd0"
+          },
+          {
+            "internal_tx_id": "af4cdb20fbd9f687babcbc1b2b4b11cb0bd71817178a0605341af534f5a1aca7",
+            "data": {
+              "note": "call",
+              "rejected": false,
+              "call_value": {
+                "_": 2837454
+              }
+            },
+            "to_address": "41891cdb91d149f23b1a45d9c5ca78a88d0cb44c18",
+            "from_address": "418747979e9965c33e07d497008b08570e51ffccd0"
+          },
+          {
+            "internal_tx_id": "74b1741a1fc894269ea0dd842c93a6bba38cc79639f13e10203dcbacb0403622",
+            "data": {
+              "note": "call",
+              "rejected": false
+            },
+            "to_address": "41891cdb91d149f23b1a45d9c5ca78a88d0cb44c18",
+            "from_address": "418747979e9965c33e07d497008b08570e51ffccd0"
+          },
+          {
+            "internal_tx_id": "77c561ac07f56df1f2caf316c197247cbfa4664505c1ed563c3886b28202c22b",
+            "data": {
+              "note": "call",
+              "rejected": false
+            },
+            "to_address": "413a10321a4e97a64d9376af42ec07d5fa50294b35",
+            "from_address": "418747979e9965c33e07d497008b08570e51ffccd0"
+          },
+          {
+            "internal_tx_id": "5415d95b0ca9db3e2c3bd541942136ce9628c69fac375d8167c1cddd5c9e8bad",
+            "data": {
+              "note": "call",
+              "rejected": false
+            },
+            "to_address": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+            "from_address": "413a10321a4e97a64d9376af42ec07d5fa50294b35"
+          },
+          {
+            "internal_tx_id": "b0d84e23288d10e8e6795a301aabd80c03b78a53f239f958cc792dce25cb3f00",
+            "data": {
+              "note": "call",
+              "rejected": false
+            },
+            "to_address": "41891cdb91d149f23b1a45d9c5ca78a88d0cb44c18",
+            "from_address": "413a10321a4e97a64d9376af42ec07d5fa50294b35"
+          },
+          {
+            "internal_tx_id": "149828014d47e69bf4ebc4ee3ced888f2b42e0ddebd748c98e17224ee73225a5",
+            "data": {
+              "note": "call",
+              "rejected": false
+            },
+            "to_address": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+            "from_address": "413a10321a4e97a64d9376af42ec07d5fa50294b35"
+          },
+          {
+            "internal_tx_id": "5f246f5f84120e36bdc3e71a54765392a32551dc38eb723d286dd69daec2c2e7",
+            "data": {
+              "note": "call",
+              "rejected": false,
+              "call_value": {
+                "_": 14188
+              }
+            },
+            "to_address": "41b2b6e1ab2e6b99b34fc50ff8f5326f4a12d9ce88",
+            "from_address": "418747979e9965c33e07d497008b08570e51ffccd0"
+          }
+        ]
+      },
+      "evidence": "data/raw/event_allocation/tron_history/cc02d459880b856215963663b2f5d535221a090a72b8a3d0b01430821ce53d9a-1.json",
+      "failed": false,
+      "fee_raw": "0",
+      "same_operator_entrypoint_as_pool_trade": true
+    },
+    "e4596ae752c32cbff82f1d2f1669c2f69f3fff65a96af791f703d88206e6cad8": {
+      "transaction": {
+        "ret": [
+          {
+            "contractRet": "SUCCESS",
+            "fee": 345000
+          }
+        ],
+        "signature": [
+          "d7c87a329e9954387bbdc1564842d839688eb6a9a251e6d9b3e783bb78501604601e51bed5bf3134cce9efe919b51344f5fb4e5431886682aa3a324ae06add7e1b"
+        ],
+        "txID": "e4596ae752c32cbff82f1d2f1669c2f69f3fff65a96af791f703d88206e6cad8",
+        "net_usage": 0,
+        "raw_data_hex": "0a02f9992208a27ea9a57f24d7d54090a8d4d998345aae01081f12a9010a31747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e54726967676572536d617274436f6e747261637412740a1541b2b6e1ab2e6b99b34fc50ff8f5326f4a12d9ce88121541a614f803b6fd780986a42c78ec9c7f77e6ded13c2244a9059cbb00000000000000000000000017f80f10b6c4f08197653da37dd778d3c09f8abb00000000000000000000000000000000000000000000000000000000000f424070cce4d0d9983490018087a70e",
+        "net_fee": 345000,
+        "energy_usage": 64285,
+        "blockNumber": 87554477,
+        "block_timestamp": 1793336820000,
+        "energy_fee": 0,
+        "energy_usage_total": 64285,
+        "raw_data": {
+          "contract": [
+            {
+              "parameter": {
+                "value": {
+                  "data": "a9059cbb00000000000000000000000017f80f10b6c4f08197653da37dd778d3c09f8abb00000000000000000000000000000000000000000000000000000000000f4240",
+                  "owner_address": "41b2b6e1ab2e6b99b34fc50ff8f5326f4a12d9ce88",
+                  "contract_address": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c"
+                },
+                "type_url": "type.googleapis.com/protocol.TriggerSmartContract"
+              },
+              "type": "TriggerSmartContract"
+            }
+          ],
+          "ref_block_bytes": "f999",
+          "ref_block_hash": "a27ea9a57f24d7d5",
+          "expiration": 1793336874000,
+          "fee_limit": 30000000,
+          "timestamp": 1793336816204
+        },
+        "internal_transactions": []
+      },
+      "evidence": "data/raw/event_allocation/tron_history/cc02d459880b856215963663b2f5d535221a090a72b8a3d0b01430821ce53d9a-1.json",
+      "failed": false,
+      "fee_raw": "345000",
+      "same_operator_entrypoint_as_pool_trade": false
+    }
+  }
+}

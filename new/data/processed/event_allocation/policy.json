@@ -1,0 +1,39 @@
+{
+  "version": "event-allocation-v1",
+  "time_window": {
+    "start_utc": "2026-10-29T20:30:00Z",
+    "end_utc_exclusive": "2026-10-30T07:00:00Z",
+    "start_timestamp": 1793305800,
+    "end_timestamp_exclusive": 1793343600,
+    "display_timezone": "America/New_York"
+  },
+  "primary_price_policy": "The same prior completed minute for every entry in a transaction. Verified-contract Coinbase USD spot; verified secondary venues and actual USDTUSD conversion explicitly recorded. Missing quotes remain unpriced, never zero.",
+  "bitquery_comparison_policy": "Separate sensitivity: stablecoins at USD1, same-minute independently observed market mark. It is not silently mixed into the primary ledger or called exact Hyperliquid replication.",
+  "deduplication_keys": {
+    "transaction": [
+      "chain",
+      "tx_hash"
+    ],
+    "transfer": [
+      "chain",
+      "tx_hash",
+      "event_or_trace_index",
+      "asset",
+      "component"
+    ],
+    "trade_leg": [
+      "chain",
+      "tx_hash",
+      "pool_key",
+      "log_index"
+    ],
+    "fee": [
+      "chain",
+      "tx_hash",
+      "fee_kind"
+    ]
+  },
+  "primary_identity": "Signed hacker reference loss after own onchain cost = signed non-hacker asset/position changes + protocol fee burn. Unpriced asset vectors conserve separately. These are reference-value changes, not historical cost-basis or causal MEV profits.",
+  "proposer_rule": "Searcher/block-recipient fees appear once in the primary table. Actual proposer payouts are a secondary redistribution and are not added to primary extraction. The event share is not inferred from the whole block payout.",
+  "control_rule": "Before the first monitored target at a pool is control. Other calls or pools in the same transaction are execution context. Same-pool activity after a target is association, not proof of incident causation."
+}

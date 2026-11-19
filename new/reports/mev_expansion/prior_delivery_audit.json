@@ -1,0 +1,228 @@
+{
+  "updated_utc": "2026-11-19T04:16:46.788422+00:00",
+  "scope": "Best-effort expanded research delivery over explicitly bounded evidence; not a certificate of all-incident causal or beneficial-owner identification.",
+  "ready_for_delivery": true,
+  "checks": [
+    {
+      "requirement": "完整可用 Ethereum 窗口扫描",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/summary.json"
+      ],
+      "finding": "完整原始窗口，不声称全历史／全链。"
+    },
+    {
+      "requirement": "去重单元与区间成本腿",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/strategy_units.json"
+      ],
+      "finding": "12,249 个单元；12,841 候选；含 126 笔补入成本腿。"
+    },
+    {
+      "requirement": "完整窗口其他成本上下文",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/all_sender_accounting.jsonl"
+      ],
+      "finding": "包括 124,172 笔非直接候选；窗口外成本仍未知。"
+    },
+    {
+      "requirement": "不局限目标附近五块",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/affected_pool_scope.jsonl"
+      ],
+      "finding": "160 池完整窗口活动；不把活动都认作 MEV。"
+    },
+    {
+      "requirement": "逐笔路线与明确 MEV 判据",
+      "passed": true,
+      "evidence": [
+        "reports/mev_expansion/全部候选池路径.csv",
+        "reports/mev_expansion/全部操作单元与判据.csv",
+        "docs/MEV判定标准.md"
+      ],
+      "finding": "每个单元有机制条件；相邻、盈利或高 Gas 均非单独充分条件。"
+    },
+    {
+      "requirement": "资产闭合、费用和负净额保留",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/terminal_cycle_profits.json"
+      ],
+      "finding": "36 个缺价单元不按零处理；闭合子集不是全事件利润。"
+    },
+    {
+      "requirement": "排序费用分拆与严格中转路径",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/covered_surplus_distribution.json",
+        "src/arbitrage/indirect_payments.py"
+      ],
+      "finding": "2391 个 ETH/WETH 正收益单元；不将 proposer 二次付款重复扣除。"
+    },
+    {
+      "requirement": "实际逐地址留存分解",
+      "passed": true,
+      "evidence": [
+        "reports/mev_expansion/闭合循环逐地址净变化.csv"
+      ],
+      "finding": "联合操作边界分到真实地址净变化，不冒充最终余额／控制人。"
+    },
+    {
+      "requirement": "目标条件影响与参考差额分开",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/victim_replays.json",
+        "reports/mev_expansion/victim_intervention_index.md"
+      ],
+      "finding": "固定调用删除前腿；实际前缀先复现；不同干预不相加。"
+    },
+    {
+      "requirement": "订单借款不冒充利润",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/comet_resolver_equity.json"
+      ],
+      "finding": "抵押加回、新债务扣除；诊断查询 Gas 不算真实成本。"
+    },
+    {
+      "requirement": "最大订单损失去向精确对平",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_full_window/order_reference_shortfall_partition.json"
+      ],
+      "finding": "$6.966M 参考差额拆为权益、区块付款、第三方结算和 Gas，不称因果 MEV。"
+    },
+    {
+      "requirement": "九笔订单实际对手方地址",
+      "passed": true,
+      "evidence": [
+        "reports/mev_expansion/九笔订单逐地址分配.csv"
+      ],
+      "finding": "3 笔全部地址资产可估值，6 笔有未估值资产；池托管余额不是 LP 钱包利润。"
+    },
+    {
+      "requirement": "四个 TRON 地址完整分页和签名主体",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_tron/all_named_bot_accounting.json",
+        "data/processed/mev_tron/canonical_transaction_overrides.json"
+      ],
+      "finding": "包括失败尝试；23 笔索引字节偏差以 solidified canonical body 修正，原文保留。"
+    },
+    {
+      "requirement": "TRON 库存与借贷仓位分开",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_tron/justlend_position_adjustments.json"
+      ],
+      "finding": "Mint/Redeem 份额与实际资产本金相对，Borrow 增负债；旧持仓利息和重估仍未知。"
+    },
+    {
+      "requirement": "TRON 当前 metadata 不冒充历史状态",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_tron/pool_metadata_current.json"
+      ],
+      "finding": "143 池当前 factory 匹配，54 仍未命名；历史金额来自回执。"
+    },
+    {
+      "requirement": "TRON 目标与未估值试单",
+      "passed": true,
+      "evidence": [
+        "data/processed/mev_tron/target_owner_accounting.json"
+      ],
+      "finding": "46 tracker 地址仅为线索；16 大额参考差额，100USDT 试单缺价保留 null。"
+    },
+    {
+      "requirement": "Bitquery 口径比较与未复现差异",
+      "passed": true,
+      "evidence": [
+        "reports/mev_expansion/完整套利与MEV核验报告.md",
+        "data/processed/mev_full_window/named_address_profiles.json"
+      ],
+      "finding": "对照原表，不将接近数字、单腿和不同边界当精确复现。"
+    },
+    {
+      "requirement": "中文报告、本地图和下载链接",
+      "passed": true,
+      "evidence": [
+        "reports/mev_expansion/完整套利与MEV核验报告.html"
+      ],
+      "finding": "静态 HTML 链接／图片引用核对；四张 PNG 已目视审查。浏览器 access host 不可用，未声称完成浏览器页面视觉检查。"
+    },
+    {
+      "requirement": "完整检查",
+      "passed": true,
+      "evidence": [
+        "reports/mev_expansion/final-expanded-pytest.xml"
+      ],
+      "finding": "76 passed；旧 52 项测试 XML 不覆盖删除。"
+    },
+    {
+      "requirement": "交付明细数量",
+      "passed": true,
+      "evidence": [
+        "reports/mev_expansion/"
+      ],
+      "finding": "CSV 共 68,672 条数据记录，跨表不能混加为事件数。"
+    }
+  ],
+  "failed_checks": [],
+  "test_result": {
+    "tests": 76,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "csv_data_rows": {
+    "全部操作单元与判据.csv": 12249,
+    "全部候选池路径.csv": 49922,
+    "闭合循环逐地址净变化.csv": 4580,
+    "TRON逐笔池路径.csv": 1722,
+    "九笔订单逐地址分配.csv": 199
+  },
+  "broken_local_report_links": [],
+  "artifact_sha256": {
+    "reports/mev_expansion/TRON逐笔池路径.csv": "db71fcd71b6efa63444a5f50537eec8953f34fdb436db8f5bdb5e5ae3e45f77a",
+    "reports/mev_expansion/covered_surplus_distribution.html": "484d20a8d686c643a5e568e4b73305300c6c9feafc84a3de160fb17f4fb5cdcf",
+    "reports/mev_expansion/covered_surplus_distribution.png": "604d10d0e8c092df27f1894505c7e389789b3b6842e5576d2551b935a970001a",
+    "reports/mev_expansion/covered_surplus_distribution.svg": "7b8e9aeccc26a1baf769c2c634d353369439af949c91ba09433eaf8a8fe79fbc",
+    "reports/mev_expansion/debt-and-strategy-pytest.xml": "b64e592e099d142a2940b18c9df1036caf3c112eea5a25292f66f0cacdda1352",
+    "reports/mev_expansion/expanded-pytest.xml": "7ff695006830fdb1cf60892548f11fc8468df60f2b2b838e9dfaa9f8cb03abaa",
+    "reports/mev_expansion/final-expanded-pytest.xml": "7c92bc41b3905c309a64ca2a03ef26677b61f0775c03c83ffbb187ce37132ea0",
+    "reports/mev_expansion/full-window-pytest.xml": "6e2917151160f1fcd33d1cb1d3dca80c2f3a3cb563ad15c7976f1cd1885847b7",
+    "reports/mev_expansion/order_resolver_fund_route.png": "a35a61209c6bd9021c06733453675f6c5b39665f11aef7a8db3bf3d6b2f03df8",
+    "reports/mev_expansion/order_resolver_fund_route.svg": "30ec5aaffa13fe87d8ed170b243929e274bc985afd002e9fda4cbbbc87c496f5",
+    "reports/mev_expansion/progress.md": "bcfe7eea2b997a5c446b60e1a19d6df396a5a6a4014eab8ceb5d5ca23c302d9c",
+    "reports/mev_expansion/pytest-results.xml": "635a28f81722b479887dd361fc5a228a2f1c45ef0fad10b62a7484a72b023b1b",
+    "reports/mev_expansion/route_index.md": "cbdd551d608c6ce0f35deded74797c1df7e6c5e9c8dd05f5fe752daae05764c1",
+    "reports/mev_expansion/sandwich_and_fee_route.png": "9904409f663102d2ee5e02000bffb06949a018f91d2d90213b7c020901aba21d",
+    "reports/mev_expansion/sandwich_and_fee_route.svg": "1fd384b8ccc3ce1af235bdabeded2098dfae027e7f57ee8b586cad19756e1fc5",
+    "reports/mev_expansion/strategy-pytest.xml": "002950298268a9667e71a2627dc8200535764348e23901ce197ec1912aede802",
+    "reports/mev_expansion/tron-pytest.xml": "574639318bc39e0839b28d0b11339718ccea81f5c6572d2d77b3798d5f838b47",
+    "reports/mev_expansion/tron_cycle_fund_route.png": "520c6120d893654d9bee34abb35a3b1afb51b3760f12694982520b68d29a4ab6",
+    "reports/mev_expansion/tron_cycle_fund_route.svg": "d1c5200cfc1ce7933702602b0f1a1da9aac02b138caadbd745918829fdd277dd",
+    "reports/mev_expansion/victim_intervention_index.md": "9c0f0da029dbd6a9a84472202b71bbfd7d28e39768e85ee143340f909188b63a",
+    "reports/mev_expansion/九笔订单逐地址分配.csv": "a2dbc66ac4a81154a44b0dedff0ecd44e7aad31a16ed35865707128baeb9b25e",
+    "reports/mev_expansion/全部候选池路径.csv": "26983751368fbd877ba9c8afcf73799e781ae642276e4e81f985c4d75ae49f85",
+    "reports/mev_expansion/全部操作单元与判据.csv": "f2b5dc7a7d69d6017dcc4fa2bf289016482b4818a96af93ca0d1b9589dae9a56",
+    "reports/mev_expansion/完整套利与MEV核验报告.html": "96bbe7168d8937563c95f9ce494ac795cb304aa1a580907a6b206f74e146954a",
+    "reports/mev_expansion/完整套利与MEV核验报告.md": "a750c514d20859d14ddc277aa87823922dabd0fa616909b0efb2261d0f93f5f7",
+    "reports/mev_expansion/收益与费用去向.md": "1c3405407351429e976c01b893f2f23f9423c94e1d59eeee8bd755f02d562a6e",
+    "reports/mev_expansion/闭合循环逐地址净变化.csv": "45d64c1ba93c18c05ef73827dadfcb845b38359d3c78812d281c836cba7d39f3"
+  },
+  "scientific_unknowns": {
+    "all_incident_causal_MEV_loss_USD": null,
+    "all_incident_firm_wide_arbitrage_profit_USD": null,
+    "ultimate_beneficial_owners_complete": false,
+    "unresolved_external_distribution_units": 249,
+    "unpriced_terminal_cycle_units": 36,
+    "orders_with_unpriced_counterparty_assets": 6,
+    "TRON_historical_state_replay_proven": false,
+    "exact_Bitquery_global_replication": false
+  },
+  "presentation": "Previously approved 14-page Canva saved and verified. This expanded report is an addendum; the saved Canva is not silently claimed to contain the new results."
+}

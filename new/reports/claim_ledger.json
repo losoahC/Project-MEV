@@ -1,0 +1,46 @@
+[
+  {
+    "claim": "three_arbitrage_net_ETH",
+    "value": "2.748062266732417199",
+    "status": "observed-derived, selected cases only",
+    "dataset": "data/processed/arbitrage_cases.json",
+    "source_field": "net_after_gas_and_builder_ETH; evidence pointers per transaction"
+  },
+  {
+    "claim": "sandwich_episode_net_ETH",
+    "value": "12.080033775421395622",
+    "status": "observed-derived, episode only; no causal victim loss",
+    "dataset": "reports/milestone23_summary.json"
+  },
+  {
+    "claim": "anomaly_five_million_cases",
+    "value": 2,
+    "status": "estimated reference values, not intent",
+    "dataset": "data/processed/wallet_swap_valuations.json"
+  },
+  {
+    "claim": "frozen_snapshot_USD",
+    "value": "2026000811.9894566897800",
+    "status": "observed blacklist/balances; estimated fixed USD mark",
+    "dataset": "data/processed/balance_reconciliation.json",
+    "valuation_utc": "2026-10-30T07:02:47+00:00"
+  },
+  {
+    "claim": "whole_incident_MEV_loss_USD",
+    "value": null,
+    "status": "unresolved; not zero",
+    "dataset": "data/processed/loss_reconciliation.json"
+  },
+  {
+    "claim": "observed_sweep_asset_count",
+    "value": 64,
+    "status": "observed-derived,three-source-sweep scope only",
+    "dataset": "data/processed/asset_inventory.json"
+  },
+  {
+    "claim": "expanded_raw_unit_ledgers_balanced",
+    "value": 1024,
+    "status": "observed-derived,64assets at16leads;not all-chain ownership",
+    "dataset": "data/processed/asset_inventory.json"
+  }
+]

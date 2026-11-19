@@ -1,0 +1,19 @@
+{
+  "wallets": 16,
+  "transactions_in_m1": 1640,
+  "two_sided_swap_wallet_rows": 810,
+  "fully_valued_rows": 621,
+  "qualified_rows": 241,
+  "million_plus_qualified": 5,
+  "five_million_plus_qualified": 2,
+  "price_conflicts": 0,
+  "excluded_missing_native_traces": 0,
+  "sum_signed_reference_shortfall_priced_rows_USD": "43727932.59248871806181198929786924",
+  "limits": [
+    "Wallet rows can share a transaction. This sum is not a deduplicated event loss reconciliation.",
+    "Reference-value shortfall is estimated, not intentional loss or MEV profit.",
+    "Position/debt and inter-wallet mixed transfers do not qualify as simple execution losses.",
+    "Unknown contract identity and missing/conflicting prices remain null.",
+    "Only the existing M1 event window and 16 wallet leads are screened."
+  ]
+}

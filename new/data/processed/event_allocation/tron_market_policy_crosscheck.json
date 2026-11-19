@@ -1,0 +1,54 @@
+{
+  "hyperliquid_evidence": "data/raw/public_http/hyperliquid-fec7aae98e1e5b4a492efe7a3f61e53719699dff2b75e93f8d9081aab90715f1.json",
+  "available_15m_bars": 44,
+  "actual_first_open": "0.33136",
+  "actual_last_15m_close": "0.33857",
+  "highest_15m_high": "0.36489",
+  "comparisons": [
+    {
+      "policy": "primary",
+      "incident_wallet_reference_loss_USD": "22622849.630476953499572",
+      "subsequent_operating_address_net_USD": "16184676.667443322366305",
+      "pool_trade_time_inventory_change_USD": "6400143.921314655380267",
+      "pool_terminal_inventory_change_USD": "-1714649.32467980786110",
+      "actual_resource_fee_mark_USD": "38029.0417189757530",
+      "unpriced_role_vectors": 0,
+      "same_minute_Bitquery_reproduction": false,
+      "lookahead_warning": null
+    },
+    {
+      "policy": "stable1",
+      "incident_wallet_reference_loss_USD": "22650105.0774031807",
+      "subsequent_operating_address_net_USD": "16209547.2102634600",
+      "pool_trade_time_inventory_change_USD": "6402459.7701711207",
+      "pool_terminal_inventory_change_USD": "-1717741.2589459105",
+      "actual_resource_fee_mark_USD": "38098.09696860",
+      "unpriced_role_vectors": 0,
+      "same_minute_Bitquery_reproduction": false,
+      "lookahead_warning": null
+    },
+    {
+      "policy": "Hyperliquid_last_completed_15m_stable1",
+      "incident_wallet_reference_loss_USD": "23434463.75517213152",
+      "subsequent_operating_address_net_USD": "16738832.33487712547",
+      "pool_trade_time_inventory_change_USD": "6657617.31336375005",
+      "pool_terminal_inventory_change_USD": "-1770187.50068268455",
+      "actual_resource_fee_mark_USD": "38014.106931256",
+      "unpriced_role_vectors": 0,
+      "same_minute_Bitquery_reproduction": false,
+      "lookahead_warning": null
+    },
+    {
+      "policy": "Hyperliquid_current_15m_close_stable1_retrospective",
+      "incident_wallet_reference_loss_USD": "22289910.68122974292",
+      "subsequent_operating_address_net_USD": "15795929.18262459560",
+      "pool_trade_time_inventory_change_USD": "6455751.88323853132",
+      "pool_terminal_inventory_change_USD": "-1770187.50068268455",
+      "actual_resource_fee_mark_USD": "38229.615366616",
+      "unpriced_role_vectors": 0,
+      "same_minute_Bitquery_reproduction": false,
+      "lookahead_warning": "Uses a later close within the current 15-minute candle; retrospective sensitivity only. Terminal price still uses the last candle completed by window end."
+    }
+  ],
+  "identification": "One-minute Hyperliquid history was unavailable under the public retention window. A 15-minute sensitivity cannot certify Bitquery same-minute values. The terminal inventory column values swap changes relative to holding the same initial coins under fixed-inventory assumptions; it is not individual LP total wealth or an extra extraction amount."
+}

@@ -1,0 +1,30 @@
+{
+  "pool": "0xc07044d4b947e7c5701f1922db048c6b47799b84",
+  "block": 26302560,
+  "event_protocol": "V3-compatible (event only)",
+  "sources": {
+    "token0": "data/raw/public_rpc/99ff7463a131c50428c682a12fe9eebe088f96711c1e716bf31f7cf29fc90772.json",
+    "token1": "data/raw/public_rpc/99ff7463a131c50428c682a12fe9eebe088f96711c1e716bf31f7cf29fc90772.json",
+    "factory": "data/raw/public_rpc/99ff7463a131c50428c682a12fe9eebe088f96711c1e716bf31f7cf29fc90772.json",
+    "fee_pips": "data/raw/public_rpc/99ff7463a131c50428c682a12fe9eebe088f96711c1e716bf31f7cf29fc90772.json",
+    "factory_lookup": "data/raw/public_rpc/99ff7463a131c50428c682a12fe9eebe088f96711c1e716bf31f7cf29fc90772.json"
+  },
+  "batch_indices": {
+    "token0": 0,
+    "token1": 1,
+    "factory": 2,
+    "fee_pips": 3,
+    "factory_lookup": 4
+  },
+  "failures": {},
+  "dex_name": "Uniswap V3",
+  "planning_snapshot_block": 26303950,
+  "token0": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+  "token1": "0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab",
+  "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+  "fee_pips": 3000,
+  "planning_matches_parent": true,
+  "factory_lookup_matches_pool": true,
+  "dex_label_source": "https://developers.uniswap.org/docs/protocols/v3/deployments/v3-ethereum-deployments",
+  "identity_note": "Metadata and factory lookup are historical first-parent multicalls. End snapshot only planned query arguments; mismatches are not silently accepted."
+}

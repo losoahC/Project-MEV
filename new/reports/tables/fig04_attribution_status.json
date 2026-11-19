@@ -1,0 +1,36 @@
+{
+  "hacker_execution_loss": {
+    "A1": {
+      "tx_hash": "0x2a1979ae32a40c0aaa0df757f6af690857c6c8cb86097cac29316597de9469f6",
+      "input_reference_USD": "29961300.00000",
+      "output_reference_USD": "21587296.079792046691378820",
+      "shortfall_USD": "8374003.920207953308621180",
+      "reference_time": "prior completed minute per target swap",
+      "gas_excluded": true,
+      "causal_MEV_loss_established": false
+    },
+    "A2": {
+      "tx_hash": "0x2ccafec913543cb6a8f13d9bf8f4fc77b3adb0b9bed4e32171560dac9670976d",
+      "input_reference_USD": "93862.91788135163153795609946657",
+      "output_reference_USD": "84412.837848834244992",
+      "shortfall_USD": "9450.08003251738654595609946657",
+      "reference_time": "prior completed minute per target swap",
+      "gas_excluded": true,
+      "causal_MEV_loss_established": false
+    },
+    "A3": {
+      "tx_hash": "0xbf3fc95e45d932b1ad0a55e91e77fea8652906a3eeb0efd65850976059aef9d7",
+      "input_reference_USD": "1094.3513079911047510113465",
+      "output_reference_USD": "743.28745762227987831822",
+      "shortfall_USD": "351.0638503688248726931265",
+      "reference_time": "prior completed minute per target swap",
+      "gas_excluded": true,
+      "causal_MEV_loss_established": false
+    }
+  },
+  "LP_value_capture": "Fee tiers and V2 mechanical fee effects available; exact per-LP attribution unmeasured.",
+  "searcher": "Observed net cash flow in explicit sender/executor boundary",
+  "builder": "Partial execution-ETH proxy for A1/A2; A3 ownership boundary unresolved",
+  "proposer": "Three exact relay-to-onchain matches, including forwarding-contract SELFDESTRUCT paths",
+  "other_costs": "Base-fee burn and identifiable gas/native payments; unknown offchain costs remain missing."
+}

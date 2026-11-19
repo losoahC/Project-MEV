@@ -1,0 +1,62 @@
+{
+  "commit": {
+    "status": "committed",
+    "transaction_id": "849451146740428700"
+  },
+  "saved": {
+    "page_metadata": [
+      {
+        "id": "PBy1brMb0XkLF4ZL",
+        "index": 4,
+        "page_number": 4,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080
+        },
+        "design_type": "presentation"
+      },
+      {
+        "id": "PB7cKMdLvksM8CZq",
+        "index": 6,
+        "page_number": 6,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080
+        },
+        "design_type": "presentation"
+      },
+      {
+        "id": "PBdM6db3cX9QWQRZ",
+        "index": 14,
+        "page_number": 14,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080
+        },
+        "design_type": "presentation"
+      }
+    ],
+    "design_metadata": {
+      "id": "DAHbT7iYK6M",
+      "title": "Binance MEV Research",
+      "owner": {
+        "user_id": "oUYgMZBIXX7Oo6AjD8pscQ",
+        "team_id": "oBYgMC5RQGexmkJMOWcheY"
+      },
+      "urls": {
+        "edit_url": "https://www.canva.com/d/vplY4YKW4tAvurG",
+        "view_url": "https://www.canva.com/d/CW_-KZcMU4HiAtb"
+      },
+      "created_at": 1795044268,
+      "updated_at": 1795051739,
+      "page_count": 14,
+      "design_types": [
+        "presentation"
+      ]
+    },
+    "design_content": "Measuring Dislocation\n\nExecution price  =  input USD value / output ETH quantity\nReference shortfall  =  input reference USD − output reference USD\nObserved example — wallet 5, block 26,300,992Input: USD 29,961,300 · Output: 9,551.900920 ETHEffective price: USD 3,136.68/ETH · Reference: USD 2,260/ETHEstimated reference shortfall: USD 8,374,003.92 (gas excluded)210 observed ETH/USDT executable prices are available in Figure 2.Prices use the prior completed independent market minute; missing prices stay null.V2 reserves and ordered V3 states are reconstructed, not a full no-MEV counterfactual.AMM impact, fees and captured arbitrage profit are distinct quantities.\nObserved / Estimated / Unresolved\nThree Arbitrage Cases Summary\n\n\nCASE / BLOCK\n\nGROSS ETH\n\nGAS ETH\n\nBUILDER ETH\n\nNET ETH\n\nA1 · 26,300,992\n\n12.137824\n\n1.139064\n\n8.252948\n\n2.745812\n\nA2 · 26,302,300SHIB/WETH\n\n0.002866\n\n0.000972\n\n0.001828\n\n0.000065\n\nA3 · 26,302,437AXS/WETH\n\n0.007002\n\n0.002419\n\n0.002398\n\n0.002184\nSELECTED TOTAL  ·  gross 12.147692 ETH  ·  net 2.748062 ETH\nRounded to 6 decimals; exact values: companion presenter notes, slide 6.\nObserved / Estimated / Unresolved\nConclusions and Limits\n\nReconstruct what is identifiable.Do not promote estimates into intent.\n\n$43.728M\nsigned trade-time reference shortfall across 621 unique completely valued swaps — a bounded sample, not full event loss\nMAIN EPISTEMIC GAPS01  All-chain inventory / recovery02  Historical losing-bid eligibility03  Full no-MEV counterfactuals\nSelected profits and proposer payments are reconstructable. Execution shortfalls do not establish intentional loss or causal MEV. Price-timing sensitivity compares identical transactions. Excluding wallets 13 and 9 leaves this sample unchanged; recipient ownership is not expanded.Eight reproducible figures · 1,024 raw-asset ledgers reconciled · 52 tests passedExact figures, full hashes and sources: companion presenter notes, slides 1–14.\nObserved / Estimated / Unresolved"
+  },
+  "approval": "保存这版修订稿",
+  "transaction_id": "849451146740428700",
+  "verified_at_utc": "2026-11-19T01:29:39.152272+00:00"
+}

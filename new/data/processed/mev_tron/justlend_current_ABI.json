@@ -1,0 +1,760 @@
+[
+  {
+    "contract": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+    "node_evidence": "data/raw/tron_expansion/25e51e39110c2c60e30ee42cf445aea568ddb98b2b1c751890ffada10236fc40.json",
+    "events": [
+      {
+        "name": "AccrueInterest",
+        "inputs": [
+          {
+            "name": "cashPrior",
+            "type": "uint256"
+          },
+          {
+            "name": "interestAccumulated",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowIndex",
+            "type": "uint256"
+          },
+          {
+            "name": "totalBorrows",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Approval",
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "spender",
+            "type": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Borrow",
+        "inputs": [
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "borrowAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "accountBorrows",
+            "type": "uint256"
+          },
+          {
+            "name": "totalBorrows",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowIndex",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Failure",
+        "inputs": [
+          {
+            "name": "error",
+            "type": "uint256"
+          },
+          {
+            "name": "info",
+            "type": "uint256"
+          },
+          {
+            "name": "detail",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "JTokenBalance",
+        "inputs": [
+          {
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "name": "jtoken_balance",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "JTokenStatus",
+        "inputs": [
+          {
+            "name": "totalCash",
+            "type": "uint256"
+          },
+          {
+            "name": "totalBorrow",
+            "type": "uint256"
+          },
+          {
+            "name": "totalReserve",
+            "type": "uint256"
+          },
+          {
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowRatePerBlock",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowIndex",
+            "type": "uint256"
+          },
+          {
+            "name": "reserveFactorMantissa",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "LiquidateBorrow",
+        "inputs": [
+          {
+            "name": "liquidator",
+            "type": "address"
+          },
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "repayAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "cTokenCollateral",
+            "type": "address"
+          },
+          {
+            "name": "seizeTokens",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Mint",
+        "inputs": [
+          {
+            "name": "minter",
+            "type": "address"
+          },
+          {
+            "name": "mintAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "mintTokens",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewAdmin",
+        "inputs": [
+          {
+            "name": "oldAdmin",
+            "type": "address"
+          },
+          {
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewComptroller",
+        "inputs": [
+          {
+            "name": "oldComptroller",
+            "type": "address"
+          },
+          {
+            "name": "newComptroller",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewMarketInterestRateModel",
+        "inputs": [
+          {
+            "name": "oldInterestRateModel",
+            "type": "address"
+          },
+          {
+            "name": "newInterestRateModel",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewPendingAdmin",
+        "inputs": [
+          {
+            "name": "oldPendingAdmin",
+            "type": "address"
+          },
+          {
+            "name": "newPendingAdmin",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewReserveAdmin",
+        "inputs": [
+          {
+            "name": "oldAdmin",
+            "type": "address"
+          },
+          {
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewReserveFactor",
+        "inputs": [
+          {
+            "name": "oldReserveFactorMantissa",
+            "type": "uint256"
+          },
+          {
+            "name": "newReserveFactorMantissa",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Redeem",
+        "inputs": [
+          {
+            "name": "redeemer",
+            "type": "address"
+          },
+          {
+            "name": "redeemAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "redeemTokens",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "RepayBorrow",
+        "inputs": [
+          {
+            "name": "payer",
+            "type": "address"
+          },
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "repayAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "accountBorrows",
+            "type": "uint256"
+          },
+          {
+            "name": "totalBorrows",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowIndex",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "ReservesAdded",
+        "inputs": [
+          {
+            "name": "benefactor",
+            "type": "address"
+          },
+          {
+            "name": "addAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "newTotalReserves",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "ReservesReduced",
+        "inputs": [
+          {
+            "name": "admin",
+            "type": "address"
+          },
+          {
+            "name": "reduceAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "newTotalReserves",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Transfer",
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      }
+    ]
+  },
+  {
+    "contract": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+    "node_evidence": "data/raw/tron_expansion/88870c6e8293c2ad897c3cfc556b5c9ce1b9f9d52a88409244fcd3079d8eb5b1.json",
+    "events": [
+      {
+        "name": "AccrueInterest",
+        "inputs": [
+          {
+            "name": "cashPrior",
+            "type": "uint256"
+          },
+          {
+            "name": "interestAccumulated",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowIndex",
+            "type": "uint256"
+          },
+          {
+            "name": "totalBorrows",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Approval",
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "spender",
+            "type": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Borrow",
+        "inputs": [
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "borrowAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "accountBorrows",
+            "type": "uint256"
+          },
+          {
+            "name": "totalBorrows",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowIndex",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Failure",
+        "inputs": [
+          {
+            "name": "error",
+            "type": "uint256"
+          },
+          {
+            "name": "info",
+            "type": "uint256"
+          },
+          {
+            "name": "detail",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "JTokenBalance",
+        "inputs": [
+          {
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "name": "jtoken_balance",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "JTokenStatus",
+        "inputs": [
+          {
+            "name": "totalCash",
+            "type": "uint256"
+          },
+          {
+            "name": "totalBorrow",
+            "type": "uint256"
+          },
+          {
+            "name": "totalReserve",
+            "type": "uint256"
+          },
+          {
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowRatePerBlock",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowIndex",
+            "type": "uint256"
+          },
+          {
+            "name": "reserveFactorMantissa",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "LiquidateBorrow",
+        "inputs": [
+          {
+            "name": "liquidator",
+            "type": "address"
+          },
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "repayAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "cTokenCollateral",
+            "type": "address"
+          },
+          {
+            "name": "seizeTokens",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Mint",
+        "inputs": [
+          {
+            "name": "minter",
+            "type": "address"
+          },
+          {
+            "name": "mintAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "mintTokens",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewAdmin",
+        "inputs": [
+          {
+            "name": "oldAdmin",
+            "type": "address"
+          },
+          {
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewComptroller",
+        "inputs": [
+          {
+            "name": "oldComptroller",
+            "type": "address"
+          },
+          {
+            "name": "newComptroller",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewImplementation",
+        "inputs": [
+          {
+            "name": "oldImplementation",
+            "type": "address"
+          },
+          {
+            "name": "newImplementation",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewMarketInterestRateModel",
+        "inputs": [
+          {
+            "name": "oldInterestRateModel",
+            "type": "address"
+          },
+          {
+            "name": "newInterestRateModel",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewPendingAdmin",
+        "inputs": [
+          {
+            "name": "oldPendingAdmin",
+            "type": "address"
+          },
+          {
+            "name": "newPendingAdmin",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewReserveAdmin",
+        "inputs": [
+          {
+            "name": "oldAdmin",
+            "type": "address"
+          },
+          {
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "NewReserveFactor",
+        "inputs": [
+          {
+            "name": "oldReserveFactorMantissa",
+            "type": "uint256"
+          },
+          {
+            "name": "newReserveFactorMantissa",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Redeem",
+        "inputs": [
+          {
+            "name": "redeemer",
+            "type": "address"
+          },
+          {
+            "name": "redeemAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "redeemTokens",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "RepayBorrow",
+        "inputs": [
+          {
+            "name": "payer",
+            "type": "address"
+          },
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "repayAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "accountBorrows",
+            "type": "uint256"
+          },
+          {
+            "name": "totalBorrows",
+            "type": "uint256"
+          },
+          {
+            "name": "borrowIndex",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "ReservesAdded",
+        "inputs": [
+          {
+            "name": "benefactor",
+            "type": "address"
+          },
+          {
+            "name": "addAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "newTotalReserves",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "ReservesReduced",
+        "inputs": [
+          {
+            "name": "admin",
+            "type": "address"
+          },
+          {
+            "name": "reduceAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "newTotalReserves",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      },
+      {
+        "name": "Transfer",
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "type": "Event"
+      }
+    ]
+  }
+]

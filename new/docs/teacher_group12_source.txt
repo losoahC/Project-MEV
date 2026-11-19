@@ -1,0 +1,57 @@
+PDF PAGE 8
+pools see more volume? Theoretically, there is an arbitrage between these two 
+pools, since users can always swap USDC for USDT. 
+a. What is the USDC/USDT volume? Is there a trend? Why would someone want 
+to swap from one to the other? 
+4. rlUSD is another famous Stablecoin, issued by Ripple. Except nobody actually uses 
+Ripple. You can analyze the descriptive statistics on rlUSD, and I expect you will ﬁnd 
+that rlUSD is SUBSTANTIALLY diƯerent from USDC/USDT.  
+ 
+Group 10: Anthropic Pre-IPO case study: 
+Need ALL the data re volume, open positions etc. for each of the HLP-3 Anthropic markets, 
+possibly you can also examine Anthropic markets on Binance, Lighter, or Aster (if they 
+exist). Need an account-level analysis of every trader’s position and their current 
+proﬁt/loss. 
+Somewhat hard to get this data probably, but please ﬁnd it, or else do a diƯerent project. 
+ 
+Group 12: Flashbots/MEV. 
+Flashbots is pretty straight forward, idk where to ﬁnd data on it though, here is some. 
+https://collective.ﬂashbots.net/t/ﬂashbots-relay-bulk-data-exports-payloads-and-builder-
+submissions/700  
+https://tokenterminal.com/explorer/projects/ﬂashbots/metrics/fees  
+That said, You may have noticed that Binance was Hacked this week for 6.3 billion.  
+https://x.com/spreekaway/status/2115904721856651382?a=B4BuOUNut6ID6Pc20EQ&s=
+20  
+$2 Billion in stablecoins was frozen, and the hacker still got away with 4 billion or so in 
+tokens. However, the hacker created A LOT of arbitrage/MEV opportunities as a result of 
+their activities. Check out this one: 
+https://x.com/Millon_Sancet/status/2116402054759645655?a=Zr3ZXWM4Ii67E2NtQow&s
+=20  
+And my reply tweet: https://x.com/ReidTymcio/status/2116605231496610148?a=ZPG6ow-
+Dt3CIruo92xo&s=20  
+
+PDF PAGE 9
+It would be AMAZING If you could evaluate this hypothesis. Ie, how much of the 4.3 billion 
+or so stolen was lost to MEV?  
+Here is a good place to start: 
+https://x.com/dcfgod/status/2115919171179704632?a=tp6kY9WdvEhWiDivRCs&s=20  
+The hackers were trying to sell their USDC/USDT cuz it can be frozen, so they bought a ton 
+of ETH on DEXes, causing the ETH price on DEX to go up to 3000, while the real price was 
+actually 2200. This caused an arbitrage opportunity where MEV bots, and arbitrage bots 
+were able to earn a free $800 per ETH sold, and this caused the gas price to increase 
+dramatically, which caused Ethereum Miners to make lots of money on fees. 
+ 
+So lots of people made money from the hack. Can you calculate exactly how much money 
+was lost by the hacker to MEV? 
+Here is Binance’s own explanation of where the money went. 
+https://binance.lamps.works/?tab=breakdown 
+ 
+ 
+
+
+PDF PAGE 10
+ Etherscan has labeled the thief wallets as “Binance Hot Wallet Exploiter 1-16”. So the 
+procedure here is to ﬁnd each one of these wallets, scan the transactions, and see how 
+many sandwich attacks you can ﬁnd. Also calculate how much the hacker overpaid for 
+ETH, cuz that amount at minimum was earned by arbitrageurs. 
+This is a very relevant topic, so I’m sure people would love to see your analysis. 
